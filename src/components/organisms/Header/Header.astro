@@ -1,5 +1,5 @@
 ---
-import DropdownButton from "@components/atoms/DropdownButton.astro";
+import DropdownButton from "@atoms/DropDown/DropdownButton.astro";
 
 const menuItems = [
   {
@@ -35,23 +35,49 @@ const menuItems = [
 ---
 
 <header id="headerw-full" class="flex justify-center w-full">
-  <div class="glassmorphism flex justify-between items-center w-full max-w-[1300px] px-10 py-2 rounded-[9px]">
-    <ul class="flex flex-1 flex-col w-full font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
-      {menuItems.map((menuItem) => (
-        <li>
-          {menuItem.url ? (
-            <a href={menuItem.url} class="block py-2 font-sans text-white hover:text-[--secondary-text-color] transition-colors" aria-current="page">
-              {menuItem.text}
-            </a>
-          ) : (
-            <DropdownButton text={menuItem.text} dropdown={menuItem.elements} />
-          )}
-        </li>
-      ))}
+  <div
+    class="glassmorphism flex justify-between items-center w-full max-w-[1300px] px-10 py-2 rounded-[9px]"
+  >
+    <ul
+      class="flex flex-1 flex-col w-full font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+    >
+      {
+        menuItems.map((menuItem) => (
+          <li>
+            {menuItem.url ? (
+              <a
+                href={menuItem.url}
+                class="block py-2 font-sans text-white hover:text-[--secondary-text-color] transition-colors"
+                aria-current="page"
+              >
+                {menuItem.text}
+              </a>
+            ) : (
+              <DropdownButton
+                text={menuItem.text}
+                dropdown={menuItem.elements}
+              />
+            )}
+          </li>
+        ))
+      }
     </ul>
-    <form action="/search" method="get" class="relative flex items-center bg-[--tertiarty-color]">
-      <input type="search" id="search-navbar" required class="w-full h-[38px] text-[1rem] rounded-l-xl block p-2 ps-none border-[--neutral-color] border bg-[--primary-text-color] text-[--secundary-color] hover:shadow-[0 0 0 .2rem rgba(0,123,255,.25)] focus:border-[#80bdff] outline-none border border-solid" placeholder="Search..." />
-      <button type="submit" class="flex items-center justify-center text-[--secundary-color] hover:text-[--neutral-variant-color] transition ease-in-out bg-[--neutral-variant-color] hover:bg-[--secundary-color] p-[7.5px] w-9 h-[38.3px] rounded-r-lg border">
+    <form
+      action="/search"
+      method="get"
+      class="relative flex items-center bg-[--tertiarty-color]"
+    >
+      <input
+        type="search"
+        id="search-navbar"
+        required
+        class="w-full h-[38px] text-[1rem] rounded-l-xl block p-2 ps-none border-[--neutral-color] border bg-[--primary-text-color] text-[--secundary-color] hover:shadow-[0 0 0 .2rem rgba(0,123,255,.25)] focus:border-[#80bdff] outline-none border border-solid"
+        placeholder="Search..."
+      />
+      <button
+        type="submit"
+        class="flex items-center justify-center text-[--secundary-color] hover:text-[--neutral-variant-color] transition ease-in-out bg-[--neutral-variant-color] hover:bg-[--secundary-color] p-[7.5px] w-9 h-[38.3px] rounded-r-lg border"
+      >
         <i class="fa-solid fa-magnifying-glass text-[14px]"></i>
         <span class="sr-only">Search icon</span>
       </button>

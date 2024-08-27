@@ -1,0 +1,39 @@
+---
+const icons = [
+  {
+    name: "Facebook",
+    url: "#",
+    icon: "ri:facebook-fill",
+  },
+  {
+    name: "Twitter",
+    url: "#",
+    icon: "ri:twitter-x-fill",
+  },
+  {
+    name: "Instagram",
+    url: "#",
+    icon: "basil:instagram-solid",
+  },
+  {
+    name: "LinkedIn",
+    url: "#",
+    icon: "uil:linkedin",
+  },
+  {
+    name: "tiktok",
+    url: "#",
+    icon: "ic:sharp-tiktok",
+  },
+];
+---
+
+<div id="icons " class="flex justify-center items-center flex-1 gap-2 ">
+  {
+    icons.map((data) => (
+      <a href={data.url} target="_blank" rel="nofollow noreferrer noopener" class="w-[24px]  h-[24px] flex items-center justify-center p-1 bg-[--button-base] hover:bg-[--button-hover] rounded-full">
+        <iconify-icon icon={data.icon} width="15" height="15" />
+      </a>
+    ))
+  }
+</div>

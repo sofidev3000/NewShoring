@@ -1,2 +1,2 @@
-export const SITE_TITLE = 'Frida IA';
-export const SITE_DESCRIPTION = 'El más potente generador de imágenes IA';
+export const SITE_TITLE = 'NewShoring';
+export const SITE_DESCRIPTION = 'Noticias de Newshoring y negocios';

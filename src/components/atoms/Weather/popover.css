@@ -1,0 +1,11 @@
+/* PopOver triangulo */
+.popover::before {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Posicionar el triángulo arriba del popover */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px; /* Tamaño del triángulo */
+    border-style: solid;
+    border-color: transparent transparent black transparent; /* Triángulo apuntando hacia abajo */
+  }
