@@ -1,0 +1,52 @@
+/* Light Mode */
+:root {
+    --main-color: #fafafa;
+    --secundary-color: #090909;
+    --accent-color: #BA0000;
+    --background-glass: #000000d6;
+
+    /* Guardsman Red Palette */
+    --guardsman-red-50: #ffefef;
+    --guardsman-red-100: #ffdcdc;
+    --guardsman-red-200: #ffbfbf;
+    --guardsman-red-300: #ff9292;
+    --guardsman-red-400: #ff5454;
+    --guardsman-red-500: #ff1f1f;
+    --guardsman-red-600: #ff0000;
+    --guardsman-red-700: #db0000;
+    --guardsman-red-800: #ba0000;
+    --guardsman-red-900: #940808;
+    --guardsman-red-950: #520000;
+
+    /* Buttons background color */
+    --button-base: var(--guardsman-red-500);
+    --button-hover: var(--guardsman-red-600);
+    --button-active: var(--guardsman-red-700);
+    --button-disable: var(--guardsman-red-50);
+
+    /* Buttons color */
+    --button-disable-color: var(--guardsman-red-400);
+    --button-color: var(--guardsman-red-50);
+}
+
+/* Dark Mode */
+
+.dark:root {
+    --main-color: #090909;
+    /* Dark background */
+    --secundary-color: #fafafa;
+    /* Light text */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.glassmorphism{
+    -webkit-backdrop-filter:blur(25px) ;
+    backdrop-filter:blur(25px) ;
+    background: var(--background-glass);
+}
