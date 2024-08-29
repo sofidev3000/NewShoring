@@ -3,6 +3,7 @@ import Button from '@atoms/Button/Button.astro';
 import WeatherPopover from '@atoms/Weather/WeatherPopover';
 import SocialMediaIcons from '@components/atoms/SocialMediaIcons/SocialMediaIcons.astro';
 import ThemeIcon from '@components/atoms/ThemeIcon/ThemeIcon.astro';
+import ToggleLanguage from '@components/atoms/ToogleLanguage/ToggleLanguage';
 ---
 
 <header
@@ -18,9 +19,9 @@ import ThemeIcon from '@components/atoms/ThemeIcon/ThemeIcon.astro';
   <div class="social-media flex flex-wrap gap-5">
     <SocialMediaIcons/>
     <Button text="Suscríbete"/>
-    <div class="icons">
+    <div class="icons flex">
       <ThemeIcon />
-
+      <ToggleLanguage client:load/>
     </div>
   </div>
 </header>

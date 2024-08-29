@@ -1,0 +1,74 @@
+{
+  "estatus": true,
+  "mensaje": "OK",
+  "result": {
+    "divisas": [
+      {
+        "varHoyPor": "(+1.05%)",
+        "tipoCambio": "USD-MXN",
+        "ultimoPrecio": 16.956,
+        "ultimoCierre": 16.7799,
+        "varHoy": "+0.1767",
+        "varAno": "-4.45%",
+        "compra": 16.9474,
+        "venta": 16.9657,
+        "rangoDiario": "16.743-16.973"
+      },
+      {
+        "varHoyPor": "(+0.53%)",
+        "tipoCambio": "EUR-MXN",
+        "ultimoPrecio": 18.332,
+        "ultimoCierre": 18.237,
+        "varHoy": "+0.0959",
+        "varAno": "-3.13%",
+        "compra": 18.3294,
+        "venta": 18.3363,
+        "rangoDiario": "18.1511-18.3584"
+      },
+      {
+        "varHoyPor": "(+0.53%)",
+        "tipoCambio": "GBP-MXN",
+        "ultimoPrecio": 21.551,
+        "ultimoCierre": 21.4373,
+        "varHoy": "+0.1143",
+        "varAno": "-1.31%",
+        "compra": 21.5476,
+        "venta": 21.5555,
+        "rangoDiario": "21.3489-21.5742"
+      },
+      {
+        "varHoyPor": "(+0.84%)",
+        "tipoCambio": "CHF-MXN",
+        "ultimoPrecio": 18.562,
+        "ultimoCierre": 18.4084,
+        "varHoy": "+0.1538",
+        "varAno": "-5.26%",
+        "compra": 18.5582,
+        "venta": 18.5661,
+        "rangoDiario": "18.3363-18.5846"
+      },
+      {
+        "varHoyPor": "(+0.75%)",
+        "tipoCambio": "JPY-MXN",
+        "ultimoPrecio": 0.1076,
+        "ultimoCierre": 0.1069,
+        "varHoy": "+0.0008",
+        "varAno": "-14.64%",
+        "compra": 0.1076,
+        "venta": 0.1077,
+        "rangoDiario": "0.1065-0.1077"
+      },
+      {
+        "varHoyPor": "(+0.46%)",
+        "tipoCambio": "CAD-MXN",
+        "ultimoPrecio": 12.365,
+        "ultimoCierre": 12.3098,
+        "varHoy": "+0.0561",
+        "varAno": "-4.87%",
+        "compra": 12.3641,
+        "venta": 12.3678,
+        "rangoDiario": "12.2538-12.3786"
+      }
+    ]
+  }
+}
