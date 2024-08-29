@@ -1,0 +1,45 @@
+---
+
+---
+
+<script>
+  import { theme } from "@controllers/themeToggle.controller";
+</script>
+
+<button id="themeToggle">
+  <iconify-icon class="sun" icon="bxs:sun" width="25" height="25"
+  ></iconify-icon>
+  <iconify-icon class="moon" icon="bxs:moon" width="25" height="25"
+  ></iconify-icon>
+</button>
+
+<style>
+  #themeToggle {
+    display: grid;
+    place-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 3rem;
+    border-radius: 50%;
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+  }
+  #themeToggle:active {
+    transform: scale(0.5);
+  }
+  .sun {
+    display: block;
+  }
+  .moon {
+    display: none;
+  }
+
+  :global(.dark) .sun {
+    display: none;
+  }
+  :global(.dark) .moon {
+    display: block;
+  }
+</style>

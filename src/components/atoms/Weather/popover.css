@@ -7,5 +7,5 @@
     transform: translateX(-50%);
     border-width: 8px; /* Tamaño del triángulo */
     border-style: solid;
-    border-color: transparent transparent black transparent; /* Triángulo apuntando hacia abajo */
+    border-color: transparent transparent rgba(0, 0, 0, 0.84) transparent; /* Triángulo apuntando hacia abajo */
   }

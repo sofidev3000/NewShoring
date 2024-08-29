@@ -1,0 +1,57 @@
+---
+// Extrae las propiedades recibidas
+const { dropdown, text, id } = Astro.props;
+---
+
+<!-- Botón principal del dropdown -->
+<button
+  id={`${id}-multiLevelDropdownButton`}
+  data-dropdown-toggle={`${id}-multi-dropdown`}
+  class="flex items-center header__link   font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
+  type="button">
+  {text}
+  <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+</button>
+
+<!-- Menú desplegable -->
+<div id={`${id}-multi-dropdown`} class="z-10 hidden  divide-y divide-gray-100 rounded-lg shadow-md w-auto bg-gray-950 ">
+  <ul class="py-2 text-sm text-gray-200 w-full " aria-labelledby={`${id}-multiLevelDropdownButton`}>
+    {dropdown.map((item, index) => (
+      <li >
+        {item.elements ? (
+
+            <button
+              id={`${id}-doubleDropdownButton-${index}`}
+              data-dropdown-toggle={`${id}-doubleDropdown-${index}`}
+              data-dropdown-trigger="hover"
+              data-dropdown-placement="right-start"
+              type="button"
+              class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-800  dark:hover:bg-gray-600 hover:text-[--guardsman-red-500]">
+              {item.text}
+              <svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+            </button>
+            <div id={`${id}-doubleDropdown-${index}`} class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow-md w-52 bg-gray-950 ">
+              <ul class="w-full py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby={`${id}-doubleDropdownButton-${index}`}>
+                {item.elements.map((subItem, subIndex) => (
+                  <li >
+                    <a href={subItem.url} class="block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]">
+                      {subItem.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+        ) : (
+          <a href={item.url} class="block px-3 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]">
+            {item.text}
+          </a>
+        )}
+      </li>
+    ))}
+  </ul>
+</div>

@@ -2,21 +2,25 @@
 import Button from '@atoms/Button/Button.astro';
 import WeatherPopover from '@atoms/Weather/WeatherPopover';
 import SocialMediaIcons from '@components/atoms/SocialMediaIcons/SocialMediaIcons.astro';
+import ThemeIcon from '@components/atoms/ThemeIcon/ThemeIcon.astro';
 ---
 
 <header
   id="top-bar"
-  class="flex justify-between items-center bg-black text-white w-full mb-2 h-10 px-10"
+  class="hidden md:flex justify-center md:justify-between items-center bg-black text-white w-full mb-2 min-h-12 px-10 py-2 flex-wrap "
 >
-  <div class="flex gap-3">
+  <div class="flex  gap-3 items-center flex-wrap">
    <WeatherPopover client:only/>
   </div>
   <div class="indicadores__carousel">
     <span>MXN-USD 19.022</span>
   </div>
-  <div class="social-media flex gap-2">
+  <div class="social-media flex flex-wrap gap-5">
     <SocialMediaIcons/>
     <Button text="Suscríbete"/>
-    <div class="icons"></div>
+    <div class="icons">
+      <ThemeIcon />
+
+    </div>
   </div>
 </header>

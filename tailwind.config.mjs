@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'vremena': ['VremenaGrotesk', 'sans-serif'],
+        'vremena-bold': ['VremenaGroteskBold', 'sans-serif'],
+        'FjallaOne': ['FjallaOne-Regular', 'sans-serif'],
+      },
       colors: {
         "guardsman-red": {
           50: "#ffefef",

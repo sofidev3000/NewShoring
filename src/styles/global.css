@@ -1,7 +1,7 @@
 /* Light Mode */
 :root {
     --main-color: #fafafa;
-    --secundary-color: #090909;
+    --secundary-color: #1b1b1b, ;
     --accent-color: #BA0000;
     --background-glass: #000000d6;
 
@@ -27,6 +27,9 @@
     /* Buttons color */
     --button-disable-color: var(--guardsman-red-400);
     --button-color: var(--guardsman-red-50);
+    /* Fonts  */
+    --font-vremena: 'VremenaGrotesk', sans-serif;
+    --font-vremena-bold: 'VremenaGroteskBold', sans-serif;
 }
 
 /* Dark Mode */
@@ -37,16 +40,40 @@
     --secundary-color: #fafafa;
     /* Light text */
 }
+/* Definición de las fuentes */
+@font-face {
+    font-family: 'VremenaGrotesk';
+    src: url('/fonts/VremenaGrotesk.otf') format('opentype');
+}
 
-*{
+@font-face {
+    font-family: 'VremenaGroteskBold';
+    src: url('/fonts/VremenaGroteskBold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'FjallaOne-Regular';
+    src: url('/fonts/FjallaOne-Regular.otf') format('opentype');
+}
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+    color: var(--secundary-color);
+}
 
-.glassmorphism{
-    -webkit-backdrop-filter:blur(25px) ;
-    backdrop-filter:blur(25px) ;
+.glassmorphism {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
     background: var(--background-glass);
 }

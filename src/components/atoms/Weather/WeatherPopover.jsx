@@ -87,11 +87,11 @@ const formattedTime = currentTime.toLocaleTimeString("en-US", {
     <>
       <button
         type="button"
-        className="btn btn-primary flex items-center gap-4 *:text-[14px]  *:text-white  relative"
+        className="btn btn-primary flex flex-wrap items-center gap-4 *:text-[14px]  *:text-white  relative "
         onClick={handleWeatherButtonClick}
       >
         {/* Weather display */}
-        <div className="flex items-center gap-1 ">
+        <div className="flex items-center gap-1 flex-wrap">
           <img
             className="weather-icon text-[--neutral-variant-color]   w-[29px]"
             src={weatherData.iconImage}
@@ -111,7 +111,7 @@ const formattedTime = currentTime.toLocaleTimeString("en-US", {
         {popoverOpen && (
           <div
             ref={popoverRef}
-            className="popover w-[11rem] bg-[--background-glass] backdrop-blur-10 shadow-lg p-3 *:text-[#cdcdcd] *:text-left rounded-lg absolute top-10 right-[-7px] z-30 flex-1"
+            className="popover w-[11rem] bg-[--background-glass] backdrop-blur-[19px] shadow-lg p-3 *:text-[#cdcdcd] *:text-left rounded-lg absolute top-11 right-[-7px] z-30 flex-1"
           >
             <span className="flex">
               <div className="w-full">
