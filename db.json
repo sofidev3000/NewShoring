@@ -1,74 +1,397 @@
 {
-  "estatus": true,
-  "mensaje": "OK",
-  "result": {
-    "divisas": [
-      {
-        "varHoyPor": "(+1.05%)",
-        "tipoCambio": "USD-MXN",
-        "ultimoPrecio": 16.956,
-        "ultimoCierre": 16.7799,
-        "varHoy": "+0.1767",
-        "varAno": "-4.45%",
-        "compra": 16.9474,
-        "venta": 16.9657,
-        "rangoDiario": "16.743-16.973"
-      },
-      {
-        "varHoyPor": "(+0.53%)",
-        "tipoCambio": "EUR-MXN",
-        "ultimoPrecio": 18.332,
-        "ultimoCierre": 18.237,
-        "varHoy": "+0.0959",
-        "varAno": "-3.13%",
-        "compra": 18.3294,
-        "venta": 18.3363,
-        "rangoDiario": "18.1511-18.3584"
-      },
-      {
-        "varHoyPor": "(+0.53%)",
-        "tipoCambio": "GBP-MXN",
-        "ultimoPrecio": 21.551,
-        "ultimoCierre": 21.4373,
-        "varHoy": "+0.1143",
-        "varAno": "-1.31%",
-        "compra": 21.5476,
-        "venta": 21.5555,
-        "rangoDiario": "21.3489-21.5742"
-      },
-      {
-        "varHoyPor": "(+0.84%)",
-        "tipoCambio": "CHF-MXN",
-        "ultimoPrecio": 18.562,
-        "ultimoCierre": 18.4084,
-        "varHoy": "+0.1538",
-        "varAno": "-5.26%",
-        "compra": 18.5582,
-        "venta": 18.5661,
-        "rangoDiario": "18.3363-18.5846"
-      },
-      {
-        "varHoyPor": "(+0.75%)",
-        "tipoCambio": "JPY-MXN",
-        "ultimoPrecio": 0.1076,
-        "ultimoCierre": 0.1069,
-        "varHoy": "+0.0008",
-        "varAno": "-14.64%",
-        "compra": 0.1076,
-        "venta": 0.1077,
-        "rangoDiario": "0.1065-0.1077"
-      },
-      {
-        "varHoyPor": "(+0.46%)",
-        "tipoCambio": "CAD-MXN",
-        "ultimoPrecio": 12.365,
-        "ultimoCierre": 12.3098,
-        "varHoy": "+0.0561",
-        "varAno": "-4.87%",
-        "compra": 12.3641,
-        "venta": 12.3678,
-        "rangoDiario": "12.2538-12.3786"
+  "indicadores": [
+    {
+      "status": 200,
+      "message": "ok",
+      "result": {
+        "cetes": [
+          {
+            "nombre": "Cetes 28 días",
+            "fechaActualizacion": "2024-05-02T00:00:00",
+            "rendimiento": 10.95
+          },
+          {
+            "nombre": "Cetes 91 días",
+            "fechaActualizacion": "2024-05-02T00:00:00",
+            "rendimiento": 11.13
+          },
+          {
+            "nombre": "Cetes 182 días",
+            "fechaActualizacion": "2024-05-02T00:00:00",
+            "rendimiento": 11.26
+          },
+          {
+            "nombre": "Cetes 365 días",
+            "fechaActualizacion": "2024-05-02T00:00:00",
+            "rendimiento": 11.51
+          }
+        ],
+        "divisas": [
+          {
+            "varHoyPor": "(-0.30%)",
+            "tipoCambio": "USD-MXN",
+            "ultimoPrecio": 16.934,
+            "ultimoCierre": 16.985,
+            "varHoy": "-0.0506",
+            "varAno": "-5.67%",
+            "compra": 16.9312,
+            "venta": 16.9377,
+            "rangoDiario": "16.9322-17.0185"
+          },
+          {
+            "varHoyPor": "(-0.30%)",
+            "tipoCambio": "EUR-MXN",
+            "ultimoPrecio": 18.15,
+            "ultimoCierre": 18.2043,
+            "varHoy": "-0.0541",
+            "varAno": "-8.04%",
+            "compra": 18.1471,
+            "venta": 18.1533,
+            "rangoDiario": "18.1467-18.2216"
+          },
+          {
+            "varHoyPor": "(-0.27%)",
+            "tipoCambio": "GBP-MXN",
+            "ultimoPrecio": 21.231,
+            "ultimoCierre": 21.2894,
+            "varHoy": "-0.0581",
+            "varAno": "-5.07%",
+            "compra": 21.2282,
+            "venta": 21.2345,
+            "rangoDiario": "21.2291-21.3169"
+          },
+          {
+            "varHoyPor": "(-0.35%)",
+            "tipoCambio": "CHF-MXN",
+            "ultimoPrecio": 18.49,
+            "ultimoCierre": 18.5557,
+            "varHoy": "-0.0651",
+            "varAno": "-8.01%",
+            "compra": 18.4867,
+            "venta": 18.4946,
+            "rangoDiario": "18.4726-18.5718"
+          },
+          {
+            "varHoyPor": "(-1.09%)",
+            "tipoCambio": "JPY-MXN",
+            "ultimoPrecio": 0.1088,
+            "ultimoCierre": 0.11,
+            "varHoy": "-0.0012",
+            "varAno": "-17.44%",
+            "compra": 0.1087,
+            "venta": 0.1089,
+            "rangoDiario": "0.1085-0.1102"
+          },
+          {
+            "varHoyPor": "(-0.18%)",
+            "tipoCambio": "CAD-MXN",
+            "ultimoPrecio": 12.346,
+            "ultimoCierre": 12.3685,
+            "varHoy": "-0.0224",
+            "varAno": "-6.25%",
+            "compra": 12.3443,
+            "venta": 12.3479,
+            "rangoDiario": "12.3359-12.3887"
+          }
+        ],
+        "energia": [
+          {
+            "nombre": "Gas Natural",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "1.96 USD",
+            "valor": "+0.025",
+            "porcentaje": "+1.29%"
+          },
+          {
+            "nombre": "Barril de Brent",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "84.02 USD",
+            "valor": "+0.58",
+            "porcentaje": "+0.70%"
+          },
+          {
+            "nombre": "WTI Crudo",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "79.53 USD",
+            "valor": "+0.530",
+            "porcentaje": "+0.67%"
+          },
+          {
+            "nombre": "Aceite de calefacción",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "2.47 USD",
+            "valor": "+0.0164",
+            "porcentaje": "+0.67%"
+          },
+          {
+            "nombre": "Gasolina RBOB",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "2.58 USD",
+            "valor": "+0.0069",
+            "porcentaje": "+0.27%"
+          },
+          {
+            "nombre": "Etanol",
+            "fechaActualizacion": "01-5-2024",
+            "ultimoPrecio": "2.16 USD",
+            "valor": "0.00",
+            "porcentaje": "0.00%"
+          }
+        ],
+        "metales": [
+          {
+            "nombre": "Oro",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "2,319.30 USD",
+            "valor": "+19.40",
+            "porcentaje": "+0.84%"
+          },
+          {
+            "nombre": "Plata",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "26.76 USD",
+            "valor": "+0.266",
+            "porcentaje": "+1.00%"
+          },
+          {
+            "nombre": "Hierro",
+            "fechaActualizacion": "01-5-2024",
+            "ultimoPrecio": "117.21 USD",
+            "valor": "+6.30",
+            "porcentaje": "+5.68%"
+          },
+          {
+            "nombre": "Platino",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "969.00 USD",
+            "valor": "+14.10",
+            "porcentaje": "+1.48%"
+          },
+          {
+            "nombre": "Paladio",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "957.50 USD",
+            "valor": "+8.90",
+            "porcentaje": "+0.94%"
+          },
+          {
+            "nombre": "Cobre",
+            "fechaActualizacion": "02-5-2024",
+            "ultimoPrecio": "4.57 USD",
+            "valor": "+0.013",
+            "porcentaje": "+0.29%"
+          }
+        ],
+        "tiies": [
+          {
+            "nombre": "TIIE 28 días",
+            "fechaActualizacion": "2024-04-30T00:00:00",
+            "rendimiento": 11.24
+          },
+          {
+            "nombre": "TIIE 91 días",
+            "fechaActualizacion": "2024-04-30T00:00:00",
+            "rendimiento": 11.4
+          }
+        ],
+        "mercados": [
+          {
+            "nombre": { "tag": "Nombre", "value": "BMV IPC" },
+            "moneda": { "tag": "Moneda", "value": "MXN" },
+            "estatus": { "tag": "Estatus", "value": "Mercado cerrado" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "30/04" },
+            "valorActual": { "tag": "Valor Actual", "value": "56,727.98" },
+            "variacionActual": {
+              "tag": "Variacion Actual",
+              "value": "-1,099.88"
+            },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(-1.90%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "57,827.86" },
+            "apertura": { "tag": "Apertura", "value": "57,835.5" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "2.81%" },
+            "volumen": { "tag": "Volumen", "value": "307,132,532" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "205,925,865"
+            },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "56,670.53-57,835.5"
+            },
+            "semanas52": {
+              "tag": "52 semanas",
+              "value": "47,765.06-59,020.55"
+            },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "BIVA" },
+            "moneda": { "tag": "Moneda", "value": "MXN" },
+            "estatus": { "tag": "Estatus", "value": "Mercado cerrado" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "30/04" },
+            "valorActual": { "tag": "Valor Actual", "value": "1,161.04" },
+            "variacionActual": { "tag": "Variacion Actual", "value": "0.00" },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(0.00%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "1,182.13" },
+            "apertura": { "tag": "Apertura", "value": "1,182.13" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "1.66%" },
+            "volumen": { "tag": "Volumen", "value": "0" },
+            "volumenPromedio": { "tag": "Vol. promedio (3m)", "value": "-" },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "1,159.66-1,182.49"
+            },
+            "semanas52": { "tag": "52 semanas", "value": "989.89-1,215.01" },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "NASDAQ" },
+            "moneda": { "tag": "Moneda", "value": "USD" },
+            "estatus": { "tag": "Estatus", "value": "Mercado cerrado" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "15:15:59" },
+            "valorActual": { "tag": "Valor Actual", "value": "15,605.48" },
+            "variacionActual": { "tag": "Variacion Actual", "value": "-52.34" },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(-0.33%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "15,657.82" },
+            "apertura": { "tag": "Apertura", "value": "15,646.09" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "29.18%" },
+            "volumen": { "tag": "Volumen", "value": "1,126,222,870" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "1,064,722,493"
+            },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "15,557.64-15,926.22"
+            },
+            "semanas52": {
+              "tag": "52 semanas",
+              "value": "11,925.37-16,538.39"
+            },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "Nikkei" },
+            "moneda": { "tag": "Moneda", "value": "JPY" },
+            "estatus": { "tag": "Estatus", "value": "Info en tiempo real" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "23:58:49" },
+            "valorActual": { "tag": "Valor Actual", "value": "38,236.50" },
+            "variacionActual": { "tag": "Variacion Actual", "value": "-14.00" },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(-0.04%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "38,250.5" },
+            "apertura": { "tag": "Apertura", "value": "38,027.5" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "30.75%" },
+            "volumen": { "tag": "Volumen", "value": "0" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "1,246,897,432"
+            },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "37,947.5-38,363"
+            },
+            "semanas52": {
+              "tag": "52 semanas",
+              "value": "28,931.81-41,087.75"
+            },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "Shanghai" },
+            "moneda": { "tag": "Moneda", "value": "CNY" },
+            "estatus": { "tag": "Estatus", "value": "Mercado cerrado" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "30/04" },
+            "valorActual": { "tag": "Valor Actual", "value": "3,104.82" },
+            "variacionActual": { "tag": "Variacion Actual", "value": "-8.22" },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(-0.26%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "3,113.04" },
+            "apertura": { "tag": "Apertura", "value": "3,110.16" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "-6.57%" },
+            "volumen": { "tag": "Volumen", "value": "440,213" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "37,475,625,121"
+            },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "3,104.29-3,123.29"
+            },
+            "semanas52": { "tag": "52 semanas", "value": "2,635.09-3,418.95" },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "Hang Seng" },
+            "moneda": { "tag": "Moneda", "value": "HKD" },
+            "estatus": { "tag": "Estatus", "value": "Info en tiempo real" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "23:59:09" },
+            "valorActual": { "tag": "Valor Actual", "value": "18,198.00" },
+            "variacionActual": {
+              "tag": "Variacion Actual",
+              "value": "+434.97"
+            },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(+2.45%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "17,763.03" },
+            "apertura": { "tag": "Apertura", "value": "17,770" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "-10.89%" },
+            "volumen": { "tag": "Volumen", "value": "1,468,564,288" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "2,734,502,533"
+            },
+            "rangoDiario": { "tag": "Rango diario", "value": "17,752-18,233" },
+            "semanas52": {
+              "tag": "52 semanas",
+              "value": "14,794.16-20,361.03"
+            },
+            "escena": { "tag": "Panorama", "value": "" }
+          },
+          {
+            "nombre": { "tag": "Nombre", "value": "FTSE 100" },
+            "moneda": { "tag": "Moneda", "value": "GBP" },
+            "estatus": { "tag": "Estatus", "value": "Mercado cerrado" },
+            "horafecha": { "tag": "Marca de tiempo", "value": "09:35:00" },
+            "valorActual": { "tag": "Valor Actual", "value": "8,121.24" },
+            "variacionActual": { "tag": "Variacion Actual", "value": "-22.89" },
+            "variacionPorActual": {
+              "tag": "Variacion porcentual actual",
+              "value": "(-0.28%)"
+            },
+            "ultimoCierre": { "tag": "Último cierre", "value": "8,121.24" },
+            "apertura": { "tag": "Apertura", "value": "8,144.13" },
+            "variacionAnual": { "tag": "Var. en un año", "value": "4.48%" },
+            "volumen": { "tag": "Volumen", "value": "562,235,514" },
+            "volumenPromedio": {
+              "tag": "Vol. promedio (3m)",
+              "value": "1,027,427,253"
+            },
+            "rangoDiario": {
+              "tag": "Rango diario",
+              "value": "8,111.38-8,178.95"
+            },
+            "semanas52": { "tag": "52 semanas", "value": "7,215.76-8,199.95" },
+            "escena": { "tag": "Panorama", "value": "" }
+          }
+        ],
+        "tasas": {}
       }
-    ]
-  }
+    }
+  ]
 }

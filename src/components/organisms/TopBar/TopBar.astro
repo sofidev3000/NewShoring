@@ -4,6 +4,7 @@ import WeatherPopover from '@atoms/Weather/WeatherPopover';
 import SocialMediaIcons from '@components/atoms/SocialMediaIcons/SocialMediaIcons.astro';
 import ThemeIcon from '@components/atoms/ThemeIcon/ThemeIcon.astro';
 import ToggleLanguage from '@components/atoms/ToogleLanguage/ToggleLanguage';
+import IndicadoresCarousel from "@atoms/IndicadoresCarousel/IndicadoresCarousel";
 ---
 
 <header
@@ -14,7 +15,7 @@ import ToggleLanguage from '@components/atoms/ToogleLanguage/ToggleLanguage';
    <WeatherPopover client:only/>
   </div>
   <div class="indicadores__carousel">
-    <span>MXN-USD 19.022</span>
+    <IndicadoresCarousel client:load/>
   </div>
   <div class="social-media flex flex-wrap gap-5">
     <SocialMediaIcons/>
