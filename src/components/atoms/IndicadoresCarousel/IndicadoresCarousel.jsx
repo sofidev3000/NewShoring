@@ -52,7 +52,7 @@ const IndicadoresCarousel = () => {
       <article className="carrusel flex flex-nowrap ga-5 w-full">
         {/* se necesita la data dos veces para que funcione la animación del  carrusel */}
         {[...data, ...data].map((indicator, index) => (
-          <div key={index} className="carusel-element flex items-center justify-center *:text-xs *:mr-1">
+          <div key={index} className="carusel-element flex items-center justify-center *:text-sm *:mr-1">
             <p className="text-white font-bold flex w-[4.6rem]"  >
               <span className="basis-auto flex-1 text-sm">{indicator.tipoCambio}:</span>
             </p>

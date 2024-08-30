@@ -11,18 +11,18 @@
     position: absolute;
     top: 0;
     z-index: 2;
-    width: 90px;
+    width: 70px;
     height: 100%;
 }
 
 .carousel-container::before {
     left: 0;
-    background: linear-gradient(to right, #000000 0%, #bda1d814 100%);
+    background: linear-gradient(to right, #000000 0%, #00000031 100%);
 }
 
 .carousel-container::after {
     right: 0;
-    background: linear-gradient(to left, #000000 0%, #bda1d814 100%);
+    background: linear-gradient(to left, #000000 0%, #00000031 100%);
 }
 .carrusel {
     width: max-content;
