@@ -1,28 +1,33 @@
 ---
-import Button from '@atoms/Button/Button.astro';
-import WeatherPopover from '@atoms/Weather/WeatherPopover';
-import SocialMediaIcons from '@components/atoms/SocialMediaIcons/SocialMediaIcons.astro';
-import ThemeIcon from '@components/atoms/ThemeIcon/ThemeIcon.astro';
-import ToggleLanguage from '@components/atoms/ToogleLanguage/ToggleLanguage';
+import Button from "@atoms/Button/Button.astro";
+import WeatherPopover from "@molecules/Weather/WeatherPopover";
+import SocialMediaIcons from "@components/atoms/SocialMediaIcons/SocialMediaIcons.astro";
+import ThemeIcon from "@components/atoms/ThemeIcon/ThemeIcon.astro";
+import ToggleLanguage from "@components/atoms/ToogleLanguage/ToggleLanguage";
 import IndicadoresCarousel from "@atoms/IndicadoresCarousel/IndicadoresCarousel";
+import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
 ---
 
+<script>
+  import suscribeModalButton from "@controllers/suscribeModal.controller";
+</script>
 <header
   id="top-bar"
-  class="hidden md:flex justify-center md:justify-between items-center bg-black text-white w-full mb-2 min-h-12 px-10 py-2 flex-wrap "
+  class="relative hidden space-y-3 lg:space-y-0 flex-col lg:flex-row md:flex justify-center md:justify-between items-center bg-black text-white w-full mb-2 min-h-12 px-10 py-2 flex-wrap"
 >
-  <div class="flex  gap-3 items-center flex-wrap">
-   <WeatherPopover client:only/>
+  <div class="flex gap-3 items-center flex-wrap">
+    <WeatherPopover client:only />
   </div>
   <div class="indicadores__carousel">
-    <IndicadoresCarousel client:load/>
+    <IndicadoresCarousel client:load />
   </div>
   <div class="social-media flex flex-wrap gap-5">
-    <SocialMediaIcons/>
-    <Button text="Suscríbete"/>
+    <SocialMediaIcons />
+    <Button text="Suscríbete" ID="suscribe-btn" clase="" />
     <div class="icons flex">
       <ThemeIcon />
-      <ToggleLanguage client:load/>
+      <ToggleLanguage client:load />
     </div>
+    <PopupSuscribe />
   </div>
 </header>

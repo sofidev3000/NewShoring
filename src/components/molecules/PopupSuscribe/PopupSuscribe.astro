@@ -1,0 +1,42 @@
+---
+import SuscribeForm from '@atoms/SuscribeForm/SuscribeForm.astro';
+---
+
+
+
+<dialog
+  id="suscribe-modal"
+  class="glassmorphism relative bg-[--background-glass] w-full max-w-[55rem] min-h-10 z-50 p-10  top-[30%] bottom-0 left-[50%] translate-x-[-50%] rounded-lg"
+>
+<i class="fa-solid fa-circle-xmark absolute top-3 left-[94%] z-[300] text-2xl" style="color: white;" id="close-modal"></i>
+  <div class="flex gap-5">
+    <div
+      class="flex flex-col items-strat justify-center *:text-[--main-color] w-[27rem] space-y-4 last:mb-0 *:text-white"
+    >
+      <h2 class="text-3xl font-bold">
+        ¡Mantente al tanto de las últimas noticias y tendencias!
+      </h2>
+      <p class="text-[1.1rem]">
+        Suscríbete a nuestra NewsLetter para recibir actualizaciones sobre
+        Nearshoring, finanzas y más.
+      </p>
+    </div>
+        <SuscribeForm/>
+  </div>
+</dialog>
+
+
+
+<style>
+  input[type="checkbox"] {
+    outline-color: var(--guardsman-red-700);
+    outline-width: 0.5px;
+    border: none;
+  }
+  input:checked {
+    background-color: var(--guardsman-red-700);
+  }
+  .hidden {
+    display: none;
+  }
+</style>

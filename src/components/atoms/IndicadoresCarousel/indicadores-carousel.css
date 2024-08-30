@@ -1,0 +1,48 @@
+.carousel-container {
+    margin: auto;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.carousel-container::before,
+.carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 70px;
+    height: 100%;
+}
+
+.carousel-container::before {
+    left: 0;
+    background: linear-gradient(to right, #000000 0%, #00000031 100%);
+}
+
+.carousel-container::after {
+    right: 0;
+    background: linear-gradient(to left, #000000 0%, #00000031 100%);
+}
+.carrusel {
+    width: max-content;
+    display: flex;
+    animation: scroll 17s linear infinite;
+}
+
+.carrusel:has(> .carusel-element:hover) {
+    animation-play-state: paused;
+  }
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.carrusel > div {
+    flex: 0 0 auto;
+}
