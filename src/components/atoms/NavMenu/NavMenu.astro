@@ -1,0 +1,149 @@
+---
+import DropdownButton from "@atoms/DropDown/DropdownButton.astro";
+import DropdownLevel from "@atoms/DropdownLevel/DropdownLevel.astro";
+const pagePathname = Astro.url.pathname;
+const {placement} = Astro.props;
+const menuItems = [
+  {
+    text: "Near Now!",
+    url: "/",
+  },
+  {
+    text: "Industrías",
+    elements: [
+      { text: "Aeroespacial", url: "/" },
+      { text: "Automotriz", url: "/" },
+      { text: "Electrodomésticos", url: "/" },
+      { text: "Electrónica", url: "/" },
+      { text: "Médico", url: "/" },
+      { text: "Textil", url: "/" },
+    ],
+  },
+  {
+    text: "Energía",
+    elements: [
+      { text: "Eléctrica", url: "/" },
+      { text: "Eólica", url: "/" },
+      { text: "Solar", url: "/" },
+    ],
+  },
+  {
+    text: "Finanzas",
+    url: "/",
+  },
+  {
+    text: "Logística y Transporte",
+    elements: [
+      { text: "Aero", url: "/" },
+      { text: "Marítimo", url: "/" },
+      { text: "Terrestre", url: "/" },
+    ],
+  },
+  {
+    text: "Parques Industriales",
+    elements: [
+      { text: "construcción", url: "/" },
+      { text: "Inmuebles", url: "/" },
+      { text: "Manufactura", url: "/" },
+    ],
+  },
+  {
+    text: "Capital Humano",
+    elements: [
+      { text: "Capacitación", url: "/" },
+      { text: "Certificación", url: "/" },
+      { text: "Coaching", url: "/" },
+      { text: "Leyes y reglamentos", url: "/" },
+      { text: "Reglamentación", url: "/" },
+    ],
+  },
+  {
+    text: "ESG",
+    elements: [
+      { text: "Gobierno Corporativo", url: "/" },
+      { text: "Inclusión", url: "/" },
+      { text: "Sustentabilidad", url: "/" },
+    ],
+  },
+];
+
+// Separar los primeros tres elementos y el resto
+const mainMenuItems = menuItems.slice(0, 4);
+const moreMenuItems = menuItems.slice(4, menuItems.length);
+const randomNum = Math.floor(Math.random() * 1000);
+---
+
+
+<nav>
+    <ul
+      class="flex flex-col md:flex-row w-full font-medium md:space-x-4 rtl:space-x-reverse  md:mt-0 md:border-0 space-y-4 md:space-y-0"
+    >
+      {
+        pagePathname !== "/" && (
+          <li class="header__item">
+            <a
+              class="header__link block font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+        )
+      }
+      {
+        mainMenuItems.map((menuItem, index) => (
+          <li >
+            {menuItem.url ? (
+              <a
+                href={menuItem.url}
+                class="header__link font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
+              >
+                {menuItem.text}
+              </a>
+            ) : (
+              <DropdownButton
+                id={`dropdown-${index}-${randomNum}`}
+                text={menuItem.text}
+                dropdown={menuItem.elements}
+                client:load
+              />
+            )}
+          </li>
+        ))
+      }
+
+      {
+        moreMenuItems.length > 0 && (
+          <li>
+            <DropdownLevel
+              id={`dropdown-more ${randomNum}`}
+              text="More"
+              dropdown={moreMenuItems}
+              placement={placement}
+            />
+          </li>
+        )
+      }
+    </ul>
+  </nav>
+
+  <style is:global>
+    .header__link {
+      position: relative;
+    }
+    .header__link::after {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      content: "";
+      width: 100%;
+      transform: scale(0);
+      transform-origin: 1;
+      height: 2px;
+      background: var(--guardsman-red-800);
+      transition: 0.35s transform;
+    }
+    .header__link:hover::after {
+      transform: scale(1);
+    }
+  </style>

@@ -5,6 +5,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Logo from "@atoms/Logo/Logo.astro";
 import Header from "@components/organisms/Header/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro";
 
 const {
   title = SITE_TITLE,
@@ -25,23 +26,23 @@ const {
   <body>
     <TopBar />
     <Logo />
+    <HeaderMobile />
     <Header />
 
-    <main>
+    <main class="w-full flex justify-center items-center">
       <slot />
     </main>
     <!-- <Footer /> -->
 
-
-
-    <script type="module" defer
+    <script
+      type="module"
+      defer
       src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
-
     ></script>
-    <script  src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script  >
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
       import AOS from "aos";
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         AOS.init({
           // Global settings:
           disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -62,7 +63,7 @@ const {
           mirror: false, // whether elements should animate out while scrolling past them
           anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
         });
-      } );
+      });
     </script>
   </body>
 </html>

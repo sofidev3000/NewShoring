@@ -7,6 +7,9 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: {
+    defaultStrategy: 'viewport'
+  },
   integrations: [tailwind(), react()],
   site: 'https://newshoring.com/',
   output: "server",
