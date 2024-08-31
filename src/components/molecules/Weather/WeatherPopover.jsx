@@ -110,7 +110,7 @@ return (
       {popoverOpen && (
         <div
           ref={popoverRef}
-          className="popover w-[11rem] bg-[--background-glass] backdrop-blur-[19px] shadow-lg p-3 *:text-[#cdcdcd] *:text-left rounded-lg absolute top-11 right-[-7px] z-30 flex-1"
+          className="popover w-[11rem] bg-[--background-glass] backdrop-blur-[19px] shadow-lg p-3 *:text-[#cdcdcd] *:text-left rounded-lg absolute top-11 right-[-69px] z-[90] flex-1"
         >
           <span className="flex">
             <div className="w-full">

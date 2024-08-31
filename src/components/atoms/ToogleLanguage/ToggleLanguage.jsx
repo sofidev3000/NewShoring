@@ -54,7 +54,7 @@ const ToggleLanguage = ({breakpoint='desktop'}) => {
         </button>
         <div
           id={`dropdown-states-${breakpoint}`}
-          className="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-black"
+          className="z-[90] hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-black"
         >
           <ul className="py-1 text-sm text-gray-200" aria-labelledby="states-button">
             {Languages.map((language, index) => (
