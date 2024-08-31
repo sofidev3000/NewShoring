@@ -48,21 +48,27 @@ const IndicadoresCarousel = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <section className="carousel-container w-[28rem] overflow-hidden flex  justify-center">
-      <article className="carrusel flex flex-nowrap ga-5 w-full">
+    <section className="carousel-container w-[24rem] overflow-hidden flex  justify-center">
+      <article className="carrusel flex flex-nowrap w-full">
         {/* se necesita la data dos veces para que funcione la animación del  carrusel */}
         {[...data, ...data].map((indicator, index) => (
-          <div key={index} className="carusel-element flex items-center justify-center *:text-sm *:mr-1">
-            <p className="text-white font-bold flex w-[4.6rem]"  >
-              <span className="basis-auto flex-1 text-sm">{indicator.tipoCambio}:</span>
+          <div
+            key={index}
+            className="carusel-element flex items-center justify-center *:text-xs "
+          >
+            <p className="text-white font-bold flex w-[4.6rem] *:text-xs ">
+              <span className="">{indicator.tipoCambio}:</span>
             </p>
-            <p className="text-guardsman-red-500 flex gap-1 items-center justify-center ">
+            <p className="text-guardsman-red-500 flex gap-1 items-center justify-center *:text-xs mr-3">
               Venta:
               <span className="text-lime-500">{indicator.venta}</span>
             </p>
             <p className="text-guardsman-red-500 flex gap-1 items-center justify-center ">
               Compra:
-              <span className="text-lime-500 flex gap-1 items-center justify-center mr-2"> {indicator.compra}</span>
+              <span className="text-lime-500 flex gap-1 items-center justify-center mr-5">
+                {" "}
+                {indicator.compra}
+              </span>
             </p>
           </div>
         ))}

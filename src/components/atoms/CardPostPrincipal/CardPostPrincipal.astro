@@ -1,12 +1,12 @@
 ---
 const {animationDirection='fade-up'} = Astro.props;
-const { link, title,image,altdesc, autor,date} = Astro.props;
+const { link, title,image,altdesc, autor,date,slot} = Astro.props;
 
 ---
 
-<a href={link}>
-<article  data-aos={animationDirection} class="flex flex-col w-full max-w-[708px] group">
-    <div class="w-full max-w-[708px] overflow-hidden ">
+<a slot={slot} href={link} class="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] group">
+<article  data-aos={animationDirection} class="">
+    <div class="w-full lg:max-w-[600px] 2xl:max-w-[708px] overflow-hidden ">
       <img
         class="w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"
         src={image}

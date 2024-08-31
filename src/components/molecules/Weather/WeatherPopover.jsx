@@ -157,7 +157,7 @@ return (
       )}
     </button>
     {/* Date and time display */}
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 text-xs">
       <time className="flex items-center cursor-pointer ">
         {formattedDate}
       </time>{" "}

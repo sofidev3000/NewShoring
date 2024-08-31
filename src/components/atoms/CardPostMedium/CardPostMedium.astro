@@ -1,9 +1,9 @@
 ---
 const {animationDirection='fade-left'} = Astro.props;
-const { link, title,image,altdesc, autor,date} = Astro.props;
+const { link, title,image,altdesc, autor,date,slot} = Astro.props;
 ---
 
-<a href={link}>
+<a href={link} slot={slot}>
 <article data-aos={animationDirection} class="flex flex-col w-full max-w-[459px] group">
     <div class="w-full max-w-[597.791px] overflow-hidden ">
       <img

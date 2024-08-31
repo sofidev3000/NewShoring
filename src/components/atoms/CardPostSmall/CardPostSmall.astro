@@ -1,9 +1,9 @@
 ---
 const { animationDuration = "fade-up" } = Astro.props;
-const { link, title, image, altdesc, autor, date } = Astro.props;
+const { link, title, image, altdesc, autor, date,slot } = Astro.props;
 ---
 
-<a href={link}>
+<a href={link} slot={slot}>
   <article data-aos={animationDuration} class="flex gap-3 max-h-[108px] group">
     <div class="w-full h-auto overflow-hidden">
       <img
@@ -13,10 +13,10 @@ const { link, title, image, altdesc, autor, date } = Astro.props;
       />
     </div>
     <div class="max-w-[16rem] flex flex-col space-y-4 justify-between">
-      <h3 class="font-bold text-[1.2rem]">
+      <h3 class="font-extrabold text-sm">
         {title}
       </h3>
-      <p class="text-[.9rem]">
+      <p class="text-xs">
         Por <strong>{autor}</strong> - <span>{date} </span>
       </p>
     </div>

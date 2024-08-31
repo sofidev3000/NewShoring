@@ -2,6 +2,6 @@
 const {text="your text", type = "button", ID, clase} = Astro.props;
 ---
 
-<button  type={type} id={ID} class=`bg-[--button-base] hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold px-4 py-1 rounded-[7px] ${clase}`>
+<button  type={type} id={ID} class=`bg-[--button-base] text-sm hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold px-3 py-1 rounded-[7px]  ${clase}`>
     {text}
 </button>
