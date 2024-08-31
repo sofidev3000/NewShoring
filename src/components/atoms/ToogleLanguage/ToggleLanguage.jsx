@@ -8,7 +8,7 @@ const Languages = [
   { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
 ];
 
-const ToggleLanguage = () => {
+const ToggleLanguage = ({breakpoint='desktop'}) => {
 
   const [selectedLanguage, setSelectedLanguage] = useState(Languages[0]);
 
@@ -29,8 +29,8 @@ const ToggleLanguage = () => {
     <form className="max-w-sm mx-auto">
       <div className="flex">
         <button
-          id="states-button"
-          data-dropdown-toggle="dropdown-states"
+          id={`states-button`}
+          data-dropdown-toggle={`dropdown-states-${breakpoint}`}
           className="flex-shrink-0 gap-2 min-w-[119px] z-10 inline-flex items-center py-1 px-1 text-sm font-medium text-center text-gray-100 hover:text-guardsman-red-500 focus:ring-0 focus:outline-none dark:text-white"
           type="button"
         >
@@ -53,12 +53,12 @@ const ToggleLanguage = () => {
           </svg>
         </button>
         <div
-          id="dropdown-states"
+          id={`dropdown-states-${breakpoint}`}
           className="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-black"
         >
           <ul className="py-1 text-sm text-gray-200" aria-labelledby="states-button">
             {Languages.map((language, index) => (
-              <li key={index}>
+              <li key={`${index}-${breakpoint}`}>
                 <button
                   type="button"
                   className="inline-flex gap-2 w-full items-center px-4 py-2 hover:text-guardsman-red-500 hover:bg-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"

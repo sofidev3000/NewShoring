@@ -1,0 +1,10 @@
+---
+import CardPostPrincipal from "@components/atoms/CardPostPrincipal/CardPostPrincipal.astro";
+import CardPostMedium from "@components/atoms/CardPostMedium/CardPostMedium.astro";
+import CardPostSmall from "@components/atoms/CardPostSmall/CardPostSmall.astro";
+
+const {direction='flex-row'  } = Astro.props;
+---
+<section class={`articles w-full max-w-[1300px] min-h-[100dvh] mt-8 flex flex-col    justify-center gap-20 lg:gap-[92px] lg:${direction}`}>
+   <slot/>
+  </section>

@@ -1,11 +1,98 @@
 ---
-
 import SectionTitles from "@components/atoms/SectionTitles/SectionTitles.astro";
 import Layout from "../layouts/Layout.astro";
+import CardPostMedium from "@components/atoms/CardPostMedium/CardPostMedium.astro";
+import CardPostPrincipal from "@components/atoms/CardPostPrincipal/CardPostPrincipal.astro";
+import CardPostSmall from "@components/atoms/CardPostSmall/CardPostSmall.astro";
 ---
 
 <Layout>
+  <SectionTitles title="Near Now!" />
+  <div
+    class="flex flex-wrap justify-center items-center w-full max-w-[1300px] gap-[91.81px]"
+  >
+    <div
+      class="articles__main__container flex flex-col max-w-full lg:max-w-[708px] h-auto space-y-4 lg:space-y-10"
+    >
+      <CardPostPrincipal
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+      <div class="border-b border-[--divider-secundary]"></div>
 
-    <SectionTitles title="Near Now!" />
+      <div class="articles__small">
+        <CardPostSmall
+          link="/"
+          title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+          image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+          altdesc="portada Nearshoring"
+          autor="Jhon Doe"
+          date="Agosto 30, 2024"
+        />
+        <CardPostSmall
+          link="/"
+          title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+          image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+          altdesc="portada Nearshoring"
+          autor="Jhon Doe"
+          date="Agosto 30, 2024"
+        />
+        <CardPostSmall
+          link="/"
+          title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+          image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+          altdesc="portada Nearshoring"
+          autor="Jhon Doe"
+          date="Agosto 30, 2024"
+        />
+        <CardPostSmall
+          link="/"
+          title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+          image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+          altdesc="portada Nearshoring"
+          autor="Jhon Doe"
+          date="Agosto 30, 2024"
+        />
+      </div>
+    </div>
+    <div class="articles__secundary flex flex-col gap-10 lg:gap-[84px]">
+      <CardPostMedium
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+        />
+      <CardPostMedium
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+        />
 
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .articles__small {
+    min-height: 40dvh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    @media (width <= 768px) {
+      min-height: 60dvh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 6rem;
+    }
+  }
+</style>

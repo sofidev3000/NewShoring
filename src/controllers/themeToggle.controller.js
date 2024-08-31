@@ -1,32 +1,32 @@
-
 export const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
   }
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+  }
+  return "light";
+})();
 
-  window.localStorage.setItem("theme", theme);
+if (theme === "light") {
+  document.documentElement.classList.remove("dark");
+} else {
+  document.documentElement.classList.add("dark");
+}
 
-  const handleToggleClick = () => {
-    const element = document.documentElement;
-    const isDark = element.classList.toggle("dark");
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+window.localStorage.setItem("theme", theme);
 
-    // Custom event
-    const event = new CustomEvent('themeChange', { detail: { isDark } });
-    window.dispatchEvent(event);
-  };
+const handleToggleClick = () => {
+  const element = document.documentElement;
+  const isDark = element.classList.toggle("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 
-  document
-    .getElementById("themeToggle")
-    .addEventListener("click", handleToggleClick);
+  // Evento personalizado
+  const event = new CustomEvent('themeChange', { detail: { isDark } });
+  window.dispatchEvent(event);
+};
+
+// Seleccionar todos los botones con el id "themeToggle"
+document
+  .querySelectorAll("#themeToggle")
+  .forEach(button => button.addEventListener("click", handleToggleClick));

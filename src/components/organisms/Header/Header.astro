@@ -1,34 +1,16 @@
 ---
 import NavMenu from "@components/atoms/NavMenu/NavMenu.astro";
+import SearchInput from "@components/atoms/SerchInput/SearchInput.astro";
 ---
 
 <header
   id="headerw-full"
-  class="hidden md:flex justify-center items-center w-full px-5"
+  class="hidden md:flex justify-center items-center w-full px-5 sticky top-1 z-50"
 >
   <div
-    class="glassmorphism flex justify-between items-center w-full min-h-[7.3dvh] max-w-[1300px] px-7 py-2 rounded-[9px] sticky top-0"
+    class="glassmorphism flex justify-between items-center w-full min-h-[7.3dvh] max-w-[1300px] px-7 py-2 rounded-[9px] "
   >
     <NavMenu />
-    <form
-      action={"/"}
-      method="get"
-      class="relative flex items-center "
-    >
-      <input
-        type="search"
-        id="search-navbar"
-        required
-        class="w-full h-[38px] text-[1rem] rounded-l-xl block p-2 ps-none border-white  bg-white text-black  focus:border-[--guardsman-red-700] focus:outline-none outline-1 border-0"
-        placeholder="Buscar..."
-      />
-      <button
-        type="submit"
-        class="flex items-center justify-center text-white hover:text-[--guardsman-red-700] transition ease-in-out bg-[--neutral-variant-color] hover:bg-[--secundary-color] p-[7.5px] w-9 h-[38.3px] rounded-r-lg border"
-      >
-        <i class="fa-solid fa-magnifying-glass text-[14px]"></i>
-        <span class="sr-only">Search icon</span>
-      </button>
-    </form>
+  <SearchInput />
   </div>
 </header>
