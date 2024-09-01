@@ -5,6 +5,8 @@ import CardPostMedium from "@components/atoms/CardPostMedium/CardPostMedium.astr
 import CardPostPrincipal from "@components/atoms/CardPostPrincipal/CardPostPrincipal.astro";
 import CardPostSmall from "@components/atoms/CardPostSmall/CardPostSmall.astro";
 import HomePostLayout from "@src/layouts/HomePostLayout.astro";
+import HomePostLayoutSecundary from "@src/layouts/HomePostLayoutSecundary.astro";
+import CardPostMain from "@components/atoms/CardPostSecundary/CardPostMain/CardPostMain.astro";
 ---
 
 <Layout>
@@ -75,4 +77,17 @@ import HomePostLayout from "@src/layouts/HomePostLayout.astro";
       date="Agosto 30, 2024"
     />
   </HomePostLayout>
+  <SectionTitles title="Energía" />
+  <HomePostLayoutSecundary>
+    <CardPostMain
+      slot="primary-card"
+      link="/"
+      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+      altdesc="portada Nearshoring"
+      autor="Jhon Doe"
+      date="Agosto 30, 2024"
+      excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+  </HomePostLayoutSecundary>
 </Layout>
