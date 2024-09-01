@@ -1,7 +1,7 @@
 ---
 import Button from "../Button/Button.astro";
 
-const {direction="flex-col"} = Astro.props;
+const {direction="flex-col", color= "white" } = Astro.props;
 ---
 <script >
     import {  handleBlur, handleSubmit } from '@controllers/emailValidation.controller.js';
@@ -30,9 +30,23 @@ novalidate
     class="form-checkbox checked:accent-guardsman-red-700"
     required
   />
-  <span class="text-xs text-white">Aceptar términos y condiciones</span>
+  <span class={`text-xs text-${color}`}>Aceptar términos y condiciones</span>
 </label>
 <span class="text-sm text-red-600 hidden" id="terms-error"></span>
 
 <Button text="Suscribirse" ID="send-btn" type="submit" />
 </form>
+
+<style >
+  input[type="checkbox"] {
+    outline-color: var(--guardsman-red-700);
+    outline-width: 0.5px;
+    border: 1px solid var(--guardsman-red-700);
+  }
+  input[type="checkbox"]:checked {
+    background-color: var(--guardsman-red-700);
+  }
+  .hidden {
+    display: none;
+  }
+</style>

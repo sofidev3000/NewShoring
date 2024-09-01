@@ -11,67 +11,62 @@ function validateForm(form) {
     // Validar email con regex
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value)) {
-      errors.email = 'Por favor, ingresa un correo electrónico válido.';
+        errors.email = 'Por favor, ingresa un correo electrónico válido.';
     }
 
     // Validar checkbox
     if (!terms.checked) {
-      errors.terms = 'Por favor, acepta los términos y condiciones.';
+        errors.terms = 'Por favor, acepta los términos y condiciones.';
     }
 
     return errors;
-  }
+}
 
-  /**
-   * Maneja el evento blur para validar los campos del formulario.
-   * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
-   */
-  function handleBlur(form) {
-    const email = form.querySelector('#email');
-    const terms = form.querySelector('#terms');
+/**
+ * Maneja el evento blur para validar los campos del formulario.
+ * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
+ */
+function handleBlur(form) {
+    const inputs = form.querySelectorAll('#email, #terms');
     const emailError = document.getElementById("email-error");
     const termsError = document.getElementById("terms-error");
 
-    email.addEventListener('blur', function () {
-      const errors = validateForm(form);
-      emailError.textContent = errors.email || '';
-      emailError.classList.toggle('hidden', !errors.email);
+    inputs.forEach(input => {
+        input.addEventListener('blur', function () {
+            const errors = validateForm(form);
+            emailError.textContent = errors.email || '';
+            emailError.classList.toggle('hidden', !errors.email);
+            termsError.textContent = errors.terms || '';
+            termsError.classList.toggle('hidden', !errors.terms);
+        });
     });
+}
 
-    terms.addEventListener('blur', function () {
-      const errors = validateForm(form);
-      termsError.textContent = errors.terms || '';
-      termsError.classList.toggle('hidden', !errors.terms);
-    });
-  }
-
-  /**
-   * Maneja el envío del formulario y muestra los mensajes de error.
-   * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
-   */
-  function handleSubmit(form) {
+/**
+ * Maneja el envío del formulario y muestra los mensajes de error.
+ * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
+ */
+function handleSubmit(form) {
     const emailError = document.getElementById("email-error");
     const termsError = document.getElementById("terms-error");
 
     form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const errors = validateForm(form);
+        event.preventDefault();
+        const errors = validateForm(form);
 
-      // Mostrar errores
-      emailError.textContent = errors.email || '';
-      emailError.classList.toggle('hidden', !errors.email);
-      termsError.textContent = errors.terms || '';
-      termsError.classList.toggle('hidden', !errors.terms);
+        // Mostrar errores
+        emailError.textContent = errors.email || '';
+        emailError.classList.toggle('hidden', !errors.email);
+        termsError.textContent = errors.terms || '';
+        termsError.classList.toggle('hidden', !errors.terms);
 
-      if (Object.keys(errors).length === 0) {
-        console.log('Email:', form.querySelector('#email').value);
-        console.log('Terms Accepted:', form.querySelector('#terms').checked);
-
-
-        form.submit();
-      }
+        if (Object.keys(errors).length === 0) {
+            console.log('Email:', form.querySelector('#email').value);
+            console.log('Terms Accepted:', form.querySelector('#terms').checked);
+            form.submit();
+        }
     });
-  }
+}
 
-  // Exportar todas las funciones a la vez
-  export { validateForm, handleBlur, handleSubmit };
+// Exportar todas las funciones a la vez
+export { validateForm, handleBlur, handleSubmit };

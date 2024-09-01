@@ -1,12 +1,12 @@
 ---
-const {direction="flex-row"} = Astro.props;
+const {direction="flex-row" } = Astro.props;
 ---
 
 <div
-  class=`flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full max-w-[1300px]  flex-col  lg:flex-nowrap xl:flex-wrap lg:${direction}`
+  class=`flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full max-w-[1300px]  flex-wrap  ${direction}`
 >
   <div
-    class="articles__main__container flex flex-col max-w-full lg:max-w-[600px] 2xl:max-w-[708px] h-auto space-y-4 xl:space-y-10"
+    class="articles__main__container flex flex-col max-w-full lg:max-w-[600px] 2xl:max-w-[708px] h-auto space-y-4 xl:space-y-10 "
   >
     <slot name="card-principal" />
     <div class="border-b border-[--divider-secundary]"></div>
@@ -14,7 +14,7 @@ const {direction="flex-row"} = Astro.props;
       <slot name="card-small" />
     </div>
   </div>
-  <div class="articles__secundary self-center flex flex-col justify-start items-stretch min-h-[928px] gap-10 lg:gap-[91px]">
+  <div class="articles__secundary self-center flex flex-col justify-start items-stretch h-full 2xl:min-h-[928px] gap-10 lg:gap-[91px]">
     <slot name="card-medium" />
   </div>
 </div>
