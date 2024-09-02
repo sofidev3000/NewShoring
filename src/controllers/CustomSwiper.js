@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination,Autoplay,Keyboard,EffectCoverflow,Grid} from 'swiper/modules';
-import {execLazyLoad} from "@controllers/CustomSwiper";
+import {execLazyLoad} from "@controllers/ImageLazy";
 export var swiperObjs = [];
 var sliderBreakPoint = 991;
 

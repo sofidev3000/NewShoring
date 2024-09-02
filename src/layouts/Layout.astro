@@ -12,7 +12,6 @@ const {
   description = SITE_DESCRIPTION,
   image = "../../public/img/city.jpg",
 } = Astro.props;
-
 ---
 
 <html lang="en">
@@ -26,8 +25,10 @@ const {
 
   <body>
     <TopBar />
-    <article  class=`hidden md:flex logo w-full  justify-center items-center text-left`>
-      <Logo hidden="hidden"/>
+    <article
+      class=`hidden md:flex logo w-full  justify-center items-center text-left`
+    >
+      <Logo hidden="hidden" />
     </article>
     <HeaderMobile />
     <Header />
@@ -42,24 +43,22 @@ const {
       src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
     ></script>
     <script>
-      import {initSend} from "@controllers/ApiSend";
-      import { initAOS }from "@utils/aos";
+      import { initSend } from "@controllers/ApiSend";
+      import { initAOS } from "@utils/aos";
       import { execLazyLoad } from "@controllers/ImageLazy";
-    document.addEventListener(
-      "DOMContentLoaded",
-      function () {
+
+      document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
         initAOS();
 
         const form = document.querySelectorAll(".form-send");
 
-        form.forEach((formItem)=>{
+        form.forEach((formItem) => {
           formItem.addEventListener("submit", function (event) {
             initSend(this as HTMLFormElement);
           });
         });
       });
-
     </script>
   </body>
 </html>
