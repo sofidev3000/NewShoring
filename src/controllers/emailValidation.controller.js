@@ -28,16 +28,22 @@ function validateForm(form) {
  */
 function handleBlur(form) {
     const inputs = form.querySelectorAll('#email, #terms');
-    const emailError = document.getElementById("email-error");
-    const termsError = document.getElementById("terms-error");
+    const emailErrors = form.querySelectorAll("#email-error");
+    const termsErrors = form.querySelectorAll("#terms-error");
 
     inputs.forEach(input => {
         input.addEventListener('blur', function () {
             const errors = validateForm(form);
-            emailError.textContent = errors.email || '';
-            emailError.classList.toggle('hidden', !errors.email);
-            termsError.textContent = errors.terms || '';
-            termsError.classList.toggle('hidden', !errors.terms);
+
+            emailErrors.forEach(emailError => {
+                emailError.textContent = errors.email || '';
+                emailError.classList.toggle('hidden', !errors.email);
+            });
+
+            termsErrors.forEach(termsError => {
+                termsError.textContent = errors.terms || '';
+                termsError.classList.toggle('hidden', !errors.terms);
+            });
         });
     });
 }
@@ -47,18 +53,23 @@ function handleBlur(form) {
  * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
  */
 function handleSubmit(form) {
-    const emailError = document.getElementById("email-error");
-    const termsError = document.getElementById("terms-error");
+    const emailErrors = form.querySelectorAll("#email-error");
+    const termsErrors = form.querySelectorAll("#terms-error");
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         const errors = validateForm(form);
 
         // Mostrar errores
-        emailError.textContent = errors.email || '';
-        emailError.classList.toggle('hidden', !errors.email);
-        termsError.textContent = errors.terms || '';
-        termsError.classList.toggle('hidden', !errors.terms);
+        emailErrors.forEach(emailError => {
+            emailError.textContent = errors.email || '';
+            emailError.classList.toggle('hidden', !errors.email);
+        });
+
+        termsErrors.forEach(termsError => {
+            termsError.textContent = errors.terms || '';
+            termsError.classList.toggle('hidden', !errors.terms);
+        });
 
         if (Object.keys(errors).length === 0) {
             console.log('Email:', form.querySelector('#email').value);

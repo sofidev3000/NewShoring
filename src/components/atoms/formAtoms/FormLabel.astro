@@ -1,0 +1,7 @@
+---
+const { color, labelFor, extraClass } = Astro.props;
+---
+
+<label class={` flex text-sm ${extraClass} text-${color}`} for={labelFor}>
+    <slot/>
+</label>

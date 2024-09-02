@@ -6,13 +6,16 @@ import CardPostPrincipal from "@components/atoms/CardPostPrincipal/CardPostPrinc
 import CardPostSmall from "@components/atoms/CardPostSmall/CardPostSmall.astro";
 import HomePostLayout from "@src/layouts/HomePostLayout.astro";
 import HomePostLayoutSecundary from "@src/layouts/HomePostLayoutSecundary.astro";
-import CardPostMain from "@components/atoms/CardPostSecundary/CardPostMain/CardPostMain.astro";
-import CardPostSecundary from "@components/atoms/CardPostSecundary/CardPostSecundary/CardPostSecundary.astro";
-import SuscribeForm from "@components/atoms/SuscribeForm/SuscribeForm.astro";
+import CardPostMain from "@components/atoms/CardPostSecundary/CardPostMain.astro";
+import CardPostSecundary from "@components/atoms/CardPostSecundary/CardPostSecundary.astro";
+import FormHome from "@organisms/FormHome/FormHome.astro";
+import MainTitle from "@components/atoms/MainTitle/MainTitle.astro";
+import CarruselVideos from "@organisms/CarruselVideos/CarruselVideos";
+
 ---
 
 <Layout>
-  <SectionTitles title="Near Now!" />
+  <SectionTitles title="Near Now!" ID="near-now" />
   <HomePostLayout >
     <CardPostPrincipal
       link="/"
@@ -79,7 +82,7 @@ import SuscribeForm from "@components/atoms/SuscribeForm/SuscribeForm.astro";
       date="Agosto 30, 2024"
     />
   </HomePostLayout>
-  <SectionTitles title="Energía" />
+  <SectionTitles title="Industrías" ID="industrias" />
   <HomePostLayoutSecundary >
     <CardPostMain
       slot="primary-card"
@@ -123,7 +126,7 @@ import SuscribeForm from "@components/atoms/SuscribeForm/SuscribeForm.astro";
       excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     />
   </HomePostLayoutSecundary>
-  <SectionTitles title="Finanzas" />
+  <SectionTitles title="Energía" ID="Energía"/>
   <HomePostLayout direction="flex-row-reverse">
     <CardPostPrincipal
       link="/"
@@ -190,7 +193,78 @@ import SuscribeForm from "@components/atoms/SuscribeForm/SuscribeForm.astro";
       date="Agosto 30, 2024"
     />
   </HomePostLayout>
-  <div class="flex ">
-    <SuscribeForm direction="flex-row" color="[--secundary-color]"/>
-  </div>
+  <MainTitle title="Suscríbete a nuestro Newsletter" ID="suscribete" />
+    <FormHome />
+    <SectionTitles title="Finanzas" ID="finanzas"/>
+    <HomePostLayout direction="flex-row">
+      <CardPostPrincipal
+      link="/"
+
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+        slot="card-principal"
+      />
+      <CardPostSmall
+        slot="card-small"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+      <CardPostSmall
+        slot="card-small"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+      <CardPostSmall
+        slot="card-small"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+      <CardPostSmall
+        slot="card-small"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+
+      <CardPostMedium
+        slot="card-medium"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+      <CardPostMedium
+        slot="card-medium"
+        link="/"
+        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
+        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
+        altdesc="portada Nearshoring"
+        autor="Jhon Doe"
+        date="Agosto 30, 2024"
+      />
+    </HomePostLayout>
+
+    <SectionTitles title="Video" ID="video"/>
+    <CarruselVideos client:load/>
+
 </Layout>

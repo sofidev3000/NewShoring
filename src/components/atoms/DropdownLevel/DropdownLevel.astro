@@ -37,8 +37,8 @@ const { dropdown, text, id, placement="right-start"} = Astro.props;
             <div id={`${id}-doubleDropdown-${index}`} class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow-md w-52 bg-gray-950 ">
               <ul class="w-full py-2 text-sm text-gray-200 dark:text-gray-200" aria-labelledby={`${id}-doubleDropdownButton-${index}`}>
                 {item.elements.map((subItem, subIndex) => (
-                  <li >
-                    <a href={subItem.url} class="header__link block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]">
+                  <li class="first:text-[--guardsman-red-500]">
+                    <a href={subItem.url} class=" block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500] ">
                       {subItem.text}
                     </a>
                   </li>
@@ -47,7 +47,7 @@ const { dropdown, text, id, placement="right-start"} = Astro.props;
             </div>
 
         ) : (
-          <a href={item.url} class="header__link block px-3 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]">
+          <a href={item.url} class="header__link sub__link block px-3 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]">
             {item.text}
           </a>
         )}

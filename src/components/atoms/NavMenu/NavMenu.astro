@@ -6,11 +6,12 @@ const {placement} = Astro.props;
 const menuItems = [
   {
     text: "Near Now!",
-    url: "/",
+    url: "#near-now",
   },
   {
     text: "Industrías",
     elements: [
+      { text: "Industrías", url: "#industrias" },
       { text: "Aeroespacial", url: "/" },
       { text: "Automotriz", url: "/" },
       { text: "Electrodomésticos", url: "/" },
@@ -21,7 +22,9 @@ const menuItems = [
   },
   {
     text: "Energía",
+
     elements: [
+      {text: "Energía", url: "#energia"},
       { text: "Eléctrica", url: "/" },
       { text: "Eólica", url: "/" },
       { text: "Solar", url: "/" },
@@ -29,11 +32,16 @@ const menuItems = [
   },
   {
     text: "Finanzas",
-    url: "/",
+    url: "#finanzas",
+  },
+  {
+    text: "Video",
+    url: "#video",
   },
   {
     text: "Logística y Transporte",
     elements: [
+      { text: "Logística y Transporte", url: "#logistica-y-transporte" },
       { text: "Aero", url: "/" },
       { text: "Marítimo", url: "/" },
       { text: "Terrestre", url: "/" },
@@ -41,7 +49,9 @@ const menuItems = [
   },
   {
     text: "Parques Industriales",
+
     elements: [
+      { text: "Parques Industriales", url: "#parques-industriales" },
       { text: "construcción", url: "/" },
       { text: "Inmuebles", url: "/" },
       { text: "Manufactura", url: "/" },
@@ -49,7 +59,9 @@ const menuItems = [
   },
   {
     text: "Capital Humano",
+    url: "capital-humano",
     elements: [
+      { text: "Capital Humano", url: "#capital-humano" },
       { text: "Capacitación", url: "/" },
       { text: "Certificación", url: "/" },
       { text: "Coaching", url: "/" },
@@ -59,7 +71,9 @@ const menuItems = [
   },
   {
     text: "ESG",
+    url: "#esg",
     elements: [
+      { text: "ESG", url: "#esg" },
       { text: "Gobierno Corporativo", url: "/" },
       { text: "Inclusión", url: "/" },
       { text: "Sustentabilidad", url: "/" },
@@ -76,7 +90,7 @@ const randomNum = Math.floor(Math.random() * 1000);
 
 <nav>
     <ul
-      class="flex flex-col md:flex-row w-full h-[100dvh] md:h-auto font-medium md:space-x-4 rtl:space-x-reverse  md:mt-0 md:border-0 space-y-4 md:space-y-0"
+      class="flex flex-col md:flex-row w-full  md:h-auto font-medium md:space-x-4 rtl:space-x-reverse  md:mt-0 md:border-0 space-y-4 md:space-y-0"
     >
       {
         pagePathname !== "/" && (
@@ -128,10 +142,10 @@ const randomNum = Math.floor(Math.random() * 1000);
   </nav>
 
   <style is:global>
-    .header__link {
+    .header__link:not(.sub__link) {
       position: relative;
     }
-    .header__link::after {
+    .header__link:not(.sub__link)::after {
       position: absolute;
       top: 25px;
       left: 0;
@@ -143,7 +157,7 @@ const randomNum = Math.floor(Math.random() * 1000);
       background: var(--guardsman-red-800);
       transition: 0.35s transform;
     }
-    .header__link:hover::after {
+    .header__link:not(.sub__link):hover::after {
       transform: scale(1);
     }
   </style>
