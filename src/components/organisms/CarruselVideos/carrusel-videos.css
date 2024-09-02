@@ -4,9 +4,8 @@
   height: 100%;
 }
 .swiper-wrapper{
-  max-width: 1300px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
 }
@@ -20,16 +19,11 @@
   align-items: center;
 }
 
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
-.swiper-slide .swiper-slide-active{
-  max-height: 260px;
-}
+
+/* .swiper-slide .swiper-slide-active{
+
+} */
 
 .swiper {
   width: 100%;
