@@ -9,7 +9,7 @@ const IndicadoresCarousel = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        
+
         let domain = "http://localhost:3000";
         if (window.location.port!== '4321') {
           domain = window.location.origin;
@@ -30,7 +30,7 @@ const IndicadoresCarousel = () => {
           },
           "DataContext": null
         });
-        
+
         const response = await fetch(baseURL, {
           method: "POST",
           headers: myHeaders,

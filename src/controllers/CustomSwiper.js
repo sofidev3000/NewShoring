@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination,Autoplay,Keyboard,EffectCoverflow,Grid} from 'swiper/modules';
-import {execLazyLoad} from "@controllers/imagelazy";
+import {execLazyLoad} from "@controllers/CustomSwiper";
 export var swiperObjs = [];
 var sliderBreakPoint = 991;
 
@@ -11,14 +11,14 @@ function getWindowWidth() {
 /****** Setup swiper slider ******/
 export async function setupSwiper() {
     const swiperItems = document.querySelectorAll(".swiper-container:not(.instafeed-wrapper )");
-  
+
     for (const [index, swiperItem] of swiperItems.entries()) {
       const _this = swiperItem;
       const sliderOptions = getOptionsSwiper(_this);
-  
+
       if (typeof sliderOptions!== 'undefined' && sliderOptions!== null) {
         _this.dataset.swiperIndex = index;
-  
+
         if (_this.classList.contains("swiper-container--filter")) {
           await createIsotopeSwiper(_this);
           await initSwiperFilter(_this);
@@ -39,7 +39,7 @@ function removeWraperChild(swiper){
             let swiperWrapper = _this.querySelector(".swiper-wrapper");
             swiperWrapper.innerHTML = ''; // Remove all child elements
             resolve();
-        }catch(error){  
+        }catch(error){
             reject(error);
         }
     });
@@ -50,24 +50,24 @@ function initSwiperFilter(swiper) {
       try {
         const _this = swiper;
         let isotopeContainer = _this.closest(".swiper-isotope");
-        
+
         let swiperWrapper = _this.querySelector(".swiper-wrapper");
-        
+
         removeWraperChild(_this).then(()=>{
 
             let [firstElement, filterValue] = getFirstFilterValue(isotopeContainer);
             let value = filterValue;
-      
+
             if (value == null) {
               value = firstElement;
               // Buscar dentro del almacen de slides
               var filterNav = isotopeContainer.querySelector(".swiper__filter[data-filter=\"" + value + "\"]");
-      
+
               if (filterNav) {
                 filterNav.classList.add("swiper__filter--active");
               }
             }
-      
+
             storeSlide.querySelectorAll(".swiper-slide--filter[data-filter='" + value.split(".")[1] + "']").forEach(function (element) {
               // Añadir la clase "swiper-slide--none"
               // element.classList.add("swiper-slide--none");
@@ -76,10 +76,10 @@ function initSwiperFilter(swiper) {
               let clone = element.cloneNode(true);
               swiperWrapper.appendChild(clone);
             });
-      
+
         });
 
-      
+
         resolve();
       } catch (error) {
         reject(error);
@@ -89,7 +89,7 @@ function initSwiperFilter(swiper) {
 
 async function createIsotopeSwiper(swiper){
     const _this = swiper;
-   
+
     let isotopeContainer = _this.closest(".swiper-isotope");
     let storeSlide = isotopeContainer.querySelector(".storeSlide");
 
@@ -103,13 +103,13 @@ async function createIsotopeSwiper(swiper){
         .catch(error => {
             console.error("Error al crear el elemento:", error);
         });
-        
+
         //Pasa los nombres de filtros dentro de cada elemento interno de un swiper slide a swiper slide como atributo data-filter
     _this.querySelectorAll("[data-by-filter]").forEach(function (element) {
-        
+
         //obtener slide al que pertenece
         let parentNode = element.closest(".swiper-slide--filter");
-        
+
         //Agregar el filtro como clase
         parentNode.classList.add(element.dataset.byFilter);
         parentNode.dataset.filter = element.dataset.byFilter;
@@ -117,8 +117,8 @@ async function createIsotopeSwiper(swiper){
         storeSlide.appendChild(parentNode);
     });
     }
-    
-     
+
+
 }
 
 function getFirstFilterValue(isotopeContainer){
@@ -126,7 +126,7 @@ function getFirstFilterValue(isotopeContainer){
     let filterNavList = isotopeContainer.querySelectorAll(".swiper__filter");
     let firstElement = null;
     let filterValue = null;
-    filterNavList.forEach(function(item){ 
+    filterNavList.forEach(function(item){
         if(item.classList.contains("swiper__filter--active")){
             filterValue = item.dataset.filter;
         }
@@ -141,18 +141,18 @@ function createElement(parentNode, tag, attr) {
     return new Promise((resolve, reject) => {
       try {
         let element = document.createElement(tag);
-  
+
         // Añadir los atributos del objeto JSON al nuevo elemento
         for (let key in attr) {
           if (attr.hasOwnProperty(key)) {
             element.setAttribute(key, attr[key]);
           }
         }
-        
+
         parentNode.appendChild(element);
-  
+
         resolve(element);
-  
+
       } catch (error) {
         reject(error);
       }
@@ -165,9 +165,9 @@ function getOptionsSwiper(element) {
 
     var _this = element;
     var sliderOptionsString = _this.getAttribute('data-slider-options');
-    
+
     var sliderOptions = null;
-    
+
     if (typeof (sliderOptionsString) !== 'undefined' && sliderOptionsString !== null) {
         var sliderOptions = JSON.parse(sliderOptionsString, function(key, value) {
             if (key === 'modules') {
@@ -200,10 +200,10 @@ function getOptionsSwiper(element) {
 export function destroySwiperLoop() {
 
     for (var i = 0; i < swiperObjs.length; i++) {
-        
+
         var swiperObj = swiperObjs[i];
         swiperObj.destroy(); // Destroy swiper
-       
+
     };
     swiperObjs=[];
     setupSwiper();
@@ -240,11 +240,11 @@ export async function setupSwiperFilter(event,_this){
         });*/
 
         // Seleccionar todos los elementos con el atributo "data-filter" igual a la variable "filter"
-        
-    
+
+
         swiperObjs[swiperIndex].destroy();
         swiperObjs[swiperIndex] = null;
-        
+
         /*const reInitSwiperSlide = new Promise((resolve,reject)=>{
             try{
 
@@ -252,7 +252,7 @@ export async function setupSwiperFilter(event,_this){
                     let clone = element.cloneNode(true);
                     swiperWrapper.appendChild(clone);
                 });
-                
+
                 resolve();
             }
             catch(error){
@@ -262,22 +262,22 @@ export async function setupSwiperFilter(event,_this){
 
         await reInitSwiperSlide.then(()=>{
 
-            
-    
+
+
             if (typeof (sliderOptions) !== 'undefined' && sliderOptions !== null) {
                 const swiperObj = new Swiper(swiperContent, sliderOptions);
                 swiperObjs[swiperIndex] = swiperObj;
                 execLazyLoad(currentSwiper);
             }
         });*/
-      
+
         const sliderOptions = getOptionsSwiper(swiperContent);
-        
+
         initSwiperFilter(swiperContent).then(() => {
             // Crear el objeto swiper después de que se hayan generado todos los slides
             execLazyLoad(swiperContent);
             const swiperObj = new Swiper(swiperContent, sliderOptions);
-           
+
             swiperObjs[swiperIndex] = swiperObj;
             swiperObjs[swiperIndex].slideToLoop(0);
 

@@ -49,7 +49,7 @@ function handleBlur(form) {
  * @param {HTMLFormElement} form - El formulario que contiene los campos a validar.
  */
 /*
-/*
+
 function handleSubmit(form) {
     const emailError = document.getElementById("email-error");
     const termsError = document.getElementById("terms-error");
@@ -75,4 +75,4 @@ function handleSubmit(form) {
 // Exportar todas las funciones a la vez
 export { validateForm, handleBlur, handleSubmit };
 */
-export { validateForm, handleBlur };
+export { validateForm, handleBlur, handleSubmit };
