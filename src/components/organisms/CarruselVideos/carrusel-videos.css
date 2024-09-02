@@ -27,7 +27,9 @@
   object-fit: cover;
 } */
 
-
+.swiper-slide .swiper-slide-active{
+  max-height: 260px;
+}
 
 .swiper {
   width: 100%;
