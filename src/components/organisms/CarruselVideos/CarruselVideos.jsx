@@ -34,31 +34,34 @@ export default function CarruselVideos() {
   const [swiperRef, setSwiperRef] = useState(null);
 
   return (
+
     <Swiper
       modules={[Virtual, Navigation, Pagination]}
       onSwiper={setSwiperRef}
       slidesPerView={3}
       centeredSlides={true}
-      spaceBetween={10}
+      spaceBetween={3}
       loop={true}
       pagination={{
-        type: "fraction",
+        clickable: true,
       }}
       navigation={true}
-      virtual
+
+      className="px-50 "
     >
+
       {carouselItems.map((item, index) => (
-        <SwiperSlide key={index} virtualIndex={index}>
-          <div className=" h-[342px] w-[404px] relative group transition duration-[2s] ease-in-out overflow-hidden">
+        <SwiperSlide key={index} >
+          <div className=" h-[342px] w-[404px] flex flex-col relative group transition duration-[2s] ease-in-out overflow-hidden">
             <img
-              className="w-full h-full object-cover overflow-hidden group-hover:scale-125"
+              className="object-cover overflow-hidden group-hover:scale-125"
               src={item.src}
               alt={item.title}
             />
-          </div>
-          <div className="card-video flex flex-col">
-            <h5>{item.category}</h5>
-            <h3>{item.title}</h3>
+            <div className="card-video flex flex-col translate-y-[-100%] *:text-white *:text-left">
+              <h5>{item.category}</h5>
+              <h3>{item.title}</h3>
+            </div>
           </div>
         </SwiperSlide>
       ))}
