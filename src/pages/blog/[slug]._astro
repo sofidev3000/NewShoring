@@ -1,4 +1,7 @@
 ---
+interface Props{
+  post:any;
+}
 import Layout from "@src/layouts/Layout.astro";
 import { wpquery } from "@services/fakePost";
 

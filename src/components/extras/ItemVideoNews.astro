@@ -1,0 +1,49 @@
+---
+interface Props {
+    className?: string;
+    category: string;
+	categoryColor: string;
+    title: string;
+    href: string;
+    datetime: string;
+    time?: string;
+}
+const {className,categoryColor,category,title,href,datetime,time=null} = Astro.props;
+---
+<article class={`${className??""}`}>
+    <a  class="group/zoom flex bg-[--secundary-color] relative overflow-hidden h-full" href={href}>
+        <!-- Badge -->
+       
+        <span class={ `absolute left-2 top-[65%] -translate-y-[65%] lg:top-[70%] lg:-translate-y-[70%]  z-[1] text-center py-1.5 px-1.5 font-sans text-xs font-bold text-white transition duration-300 ease-in-out ${categoryColor}`}>{category}</span>
+        
+        <!-- Imagen -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <slot name="image"/>
+        </div>
+        <!-- Gradient -->
+        <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black"></div>
+        
+        <!-- video player-->
+        <span class={ `absolute z-[1] top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]`}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="60" height="60" viewBox="0 0 32 32"><path d="M16 .5C24.563.5 31.5 7.438 31.5 16S24.562 31.5 16 31.5.5 24.562.5 16 7.438.5 16 .5zm7.231 17c1.025-.569 1.025-2.05 0-2.625l-11-6.688C11.237 7.637 10 8.349 10 9.5v13c0 1.156 1.244 1.863 2.231 1.313z"/></svg>
+        </span>
+        <!-- Card-body -->
+        
+        <div class="relative z-[1] w-full px-4 pb-10 flex-1 inline-flex flex-wrap content-end">
+           
+            {
+                time &&(
+                    <time datetime="fecha_de_noticia" class="font-body text-sm text-white mb-2 flex flex-nowrap gap-2 items-center mr-4">
+                    {datetime}
+                </time>
+                    <span class="font-body text-sm text-white mb-2 flex flex-nowrap gap-1 items-center">
+                        {time}
+                    </span>
+                )
+            }
+            <h2 class="w-full group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-white text-sm leading-[1.1rem] font-sans font-medium ">
+                {title}
+            </h2>
+        </div>
+    </a>
+</article>

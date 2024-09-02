@@ -3,12 +3,16 @@ const suscribeModalButton = d.getElementById("suscribe-btn");
 const subscribeModal = d.getElementById("suscribe-modal");
 const closeModal = d.getElementById("close-modal");
 suscribeModalButton.addEventListener("click", (e) => {
+  console.log("ver modal");
   subscribeModal.showModal();
 });
 
-closeModal.addEventListener("click", (e) => {
-  subscribeModal.close();
-});
+if(closeModal){
+  closeModal.addEventListener("click", (e) => {
+    subscribeModal.close();
+  });
+}
+
 
 
 

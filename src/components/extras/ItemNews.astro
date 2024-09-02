@@ -1,0 +1,67 @@
+---
+
+interface Props {
+    className?: string;
+    title: string;
+    href: string;
+	category: string;
+	categoryColor: string;
+    datetime:string;
+    time?: string;
+    Options?:string;
+    attributes?:string;
+    content?:string;
+}
+
+const {href, category, categoryColor,datetime,title,content="",time=null,Options=null,className="",attributes=""} = Astro.props;
+
+var optionsObjs = null;
+if(Options!=null){
+    optionsObjs = JSON.parse(Options);
+}else{
+    optionsObjs = JSON.parse("{\"LinkContainer\": { \"ClassName\": \"\" },\"AssetsContainer\":{\"ClassName\":\"relative w-2/5 overflow-hidden\",\"HasFlag\":true,\"Flag\":{\"ClassName\":\"absolute top-1.5 left-1.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-black rounded-lg\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":true,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full\"}}},\"DataContainer\":{\"ClassName\":\"w-3/5 p-4 pl-0 pb-3\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"}}}");
+}      
+
+const dataAttributes = attributes && attributes ? attributes : "{}";
+    let dataAttribut:any;
+
+    if (dataAttributes) {
+    const parsedData = JSON.parse(dataAttributes);
+    dataAttribut = Object.fromEntries(
+        Object.entries(parsedData).map(([key, value]) => [key, value])
+    );
+    }
+---
+<article class={className} {...dataAttribut}>
+    <a class={ optionsObjs.LinkContainer.ClassName} href={href}>
+        <div class={optionsObjs.AssetsContainer.ClassName}>
+            <slot name="image" />
+            {
+                optionsObjs.AssetsContainer.HasFlag && (
+                    <span class={ `${optionsObjs.AssetsContainer.Flag.ClassName} ${categoryColor}`}>{category}</span>
+                )
+            }
+        </div>
+        <div class={optionsObjs.DataContainer.ClassName}>
+            <time datetime="fecha_de_noticia" class={optionsObjs.DataContainer.Date.ClassName}>
+                {
+                    optionsObjs.DataContainer.Date.Icon.ClassName && (
+                        <svg xmlns="http://www.w3.org/2000/svg" class={optionsObjs.DataContainer.Date.Icon.ClassName} width="15" height="17" fill="#d1d1d1" viewBox="0 0 28 32"><path d="M25 4c1.656 0 3 1.344 3 3v22c0 1.656-1.344 3-3 3H3c-1.656 0-3-1.344-3-3V7c0-1.656 1.344-3 3-3h3V.75c0-.412.338-.75.75-.75h2.5c.412 0 .75.338.75.75V4h8V.75c0-.412.338-.75.75-.75h2.5c.412 0 .75.338.75.75V4h3zm-.375 25a.376.376 0 0 0 .375-.375V10H3v18.625c0 .206.169.375.375.375h21.25z" /></svg>
+                    )
+                }
+                {datetime}
+            </time>
+            {
+                time &&(
+                    <span class={optionsObjs.DataContainer.Time.ClassName}>
+                        <svg xmlns="http://www.w3.org/2000/svg" class={optionsObjs.DataContainer.Time.Icon.ClassName} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 7v5" /><path d="M12 12l2 -3" /></svg>
+                        {time}
+                    </span>
+                )
+            }
+            <h2 class={optionsObjs.DataContainer.Title.ClassName}>
+                {title}
+            </h2>
+        </div>
+    </a>
+</article>

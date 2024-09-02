@@ -1,270 +1,656 @@
 ---
-import SectionTitles from "@components/atoms/SectionTitles/SectionTitles.astro";
 import Layout from "../layouts/Layout.astro";
-import CardPostMedium from "@components/atoms/CardPostMedium/CardPostMedium.astro";
-import CardPostPrincipal from "@components/atoms/CardPostPrincipal/CardPostPrincipal.astro";
-import CardPostSmall from "@components/atoms/CardPostSmall/CardPostSmall.astro";
-import HomePostLayout from "@src/layouts/HomePostLayout.astro";
-import HomePostLayoutSecundary from "@src/layouts/HomePostLayoutSecundary.astro";
-import CardPostMain from "@components/atoms/CardPostSecundary/CardPostMain.astro";
-import CardPostSecundary from "@components/atoms/CardPostSecundary/CardPostSecundary.astro";
-import FormHome from "@organisms/FormHome/FormHome.astro";
-import MainTitle from "@components/atoms/MainTitle/MainTitle.astro";
-import CarruselVideos from "@organisms/CarruselVideos/CarruselVideos";
-
+import ItemNews from "@components/extras/ItemNews.astro";
+import ImageLazy from "@components/extras/ImageLazy.astro";
+import ItemNewsWithDesc from "@components/extras/ItemNewsWithDesc.astro";
+import Swiper from "@components/extras/Swiper.astro";
+import SwiperItem from "@components/extras/SwiperItem.astro";
+import ItemVideoNews from "@components/extras/ItemVideoNews.astro";
+import Button from "@components/atoms/Button/Button.astro";
 ---
 
 <Layout>
-  <SectionTitles title="Near Now!" ID="near-now" />
-  <HomePostLayout >
-    <CardPostPrincipal
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      slot="card-principal"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-
-    <CardPostMedium
-      slot="card-medium"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostMedium
-      slot="card-medium"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-  </HomePostLayout>
-  <SectionTitles title="Industrías" ID="industrias" />
-  <HomePostLayoutSecundary >
-    <CardPostMain
-      slot="primary-card"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-
-    <CardPostSecundary
-      slot="secondary-card"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-    <CardPostSecundary
-      slot="secondary-card"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-    <CardPostSecundary
-      slot="secondary-card"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      excerpt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-  </HomePostLayoutSecundary>
-  <SectionTitles title="Energía" ID="Energía"/>
-  <HomePostLayout direction="flex-row-reverse">
-    <CardPostPrincipal
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-      slot="card-principal"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostSmall
-      slot="card-small"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-
-    <CardPostMedium
-      slot="card-medium"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-    <CardPostMedium
-      slot="card-medium"
-      link="/"
-      title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-      image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-      altdesc="portada Nearshoring"
-      autor="Jhon Doe"
-      date="Agosto 30, 2024"
-    />
-  </HomePostLayout>
-  <MainTitle title="Suscríbete a nuestro Newsletter" ID="suscribete" />
-    <FormHome />
-    <SectionTitles title="Finanzas" ID="finanzas"/>
-    <HomePostLayout direction="flex-row">
-      <CardPostPrincipal
-      link="/"
-
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
-        slot="card-principal"
+  <section
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+  >
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    >
+      <h2 class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+        Near Now
+      </h2>
+    </div>
+    <div
+      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-up"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <div class="border-b border-[--divider-secundary] w-full"></div>
+      <div class="articles__small space-y-reverse w-full">
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+      </div>
+    </div>
+    <div class=`flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`>
+      <ItemNews
+      Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+      className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
+      attributes={'{"data-aos":"fade-left"}'}
+      category=""
+      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+        width="600"
+        height="375"
+        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
       />
-      <CardPostSmall
-        slot="card-small"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemNews>
+    <ItemNews
+    Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+    className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+    attributes={'{"data-aos":"fade-left"}'}
+    category=""
+    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+    datetime="22/04/2024"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+      width="600"
+      height="375"
+      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+      classNameImage="h-full object-cover object-center"
+      slot="image"
+    />
+  </ItemNews>
+    </div>
+  </section>
+  <section class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap">
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    >
+      <h2 class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+        Energía
+      </h2>
+    </div>
+    <div class="flex self-center w-full lg:w-[30%]  group ">
+      <ItemNewsWithDesc
+        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}'}
+        className="w-full"
+        attributes={'{"data-aos":"fade-right"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+    </div>
+    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%] group ">
+      <ItemNewsWithDesc
+        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+      <ItemNewsWithDesc
+        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+      <ItemNewsWithDesc
+        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+    </div>
+  </section>
+  <section
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap">
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    >
+      <h2 class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+        Finanzas
+      </h2>
+    </div>
+    <div class=`flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`>
+      <ItemNews
+      Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+      className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
+      attributes={'{"data-aos":"fade-left"}'}
+      category=""
+      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+        width="600"
+        height="375"
+        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
       />
-      <CardPostSmall
-        slot="card-small"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemNews>
+    <ItemNews
+    Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+    className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+    attributes={'{"data-aos":"fade-left"}'}
+    category=""
+    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+    datetime="22/04/2024"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+      width="600"
+      height="375"
+      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+      classNameImage="h-full object-cover object-center"
+      slot="image"
+    />
+  </ItemNews>
+    </div>
+    <div
+      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-up"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <div class="border-b border-[--divider-secundary] w-full"></div>
+      <div class="articles__small space-y-reverse w-full">
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+      </div>
+    </div>
+    
+  </section>
+  <section
+  class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+>
+  <div
+    class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+  >
+    <h2 class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+      Logística
+    </h2>
+  </div>
+  <div
+    class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
+  >
+    <ItemNews
+      Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+      className="flex flex-col self-center w-full group"
+      attributes={'{"data-aos":"fade-up"}'}
+      category=""
+      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+        width="600"
+        height="375"
+        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
       />
-      <CardPostSmall
-        slot="card-small"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemNews>
+    <div class="border-b border-[--divider-secundary] w-full"></div>
+    <div class="articles__small space-y-reverse w-full">
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+        className=""
+        category="Internacional"
+        attributes={'{"data-aos":"fade-up"}'}
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+          width="200"
+          height="114"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+        className=""
+        category="Internacional"
+        attributes={'{"data-aos":"fade-up"}'}
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+          width="200"
+          height="114"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+        className=""
+        category="Internacional"
+        attributes={'{"data-aos":"fade-up"}'}
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+          width="200"
+          height="114"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":"flex gap-3 max-h-[108px] group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block absolute h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[16rem] flex flex-col space-y-4 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-extrabold text-sm"}}}'}
+        className=""
+        category="Internacional"
+        attributes={'{"data-aos":"fade-up"}'}
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+          width="200"
+          height="114"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
+  </div>
+  <div class=`flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`>
+    <ItemNews
+    Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+    className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
+    attributes={'{"data-aos":"fade-left"}'}
+    category=""
+    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+    datetime="22/04/2024"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+      width="600"
+      height="375"
+      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+      classNameImage="h-full object-cover object-center"
+      slot="image"
+    />
+  </ItemNews>
+  <ItemNews
+  Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+  className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+  attributes={'{"data-aos":"fade-left"}'}
+  category=""
+  title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+  datetime="22/04/2024"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+    width="600"
+    height="375"
+    className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+    classNameImage="h-full object-cover object-center"
+    slot="image"
+  />
+</ItemNews>
+  </div>
+</section>
+<div class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap" data-aos="fade-up">
+  <p class="text-left text-3xl font-extrabold text-[--guardsman-red-500] w-full">Suscribe to our Newsletter</p>
+  <form action="/search"  method="post" class="w-full flex flex-row flex-wrap gap-4">
+    <div class="w-full lg:w-[79%] flex flex-col gap-1">
+      <input type="email" id="email" name="email" placeholder="email" required />
+    </div>
+    <div class="w-full lg:w-[19%]">
+      <Button text="Registrar" ID="send-btn" type="submit" clase="w-full h-full"/>
+    </div>  
+  </form>
+</div>
+<section
+class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+>
+<div
+  class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+>
+  <h2 class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+    Video
+  </h2>
+</div>
+<Swiper className="mx-auto mt-5 w-full h-[300px]" navigation={ "{\"Type\":\"normal\", \"ClassName\":\"\" ,\"ClassNext\":\"\",\"ClassPrev\": \"\"}" } options={ "{\"loop\":true,\"speed\":1000,\"slidesPerView\":1.5,\"modules\": [\"Autoplay\",\"Pagination\",\"Navigation\"],\"spaceBetween\": 10,\"observer\":true,\"observeParents\":true,\"breakpoints\":{\"768\":{\"slidesPerView\":2.5},\"992\":{\"slidesPerView\":2.5},\"1200\":{\"slidesPerView\":2.5}}}" }>
+  <SwiperItem className='swiper-slide w-full md:w-[48%] mr-[10px]'>
+    <ItemVideoNews 
+      datetime='23/04/2024' className='w-full h-full' category='Internacional' categoryColor='category_03' title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"  href="#">
+      <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+      width="500"
+      height="731"
+      className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+      classNameImage='object-cover h-full'
+      slot="image"
       />
-      <CardPostSmall
-        slot="card-small"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemVideoNews>
+  </SwiperItem>
+  <SwiperItem className='swiper-slide w-full md:w-[48%] mr-[10px]'>
+    <ItemVideoNews 
+      datetime='23/04/2024' className='w-full h-full' category='Internacional' categoryColor='category_03' title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"  href="#">
+      <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+      width="500"
+      height="731"
+      className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+      classNameImage='object-cover h-full'
+      slot="image"
       />
-
-      <CardPostMedium
-        slot="card-medium"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemVideoNews>
+  </SwiperItem>
+  <SwiperItem className='swiper-slide w-full md:w-[48%] mr-[10px]'>
+    <ItemVideoNews 
+      datetime='23/04/2024' className='w-full h-full' category='Internacional' categoryColor='category_03' title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"  href="#">
+      <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+      width="500"
+      height="731"
+      className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+      classNameImage='object-cover h-full'
+      slot="image"
       />
-      <CardPostMedium
-        slot="card-medium"
-        link="/"
-        title="México | Nearshoring impulsa anuncios de inversión por 45,464 millones de pesos..."
-        image="https://ibu.ca/wp-content/uploads/2024/01/m29.webp"
-        altdesc="portada Nearshoring"
-        autor="Jhon Doe"
-        date="Agosto 30, 2024"
+    </ItemVideoNews>
+  </SwiperItem>
+  <SwiperItem className='swiper-slide w-full md:w-[48%] mr-[10px]'>
+    <ItemVideoNews 
+      datetime='23/04/2024' className='w-full h-full' category='Internacional' categoryColor='category_03' title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"  href="#">
+      <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+      width="500"
+      height="731"
+      className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+      classNameImage='object-cover h-full'
+      slot="image"
       />
-    </HomePostLayout>
-
-    <SectionTitles title="Video" ID="video"/>
-    <CarruselVideos client:load/>
-
+    </ItemVideoNews>
+  </SwiperItem>
+</Swiper>
+</section>
 </Layout>
+<style>
+  .articles__small {
+    min-height: 40dvh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    @media (width <= 768px) {
+      min-height: 60dvh;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 6rem;
+    }
+  }
+</style>

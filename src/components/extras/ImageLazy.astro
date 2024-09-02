@@ -1,0 +1,107 @@
+---
+interface Props {
+  src: string;
+  srcWebp?: string;
+  className: string;
+  classNameImage?: string;
+  watermark?: boolean;
+  width: string;
+  height: string;
+}
+
+const { src, srcWebp, className, width, height,classNameImage, watermark = true } = Astro.props;
+
+var hasWatermark= "after:content-[''] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-full after:bg-contain after:bg-watermark after:bg-no-repeat";
+if(!watermark){
+  hasWatermark = ""
+}
+---
+
+<div class={`load-image-container block h-0 ${hasWatermark} ${className}`}>
+  <div class="loader-icon  top-1/2 left-1/2 w-1/4 h-1/4 transform -translate-x-1/2 -translate-y-1/2">
+    <div
+      class="lds-facebook block relative m-auto bg-transparent w-full h-full">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <img
+    class= `lazy absolute top-0 left-0 w-full ${classNameImage}`
+    width={width}
+    height={height}
+    data-loaded="visible-image"
+    data-src={src}
+    data-webp-src={srcWebp} 
+    alt=""
+    src=""
+  />
+</div>
+
+<style is:global>
+
+    .lazy {
+        opacity: 0;
+    }
+
+    .visible-image {
+        visibility: hidden;
+        animation-name: visibleImage;
+        animation-duration: 0.1s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+    }
+
+    .loader-icon--hidden{
+        display: none;
+        background: transparent;
+    }
+  @keyframes visibleImage {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 20%;
+    background-color: var(--neutral-color);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+
+  .lds-facebook div:nth-child(1) {
+    left: 6%;
+    animation-delay: -0.24s;
+  }
+
+  .lds-facebook div:nth-child(2) {
+    left: 36%;
+    animation-delay: -0.12s;
+  }
+
+  .lds-facebook div:nth-child(3) {
+    left: 68%;
+    animation-delay: 0;
+  }
+
+  @keyframes lds-facebook {
+    0% {
+      top: 2%;
+      height: 120%;
+    }
+
+    50%,
+    100% {
+      top: 44%;
+      height: 40%;
+    }
+  }
+</style>

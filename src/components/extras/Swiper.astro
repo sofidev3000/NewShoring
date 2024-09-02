@@ -1,0 +1,94 @@
+---
+interface Props{
+    className?: string;
+    options: string;
+    navigation: string;
+    pagination?: string;
+}
+
+const {className,options,navigation,pagination=null} = Astro.props;
+const navObj = JSON.parse(navigation);
+const prev= navObj.ClassPrev;
+const next = navObj.ClassNext;
+const classNameNav = navObj.ClassName;
+const typeNav = navObj.Type;
+
+var paginationSwiper = pagination;
+
+if(pagination!=null){
+    var pagObj = JSON.parse(pagination);
+    var ClassNamePagination= pagObj.ClassName;
+    var elPagination = pagObj.el;
+    var paginPosition = pagObj.Position;
+}
+
+---
+{ typeNav == "headerPosition" && (
+    <div class={classNameNav}>
+        <div class={`${prev} cursor-pointer flex items-center justify-center `}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current object-contain transform origin-center transition duration-200 ease-in-out w-7 h-7" width="16" height="32" viewBox="0 0 16 32"><path d="m1.981 14.938 8.5-8.5a1.493 1.493 0 0 1 2.119 0l1.413 1.412a1.495 1.495 0 0 1 0 2.119L7.994 16l6.025 6.025a1.493 1.493 0 0 1 0 2.119l-1.412 1.419a1.493 1.493 0 0 1-2.119 0l-8.5-8.5a1.495 1.495 0 0 1-.006-2.125z" /></svg>
+        </div>
+        <div class={`${next} cursor-pointer flex items-center justify-center`}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current object-contain transform origin-center transition duration-200 ease-in-out w-7 h-7" width="16" height="32" viewBox="0 0 16 32"><path d="m14.019 17.063-8.5 8.5a1.493 1.493 0 0 1-2.119 0l-1.413-1.412a1.495 1.495 0 0 1 0-2.119l6.025-6.025-6.025-6.025a1.495 1.495 0 0 1 0-2.119l1.406-1.425a1.493 1.493 0 0 1 2.119 0l8.5 8.5c.594.588.594 1.537.006 2.125z" /></svg>
+        </div>
+    </div>
+)}
+
+<div class={`${className??""} swiper-container relative overflow-hidden list-none p-0 z-[1] block swiper`} data-slider-options={options} >
+    <div class="swiper-wrapper h-full box-content flex z-[1] transition-transform">
+        <slot/>
+    </div>
+    {
+        paginationSwiper && (
+            paginPosition == "inside" && (
+                <div class={`swiper-pagination ${ClassNamePagination} ${elPagination}`}>
+    
+                </div>
+            )
+        )
+    }
+    {
+        typeNav == "normal" && (
+
+        <div class={`${prev} absolute top-1/2 transform -translate-y-1/2 z-10 cursor-pointer flex items-center justify-center left-0`}>
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current object-contain transform origin-center transition duration-200 ease-in-out text-white w-9 h-9" width="16" height="32" viewBox="0 0 16 32"><path d="m1.981 14.938 8.5-8.5a1.493 1.493 0 0 1 2.119 0l1.413 1.412a1.495 1.495 0 0 1 0 2.119L7.994 16l6.025 6.025a1.493 1.493 0 0 1 0 2.119l-1.412 1.419a1.493 1.493 0 0 1-2.119 0l-8.5-8.5a1.495 1.495 0 0 1-.006-2.125z" /></svg>
+        </div>
+        <div class={`${next} absolute top-1/2 transform -translate-y-1/2 z-10 cursor-pointer flex items-center justify-center right-0`}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current object-contain transform origin-center transition duration-200 ease-in-out text-white w-9 h-9" width="16" height="32" viewBox="0 0 16 32"><path d="m14.019 17.063-8.5 8.5a1.493 1.493 0 0 1-2.119 0l-1.413-1.412a1.495 1.495 0 0 1 0-2.119l6.025-6.025-6.025-6.025a1.495 1.495 0 0 1 0-2.119l1.406-1.425a1.493 1.493 0 0 1 2.119 0l8.5 8.5c.594.588.594 1.537.006 2.125z" /></svg>
+        </div>
+        )
+        
+    }
+</div>
+{
+    paginationSwiper && (
+        paginPosition != "inside" && (
+            <div class={`swiper-pagination ${ClassNamePagination} ${elPagination}`}>
+
+            </div>
+        )
+    )
+}
+<script>
+    import {setupSwiper,destroySwiperLoop,setupSwiperFilter} from "@controllers/CustomSwiper"
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+        setupSwiper();
+        
+        window.addEventListener('resize', function() {
+            destroySwiperLoop();
+            //resetSwiperLoop();
+        });
+
+        document.querySelectorAll('.swiper__filter').forEach(function (filter) {
+            filter.addEventListener('click', function (event) {
+                event.preventDefault();
+                setupSwiperFilter(event,event.target);
+            });
+        });
+
+      },
+      false
+    );
+</script>

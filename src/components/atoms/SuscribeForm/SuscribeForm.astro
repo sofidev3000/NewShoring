@@ -1,0 +1,44 @@
+---
+import Button from "../Button/Button.astro";
+
+const {direction="flex-col", color= "white" } = Astro.props;
+---
+<script >
+    import {  handleBlur } from '@controllers/emailValidation.controller.js';
+
+    const form = document.getElementById("subscribe-form") as HTMLFormElement;
+
+    handleBlur(form);
+  </script>
+
+<form id="subscribe-form" class={`flex flex-1 flex-col ${direction} gap-3`} novalidate>
+  <div class="w-full flex flex-col gap-1">
+    <label class="text-[--main-color]" for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+    <span class="text-red-600 hidden" id="email-error"></span>    
+  </div>
+  <div class="w-full block relative">
+   <label for="terms" class="flex items-center space-x-2 absolute w-full h-full top-0 left-0"></label>
+    <input type="checkbox"  id="terms"  name="terms"  class="form-checkbox checked:accent-guardsman-red-700" required/>
+    <span class="text-xs text-white">Aceptar términos y condiciones</span>
+  </div>
+  <div class="w-full">
+    <Button text="Suscribirse" ID="send-btn" type="submit" clase="w-full"/>
+  </div>  
+  <span data-form-belong="form-send__result" class="text-red-600 hidden" id="terms-error"></span>
+              
+</form>
+
+<style >
+  input[type="checkbox"] {
+    outline-color: var(--guardsman-red-700);
+    outline-width: 0.5px;
+    border: 1px solid var(--guardsman-red-700);
+  }
+  input[type="checkbox"]:checked {
+    background-color: var(--guardsman-red-700);
+  }
+  .hidden {
+    display: none;
+  }
+</style>

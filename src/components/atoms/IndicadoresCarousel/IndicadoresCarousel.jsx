@@ -9,27 +9,38 @@ const IndicadoresCarousel = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        
+        let domain = "http://localhost:3000";
+        if (window.location.port!== '4321') {
+          domain = window.location.origin;
+        }
+
+        const baseURL = `${domain}/api-request`;
         // ejecuta
-        const response = await fetch("http://localhost:3000/api-request", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        const raw = JSON.stringify({
+          "PluginName": "quotify",
+          "ServiceName": "quantify-service",
+          "ServiceAction": "indicadores-data",
+          "BodyData": {
+            "language_code": "es",
+            "query_date": getCurrentDate()
           },
-          body: JSON.stringify({
-            PluginName: "quotify",
-            ServiceName: "quantify-service",
-            ServiceAction: "indicadores-data",
-            BodyData: {
-              language_code: "es",
-              query_date: getCurrentDate,
-            },
-            DataContext: null,
-          }),
+          "DataContext": null
         });
+        
+        const response = await fetch(baseURL, {
+          method: "POST",
+          headers: myHeaders,
+          body: raw
+        });
+
         if (!response.ok) throw new Error("Network response was not ok");
 
         const result = await response.json();
-        const indicadoresData = result.indicadores[0].result.divisas;
+        const indicadoresData = result.result.divisas;
 
         // Asegúrate de que data sea un array
         setData(Array.isArray(indicadoresData) ? indicadoresData : []);

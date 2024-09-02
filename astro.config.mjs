@@ -10,13 +10,22 @@ export default defineConfig({
   prefetch: {
     defaultStrategy: 'viewport'
   },
-  integrations: [tailwind(), react()],
+  integrations: [tailwind(),react({experimentalReactChildren: true,})],
   site: 'https://newshoring.com/',
-  output: "server",
+  output: "static",
+  compressHTML: false,
   adapter: node({
     mode: "standalone"
   }),
   vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          entryFileNames: 'js/themes/nearshoringtheme/[name].[hash].js',
+          chunkFileNames: 'js/themes/nearshoringtheme/chunks/[name].[hash].js'
+        },
+      },
+    },
     server: {
       proxy: {
         '/api-request': {
