@@ -33,7 +33,7 @@ function execLazyLoad(selector) {
                         lazyImage.classList.remove("lazy");
                         lazyImageObserver.unobserve(lazyImage);
                     }
-                   
+
                 }
             });
         });
@@ -126,7 +126,7 @@ function lazyloadBG(lazyImage,canUse){
         }
         return getDataSrcsetBG(UseWebp(lazyImage.dataset.bg,lazyImage.dataset.webpBg,canUse),data);
     }else{
-        
+
         return "url('"+UseWebp(lazyImage.dataset.bg,lazyImage.dataset.webpBg,canUse)+"')";
     }
 }
@@ -153,6 +153,6 @@ function getDataSrcsetBG(src,srcset){
     if (url==""){
         url="url('"+src+"')";
     }
-    return url;       
+    return url;
 }
 export { execLazyLoad, removeLoader, convertWebpSrcset, UseWebp, canUseWebP };

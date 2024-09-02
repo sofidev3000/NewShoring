@@ -2,7 +2,6 @@
 interface Props{
     className?: string;
 }
-
 const { className } = Astro.props;
 ---
 <div class={ `${className??""} flex-shrink-0 relative opacity-100 visible transition-transform block` }>
