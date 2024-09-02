@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./carrusel-videos.css";
+import CardVideo from "@components/atoms/CardVideo/CardVideo";
 const carouselItems = [
   {
     title: "Mexico impulsa Nearshoring a través de financiamiento",
@@ -73,6 +74,11 @@ export default function CarruselVideos() {
       {carouselItems.map((item, index) => (
         <SwiperSlide key={index} className="h-[342px] w-[404px] self-center">
           <a href="/" className=" h-[342px] w-[404px] flex flex-col relative group   overflow-hidden">
+          <CardVideo isVideo={true}
+          src={item.src}
+          title={item.title}
+          category={item.category}
+          />
 
             <img
               className=" h-[342px] w-[404px] object-cover  group-hover:scale-125 transition-transform duration-[.5s] ease-in-out"
