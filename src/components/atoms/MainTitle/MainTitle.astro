@@ -1,0 +1,14 @@
+---
+const { title = "title", ID } = Astro.props;
+---
+
+<div class="flex justify-center items-center w-full mt-20">
+  <div class="flex  justify-cendter w-full max-w-[1300px] self-start">
+    <h2
+      id={ID}
+      class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+    >
+      {title}
+    </h2>
+  </div>
+</div>

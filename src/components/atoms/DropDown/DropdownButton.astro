@@ -32,15 +32,15 @@ const {dropdown, url, text, id} = Astro.props;
   class="z-10 hidden  divide-y divide-gray-100 rounded-lg shadow-md w-44 bg-gray-950"
 >
   <ul
-    class="py-2 text-lg md:text-sm text-gray-200 dark:text-gray-200"
+    class="py-2 text-lg md:text-sm text-gray-200 dark:text-gray-200 "
     aria-labelledby={`${id}-button`}
   >
     {
       dropdown.map((menuItem) => (
-        <li>
+        <li class="first:text-[--guardsman-red-500]">
           <a
             href={menuItem.url}
-            class="header__link block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500]"
+            class=" block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500] "
           >
             {menuItem.text}
           </a>

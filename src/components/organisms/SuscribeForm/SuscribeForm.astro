@@ -1,0 +1,48 @@
+---
+import Button from "@atoms/Button/Button.astro";
+import FormLabel from "@atoms/formAtoms/FormLabel.astro";
+import Inputemail from "@atoms/formAtoms/Inputemail.astro";
+import ErrorMessage from "@atoms/formAtoms/ErrorMessage.astro";
+import FormCheckbox from "@atoms/formAtoms/FormCheckbox.astro";
+const { direction = "flex-col", color = "white" } = Astro.props;
+---
+
+<script>
+  import {
+    handleBlur,
+    handleSubmit,
+  } from "@controllers/emailValidation.controller.js";
+
+  const form = document.querySelectorAll(".subscribe-form") || [];
+  form.forEach((formElement) => {
+    handleSubmit(formElement);
+    handleBlur(formElement);
+  });
+</script>
+
+<form
+  id="subscribe-form"
+  method="POST"
+  action="/"
+  novalidate
+  class={`subscribe-form flex flex-1 ${direction} items-start  justify-center   `}
+>
+  <FormLabel color={color} labelFor="email">
+    Ingresa tu correo electrónico
+  </FormLabel>
+  <Inputemail color={color} />
+  <ErrorMessage errorType="email" />
+
+  <FormLabel
+    color={color}
+    labelFor="terms"
+    extraClass="flex items-center  mb-3"
+  >
+   <FormCheckbox />
+    <span class={`text-xs  text-${color}`}>Aceptar términos y condiciones</span>
+  </FormLabel>
+
+  <ErrorMessage errorType="terms" />
+
+  <Button text="Suscribirse" ID="send-btn" type="submit" clase="self-start py-2 px-1" />
+</form>
