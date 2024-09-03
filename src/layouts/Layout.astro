@@ -7,6 +7,7 @@ import Header from "@components/organisms/Header/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro";
 import Footer from "@organisms/Footer/Footer.astro";
+import ButtonToTop from "@components/atoms/ButtonToTop/ButtonToTop.astro";
 
 const {
   title = SITE_TITLE,
@@ -15,7 +16,7 @@ const {
 } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <BaseHead />
     <!-- Primary Meta Tags -->
@@ -34,6 +35,7 @@ const {
     <HeaderMobile />
     <Header />
     <main class="w-full flex flex-col justify-center items-center px-3 pt-20 md:pt-1">
+      <ButtonToTop />
       <slot />
     </main>
     <Footer />

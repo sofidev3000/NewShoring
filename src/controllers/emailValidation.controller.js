@@ -75,4 +75,4 @@ function handleSubmit(form) {
 // Exportar todas las funciones a la vez
 export { validateForm, handleBlur, handleSubmit };
 */
-export { validateForm, handleBlur, handleSubmit };
+export { validateForm, handleBlur };

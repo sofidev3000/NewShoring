@@ -16,7 +16,7 @@ import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
   class="relative hidden space-y-3 lg:space-y-0 flex-col lg:flex-row md:flex justify-center md:justify-between items-center bg-black text-white w-full mb-2 min-h-12 px-5 py-2 "
 >
   <div class="flex gap-3 items-center flex-wrap">
-    <WeatherPopover client:only />
+    <WeatherPopover  client:only="react"/>
   </div>
   <div class="indicadores__carousel w-80">
     <IndicadoresCarousel  client:only="react"/>
