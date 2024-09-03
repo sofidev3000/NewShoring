@@ -28,10 +28,10 @@ const icons = [
 ];
 ---
 
-<div id="icons " class="flex justify-center items-center flex-1 gap-3 ">
+<div id="icons " class="flex justify-center items-center gap-4">
   {
     icons.map((data) => (
-      <a href={data.url} target="_blank" rel="nofollow noreferrer noopener" class="w-[24px]  h-[24px] flex items-center justify-center p-1 bg-[--button-base] hover:bg-[--button-hover] hover:scale-125 rounded-full">
+      <a href={data.url} target="_blank" rel="nofollow noreferrer noopener" class="w-[24px]   flex items-center justify-center p-1 bg-[--button-base] hover:bg-[--button-hover] hover:scale-125 rounded-full">
         <iconify-icon icon={data.icon} width="15" height="15" />
       </a>
     ))

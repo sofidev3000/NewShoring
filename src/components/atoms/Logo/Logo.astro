@@ -1,18 +1,21 @@
 ---
-const {animationdirection="fade-right" } = Astro.props;
+const { animationdirection = "fade-right", textColor = '[--secundary-color]', fontSize = '[8.1vw]', fontSizeSlogan = "[2.3vw]", isMobile = false } = Astro.props;
 ---
-
-
-  <a  data-aos={animationdirection}  href="/" class="flex flex-col text-left *:font-normal text-[--secundary-color] relative ">
-    <h1 class="text-[8.1vw] font-FjallaOne tracking-tight lg:tracking-[-9.5px] ">Nearshoring News</h1>
-    <h4 class="text-[2.3vw] absolute top-[73%] bottom-0">We bring markets closer</h4>
+{isMobile ? (
+  <a data-aos={animationdirection} href="/" class={`flex flex-col flex-1 font-normal text-${textColor} relative`}>
+    <h1 class="text-[2.3rem] font-FjallaOne tracking-normal">Nearshoring News</h1>
+    <h4 class="text-[1rem] absolute top-[73%] bottom-0">We bring markets closer</h4>
   </a>
-
-
+) : (
+  <a data-aos={animationdirection} href="/" class={`flex flex-col text-left font-normal text-${textColor} relative`}>
+    <h1 class={`text-${fontSize} font-FjallaOne tracking-normal`}>Nearshoring News</h1>
+    <h4 class={`text-${fontSizeSlogan} absolute top-[73%] bottom-0`}>We bring markets closer</h4>
+  </a>
+)}
 
 <style>
-    .logo{
-         padding-block: 1rem;
-         writing-mode: horizontal-tb;
-    }
+  .logo {
+    padding-block: 1rem;
+    writing-mode: horizontal-tb;
+  }
 </style>
