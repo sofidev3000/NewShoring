@@ -20,7 +20,8 @@ import ToggleLanguage from "@components/atoms/ToogleLanguage/ToggleLanguage";
   <aside
     class="panel bg-black absolute top-0 w-full h-[150dvh] flex flex-col lg:hidden items-start px-3 pt-20 *:text-2xl space-y-10 "
   >
-      <ToggleLanguage client:load breakpoint="mobile"/>
+      <!-- <ToggleLanguage client:load breakpoint="mobile"/> -->
+      <ToggleLanguage client:only="react" breakpoint="mobile"/>
     <NavMenu placement="bottom" />
     <div class="">
       <SearchInput />
