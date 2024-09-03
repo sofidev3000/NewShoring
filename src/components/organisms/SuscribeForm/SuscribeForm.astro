@@ -9,13 +9,11 @@ const { direction = "flex-col", color = "white" } = Astro.props;
 
 <script>
   import {
-    handleBlur,
-    handleSubmit,
+    handleBlur
   } from "@controllers/emailValidation.controller.js";
 
   const form = document.querySelectorAll(".subscribe-form") || [];
   form.forEach((formElement) => {
-    handleSubmit(formElement);
     handleBlur(formElement);
   });
 </script>

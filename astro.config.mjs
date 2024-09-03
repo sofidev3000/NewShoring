@@ -15,7 +15,7 @@ export default defineConfig({
   output: "static",
   compressHTML: false,
   adapter: node({
-    mode: "standalone"
+    mode: 'standalone',
   }),
   vite: {
     build: {
