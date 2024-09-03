@@ -1,0 +1,154 @@
+---
+import Logo from "@components/atoms/Logo/Logo.astro";
+import SocialMediaIcons from "@components/atoms/SocialMediaIcons/SocialMediaIcons.astro";
+import ImageLazy from "@components/extras/ImageLazy.astro";
+import ItemNews from "@components/extras/ItemNews.astro";
+import FormHome from "../FormHome/FormHome.astro";
+import ErrorMessage from "@components/atoms/formAtoms/ErrorMessage.astro";
+import FormLabel from "@components/atoms/formAtoms/FormLabel.astro";
+import Inputemail from "@components/atoms/formAtoms/Inputemail.astro";
+import Button from "@components/atoms/Button/Button.astro";
+import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
+---
+
+<footer
+  class="footer bg-black flex flex-wrap justify-between items-start content-center text-white h-fit  w-full py-5 px-[23px] space-y-[1rem]"
+>
+  <div
+    class="min-w-[370px] h-full flex flex-col justify-between items-start gap-[3rem] self-center"
+  >
+    <Logo animationdirection="fade-bottom" isMobile="true" />
+    <SocialMediaIcons />
+    <nav>
+      <ul>
+        <li>
+          <a class="flex items-center gap-2" href="mailto:"
+            ><iconify-icon
+              class="text-guardsman-red-600"
+              icon="ic:round-mail"
+              width="20"
+              height="20"></iconify-icon>
+            <span class="py-1"> correo@correo.com</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2" href="tel:"
+            ><iconify-icon
+              class="text-guardsman-red-600"
+              icon="formkit:telephone"
+              width="20"
+              height="20"></iconify-icon>
+            <span class="py-1"> correo@correo.com</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer__latest-post flex flex-col gap-4">
+    <h3 class="font-bold text-xl mb-2">Lo más reciente</h3>
+    <ItemNews
+      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
+      className=""
+      category="Internacional"
+      attributes={'{"data-aos":"fade-up"}'}
+      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+        width="200"
+        height="100"
+        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
+      />
+    </ItemNews>
+    <ItemNews
+    Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
+    className=""
+    category="Internacional"
+    attributes={'{"data-aos":"fade-up"}'}
+    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+    datetime="22/04/2024"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+      width="200"
+      height="100"
+      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+      classNameImage="h-full object-cover object-center"
+      slot="image"
+    />
+  </ItemNews> <ItemNews
+  Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
+  className=""
+  category="Internacional"
+  attributes={'{"data-aos":"fade-up"}'}
+  title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+  datetime="22/04/2024"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+    width="200"
+    height="100"
+    className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+    classNameImage="h-full object-cover object-center"
+    slot="image"
+  />
+</ItemNews>
+  </div>
+
+  <div class="footer__latest-post flex flex-col gap-4 w-full max-w-[356px]">
+    <h3 class="font-bold text-xl mb-2">Suscríbete</h3>
+    <p>
+      Ut velit culpa irure aliquip. Nisi nisi irure laborum irure ex est irure
+      do irure do. Lorem amet non labore proident. Ut eiusmod ullamco nulla
+      reprehenderit ullamco aute occaecat tempor mollit non commodo non in.
+    </p>
+
+    <section class="w-full flex justify-start items-center pb-[7rem] pt-4">
+      <form
+        id="subscribe-form"
+        method="POST"
+        action="/"
+        novalidate
+        class="subscribe-form flex flex-col items-start justify-strech w-[80%] max-w-[1300px] "
+      >
+        <div class="flex flex-col items-center justify-center ga-10 w-full">
+          <span class="text-sm text-red-600 hidden mb-2" id="email-error"
+          ></span>
+          <span class="text-sm text-red-600 hidden mb-2" id="terms-error"
+          ></span>
+        </div>
+
+        <label class="flex text-sm text-left self-start text-white" for="email">
+          Ingresa tu correo electrónico
+        </label>
+
+        <div class="flex items-center justify-center w-full">
+          <Inputemail color="black" extraClass=" py-[10.2px] flex-1 text-xs" />
+          <Button
+            text="Suscribirse"
+            ID="send-btn"
+            clase="self-start px-5 py-[10px] w-[300px]"
+            rounded="rounded-r-lg"
+            type="submit"
+          />
+        </div>
+        <div class="flex py-2">
+          <FormCheckbox />
+          <span class={`text-xs  text-[--secundary-color]`}
+            >Aceptar términos y condiciones</span
+          >
+        </div>
+      </form>
+    </section>
+  </div>
+</footer>
