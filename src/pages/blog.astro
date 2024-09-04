@@ -1,0 +1,287 @@
+---
+import ImageLazy from "@components/extras/ImageLazy.astro";
+import ItemNews from "@components/extras/ItemNews.astro";
+import Swiper from "@components/extras/Swiper.astro";
+import SwiperItem from "@components/extras/SwiperItem.astro";
+import LayoutPost from "@src/layouts/LayoutPost.astro";
+---
+
+
+<LayoutPost title={`Blog`}>
+  <section class="w-full">
+    <div class="flex items-end justify-center relative overflow-hidden h-[calc(calc(16*100vw)/7.5)]  sm:h-[calc(calc(4*100vw)/3)] md:max-h-[400px] lg:h-[calc(calc(1.5*100vw)/3)] xl:h-[calc(calc(1.3*100vw)/3)]">
+        <div class="absolute w-full h-full top-0 left-0 bg-fixed bg-center bg-no-repeat bg-cover bg-parallaxBg"></div>
+        <div class="flex items-center flex-col justify-around pt-0 sm:justify-center sm:py-0 lg:max-w-screen-lg md:max-w-screen-md px-3.5 xl:max-w-[1140px] relative z-10 w-full h-auto sm:h-full lg:h-auto">
+
+            <div class="mt-5 w-full flex flex-wrap justify-between ">
+                <div class=" w-full sm:w-[55%] mt-5 sm:mt-0 *:text-[--secundary-color]">
+                    <div class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0 *:text-[--secundary-color]">
+                        <time datetime="fecha_de_noticia" class="font-body  flex flex-nowrap gap-2 items-center">
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="stroke-white"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h10" /><path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M18 16.5v1.5l.5 .5" /></svg>
+                            Publicado en mayo 13, 2024 09:57
+                        </time>
+                        <div class="inline-flex flex-wrap items-center">
+                            <a href="/" class="decoration-inherit  transition-all duration-500 hover:text-[--guardsman-red-500] text-sm">
+                                Ciencia
+                            </a>
+                            <span class="mx-3">|</span>
+                            <div class="group/comments font-body  inline-flex flex-nowrap gap-2 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="group-hover/comments:fill-[--guardsman-red-700] transition-all duration-500 fill-[--secundary-color]" fill="#010101"  width="20"  height="20" viewBox="0 0 32 32"><path d="M16 2c8.837 0 16 5.819 16 13s-7.163 13-16 13c-2.4 0-4.669-.444-6.713-1.213C7.75 28.012 4.643 30 .5 30c-.2 0-.375-.113-.456-.3s-.044-.4.094-.544c.031-.031 2.644-2.838 3.425-5.988C1.338 20.937 0 18.099 0 14.999c0-7.181 7.162-13 16-13z"/></svg>
+                                <a href="/" class="decoration-inherit transition-all duration-500  group-hover/comments:text-[--guardsman-red-500] text-sm">
+                                    0 Commentarios
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="text-[--secundary-color] mb-2.5 p-0 font-sans font-bold uppercase text-xl lg:text-3xl w-full">
+                        ALCALDÍAS DE CIUDAD DE MÉXICO APLICARÁN LEY SECA DURANTE SEMANA SANTA: TLÁHUAC Y CUAJIMALPA
+                    </h1>
+                    <p class="text-[--guardsman-red-500] font-body text-lg italic font-semibold">El Costo Financiero De La Deuda Pública Alcanzó Un Récord En Febrero, Con Un Incremento Real Del 16%.</p>
+
+                </div>
+                <div class="relative w-full sm:w-5/12 mt-5 sm:mt-0  overflow-hidden">
+                    <ImageLazy
+                    src="https://gf-tvoainews.s3.amazonaws.com/images/3617a752-f29b-4f2a-92ad-6c3f7fe0e62a.webp"
+                    srcWebp='https://gf-tvoainews.s3.amazonaws.com/images/3617a752-f29b-4f2a-92ad-6c3f7fe0e62a.webp'
+                    width="540"
+                    height="378"
+                    className="pt-[70%] w-full overflow-hidden relative"
+                    />
+                    <div class="absolute top-2 right-2 w-[100px] h-[36px] z-10">
+                        <img src="../public/img/tvoai_logo_inverted.svg" alt="Marca de agua" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="absolute top-0 left-0 right-0 h-[70%] bg-gradient-to-b from-[#111] to-transparent opacity-70 z-0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- article with sidebar -->
+<div class="w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap lg:max-w-screen-lg m-auto md:max-w-screen-md xl:max-w-[1140px]">
+  <!-- Main article -->
+   <div class="w-full sm:w-3/4 pr-0 sm:pr-2">
+        <div class="text-[--primary-text-color] space-y-4 flex flex-wrap gap-4 lg:max-w-screen-lg m-auto md:max-w-screen-md xl:max-w-[1140px]">
+            <p>En una sorprendente noticia, un <strong>raro oso panda pardo</strong> fue avistado por primera vez en seis años en las montañas Qinling, en la provincia china de Shaanxi. Este avistamiento representa la undécima vez en total que se ha observado a esta especie desde su primer registro en 1985, marcando un hecho significativo para la conservación de esta subespecie.</p>
+            <h2>Avistamiento de oso panda pardo</h2>
+            <p><strong>El avistamiento</strong> <strong>del oso panda pardo</strong> se produjo el pasado 17 de enero, cuando una cámara infrarroja colocada en la Reserva Nacional de la Naturaleza de Changqing logró capturar la imagen de este ejemplar único. Cabe mencionar que es la primera vez que se observa un panda pardo en esta zona desde el año 2018, lo que resalta la importancia de este hallazgo para la investigación y conservación de la especie.</p>
+            <h2>Subespecie extremadamente rara</h2>
+            <p>La subespecie de panda pardo de las <strong>montañas Qinling</strong> es sumamente escasa, con una población estimada de tan solo 20 individuos. El descubrimiento inicial de esta subespecie en 1985, en la misma área donde se realizó este avistamiento, destaca la importancia de preservar su hábitat y tomar medidas para su protección.</p>
+            <!-- Banner comercial -->
+            <div id='div-gpt-ad-4222133-1' class="google-ads bg-[#d7d7d7b8] w-full h-[100px] relative m-5" data-code="@adsDomain/responsive_portada_leaderboard_1" data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'>
+                <div class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-none stoke-[#1b1b1bbf]" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M7 15v-4a2 2 0 0 1 4 0v4" /><path d="M7 13l4 0" /><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5" /></svg>
+                </div>
+            </div>
+            <h2>Investigación genética de oso panda pardo</h2>
+            <p>En un estudio reciente, llevado a cabo por la <strong>Academia China de Ciencias y publicado en la revista PNAS</strong>, se señaló que una mutación genética es la responsable de la particular coloración de los pandas pardos. Esta investigación confirmó que una deleción homocigótica en el gen Bace2 es la responsable de esta mutación, lo que amplía nuestro conocimiento sobre la genética de esta especie en peligro de extinción.</p>
+            <p>El análisis del genoma y la historia familiar de dos pandas pardos reveló que ambos compartían una deleción homocigótica en el gen Bace2, distinta a la presente en otros pandas estudiados. Para confirmar el efecto de esta mutación, <strong>los investigadores utilizaron la técnica CRISPR-Cas9</strong> para introducir la misma deleción en ratones. Como resultado, los ratones exhibieron una coloración pardo-blanca, demostrando que la mutación en el gen Bace2 es responsable de la coloración inusual en estos pandas.</p>
+            <p class="font-sans font-semibold text-base">Compartir Noticia:</p>
+            <ul class="flex items-center grow-0 w-full justify-start">
+                <li class="w-8 h-8 mr-2">
+                    <a href="#" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="10" height="16" viewBox="0 0 20 32" data-astro-cid-dv46nlzh><path d="M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z" data-astro-cid-dv46nlzh></path></svg>
+                    </a>
+                </li>
+                <li class="w-8 h-8 mr-2">
+                    <a href="#" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0" /></svg>
+                    </a>
+                </li>
+                <li class="w-8 h-8 mr-2">
+                    <a href="#" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32"><path d="M6.268 28H.463V9.306h5.805V28zM3.362 6.756C1.506 6.756 0 5.219 0 3.362a3.362 3.362 0 0 1 6.724 0c0 1.856-1.506 3.394-3.362 3.394zM27.994 28h-5.793v-9.1c0-2.169-.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794V28H9.903V9.306h5.567v2.55h.081c.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894V28h-.006z"/></svg>
+                    </a>
+                </li>
+                <li class="w-8 h-8 mr-2">
+                    <a href="#" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                        <svg xmlns="http://www.w3.org/2000/svg"  class="fill-white" width="14" height="14"  width="32" height="32" viewBox="0 0 32 32"><path d="M23.806 6.069C26.425 8.694 28 12.175 28 15.882c0 7.65-6.363 13.875-14.006 13.875h-.006c-2.325 0-4.606-.581-6.631-1.688L.001 30l1.969-7.188a13.885 13.885 0 0 1-1.85-6.938c0-7.65 6.225-13.875 13.875-13.875 3.706 0 7.194 1.444 9.812 4.069zm-9.812 21.35c6.356 0 11.662-5.175 11.662-11.538.006-3.081-1.331-5.975-3.506-8.156S17.081 4.344 14 4.344c-6.362 0-11.537 5.175-11.537 11.531 0 2.181.606 4.3 1.762 6.138l.275.438-1.162 4.256L7.7 25.563l.419.25a11.512 11.512 0 0 0 5.875 1.606zm6.325-8.638c.344.169.575.256.656.412.088.144.088.838-.2 1.65s-1.669 1.55-2.338 1.65c-1.1.162-1.963.081-4.162-.869-3.481-1.506-5.75-5.006-5.925-5.238-.169-.231-1.412-1.881-1.412-3.588s.894-2.544 1.213-2.894c.319-.344.694-.431.925-.431s.462 0 .662.012c.213.012.5-.081.781.594.288.694.981 2.4 1.069 2.575s.144.375.031.606c-.663 1.325-1.375 1.281-1.019 1.894 1.344 2.306 2.681 3.106 4.719 4.125.344.175.55.144.75-.088.206-.238.869-1.012 1.1-1.363s.462-.294.781-.175c.319.113 2.025.95 2.369 1.125z"/></svg>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- Plugin de comentarios -->
+            <div id="disqus_thread" class="h-[55rem] md:h-[35rem] overflow-auto w-full"></div>
+        </div>
+    </div>
+    <!-- Side Bar -->
+    <aside class="w-full sm:w-3/12 mt-10 sm:mt-0 pl-0 sm:pl-2 space-y-8 ">
+      <div id='div-gpt-ad-4222133-1' class="google-ads bg-[#d7d7d7b8] w-full h-[600px] relative" data-code="@adsDomain/responsive_article_vertical_1" data-sizes='[{\"width\":300,\"height\":600},{\"width\":120,\"height\":600}]'>
+          <div class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-none stoke-[#1b1b1bbf]" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M7 15v-4a2 2 0 0 1 4 0v4" /><path d="M7 13l4 0" /><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5" /></svg>
+          </div>
+      </div>
+
+      <div class="w-full">
+          <h2 class="text-[--primary-text-color] m-0 mb-8 flex-1  p-0 font-sans font-bold uppercase text-2xl">
+              Presentadores IA
+          </h2>
+          <div class="w-full md:space-y-4">
+              <article class="flex flex-row flex-nowrap  gap-2">
+                  <ImageLazy
+                          src="./nat_01.png"
+                          width="74"
+                          height="74"
+                          className="w-[90px] lg:w-[74px] h-0 pt-[90px] lg:pt-[71px] xl:pt-[78px] sm:hidden lg:block relative"
+                          watermark = {false}
+                          slot="image"
+                  />
+                  <div class="flex flex-col w-[70%] sm:w-full lg:w-[68%] xl-[70%]">
+                    <p class="mb-3 text-[--primary-text-color] text-xl font-bold font-sans">Nat </p>
+                    <ul class="flex items-center grow-0 w-full justify-start mt-5 sm:mt-0">
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.facebook.com/people/Nat-Tvoai/100094117855102/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="10" height="16" viewBox="0 0 20 32" data-astro-cid-dv46nlzh><path d="M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z" data-astro-cid-dv46nlzh></path></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://x.com/nat_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.instagram.com/nat_tvoai/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M14.006 8.813c3.975 0 7.181 3.206 7.181 7.181s-3.206 7.181-7.181 7.181-7.181-3.206-7.181-7.181 3.206-7.181 7.181-7.181zm0 11.85c2.569 0 4.669-2.094 4.669-4.669s-2.094-4.669-4.669-4.669c-2.575 0-4.669 2.094-4.669 4.669s2.1 4.669 4.669 4.669zm9.15-12.144c0 .931-.75 1.675-1.675 1.675a1.675 1.675 0 1 1 1.675-1.675zm4.757 1.7c.131 2.313.131 9.238 0 11.55-.113 2.244-.625 4.231-2.262 5.869-1.637 1.644-3.625 2.156-5.869 2.262-2.313.131-9.244.131-11.556 0-2.244-.113-4.225-.625-5.869-2.262S.201 24.013.094 21.769c-.131-2.313-.131-9.244 0-11.556.112-2.244.619-4.231 2.263-5.869s3.631-2.15 5.869-2.256c2.313-.131 9.244-.131 11.556 0 2.244.112 4.231.625 5.869 2.262 1.644 1.638 2.156 3.625 2.262 5.869zM24.925 24.25c.731-1.838.563-6.219.563-8.256s.169-6.413-.563-8.256a4.728 4.728 0 0 0-2.662-2.662c-1.838-.725-6.219-.563-8.256-.563s-6.412-.169-8.256.563a4.728 4.728 0 0 0-2.662 2.662c-.725 1.838-.563 6.219-.563 8.256s-.169 6.412.563 8.256a4.725 4.725 0 0 0 2.662 2.662c1.838.725 6.219.563 8.256.563s6.413.169 8.256-.563a4.728 4.728 0 0 0 2.662-2.662z" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.threads.net/@nat_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white group-hover/social:fill-[--guardsman-red-700] transition-all duration-[2s]" width="12" height="14" viewBox="0 0 12 14" data-astro-cid-dv46nlzh>
+                                  <path fill="#fff" d="M9.15 6.407c.064.026.122.055.183.081.849.411 1.47 1.027 1.796 1.79.456 1.065.5 2.794-.88 4.176C9.196 13.51 7.915 13.986 6.105 14h-.009c-2.039-.015-3.605-.703-4.66-2.047C.5 10.757.018 9.093 0 7.007v-.014c.015-2.085.497-3.75 1.435-4.946C2.489.703 4.058.015 6.097 0h.009c2.042.015 3.628.7 4.715 2.038.534.662.93 1.458 1.179 2.383l-1.174.315c-.206-.753-.517-1.394-.935-1.907-.848-1.044-2.12-1.58-3.79-1.593-1.657.015-2.909.549-3.725 1.587-.76.97-1.156 2.376-1.17 4.176.014 1.799.41 3.204 1.17 4.178.814 1.038 2.068 1.572 3.724 1.587 1.493-.012 2.481-.368 3.303-1.193.938-.939.92-2.094.622-2.797-.178-.414-.497-.758-.927-1.017-.107.784-.343 1.408-.717 1.89-.497.635-1.203.98-2.112 1.029-.686.038-1.345-.129-1.857-.467a2.174 2.174 0 0 1-.996-1.73C3.344 7.072 4.453 6.06 6.182 5.96a7.67 7.67 0 0 1 1.72.082c-.07-.431-.213-.776-.425-1.026-.29-.342-.744-.517-1.342-.52h-.02c-.482 0-1.133.135-1.549.767l-.999-.688c.558-.848 1.461-1.315 2.55-1.315h.024c1.818.012 2.902 1.152 3.012 3.14l-.006.007h.003ZM4.62 8.413c.038.732.825 1.073 1.586 1.03.743-.042 1.586-.333 1.728-2.135a5.88 5.88 0 0 0-1.26-.129c-.14 0-.28.003-.419.012-1.246.07-1.661.677-1.632 1.219l-.003.003Z"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.tiktok.com/@nat_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M28 13.119h-.032a13.11 13.11 0 0 1-7.641-2.453v11.17c-.002 5.605-4.554 10.156-10.159 10.156C4.561 31.992.009 27.44.009 21.833s4.552-10.159 10.159-10.159c.477 0 .936.033 1.395.096v5.618a4.666 4.666 0 0 0-6.063 4.45 4.666 4.666 0 0 0 4.664 4.664 4.667 4.667 0 0 0 4.664-4.665V.001h5.5v.063c0 .454.04.89.117 1.322A7.64 7.64 0 0 0 23.814 6.4a7.548 7.548 0 0 0 4.178 1.254l.009.005v5.461z" /></svg>
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+              </article>
+              <article class="flex flex-row flex-nowrap  gap-2">
+                  <ImageLazy
+                          src="./max_01.png"
+                          width="74"
+                          height="74"
+                          className="w-[90px] lg:w-[74px] h-0 pt-[90px] lg:pt-[71px] xl:pt-[78px] sm:hidden lg:block relative"
+                          watermark = {false}
+                          slot="image"
+                  />
+                  <div class="flex flex-col w-[70%] sm:w-full lg:w-[68%] xl-[70%]">
+                    <p class="mb-3 text-[--primary-text-color] text-xl font-bold font-sans">Max</p>
+                    <ul class="flex items-center grow-0 w-full justify-start mt-5 sm:mt-0">
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.facebook.com/MaiaPrimeAiNews/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="10" height="16" viewBox="0 0 20 32" data-astro-cid-dv46nlzh><path d="M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z" data-astro-cid-dv46nlzh></path></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://x.com/i/flow/login?redirect_after_login=%2Fmax_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.instagram.com/max_tvoai/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M14.006 8.813c3.975 0 7.181 3.206 7.181 7.181s-3.206 7.181-7.181 7.181-7.181-3.206-7.181-7.181 3.206-7.181 7.181-7.181zm0 11.85c2.569 0 4.669-2.094 4.669-4.669s-2.094-4.669-4.669-4.669c-2.575 0-4.669 2.094-4.669 4.669s2.1 4.669 4.669 4.669zm9.15-12.144c0 .931-.75 1.675-1.675 1.675a1.675 1.675 0 1 1 1.675-1.675zm4.757 1.7c.131 2.313.131 9.238 0 11.55-.113 2.244-.625 4.231-2.262 5.869-1.637 1.644-3.625 2.156-5.869 2.262-2.313.131-9.244.131-11.556 0-2.244-.113-4.225-.625-5.869-2.262S.201 24.013.094 21.769c-.131-2.313-.131-9.244 0-11.556.112-2.244.619-4.231 2.263-5.869s3.631-2.15 5.869-2.256c2.313-.131 9.244-.131 11.556 0 2.244.112 4.231.625 5.869 2.262 1.644 1.638 2.156 3.625 2.262 5.869zM24.925 24.25c.731-1.838.563-6.219.563-8.256s.169-6.413-.563-8.256a4.728 4.728 0 0 0-2.662-2.662c-1.838-.725-6.219-.563-8.256-.563s-6.412-.169-8.256.563a4.728 4.728 0 0 0-2.662 2.662c-.725 1.838-.563 6.219-.563 8.256s-.169 6.412.563 8.256a4.725 4.725 0 0 0 2.662 2.662c1.838.725 6.219.563 8.256.563s6.413.169 8.256-.563a4.728 4.728 0 0 0 2.662-2.662z" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.threads.net/@max_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white group-hover/social:fill-[--guardsman-red-700] transition-all duration-[2s]" width="12" height="14" viewBox="0 0 12 14" data-astro-cid-dv46nlzh>
+                                  <path fill="#fff" d="M9.15 6.407c.064.026.122.055.183.081.849.411 1.47 1.027 1.796 1.79.456 1.065.5 2.794-.88 4.176C9.196 13.51 7.915 13.986 6.105 14h-.009c-2.039-.015-3.605-.703-4.66-2.047C.5 10.757.018 9.093 0 7.007v-.014c.015-2.085.497-3.75 1.435-4.946C2.489.703 4.058.015 6.097 0h.009c2.042.015 3.628.7 4.715 2.038.534.662.93 1.458 1.179 2.383l-1.174.315c-.206-.753-.517-1.394-.935-1.907-.848-1.044-2.12-1.58-3.79-1.593-1.657.015-2.909.549-3.725 1.587-.76.97-1.156 2.376-1.17 4.176.014 1.799.41 3.204 1.17 4.178.814 1.038 2.068 1.572 3.724 1.587 1.493-.012 2.481-.368 3.303-1.193.938-.939.92-2.094.622-2.797-.178-.414-.497-.758-.927-1.017-.107.784-.343 1.408-.717 1.89-.497.635-1.203.98-2.112 1.029-.686.038-1.345-.129-1.857-.467a2.174 2.174 0 0 1-.996-1.73C3.344 7.072 4.453 6.06 6.182 5.96a7.67 7.67 0 0 1 1.72.082c-.07-.431-.213-.776-.425-1.026-.29-.342-.744-.517-1.342-.52h-.02c-.482 0-1.133.135-1.549.767l-.999-.688c.558-.848 1.461-1.315 2.55-1.315h.024c1.818.012 2.902 1.152 3.012 3.14l-.006.007h.003ZM4.62 8.413c.038.732.825 1.073 1.586 1.03.743-.042 1.586-.333 1.728-2.135a5.88 5.88 0 0 0-1.26-.129c-.14 0-.28.003-.419.012-1.246.07-1.661.677-1.632 1.219l-.003.003Z"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.tiktok.com/@max_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M28 13.119h-.032a13.11 13.11 0 0 1-7.641-2.453v11.17c-.002 5.605-4.554 10.156-10.159 10.156C4.561 31.992.009 27.44.009 21.833s4.552-10.159 10.159-10.159c.477 0 .936.033 1.395.096v5.618a4.666 4.666 0 0 0-6.063 4.45 4.666 4.666 0 0 0 4.664 4.664 4.667 4.667 0 0 0 4.664-4.665V.001h5.5v.063c0 .454.04.89.117 1.322A7.64 7.64 0 0 0 23.814 6.4a7.548 7.548 0 0 0 4.178 1.254l.009.005v5.461z" /></svg>
+                          </a>
+                      </li>
+                  </ul>
+                  </div>
+              </article>
+              <article class="flex flex-row flex-nowrap gap-2">
+                  <ImageLazy
+                          src="./sofi_01.png"
+                          width="74"
+                          height="74"
+                          className="w-[90px] lg:w-[74px] h-0 pt-[90px] lg:pt-[71px] xl:pt-[78px] sm:hidden lg:block relative"
+                          watermark = {false}
+                          slot="image"
+                  />
+                  <div class="flex flex-col w-[70%] sm:w-full lg:w-[68%] xl-[70%]">
+                    <p class="mb-3 text-[--primary-text-color] text-xl font-bold font-sans">Sofi</p>
+                    <ul class="flex items-center grow-0 w-full justify-start mt-5 sm:mt-0">
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.facebook.com/people/Sofi-Tvoai/100094057947793/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="10" height="16" viewBox="0 0 20 32" data-astro-cid-dv46nlzh><path d="M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z" data-astro-cid-dv46nlzh></path></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsofi_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.instagram.com/sofi_tvoai/" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M14.006 8.813c3.975 0 7.181 3.206 7.181 7.181s-3.206 7.181-7.181 7.181-7.181-3.206-7.181-7.181 3.206-7.181 7.181-7.181zm0 11.85c2.569 0 4.669-2.094 4.669-4.669s-2.094-4.669-4.669-4.669c-2.575 0-4.669 2.094-4.669 4.669s2.1 4.669 4.669 4.669zm9.15-12.144c0 .931-.75 1.675-1.675 1.675a1.675 1.675 0 1 1 1.675-1.675zm4.757 1.7c.131 2.313.131 9.238 0 11.55-.113 2.244-.625 4.231-2.262 5.869-1.637 1.644-3.625 2.156-5.869 2.262-2.313.131-9.244.131-11.556 0-2.244-.113-4.225-.625-5.869-2.262S.201 24.013.094 21.769c-.131-2.313-.131-9.244 0-11.556.112-2.244.619-4.231 2.263-5.869s3.631-2.15 5.869-2.256c2.313-.131 9.244-.131 11.556 0 2.244.112 4.231.625 5.869 2.262 1.644 1.638 2.156 3.625 2.262 5.869zM24.925 24.25c.731-1.838.563-6.219.563-8.256s.169-6.413-.563-8.256a4.728 4.728 0 0 0-2.662-2.662c-1.838-.725-6.219-.563-8.256-.563s-6.412-.169-8.256.563a4.728 4.728 0 0 0-2.662 2.662c-.725 1.838-.563 6.219-.563 8.256s-.169 6.412.563 8.256a4.725 4.725 0 0 0 2.662 2.662c1.838.725 6.219.563 8.256.563s6.413.169 8.256-.563a4.728 4.728 0 0 0 2.662-2.662z" /></svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.threads.net/@sofi_tvoa" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white group-hover/social:fill-[--guardsman-red-700] transition-all duration-[2s]" width="12" height="14" viewBox="0 0 12 14" data-astro-cid-dv46nlzh>
+                                  <path fill="#fff" d="M9.15 6.407c.064.026.122.055.183.081.849.411 1.47 1.027 1.796 1.79.456 1.065.5 2.794-.88 4.176C9.196 13.51 7.915 13.986 6.105 14h-.009c-2.039-.015-3.605-.703-4.66-2.047C.5 10.757.018 9.093 0 7.007v-.014c.015-2.085.497-3.75 1.435-4.946C2.489.703 4.058.015 6.097 0h.009c2.042.015 3.628.7 4.715 2.038.534.662.93 1.458 1.179 2.383l-1.174.315c-.206-.753-.517-1.394-.935-1.907-.848-1.044-2.12-1.58-3.79-1.593-1.657.015-2.909.549-3.725 1.587-.76.97-1.156 2.376-1.17 4.176.014 1.799.41 3.204 1.17 4.178.814 1.038 2.068 1.572 3.724 1.587 1.493-.012 2.481-.368 3.303-1.193.938-.939.92-2.094.622-2.797-.178-.414-.497-.758-.927-1.017-.107.784-.343 1.408-.717 1.89-.497.635-1.203.98-2.112 1.029-.686.038-1.345-.129-1.857-.467a2.174 2.174 0 0 1-.996-1.73C3.344 7.072 4.453 6.06 6.182 5.96a7.67 7.67 0 0 1 1.72.082c-.07-.431-.213-.776-.425-1.026-.29-.342-.744-.517-1.342-.52h-.02c-.482 0-1.133.135-1.549.767l-.999-.688c.558-.848 1.461-1.315 2.55-1.315h.024c1.818.012 2.902 1.152 3.012 3.14l-.006.007h.003ZM4.62 8.413c.038.732.825 1.073 1.586 1.03.743-.042 1.586-.333 1.728-2.135a5.88 5.88 0 0 0-1.26-.129c-.14 0-.28.003-.419.012-1.246.07-1.661.677-1.632 1.219l-.003.003Z"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="w-8 h-8 mr-1">
+                          <a href="https://www.tiktok.com/@sofi_tvoai" class="inline-flex items-center justify-center w-full h-full bg-[--tertiarty-color] hover:bg-[--guardsman-red-700]" target="_blank" rel="nofollow">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" width="14" height="14" viewBox="0 0 32 32" data-astro-cid-dv46nlzh><path d="M28 13.119h-.032a13.11 13.11 0 0 1-7.641-2.453v11.17c-.002 5.605-4.554 10.156-10.159 10.156C4.561 31.992.009 27.44.009 21.833s4.552-10.159 10.159-10.159c.477 0 .936.033 1.395.096v5.618a4.666 4.666 0 0 0-6.063 4.45 4.666 4.666 0 0 0 4.664 4.664 4.667 4.667 0 0 0 4.664-4.665V.001h5.5v.063c0 .454.04.89.117 1.322A7.64 7.64 0 0 0 23.814 6.4a7.548 7.548 0 0 0 4.178 1.254l.009.005v5.461z" /></svg>
+                          </a>
+                      </li>
+                  </ul>
+                  </div>
+              </article>
+          </div>
+      </div>
+      <div class="w-full">
+          <h2 class="text-[--primary-text-color] m-0 mb-8 flex-1  p-0 font-sans font-bold uppercase text-2xl">
+              TWITTER FEEDS
+          </h2>
+          <div class="w-full md:space-y-4 h-[250px]">
+              <iframe class="h-[250px] w-full" loading="lazy" id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" title="Twitter Timeline" src="https://syndication.twitter.com/srv/timeline-profile/screen-name/TVOAI_GF?creatorScreenName=TVOAI_GF&amp;dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=es&amp;maxHeight=250px&amp;origin=https%3A%2F%2Fwww.tvoainews.com%2F&amp;sessionId=52ac1028c8fb29fdab2c0222946279302a863a29&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=TVOAI_GF&amp;theme=dark&amp;transparent=false&amp;widgetsVersion=2615f7e52b7e0%3A1702314776716" style="position: static; visibility: visible; display: block; flex-grow: 1;"></iframe>
+          </div>
+      </div>
+ </aside>
+</div>
+
+<!-- Noticias relacionadas -->
+<section class=" *:text-[--secundary-color] py-5 sm:py-10 mt-10 sm:mt-20 flex items-end justify-center relative overflow-hidden">
+    <div class="absolute w-full h-full top-0 left-0 bg-fixed bg-center bg-no-repeat bg-cover bg-parallaxBg"></div>
+    <div class="flex flex-wrap py-5 sm:py-0 lg:max-w-screen-lg md:max-w-screen-md px-3.5 xl:max-w-[1140px] relative z-10 w-full h-full">
+        <h2 class=" text-center mb-10 flex-1 p-0 font-sans font-bold uppercase text-3xl sm:text-4xl w-full">
+            Noticias <span class="block md:inline-block ml-[-1.9rem] sm:ml-0 text-gradient after:content-[''] after:w-8 after:h-full after:absolute after:top-2 after:ml-2.5 after:bg-contain after:bg-no-repeat after:bg-titleOrnament relative"> Relacionadas</span>
+        </h2>
+        <Swiper className="mx-auto w-full h-[1185px] sm:h-[371px]" pagination={ "{\"ClassName\":\"relative mt-2.5\" ,\"el\":\"today-news__pagination\" }" } navigation={ "{\"Type\":\"none\", \"ClassName\":\"\" ,\"ClassNext\":\"\",\"ClassPrev\": \"\"}" } options={ "{\"loop\":true,\"slidesPerView\":1,\"modules\": [\"Grid\",\"Autoplay\",\"Pagination\"],\"loopAddBlankSlides\":true,\"grid\":{\"rows\":3},\"spaceBetween\": 10,\"autoplay\":{\"delay\":35000,\"disableOnInteraction\":false},\"observer\":true,\"observeParents\":true,\"pagination\": { \"el\": \".today-news__pagination\",\"clickable\": true },\"breakpoints\":{\"768\":{\"slidesPerView\":2,\"grid\":{\"rows\":1}},\"992\":{\"slidesPerView\":3,\"grid\":{\"rows\":1}},\"1200\":{\"slidesPerView\":3,\"grid\":{\"rows\":1}}}}" }>
+            <SwiperItem className='swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]'>
+                <ItemNews
+                    Options={"{\"LinkContainer\": { \"ClassName\": \"group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md\" },\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\": true,\"Flag\":{\"ClassName\":\"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":true,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full\"}}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"ClassName\":\"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--guardsman-red-700]\"}},\"Time\":{\"ClassName\":\"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center\",\"Icon\":{\"ClassName\":\"stroke-[--guardsman-red-700]\"}},\"Title\":{\"ClassName\":\"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium\"}}}"}
+                    className="w-full"
+                    category='Internacional'
+                    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+                    datetime='22/04/2024' time='17:24' href='#' categoryColor='category_03'>
+                    <ImageLazy
+                        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+                        width="200"
+                        height="114"
+                        className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+                        classNameImage="h-full"
+                        slot="image"
+                    />
+                </ItemNews>
+            </SwiperItem>
+        </Swiper>
+    </div>
+</section>
+
+</LayoutPost>
