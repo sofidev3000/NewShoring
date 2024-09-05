@@ -1,4 +1,5 @@
 ---
+import TranslateText from '../custom/TranslateText.tsx';
 
 interface Props {
     className?: string;
@@ -60,7 +61,8 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                 )
             }
             <h2 class={optionsObjs.DataContainer.Title.ClassName}>
-                {title}
+                <!-- {title} -->
+                <TranslateText client:load text={title} />
             </h2>
         </div>
     </a>

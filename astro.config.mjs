@@ -7,10 +7,17 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
+  plugins: [react()],
   prefetch: {
     defaultStrategy: 'viewport'
   },
-  integrations: [tailwind(),react({experimentalReactChildren: true,})],
+  integrations: [
+    tailwind(),react({experimentalReactChildren: true,}),
+    // {
+    //   name: '@astrojs/react',
+    //   options: {}
+    // }
+  ],
   site: 'https://newshoring.com/',
   output: "static",
   compressHTML: false,
