@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const {animationDirection='fade-left'} = Astro.props;
 const { link, title,image,altdesc, autor,date,slot, excerpt} = Astro.props;
 
@@ -14,7 +15,8 @@ const { link, title,image,altdesc, autor,date,slot, excerpt} = Astro.props;
       />
     </div>
     <h3 class="text-lg mb-5">
-        {title}
+        <!-- {title} -->
+        <TranslateText client:load text={title} />
     </h3>
     <div class="flex flex-col">
       <p class="text-xs mb-3">

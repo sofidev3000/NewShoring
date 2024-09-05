@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 
 interface Props {
     className?: string;
@@ -14,6 +15,7 @@ interface Props {
 }
 
 const {href, category, categoryColor,datetime,title,content="",time=null,Options=null,className="",attributes=""} = Astro.props;
+
 
 var optionsObjs = null;
 if(Options!=null){
@@ -38,7 +40,10 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
             <slot name="image" />
             {
                 optionsObjs.AssetsContainer.HasFlag && (
-                    <span class={ `${optionsObjs.AssetsContainer.Flag.ClassName} ${categoryColor}`}>{category}</span>
+                    <span class={ `${optionsObjs.AssetsContainer.Flag.ClassName} ${categoryColor}`}>
+                        {/* {category} */}
+                        <TranslateText client:load text={category} />
+                    </span>
                 )
             }
         </div>
@@ -60,10 +65,12 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                 )
             }
             <h2 class={optionsObjs.DataContainer.Title.ClassName}>
-                {title}
+                <!-- {title} -->
+                <TranslateText client:load text={title} />
             </h2>
             <p>
-                {content}
+                <!-- {content} -->
+                <TranslateText client:load text={content} />
             </p>
         </div>
     </a>

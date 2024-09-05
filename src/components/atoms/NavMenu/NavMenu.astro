@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import DropdownButton from "@atoms/DropDown/DropdownButton.astro";
 import DropdownLevel from "@atoms/DropdownLevel/DropdownLevel.astro";
 const pagePathname = Astro.url.pathname;
@@ -99,7 +100,10 @@ const randomNum = Math.floor(Math.random() * 1000);
               class="header__link block font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
               href="/"
             >
-              Home
+              {/* Home */}
+              
+              <TranslateText client:load text={'Home'} />
+
             </a>
           </li>
         )
@@ -112,7 +116,9 @@ const randomNum = Math.floor(Math.random() * 1000);
                 href={menuItem.url}
                 class="header__link font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
               >
-                {menuItem.text}
+                {/* {menuItem.text} */}
+                
+                <TranslateText client:load text={menuItem.text} />
               </a>
             ) : (
               <DropdownButton

@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const { title = "title", ID } = Astro.props;
 ---
 
@@ -8,7 +9,10 @@ const { title = "title", ID } = Astro.props;
       id={ID}
       class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
     >
-      {title}
+      <!-- {title} -->
+       
+      <TranslateText client:load text={title} />
+
     </h2>
   </div>
 </div>

@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import Button from "../Button/Button.astro";
 
 const {direction="flex-col", color= "white" } = Astro.props;
@@ -13,14 +14,20 @@ const {direction="flex-col", color= "white" } = Astro.props;
 
 <form id="subscribe-form" class={`flex flex-1 flex-col ${direction} gap-3`} novalidate>
   <div class="w-full flex flex-col gap-1">
-    <label class="text-[--main-color]" for="email">Email</label>
+    <label class="text-[--main-color]" for="email">
+      <TranslateText client:load text={'Email'} />   
+      <!-- Email -->
+    </label>
     <input type="email" id="email" name="email" required />
     <span class="text-red-600 hidden" id="email-error"></span>    
   </div>
   <div class="w-full block relative">
    <label for="terms" class="flex items-center space-x-2 absolute w-full h-full top-0 left-0"></label>
     <input type="checkbox"  id="terms"  name="terms"  class="form-checkbox checked:accent-guardsman-red-700" required/>
-    <span class="text-xs text-white">Aceptar términos y condiciones</span>
+    <span class="text-xs text-white">
+      <!-- Aceptar términos y condiciones -->
+      <TranslateText client:load text={'Aceptar términos y condiciones'} />   
+    </span>
   </div>
   <div class="w-full">
     <Button text="Suscribirse" ID="send-btn" type="submit" clase="w-full"/>

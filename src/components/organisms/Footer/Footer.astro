@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import Logo from "@components/atoms/Logo/Logo.astro";
 import SocialMediaIcons from "@components/atoms/SocialMediaIcons/SocialMediaIcons.astro";
 import ImageLazy from "@components/extras/ImageLazy.astro";
@@ -42,7 +43,10 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
   </div>
 
   <div class="footer__latest-post flex flex-col gap-4">
-    <h3 class="font-bold text-xl mb-2">Lo más reciente</h3>
+    <h3 class="font-bold text-xl mb-2">
+      <!-- Lo más reciente -->
+      <TranslateText client:load text={'Lo más reciente'} />
+    </h3>
     <ItemNews
       Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
       className=""
@@ -103,11 +107,17 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
   </div>
 
   <div class="footer__latest-post flex flex-col gap-4 w-full max-w-[356px]">
-    <h3 class="font-bold text-xl mb-2">Suscríbete</h3>
+    <h3 class="font-bold text-xl mb-2">
+      <!-- Suscríbete -->
+      <TranslateText client:load text={'Suscríbete'} />
+    </h3>
     <p>
-      Ut velit culpa irure aliquip. Nisi nisi irure laborum irure ex est irure
+      <!-- Ut velit culpa irure aliquip. Nisi nisi irure laborum irure ex est irure
       do irure do. Lorem amet non labore proident. Ut eiusmod ullamco nulla
-      reprehenderit ullamco aute occaecat tempor mollit non commodo non in.
+      reprehenderit ullamco aute occaecat tempor mollit non commodo non in. -->
+      <TranslateText client:load text={`Ut velit culpa irure aliquip. Nisi nisi irure laborum irure ex est irure
+      do irure do. Lorem amet non labore proident. Ut eiusmod ullamco nulla
+      reprehenderit ullamco aute occaecat tempor mollit non commodo non in`} />
     </p>
 
     <section class="w-full flex justify-start items-center pb-[7rem] pt-4">
@@ -125,7 +135,8 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
         </div>
 
         <label class="flex text-sm text-left self-start text-white" for="email">
-          Ingresa tu correo electrónico
+          <!-- Ingresa tu correo electrónico -->
+          <TranslateText client:load text={'Ingresa tu correo electrónico'} />
         </label>
 
         <div class="flex items-center justify-center w-full">
@@ -155,7 +166,11 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
           />
 
           <span class={`text-xs  text-[--secundary-color]`}
-            >Aceptar términos y condiciones</span
+            >
+            
+              <!-- Aceptar términos y condiciones -->
+              <TranslateText client:load text={'Aceptar términos y condiciones'} />
+            </span
           >
         </div>
       </form>

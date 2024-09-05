@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 const Languages = [
   { name: 'Español', code: 'es', flag: 'circle-flags:es' },
   { name: 'English', code: 'en', flag: 'emojione:flag-for-us-outlying-islands' },
-  { name: 'Chinese', code: 'cn', flag: 'circle-flags:cn' },
   { name: 'French', code: 'fr', flag: 'circle-flags:fr' },
-  { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
+  // { name: 'Chinese', code: 'cn', flag: 'circle-flags:cn' },
+  // { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
+  { name: 'Chinese', code: 'zh', flag: 'circle-flags:cn' },
+  { name: 'Rusian', code: 'ru', flag: 'circle-flags:ru' },
 ];
 
 const ToggleLanguage = ({breakpoint='desktop'}) => {
@@ -23,6 +25,7 @@ const ToggleLanguage = ({breakpoint='desktop'}) => {
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
     localStorage.setItem('selectedLanguage', JSON.stringify(language));
+    window.location.reload(); // ver una forma menos agresiva de recargar la página...
   };
 
   return (

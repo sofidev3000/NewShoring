@@ -1,4 +1,6 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
+
 interface Props {
     className?: string;
     category: string;
@@ -14,7 +16,10 @@ const {className,categoryColor,category,title,href,datetime,time=null} = Astro.p
     <a  class="group/zoom flex bg-[--secundary-color] relative overflow-hidden h-full" href={href}>
         <!-- Badge -->
        
-        <span class={ `absolute left-2 top-[65%] -translate-y-[65%] lg:top-[70%] lg:-translate-y-[70%]  z-[1] text-center py-1.5 px-1.5 font-sans text-xs font-bold text-white transition duration-300 ease-in-out ${categoryColor}`}>{category}</span>
+        <span class={ `absolute left-2 top-[65%] -translate-y-[65%] lg:top-[70%] lg:-translate-y-[70%]  z-[1] text-center py-1.5 px-1.5 font-sans text-xs font-bold text-white transition duration-300 ease-in-out ${categoryColor}`}>
+            <!-- {category} -->
+            <TranslateText client:load text={category} />
+        </span>
         
         <!-- Imagen -->
         <div class="absolute top-0 left-0 w-full h-full">
@@ -42,7 +47,8 @@ const {className,categoryColor,category,title,href,datetime,time=null} = Astro.p
                 )
             }
             <h2 class="w-full group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-white text-sm leading-[1.1rem] font-sans font-medium ">
-                {title}
+                <!-- {title} -->
+                <TranslateText client:load text={title} />
             </h2>
         </div>
     </a>

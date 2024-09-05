@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const { animationDuration = "fade-up" } = Astro.props;
 const { link, title, image, altdesc, autor, date,slot } = Astro.props;
 ---
@@ -14,7 +15,8 @@ const { link, title, image, altdesc, autor, date,slot } = Astro.props;
     </div>
     <div class="max-w-[16rem] flex flex-col space-y-4 justify-between">
       <h3 class="font-extrabold text-sm">
-        {title}
+        <!-- {title} -->
+        <TranslateText client:load text={title} />
       </h3>
       <p class="text-xs">
         Por <strong>{autor}</strong> - <span>{date} </span>

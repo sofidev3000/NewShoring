@@ -1,7 +1,9 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const {text="your text", type = "button", ID, clase="px-3 py-1" , rounded='rounded-[7px] '} = Astro.props;
 ---
 
 <button  type={type} id={ID} class=`bg-[--button-base] text-sm hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold ${rounded}   ${clase}`>
-    {text}
+    <!-- {text} -->
+    <TranslateText client:load text={text} />
 </button>

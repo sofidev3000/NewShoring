@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 // Extrae las propiedades recibidas
 const { dropdown, text, id, placement="right-start"} = Astro.props;
 ---
@@ -9,7 +10,8 @@ const { dropdown, text, id, placement="right-start"} = Astro.props;
   data-dropdown-toggle={`${id}-multi-dropdown`}
   class="flex items-center    font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
   type="button">
-  {text}
+  <!-- {text} -->
+  <TranslateText client:load text={text} />
   <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
   </svg>
@@ -29,7 +31,8 @@ const { dropdown, text, id, placement="right-start"} = Astro.props;
               data-dropdown-placement={placement}
               type="button"
               class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-800  dark:hover:bg-gray-600 hover:text-[--guardsman-red-500]">
-              {item.text}
+              {/* {item.text} */}
+              <TranslateText client:load text={item.text} />
               <svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
               </svg>
@@ -39,7 +42,8 @@ const { dropdown, text, id, placement="right-start"} = Astro.props;
                 {item.elements.map((subItem, subIndex) => (
                   <li class="first:text-[--guardsman-red-500]">
                     <a href={subItem.url} class=" block px-4 py-2 hover:bg-gray-800  hover:text-[--guardsman-red-500] ">
-                      {subItem.text}
+                      {/* {subItem.text} */}
+                      <TranslateText client:load text={subItem.text} />
                     </a>
                   </li>
                 ))}

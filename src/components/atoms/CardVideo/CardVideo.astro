@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const { title, category, src } = Astro.props;
 ---
 
@@ -11,8 +12,14 @@ const { title, category, src } = Astro.props;
     class="card-video flex flex-col  "
   >
 
-    <h5>{category}</h5>
-    <h3>{title}</h3>
+    <h5>
+      <!-- {category} -->
+      <TranslateText client:load text={category} />
+    </h5>
+    <h3>
+      <!-- {title} -->
+      <TranslateText client:load text={title} />
+    </h3>
   </div>
 
   <swiper-container init="false"></swiper-container>

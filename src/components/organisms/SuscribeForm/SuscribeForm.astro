@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import Button from "@atoms/Button/Button.astro";
 import FormLabel from "@atoms/formAtoms/FormLabel.astro";
 import Inputemail from "@atoms/formAtoms/Inputemail.astro";
@@ -26,7 +27,8 @@ const { direction = "flex-col", color = "white" } = Astro.props;
   class={`subscribe-form flex flex-1 ${direction} items-start  justify-center   `}
 >
   <FormLabel color={color} labelFor="email">
-    Ingresa tu correo electrónico
+    <!-- Ingresa tu correo electrónico -->
+<TranslateText client:load text={'Ingresa tu correo electrónico'} />
   </FormLabel>
   <Inputemail color={color} />
   <ErrorMessage errorType="email" />
@@ -37,7 +39,10 @@ const { direction = "flex-col", color = "white" } = Astro.props;
     extraClass="flex items-center  mb-3"
   >
    <FormCheckbox />
-    <span class={`text-xs  text-${color}`}>Aceptar términos y condiciones</span>
+    <span class={`text-xs  text-${color}`}>
+      <!-- Aceptar términos y condiciones -->
+      <TranslateText client:load text={'Aceptar términos y condiciones'} />
+    </span>
   </FormLabel>
 
   <ErrorMessage errorType="terms" />

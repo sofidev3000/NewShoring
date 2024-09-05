@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TranslateText from "@src/customs/TranslateText.tsx";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -69,8 +70,14 @@ export default function CarruselVideos() {
               alt={item.title}
             />
             <div className="card-video flex flex-col translate-y-[-100%] top-[87%] left-5 absolute *:text-white *:text-left overflow-hidden  " >
-              <h5>{item.category}</h5>
-              <h3>{item.title}</h3>
+              <h5>
+                {/* {item.category} */}
+              <TranslateText client:load text={item.category} />
+              </h5>
+              <h3>
+                {/* {item.title} */}
+                <TranslateText client:load text={item.title} />
+                </h3>
             </div>
           </div>
         </SwiperSlide>

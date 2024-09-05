@@ -1,6 +1,13 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
+import useTranslateText from '@src/customs/useTranslateText.tsx';
+
 const {animationDirection='fade-left'} = Astro.props;
 const { link, title,image,altdesc, autor,date,slot} = Astro.props;
+
+// const newAltDesc = useTranslateText(altdesc);
+// console.log('EL NUEVO DESC ==> ', newAltDesc);
+// localStorage.getItem('a');
 ---
 
 <a href={link} slot={slot}>
@@ -9,11 +16,12 @@ const { link, title,image,altdesc, autor,date,slot} = Astro.props;
       <img
         class="w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"
         alt={altdesc}
-		src={image}
+		    src={image}
       />
     </div>
     <h3 class="text-[1.3rem] ">
-      {title}
+      <!-- {title} -->
+       <TranslateText client:load text={title} />
     </h3>
     <div class="flex">
       <p>

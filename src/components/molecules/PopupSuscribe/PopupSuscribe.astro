@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import SuscribeForm from '@organisms/SuscribeForm/SuscribeForm.astro';
 ---
 
@@ -14,11 +15,13 @@ import SuscribeForm from '@organisms/SuscribeForm/SuscribeForm.astro';
       class="flex flex-col items-strat justify-center *:text-[--main-color] w-[27rem] space-y-4 last:mb-0 *:text-white"
     >
       <h2 class="text-3xl font-bold">
-        ¡Mantente al tanto de las últimas noticias y tendencias!
+        <!-- ¡Mantente al tanto de las últimas noticias y tendencias! -->
+        <TranslateText client:load text={'¡Mantente al tanto de las últimas noticias y tendencias!'} />   
       </h2>
       <p class="text-sm font-normal">
-        Suscríbete a nuestra NewsLetter para recibir actualizaciones sobre
-        Nearshoring, finanzas y más.
+        <TranslateText client:load text={'Suscríbete a nuestra NewsLetter para recibir actualizaciones sobre Nearshoring, finanzas y más.'} />   
+        <!-- Suscríbete a nuestra NewsLetter para recibir actualizaciones sobre
+        Nearshoring, finanzas y más. -->
       </p>
     </div>
         <SuscribeForm/>

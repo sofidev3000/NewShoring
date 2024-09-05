@@ -1,4 +1,5 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 import Button from "@components/atoms/Button/Button.astro";
 import ErrorMessage from "@components/atoms/formAtoms/ErrorMessage.astro";
 import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
@@ -30,7 +31,8 @@ import Inputemail from "@components/atoms/formAtoms/Inputemail.astro";
       <ErrorMessage errorType="terms" />
     </div>
     <FormLabel color="black" labelFor="email" extraClass="text-left self-start">
-      Ingresa tu correo electrónico
+      <!-- Ingresa tu correo electrónico -->
+      <TranslateText client:load text={'Ingresa tu correo electrónico'} />
     </FormLabel>
     <div class="flex items-center justify-center w-full">
       <Inputemail color="black" extraClass=" py-[10.3px] flex-1 text-xs" />
@@ -44,9 +46,10 @@ import Inputemail from "@components/atoms/formAtoms/Inputemail.astro";
     </div>
     <div class="flex py-2">
       <FormCheckbox />
-      <span class={`text-xs  text-[--secundary-color]`}
-        >Aceptar términos y condiciones</span
-      >
+      <span class={`text-xs  text-[--secundary-color]`}>
+        <!-- Aceptar términos y condiciones -->
+        <TranslateText client:load text={'Aceptar términos y condiciones'} />
+        </span>
     </div>
   </form>
 </section>

@@ -1,13 +1,16 @@
 ---
+import TranslateText from "@src/customs/TranslateText.tsx";
 const { title = "Title", ID } = Astro.props;
 ---
 
+
 <div
-  class="flex justify-center items-center w-full border-[--secundary-color] border-t-4 border-b self-center my-10 2xl:max-w-[1300px]"
+class="flex justify-center items-center w-full border-[--secundary-color] border-t-4 border-b self-center my-10 2xl:max-w-[1300px]"
 >
-  <div class="self-start w-full pt-10 pb-4">
-    <h2 id={ID} class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
-      {title}
+<div class="self-start w-full pt-10 pb-4">
+  <h2 id={ID} class="text-left text-3xl font-extrabold text-[--guardsman-red-500]">
+    <!-- {title} -->
+    <TranslateText client:load text={title} />
     </h2>
   </div>
 </div>
