@@ -27,14 +27,16 @@ const {
 
   <body>
     <TopBar />
+
     <article
-      class=`hidden md:flex logo w-full  justify-center items-center text-left`
+      class=`hidden lg:flex logo w-full  justify-center items-center text-left`
     >
       <Logo hidden="hidden" />
     </article>
     <HeaderMobile />
     <Header />
     <main class="w-full flex flex-col justify-center items-center px-3 pt-20 md:pt-1">
+
       <ButtonToTop />
       <slot />
     </main>
