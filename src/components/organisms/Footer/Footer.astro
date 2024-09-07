@@ -8,7 +8,7 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
 ---
 
 <footer
-  class="footer bg-black flex flex-wrap justify-between items-start content-center text-white h-fit w-full py-5 px-[23px] space-y-[1rem]"
+  class="footer bg-black flex flex-wrap justify-center md:justify-between items-start content-center text-white h-fit w-full py-5 px-[2rem] space-y-[1rem] mt-auto"
 >
   <div
     class="min-w-[370px] h-full flex flex-col justify-between items-start gap-[3rem] self-center"
@@ -41,8 +41,8 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
     </nav>
   </div>
 
-  <div class="footer__latest-post flex flex-col gap-4">
-    <h3 class="font-bold text-xl mb-2">Lo más reciente</h3>
+  <div class="footer__latest-post flex flex-col gap-3 m-0">
+    <h3 class="font-bold text-xl mb-0">Lo más reciente</h3>
     <ItemNews
       Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
       className=""
@@ -110,7 +110,7 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
       reprehenderit ullamco aute occaecat tempor mollit non commodo non in.
     </p>
 
-    <section class="w-full flex justify-start items-center pb-[7rem] pt-4">
+    <section class="w-full flex justify-start items-center pb-1 pt-4">
       <form
         id="subscribe-form"
         method="POST"

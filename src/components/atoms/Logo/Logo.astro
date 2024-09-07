@@ -2,8 +2,8 @@
 const { animationdirection = "fade-right", textColor = '[--secundary-color]', fontSize = '', fontSizeSlogan = "", isMobile = false } = Astro.props;
 ---
 {isMobile ? (
-  <a data-aos={animationdirection} href="/" class={`flex flex-col flex-1 font-normal text-${textColor} relative`}>
-    <h1 class="text-[2.3rem] font-FjallaOne tracking-normal">Nearshoring News</h1>
+  <a data-aos={animationdirection} href="/" class={`flex w-fit flex-col flex-1 font-normal text-${textColor} relative`}>
+    <h1 class="text-[2.1rem] font-FjallaOne tracking-none w-fit">Nearshoring News</h1>
     <h4 class="text-[1rem] absolute top-[73%] bottom-0">We bring markets closer</h4>
   </a>
 ) : (
