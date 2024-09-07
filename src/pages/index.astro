@@ -12,7 +12,7 @@ import Button from "@components/atoms/Button/Button.astro";
 <Layout>
   <!-- Near Now -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center gap-10  2xl:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -25,11 +25,12 @@ import Button from "@components/atoms/Button/Button.astro";
       </h2>
     </div>
     <div
-      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
+      class=`w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between lg:justify-center xl:gap-[20px] items-start w-full flex-wrap `
     >
+    <!-- mainCard -->
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full","Date":{"ClassName":"order-1 font-normal text-center","Icon":{"ClassName":""}},"Time":{"ClassName":"text-sm font-normal","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "}}}'}
-        className="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] font-bold group"
+        className="flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
@@ -127,11 +128,11 @@ import Button from "@components/atoms/Button/Button.astro";
       </div>
     </div>
     <div
-      class=`flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`
+      class=`flex flex-row flex-wrap w-full lg:max-w-[300px] max-w-[600px] 2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28`
     >
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
+        className="flex flex-col self-center w-full    group"
         attributes={'{"data-aos":"fade-left"}'}
         category=""
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
@@ -171,7 +172,7 @@ import Button from "@components/atoms/Button/Button.astro";
   </section>
   <!-- Industrías -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -271,7 +272,7 @@ import Button from "@components/atoms/Button/Button.astro";
 
   <!-- Energía -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center gap-10  2xl:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -284,54 +285,12 @@ import Button from "@components/atoms/Button/Button.astro";
       </h2>
     </div>
     <div
-      class=`flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`
+      class=`w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between lg:justify-center xl:gap-[20px] items-start w-full flex-wrap `
     >
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-    </div>
-    <div
-      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
-    >
-      <!-- Card principal -->
+    <!-- mainCard -->
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full","Date":{"ClassName":"order-1 font-normal text-center","Icon":{"ClassName":""}},"Time":{"ClassName":"text-sm font-normal","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "}}}'}
-        className="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] font-bold group"
+        className="flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
@@ -428,10 +387,52 @@ import Button from "@components/atoms/Button/Button.astro";
     </ItemNews>
       </div>
     </div>
+    <div
+      class=`flex flex-row flex-wrap w-full lg:max-w-[300px] max-w-[600px] 2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28`
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full    group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
   </section>
   <!-- Newsletter -->
   <div
-    class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
     data-aos="fade-up"
   >
     <p
@@ -465,7 +466,7 @@ import Button from "@components/atoms/Button/Button.astro";
   </div>
   <!-- Finanzas -->
   <section
-    class="flex flex-row-reverse 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center gap-10  2xl:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -474,58 +475,16 @@ import Button from "@components/atoms/Button/Button.astro";
         id="finanzas"
         class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
       >
-        Fiananzas
+        Finanzas
       </h2>
     </div>
     <div
-      class=` flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`
+      class=`w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between lg:justify-center xl:gap-[20px] items-start w-full flex-wrap `
     >
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-    </div>
-    <div
-      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
-    >
-      <!-- Card principal -->
+    <!-- mainCard -->
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full","Date":{"ClassName":"order-1 font-normal text-center","Icon":{"ClassName":""}},"Time":{"ClassName":"text-sm font-normal","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "}}}'}
-        className="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] font-bold group"
+        className="flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
@@ -622,10 +581,52 @@ import Button from "@components/atoms/Button/Button.astro";
     </ItemNews>
       </div>
     </div>
+    <div
+      class=`flex flex-row flex-wrap w-full lg:max-w-[300px] max-w-[600px] 2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28`
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full    group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
   </section>
   <!-- video -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px]  flex-col"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -722,7 +723,7 @@ import Button from "@components/atoms/Button/Button.astro";
   </section>
   <!-- Logística y transporte -->
   <section
-    class="flex flex-row 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center gap-10  2xl:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -731,58 +732,16 @@ import Button from "@components/atoms/Button/Button.astro";
         id="logistica-y-transporte"
         class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
       >
-        Logística y transporte
+       Logística y transporte
       </h2>
     </div>
     <div
-      class=` flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`
+      class=`w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between lg:justify-center xl:gap-[20px] items-start w-full flex-wrap `
     >
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-    </div>
-    <div
-      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
-    >
-      <!-- Card principal -->
+    <!-- mainCard -->
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full","Date":{"ClassName":"order-1 font-normal text-center","Icon":{"ClassName":""}},"Time":{"ClassName":"text-sm font-normal","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "}}}'}
-        className="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] font-bold group"
+        className="flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
@@ -879,10 +838,52 @@ import Button from "@components/atoms/Button/Button.astro";
     </ItemNews>
       </div>
     </div>
+    <div
+      class=`flex flex-row flex-wrap w-full lg:max-w-[300px] max-w-[600px] 2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28`
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full    group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
   </section>
   <!-- Parques Industríales -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -981,7 +982,7 @@ import Button from "@components/atoms/Button/Button.astro";
   </section>
   <!-- Capital Humano -->
   <section
-    class="flex flex-row 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center gap-10  2xl:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -994,54 +995,12 @@ import Button from "@components/atoms/Button/Button.astro";
       </h2>
     </div>
     <div
-      class=` flex flex-row flex-wrap w-full max-w-[459px] sm:max-w-[600px] lg:max-w-[459px] items-stretch gap-12 lg:gap-28`
+      class=`w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between lg:justify-center xl:gap-[20px] items-start w-full flex-wrap `
     >
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full  group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
-        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
-        attributes={'{"data-aos":"fade-left"}'}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-    </div>
-    <div
-      class=`w-full max-w-[600px] 2xl:max-w-[708px] flex 2xl:justify-between space-y-10 lg:space-y-0 lg:justify-center lg:gap-[45px] items-start w-full flex-wrap `
-    >
-      <!-- Card principal -->
+    <!-- mainCard -->
       <ItemNews
         Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full","Date":{"ClassName":"order-1 font-normal text-center","Icon":{"ClassName":""}},"Time":{"ClassName":"text-sm font-normal","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "}}}'}
-        className="flex flex-col self-center w-full max-w-[600px] 2xl:max-w-[708px] font-bold group"
+        className="flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
@@ -1138,10 +1097,52 @@ import Button from "@components/atoms/Button/Button.astro";
     </ItemNews>
       </div>
     </div>
+    <div
+      class=`flex flex-row flex-wrap w-full lg:max-w-[300px] max-w-[600px] 2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28`
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full    group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-1","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] "}}}'}
+        className="flex flex-col self-center w-full sm:w-[45%] lg:w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
   </section>
   <!-- ESG -->
   <section
-    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap"
+    class="flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
