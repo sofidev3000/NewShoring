@@ -10,12 +10,20 @@ const IndicadoresCarousel = () => {
     const fetchData = async () => {
       try {
 
-        let domain = "http://localhost:3000";
-        if (window.location.port!== '4321') {
-          domain = window.location.origin;
-        }
+        let domain = window.location.origin;
 
-        const baseURL = `${domain}/api-request`;
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const testParam = params.get('test');
+        let testString = "";
+        if(testParam){
+          testString = `?test=${testParam}`
+        }
+        /*if (window.location.port!== '4321') {
+          domain = window.location.origin;
+        }*/
+
+        const baseURL = `${domain}/api-request${testString}`;
         // ejecuta
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");

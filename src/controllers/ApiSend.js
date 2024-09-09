@@ -5,12 +5,14 @@ function initSend(form){
     console.log(form);
     var serviceName = form.dataset.service;
     var serviceAction = form.dataset.serviceAction;
+    var servicePlugin = form.dataset.plugin;
     var token = form.querySelector('input[name="__RequestVerificationToken"]');
     var message = form.querySelector("[data-form-belong=\"form-send__result\"]");
 
-    if((serviceName !== null && typeof serviceName !== 'undefined' && serviceName!=="") && (serviceAction !== null && typeof serviceAction !== 'undefined' && serviceAction!=="")){
+    if((serviceName !== null && typeof serviceName !== 'undefined' && serviceName!=="") && (serviceAction !== null && typeof serviceAction !== 'undefined' && serviceAction!=="") && (servicePlugin !== null && typeof servicePlugin !== 'undefined' && servicePlugin!=="")){
         
         var dataForm = {
+            PluginName: servicePlugin,
             ServiceName: serviceName,
             ServiceAction: serviceAction,
             AssociateIdentifier: form.dataset.associate,
@@ -19,7 +21,20 @@ function initSend(form){
         };
 
         var method = form.method;
-        var action = form.dataset.action;
+        let action = form.dataset.action;
+
+        if(action === "api-request" || action === "requestpost"){
+            const url = new URL(window.location.href);
+            const params = new URLSearchParams(url.search);
+            const testParam = params.get('test');
+            let testString = "";
+            if(testParam){
+            testString = `?test=${testParam}`
+            }
+
+            action = `${action}${testString}`;
+        }
+        
         var headers = {};
         if(token){
             headers={
