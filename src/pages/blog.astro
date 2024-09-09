@@ -9,7 +9,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
 ---
 
 <LayoutPost title={`Blog`}>
-  <section class="w-full flex flex-col pt-[4.2rem] 2xl:pt-[1rem]">
+  <section id="blog" class="w-full flex flex-col pt-[4.2rem] 2xl:pt-[1rem]">
     <div class="flex items-end justify-center relative w-full h-full">
       <div
         class="flex items-center flex-col justify-center pt-0 sm:justify-center py-0 px-3 xl:max-w-[1100px] 2xl:max-w-[1300px] relative z-10 w-full h-full 2xl:min-h-[45dvh] "
@@ -516,3 +516,11 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
     </div>
   </section>
 </LayoutPost>
+
+<style>
+  #blog:has(h2){
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:var(--guardsman-red-500);
+}
+</style>
