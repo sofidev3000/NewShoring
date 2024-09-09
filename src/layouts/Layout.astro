@@ -51,10 +51,12 @@ const {
       import { initSend } from "@controllers/ApiSend";
       import { initAOS } from "@utils/aos";
       import { execLazyLoad } from "@controllers/ImageLazy";
+      import {initProcessTranslate} from '@utils/translatePage';
 
       document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
         initAOS();
+        // initProcessTranslate();
 
         const form = document.querySelectorAll(".form-send");
 

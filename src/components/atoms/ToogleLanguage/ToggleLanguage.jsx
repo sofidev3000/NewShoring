@@ -1,3 +1,4 @@
+import { initProcessTranslate } from '@src/utils/translatePage';
 import React, { useState, useEffect } from 'react';
 
 const Languages = [
@@ -23,6 +24,7 @@ const ToggleLanguage = ({breakpoint='desktop'}) => {
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
     localStorage.setItem('selectedLanguage', JSON.stringify(language));
+    // initProcessTranslate(language.code);
   };
 
   return (
