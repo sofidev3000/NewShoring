@@ -1,0 +1,67 @@
+---
+import TopBar from "@components/organisms/TopBar/TopBar.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+import Logo from "@atoms/Logo/Logo.astro";
+import Header from "@components/organisms/Header/Header.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro";
+import Footer from "@organisms/Footer/Footer.astro";
+import ButtonToTop from "@components/atoms/ButtonToTop/ButtonToTop.astro";
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  image = "../../public/img/city.jpg",
+} = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <BaseHead />
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+  </head>
+
+  <body>
+    <TopBar />
+
+
+    <HeaderMobile />
+    <Header />
+    <main class="w-full flex flex-col justify-center items-center px-3 pt-20 md:pt-1 ">
+
+      <ButtonToTop />
+      <slot />
+    </main>
+    <Footer />
+
+
+
+    <script
+      type="module"
+      defer
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+    <script>
+      import { initSend } from "@controllers/ApiSend";
+      import { initAOS } from "@utils/aos";
+      import { execLazyLoad } from "@controllers/ImageLazy";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        execLazyLoad();
+        initAOS();
+
+        const form = document.querySelectorAll(".form-send");
+
+        form.forEach((formItem) => {
+          formItem.addEventListener("submit", function (event) {
+            initSend(this as HTMLFormElement);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
