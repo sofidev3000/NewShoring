@@ -77,6 +77,11 @@ body {
 }
 
 
+ #blog > * h2:not(.swiper-slide h2){
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:var(--guardsman-red-500);
+}
 
 .glassmorphism {
     -webkit-backdrop-filter: blur(25px);

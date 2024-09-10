@@ -90,7 +90,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
     class="w-full p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
   >
     <!-- Main article -->
-    <div class="w-full lg:w-3/4 h-full gap-5">
+    <div id="blog" class="w-full lg:w-3/4 h-full gap-5">
       <div
         class="h-full text-[--primary-text-color] space-y-4 flex flex-wrap gap-10 justify-between md:max-w-screen-md"
       >
@@ -101,7 +101,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
           que se ha observado a esta especie desde su primer registro en 1985, marcando
           un hecho significativo para la conservación de esta subespecie.
         </p>
-        <h2 class="text-[--guardsman-red-500] text-2xl font-bold">
+        <h2 class="">
           Avistamiento de oso panda pardo
         </h2>
         <p>
@@ -113,7 +113,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
           el año 2018, lo que resalta la importancia de este hallazgo para la investigación
           y conservación de la especie.
         </p>
-        <h2 class="text-[--guardsman-red-500] text-2xl font-bold">
+        <h2 class="">
           Subespecie extremadamente rara
         </h2>
         <p>
@@ -151,7 +151,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
             >
           </div>
         </div>
-        <h2 class="text-[--guardsman-red-500] text-2xl font-bold">
+        <h2 class="">
           Investigación genética de oso panda pardo
         </h2>
         <p>
@@ -518,8 +518,8 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
   </section>
 </LayoutPost>
 
-<style>
-  #blog:has(h2){
+<style is:global>
+  #blog:nth-last-of-type(h2){
     font-weight: 700;
     font-size: 1.5rem;
     color:var(--guardsman-red-500);
