@@ -151,9 +151,11 @@ const {
         initAOS();
 
         const form = document.querySelectorAll(".form-send");
-
+        console.log('LAYOUT POST ==>', form);
         form.forEach((formItem) => {
           formItem.addEventListener("submit", function (event) {
+            console.log('LAYOUT POST ==> CLICK FORM');
+            event.preventDefault();
             initSend(this as HTMLFormElement);
           });
         });
