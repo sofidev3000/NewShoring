@@ -55,9 +55,11 @@ const {
         initAOS();
 
         const form = document.querySelectorAll(".form-send");
-
+        console.log('CATEGORIES FORM ==>', form);
         form.forEach((formItem) => {
           formItem.addEventListener("submit", function (event) {
+            console.log('LAYOUT CATEGORIES ==> CLICK FORM');
+            event.preventDefault();
             initSend(this as HTMLFormElement);
           });
         });
