@@ -4,16 +4,16 @@
     --secundary-color: #1b1b1b, ;
     --accent-color: #BA0000;
     --background-glass: #000000d6;
-    --divider-secundary: rgba(38, 38, 38, 0.555);
+    --divider-secundary: rgba(38, 38, 38, 0.454);
     /* Guardsman Red Palette */
     --guardsman-red-50: #ffefef;
     --guardsman-red-100: #ffdcdc;
     --guardsman-red-200: #ffbfbf;
     --guardsman-red-300: #ff9292;
     --guardsman-red-400: #ff5454;
-    --guardsman-red-500: #ff1f1f;
-    --guardsman-red-600: #ff0000;
-    --guardsman-red-700: #db0000;
+    --guardsman-red-500: #BA0000;
+    --guardsman-red-600: #ca0303;
+    --guardsman-red-700: #8F0101;
     --guardsman-red-800: #ba0000;
     --guardsman-red-900: #940808;
     --guardsman-red-950: #520000;
@@ -38,7 +38,7 @@
     --main-color: #090909;
     /* Dark background */
     --secundary-color: #fafafa;
-    --divider-secundary: rgba(89, 89, 89, 0.581);
+    --divider-secundary: rgba(89, 89, 89, 0.497);
 
 }
 /* Definición de las fuentes */
