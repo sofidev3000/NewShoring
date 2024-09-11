@@ -9,56 +9,54 @@ import SwiperItem from "@components/extras/SwiperItem.astro";
 import LayoutPost from "@src/layouts/LayoutPost.astro";
 
 // Video URL a insertar en el iframe
-const videourl = 'https://www.youtube.com/watch?v=BjPsA8O3-EQ';
+const videourl = "https://www.youtube.com/watch?v=BjPsA8O3-EQ";
 
-
-
-const videoId = videourl.split('v=')[1];
+const videoId = videourl.split("v=")[1];
 const embed = `https://www.youtube.com/embed/${videoId}`;
 ---
 
-
-
-
 <LayoutPost title={`Blog`}>
-
+  <div
+    class="w-full 2xl:mt-15 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px] mt-24"
+  >
+    <div
+      class="h-full w-full text-[--primary-text-color] space-y-4 flex flex-col gap-10 justify-between"
+    >
+      <h1 class="text-4xl text-center font-bold">
+        Avistamiento de oso panda pardo
+      </h1>
+      <p>
+        <strong>El avistamiento</strong>
+        <strong>del oso panda pardo</strong> se produjo el pasado 17 de enero, cuando
+        una cámara infrarroja colocada en la Reserva Nacional de la Naturaleza de
+        Changqing logró capturar la imagen de este ejemplar único. Cabe mencionar
+        que es la primera vez que se observa un panda pardo en esta zona desde el
+        año 2018, lo que resalta la importancia de este hallazgo para la investigación
+        y conservación de la especie.
+      </p>
+    </div>
+  </div>
 
   <div
-  id="blog"
-    class="w-full  2xl:mt-15 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px] mt-24"
+    id="blog"
+    class="w-full 2xl:mt-15 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px] mt-24"
   >
     <!-- Main article -->
-    <div class="w-full  h-full gap-5">
-      <div
-        class="h-full w-full text-[--primary-text-color] space-y-4 flex flex-col gap-10 justify-between "
-      >
+    <div
+      class="h-full w-full text-[--primary-text-color] space-y-4 flex flex-col gap-10 justify-between"
+    >
+    <iframe
+    class="w-full h-[500px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]"
+    src={embed}
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
-        <h1 class=" text-4xl text-center font-bold">
-          Avistamiento de oso panda pardo
-        </h1>
-        <p><strong>El avistamiento</strong>
-          <strong>del oso panda pardo</strong> se produjo el pasado 17 de enero,
-          cuando una cámara infrarroja colocada en la Reserva Nacional de la Naturaleza
-          de Changqing logró capturar la imagen de este ejemplar único. Cabe mencionar
-          que es la primera vez que se observa un panda pardo en esta zona desde
-          el año 2018, lo que resalta la importancia de este hallazgo para la investigación
-          y conservación de la especie.
-        </p>
-          <div>
-              <iframe
-                class="w-full h-[500px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]"
-                src={embed}
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-          </div>
-
-        <!-- SHARE BTNS MOBILE -->
+      <!-- SHARE BTNS MOBILE -->
       <div class="flex flex-col md:hidden itemscenter">
         <h5
-          class="text-sm  my-3 bg-[#000000] dark:bg-slate-900  text-white hover:text-guardsman-red-800 rounded-md p-1 w-fit"
+          class="text-sm my-3 bg-[#000000] dark:bg-slate-900 text-white hover:text-guardsman-red-800 rounded-md p-1 w-fit"
         >
           Compartir:
         </h5>
@@ -153,244 +151,258 @@ const embed = `https://www.youtube.com/embed/${videoId}`;
           </li>
         </ul>
       </div>
-       <!-- Banner comercial -->
-       <div
-       id="div-gpt-ad-4222133-1"
-       class="google-ads bg-[#a1a1a1b8] w-full h-[100px] relative "
-       data-code="@adsDomain/responsive_portada_leaderboard_1"
-       data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
-     >
-       <div
-         class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
-       >
-         <svg
-           xmlns="http://www.w3.org/2000/svg"
-           class="fill-none stoke-[#1b1b1bbf]"
-           width="24"
-           height="24"
-           viewBox="0 0 24 24"
-           stroke="currentColor"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-           ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-             d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-           ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
-             d="M7 13l4 0"></path><path
-             d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"></path></svg
-         >
-       </div>
-     </div>
+      <!-- Banner comercial -->
+      <div
+        id="div-gpt-ad-4222133-1"
+        class="google-ads bg-[#a1a1a1b8] w-full h-[100px] relative"
+        data-code="@adsDomain/responsive_portada_leaderboard_1"
+        data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
+      >
+        <div
+          class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-none stoke-[#1b1b1bbf]"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+            ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
+              d="M7 13l4 0"></path><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"
+            ></path></svg
+          >
+        </div>
+      </div>
     </div>
   </div>
-     <!-- video relacionado  -->
+  <!-- video relacionado  -->
   <section
-  class="flex 2xl:justify-between mb-20 space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px]  flex-col"
->
-  <div
-    class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    class="mx-auto flex 2xl:justify-between mb-20 space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-col"
   >
-    <h2
-      id="video"
-      class="text-left text-3xl font-extrabold "
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
     >
-      Videos Relacionados
-    </h2>
-
-  </div>
-  <Swiper
-    className="mx-auto mt-5 w-full h-[300px] "
-    navigation={'{"Type":"normal", "ClassName":"" ,"ClassNext":"text-white bg-guardsman-red-700 rounded-full","ClassPrev": "text-white bg-guardsman-red-700 rounded-full"}'}
-    options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
-  >
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-  </Swiper>
-     <!-- Banner comercial -->
-     <div
-     id="div-gpt-ad-4222133-1"
-     class="google-ads bg-[#a1a1a1b8] w-full h-[100px] relative "
-     data-code="@adsDomain/responsive_portada_leaderboard_1"
-     data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
-   >
-     <div
-       class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
-     >
-       <svg
-         xmlns="http://www.w3.org/2000/svg"
-         class="fill-none stoke-[#1b1b1bbf]"
-         width="24"
-         height="24"
-         viewBox="0 0 24 24"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-           d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-         ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
-           d="M7 13l4 0"></path><path
-           d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"></path></svg
-       >
-     </div>
-   </div>
-   <Swiper
-    className="mx-auto mt-5 w-full h-[300px] "
-    navigation={'{"Type":"normal", "ClassName":"" ,"ClassNext":"text-white bg-guardsman-red-700 rounded-full","ClassPrev": "text-white bg-guardsman-red-700 rounded-full"}'}
-    options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
-  >
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-    <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
-      <ItemVideoNews
-        datetime="23/04/2024"
-        className="w-full h-full"
-        category="Internacional"
-        categoryColor="category_03"
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        href="#"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
-          width="500"
-          height="731"
-          className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
-          classNameImage="object-cover h-full"
-          slot="image"
-        />
-      </ItemVideoNews>
-    </SwiperItem>
-  </Swiper>
-</section>
+      <h2 id="video" class="text-left text-3xl font-extrabold">
+        Videos Relacionados
+      </h2>
     </div>
+    <Swiper
+      className="mx-auto mt-5 w-full h-[300px] "
+      navigation={'{"Type":"normal", "ClassName":"" ,"ClassNext":"text-white bg-guardsman-red-700 rounded-full","ClassPrev": "text-white bg-guardsman-red-700 rounded-full"}'}
+      options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
+    >
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+    </Swiper>
+    <!-- Banner comercial -->
+    <div
+      id="div-gpt-ad-4222133-1"
+      class="google-ads bg-[#a1a1a1b8] w-full h-[100px] relative"
+      data-code="@adsDomain/responsive_portada_leaderboard_1"
+      data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
+    >
+      <div
+        class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-none stoke-[#1b1b1bbf]"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+          ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path d="M7 13l4 0"
+          ></path><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"></path></svg
+        >
+      </div>
+    </div>
+    <Swiper
+      className="mx-auto mt-5 w-full h-[300px] "
+      navigation={'{"Type":"normal", "ClassName":"" ,"ClassNext":"text-white bg-guardsman-red-700 rounded-full","ClassPrev": "text-white bg-guardsman-red-700 rounded-full"}'}
+      options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
+    >
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+      <SwiperItem className="swiper-slide w-full md:w-[48%] mr-[10px]">
+        <ItemVideoNews
+          datetime="23/04/2024"
+          className="w-full h-full"
+          category="Internacional"
+          categoryColor="category_03"
+          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+          href="#"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/c26871d4-c46e-4fa8-b045-9660e05da4db.webp"
+            width="500"
+            height="731"
+            className="group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative"
+            classNameImage="object-cover h-full"
+            slot="image"
+          />
+        </ItemVideoNews>
+      </SwiperItem>
+    </Swiper>
   </section>
 </LayoutPost>
+<style is:global>
+  #blog iframe{
+    width: 100%;
+    height: 500px;
+}
+@media (min-width: 768px) {
+  #blog iframe{
+    height: 400px;
+}
+}
+@media (min-width: 1024px) {
+  #blog iframe{
+    height: 500px;
+}
+}
+@media (min-width: 1280px) {
+  #blog iframe{
+    height: 600px;
+}
+}
+</style>

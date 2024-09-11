@@ -58,6 +58,7 @@ const {
 
         form.forEach((formItem) => {
           formItem.addEventListener("submit", function (event) {
+            event.preventDefault();
             initSend(this as HTMLFormElement);
           });
         });

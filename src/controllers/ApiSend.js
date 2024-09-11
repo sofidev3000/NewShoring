@@ -23,18 +23,14 @@ function initSend(form){
         var method = form.method;
         let action = form.dataset.action;
 
-        if(action === "api-request" || action === "requestpost"){
-            const url = new URL(window.location.href);
-            const params = new URLSearchParams(url.search);
-            const testParam = params.get('test');
-            let testString = "";
-            if(testParam){
-            testString = `?test=${testParam}`
-            }
-
-            action = `${action}${testString}`;
-        }
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+        const testParam = params.get('test');
         
+        if(testParam){
+            action = `${action}?${params.toString()}`
+        }
+
         var headers = {};
         if(token){
             headers={
