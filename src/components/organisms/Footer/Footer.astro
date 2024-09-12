@@ -8,10 +8,10 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
 ---
 
 <footer
-  class="footer bg-black flex flex-wrap justify-center md:justify-between items-start content-center text-white h-fit w-full py-5 px-[2rem] space-y-[1rem] mt-auto"
+  class="footer bg-black flex flex-wrap justify-center md:justify-between text-white h-fit w-full py-5 px-[2rem] space-y-[1rem] mt-auto"
 >
   <div
-    class="min-w-[370px] h-full flex flex-col justify-between items-start gap-[3rem] self-center"
+    class="sm:min-w-[300px] w-full sm:w-auto h-full flex flex-col justify-between items-start gap-[3rem] mt-[1rem]"
   >
     <Logo animationdirection="fade-bottom" isMobile="true" />
     <SocialMediaIcons />
@@ -41,68 +41,68 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
     </nav>
   </div>
 
-  <div class="footer__latest-post flex flex-col gap-3 m-0">
+  <div class="footer__latest-post flex flex-col gap-3 m-0 w-full lg:w-[60%] xl:max-w-[370px]">
     <h3 class="font-bold text-xl mb-0">Lo más reciente</h3>
     <ItemNews
-      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="100"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="100"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[115px] md:min-h-[73px]  group"},"AssetsContainer":{"ClassName":"relative w-full h-auto overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  max-w-[190px] h-full  max-h-[120px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"max-w-[26rem] md:max-w-[13rem] flex flex-col  gap-2 space-y-reverse justify-between","Date":{"ClassName":"order-1 text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"font-normal","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-xs"}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="100"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
+    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+    className=""
+    category="Internacional"
+    attributes={'{"data-aos":"fade-up"}'}
+    title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+    datetime="22/04/2024"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+      width="200"
+      height="114"
+      className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+      classNameImage="h-full object-cover object-center"
+      slot="image"
+    />
+  </ItemNews>
+  <ItemNews
+  Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+  className=""
+  category="Internacional"
+  attributes={'{"data-aos":"fade-up"}'}
+  title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+  datetime="22/04/2024"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+    width="200"
+    height="114"
+    className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+    classNameImage="h-full object-cover object-center"
+    slot="image"
+  />
+</ItemNews>
+<ItemNews
+Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+className=""
+category="Internacional"
+attributes={'{"data-aos":"fade-up"}'}
+title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+datetime="22/04/2024"
+href="#"
+categoryColor="category_03"
+>
+<ImageLazy
+  src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+  width="200"
+  height="114"
+  className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+  classNameImage="h-full object-cover object-center"
+  slot="image"
+/>
+</ItemNews>
   </div>
 
-  <div class="footer__latest-post flex flex-col gap-4 w-full max-w-[356px]">
+  <div class="footer__latest-post flex flex-col gap-4 w-full xl:max-w-[356px]">
     <h3 class="font-bold text-xl mb-2">Suscríbete</h3>
     <p>
       Ut velit culpa irure aliquip. Nisi nisi irure laborum irure ex est irure
@@ -130,7 +130,7 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
 
         <div class="flex items-center justify-center w-full">
           <input
-            class="py-[10.2px] flex-1 text-xs text-[#1b1b1b]"
+            class="py-[10.2px] flex-1 text-xs"
             type="email"
             id="email"
             name="email"
