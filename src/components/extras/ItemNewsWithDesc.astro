@@ -19,7 +19,7 @@ var optionsObjs = null;
 if(Options!=null){
     optionsObjs = JSON.parse(Options);
 }else{
-    optionsObjs = JSON.parse("{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"\"}}},\"DataContainer\":{\"ClassName\":\"\",\"Date\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"\"},\"Content\":{\"ClassName\":\"\"}}}");
+    optionsObjs = JSON.parse("{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"\"}}},\"DataContainer\":{\"ClassName\":\"\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"},\"Autor\":{\"Active\":true,\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por\",\"TextNext\":\"-\"}}}");
 }
 
 const dataAttributes = attributes && attributes ? attributes : "{}";
@@ -42,9 +42,13 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                 )
             }
         </div>
+        <h2 class={optionsObjs.DataContainer.Title.ClassName}>
+            {title}
+        </h2>
         <div class={optionsObjs.DataContainer.ClassName}>
+
             <div class={optionsObjs.DataContainer.ClassName}>
-                <span class="order-1">
+                <span class="order-0">
                     Por&nbsp;
                     <strong>Ejemplo autor</strong>
                     &nbsp;-&nbsp;
@@ -65,12 +69,9 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                     </span>
                 )
             }
-            <h2 class={optionsObjs.DataContainer.Title.ClassName}>
-                {title}
-            </h2>
-            <p>
-                {content}
-            </p>
+                  <p>
+                    {content}
+                </p>
         </div>
     </a>
 </article>
