@@ -1,6 +1,6 @@
 [
   {
-    "ClassName": "flex flex-col justify-center lg:justify-between  xl:flex-row   space-y-1 lg:space-y-0  items-start w-full  max-w-[1300px] flex-wrap md:gap-[5rem]",
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
     "Components": [
       {
         "ComponentType": "component",
@@ -21,7 +21,7 @@
               "Object": "SingleData",
               "Action": "deserialize",
               "Data": {
-                "Data": "Near Now!"
+                "Data": "NEAR NOW!"
               }
             }
           }
@@ -31,14 +31,14 @@
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNews",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-up\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
             },
             "ViewData": {},
             "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
@@ -79,7 +79,7 @@
                 "PartialItem": "promotagger/ItemNews",
                 "Attributes": {
                   "Data": "{\"data-aos\":\"fade-up\"}",
-                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
                 },
                 "ViewData": {},
                 "ClassName": "",
@@ -100,17 +100,28 @@
         ]
       },
       {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "flex  flex-col lg:gap-[10rem] xl:flex-col  w-full xl:max-w-[450px]  2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28 pt-20",
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNews",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-left\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
             },
             "ViewData": {},
             "ClassName": "flex flex-col self-center w-full group",
@@ -152,7 +163,7 @@
               "Object": "SingleData",
               "Action": "deserialize",
               "Data": {
-                "Data": " Industrías"
+                "Data": "INDUSTRÍAS"
               }
             }
           }
@@ -169,7 +180,7 @@
             "PartialItem": "promotagger/ItemNewsWithDesc",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-right\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
             },
             "ViewData": {},
             "ClassName": "",
@@ -199,7 +210,7 @@
             "PartialItem": "promotagger/ItemNewsWithDesc",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-left\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
             },
             "ViewData": {},
             "ClassName": "w-full sm:w-[31%]",
@@ -221,7 +232,7 @@
     ]
   },
   {
-    "ClassName": "flex flex-col justify-center lg:justify-between  xl:flex-row   space-y-1 lg:space-y-0  items-start w-full  max-w-[1300px] flex-wrap md:gap-[5rem]",
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
     "Components": [
       {
         "ComponentType": "component",
@@ -242,7 +253,7 @@
               "Object": "SingleData",
               "Action": "deserialize",
               "Data": {
-                "Data": "Energía"
+                "Data": "ENERGÍA"
               }
             }
           }
@@ -252,14 +263,14 @@
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "flex  flex-col lg:gap-[10rem] xl:flex-col  w-full xl:max-w-[450px]  2xl:max-w-[459px] items-stretch xl:gap-12  2xl:gap-28 pt-20",
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNews",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-left\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
             },
             "ViewData": {},
             "ClassName": "flex flex-col self-center w-full group",
@@ -279,17 +290,28 @@
         ]
       },
       {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "w-full xl:max-w-[600px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNews",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-up\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
             },
             "ViewData": {},
             "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
@@ -331,7 +353,7 @@
                 "PartialItem": "promotagger/ItemNews",
                 "Attributes": {
                   "Data": "{\"data-aos\":\"fade-up\"}",
-                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
                 },
                 "ViewData": {},
                 "ClassName": "",
@@ -367,7 +389,7 @@
         "Attributes": {
           "Data": "{ \"method\":\"POST\",\"data-plugin\":\"storage-data-system\", \"data-action\":\"/requestpost\",\"data-service\": \"storage-data\", \"data-service-action\": \"storage-suscribe-form\",\"data-redirect\": \"{{domain}}/confirmation\"}",
           "RecaptchaField": "{ \"ClassName\": \"hidden\", \"data-sitekey\": \"\", \"recaptcha-used\": false }",
-          "DisclaimerContainer": "{\"Active\":true,\"Type\":\"p\",\"ClassName\":\"text-left text-3xl font-extrabold text-[--guardsman-red-500] w-full\",\"Text\":\"Suscribe to our Newsletter\"}"
+          "DisclaimerContainer": "{\"Active\":true,\"Type\":\"p\",\"ClassName\":\"text-left text-3xl font-extrabold text-[--guardsman-red-500] w-full\",\"Text\":\"SUSCRÍBETE A NUESTRO NEWSLETTER\"}"
         },
         "ViewData": {},
         "ClassName": "form-send w-full flex flex-row flex-wrap gap-4",
@@ -376,11 +398,156 @@
           "Action": "deserialize",
           "Data": {
             "Field": [
-              "{\"IdBase\":\"email-sub\",\"ClassNameContainer\":\"w-full lg:w-[79%] flex flex-col gap-1\",\"Field\":{\"Type\":\"input\",\"ClassName\":\"\",\"Attributes\":{\"type\":\"email\",\"name\":\"email\",\"placeholder\": \"email\",\"required\":true}}}",
+              "{\"IdBase\":\"email-sub\",\"ClassNameContainer\":\"w-full lg:w-[79%] flex flex-col gap-1\",\"Field\":{\"Type\":\"input\",\"ClassName\":\"\",\"Attributes\":{\"type\":\"email\",\"name\":\"email\",\"placeholder\": \"Ingresa tu correo electrónico\",\"required\":true}}}",
               "{\"IdBase\": \"buttonSubmit\", \"ClassNameContainer\": \"w-full lg:w-[19%]\", \"Field\": {\"Type\": \"input\", \"ClassName\": \"bg-[--button-base] hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold px-4 py-1 rounded-[7px] w-full h-full\", \"Attributes\": {\"type\": \"submit\", \"value\": \"Registrar\"}}}"
             ]
           }
         }
+      }
+    ]
+  },
+  {
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2",
+              "Data": "{ \"id\":\"finanzas\" }"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": "FINANZAS"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-up\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 41,
+                  "limit": 1,
+                  "take": 0
+                }
+              }
+            }
+          },
+          {
+            "ComponentType": "element",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "border-b border-[--divider-secundary] w-full my-5",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": ""
+            }
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "Data": "{ \"data-astro-cid-j7pv25f6\":\"\" }"
+            },
+            "ViewData": {},
+            "ClassName": "articles__small space-y-reverse w-full",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "promotagger/ItemNews",
+                "Attributes": {
+                  "Data": "{\"data-aos\":\"fade-up\"}",
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                },
+                "ViewData": {},
+                "ClassName": "",
+                "Content": {
+                  "Object": "PromoTagger",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "GetNewsListByCategory",
+                    "Param": {
+                      "idCategory": 41,
+                      "limit": 4,
+                      "take": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-left\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 41,
+                  "limit": 2,
+                  "take": 5
+                }
+              }
+            }
+          }
+        ]
       }
     ]
   },
@@ -440,6 +607,531 @@
                   "Object": "PromoTagger",
                   "Data": "{\"Exec\": \"GetListNews\", \"Param\": { \"limit\": 4,\"take\": 4,\"type_content\": \"news-video\"}}",
                   "Action": "exec"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2",
+              "Data": "{ \"id\": \"logistica-y-transporte\" }"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": " LOGÍSTICA Y TRANSPORTE"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-up\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 42,
+                  "limit": 2,
+                  "take": 0
+                }
+              }
+            }
+          },
+          {
+            "ComponentType": "element",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "border-b border-[--divider-secundary] w-full my-5",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": ""
+            }
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "Data": "{ \"data-astro-cid-j7pv25f6\":\"\" }"
+            },
+            "ViewData": {},
+            "ClassName": "articles__small space-y-reverse w-full",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "promotagger/ItemNews",
+                "Attributes": {
+                  "Data": "{\"data-aos\":\"fade-up\"}",
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                },
+                "ViewData": {},
+                "ClassName": "",
+                "Content": {
+                  "Object": "PromoTagger",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "GetNewsListByCategory",
+                    "Param": {
+                      "idCategory": 42,
+                      "limit": 1,
+                      "take": 2
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-left\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 42,
+                  "limit": 4,
+                  "take": 3
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2",
+              "Data": "{ \"id\":\"parques-industriales\" }"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": "PARQUES INDUSTRIALES"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-left\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 46,
+                  "limit": 2,
+                  "take": 0
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-up\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 46,
+                  "limit": 1,
+                  "take": 2
+                }
+              }
+            }
+          },
+          {
+            "ComponentType": "element",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "border-b border-[--divider-secundary] w-full my-5",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": ""
+            }
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "Data": "{ \"data-astro-cid-j7pv25f6\":\"\" }"
+            },
+            "ViewData": {},
+            "ClassName": "articles__small space-y-reverse w-full",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "promotagger/ItemNews",
+                "Attributes": {
+                  "Data": "{\"data-aos\":\"fade-up\"}",
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                },
+                "ViewData": {},
+                "ClassName": "",
+                "Content": {
+                  "Object": "PromoTagger",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "GetNewsListByCategory",
+                    "Param": {
+                      "idCategory": 46,
+                      "limit": 4,
+                      "take": 3
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2",
+              "Data": "{ \"id\": \"capital-humano\" }"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": " CAPITAL HUMANO"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-up\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full xl:max-w-[580px] 2xl:max-w-[700px] font-bold group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 50,
+                  "limit": 2,
+                  "take": 0
+                }
+              }
+            }
+          },
+          {
+            "ComponentType": "element",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "border-b border-[--divider-secundary] w-full my-5",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": ""
+            }
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "Data": "{ \"data-astro-cid-j7pv25f6\":\"\" }"
+            },
+            "ViewData": {},
+            "ClassName": "articles__small space-y-reverse w-full",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "promotagger/ItemNews",
+                "Attributes": {
+                  "Data": "{\"data-aos\":\"fade-up\"}",
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                },
+                "ViewData": {},
+                "ClassName": "",
+                "Content": {
+                  "Object": "PromoTagger",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "GetNewsListByCategory",
+                    "Param": {
+                      "idCategory": 50,
+                      "limit": 1,
+                      "take": 2
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ComponentType": "element",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]",
+        "Content": {
+          "Object": "SingleData",
+          "Action": "deserialize",
+          "Data": ""
+        }
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNews",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-left\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "flex flex-col self-center w-full group",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 50,
+                  "limit": 4,
+                  "take": 3
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2",
+              "Data": "{ \"id\": \"esg\" }"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": "ESG"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex self-center w-full lg:w-[30%] group",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNewsWithDesc",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-right\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 56,
+                  "limit": 1,
+                  "take": 0
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "flex flex-row flex-wrap gap-4 w-full lg:w-[65%] group",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "promotagger/ItemNewsWithDesc",
+            "Attributes": {
+              "Data": "{\"data-aos\":\"fade-left\"}",
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+            },
+            "ViewData": {},
+            "ClassName": "w-full sm:w-[31%]",
+            "Content": {
+              "Object": "PromoTagger",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNewsListByCategory",
+                "Param": {
+                  "idCategory": 56,
+                  "limit": 3,
+                  "take": 1
                 }
               }
             }
