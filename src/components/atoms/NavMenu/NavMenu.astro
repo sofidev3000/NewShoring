@@ -95,7 +95,7 @@ const randomNum = Math.floor(Math.random() * 1000);
     >
       {
         pagePathname !== "/" && (
-          <li class="header__item">
+          <li class="header__item  ">
             <a
               class="header__link block font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
               href="/"
@@ -107,7 +107,7 @@ const randomNum = Math.floor(Math.random() * 1000);
       }
       {
         mainMenuItems.map((menuItem, index) => (
-          <li >
+          <li class="">
             {menuItem.url ? (
               <a
                 href={menuItem.url}
