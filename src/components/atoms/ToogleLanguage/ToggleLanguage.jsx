@@ -6,6 +6,7 @@ const Languages = [
   { name: 'Chinese', code: 'cn', flag: 'circle-flags:cn' },
   { name: 'French', code: 'fr', flag: 'circle-flags:fr' },
   { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
+  { name: 'Alemán', code: 'de', flag: 'circle-flags:de' }
 ];
 
 const ToggleLanguage = ({breakpoint='desktop'}) => {

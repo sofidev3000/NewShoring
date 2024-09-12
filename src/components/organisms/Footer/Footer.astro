@@ -11,7 +11,7 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
   class="footer bg-black flex flex-wrap justify-center md:justify-between text-white h-fit w-full py-5 px-[2rem] space-y-[1rem] mt-auto"
 >
   <div
-    class="sm:min-w-[300px] w-full sm:w-auto h-full flex flex-col justify-between items-start gap-[3rem] mt-[1rem]"
+    class="sm:min-w-[300px] w-full sm:w-[300px] h-full flex flex-col justify-between items-start gap-[3rem] mt-[1rem]"
   >
     <Logo animationdirection="fade-bottom" isMobile="true" />
     <SocialMediaIcons />
@@ -32,6 +32,16 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
             ><iconify-icon
               class="text-guardsman-red-600"
               icon="formkit:telephone"
+              width="20"
+              height="20"></iconify-icon>
+            <span class="py-1"> correo@correo.com</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2" href="tel:"
+            ><iconify-icon
+              class="text-guardsman-red-600"
+              icon="el:map-marker"
               width="20"
               height="20"></iconify-icon>
             <span class="py-1"> correo@correo.com</span>
