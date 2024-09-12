@@ -4,7 +4,8 @@
     --secundary-color: #1b1b1b, ;
     --accent-color: #8F0101;
     --background-glass: #000000d6;
-    --divider-secundary: rgba(38, 38, 38, 0.454);
+    --divider-secundary: rgb(38 38 38 / 23%);
+
     /* Guardsman Red Palette */
     --guardsman-red-50: #ffefef;
     --guardsman-red-100: #ffdcdc;
@@ -38,7 +39,7 @@
     --main-color: #090909;
     /* Dark background */
     --secundary-color: #fafafa;
-    --divider-secundary: rgba(89, 89, 89, 0.497);
+    --divider-secundary: rgba(118, 118, 118, 0.348);
 
 }
 /* Definición de las fuentes */
