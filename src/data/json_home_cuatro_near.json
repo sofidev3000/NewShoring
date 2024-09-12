@@ -142,7 +142,7 @@
     ]
   },
   {
-    "ClassName": "flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full  max-w-[1300px] flex-wrap mb-10",
+    "ClassName": "flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5",
     "Components": [
       {
         "ComponentType": "component",
@@ -173,14 +173,14 @@
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "flex self-center w-full lg:w-[30%] ",
+        "ClassName": "flex self-center w-full lg:w-[30%] group",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNewsWithDesc",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-right\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"group \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
             },
             "ViewData": {},
             "ClassName": "",
@@ -203,17 +203,17 @@
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "flex flex-row flex-wrap gap-4 w-full lg:w-[65%] ",
+        "ClassName": "flex flex-row flex-wrap gap-4 w-full lg:w-[65%]",
         "Children": [
           {
             "ComponentType": "element",
             "PartialItem": "promotagger/ItemNewsWithDesc",
             "Attributes": {
               "Data": "{\"data-aos\":\"fade-left\"}",
-              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+              "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
             },
             "ViewData": {},
-            "ClassName": "w-full sm:w-[31%]",
+            "ClassName": "w-full sm:w-[31%] group",
             "Content": {
               "Object": "PromoTagger",
               "Action": "exec",
@@ -665,7 +665,7 @@
                 "Exec": "GetNewsListByCategory",
                 "Param": {
                   "idCategory": 42,
-                  "limit": 2,
+                  "limit": 1,
                   "take": 0
                 }
               }
@@ -708,7 +708,7 @@
                     "Param": {
                       "idCategory": 42,
                       "limit": 1,
-                      "take": 2
+                      "take": 4
                     }
                   }
                 }
@@ -750,8 +750,8 @@
                 "Exec": "GetNewsListByCategory",
                 "Param": {
                   "idCategory": 42,
-                  "limit": 4,
-                  "take": 3
+                  "limit": 2,
+                  "take": 5
                 }
               }
             }
@@ -955,7 +955,7 @@
                 "Exec": "GetNewsListByCategory",
                 "Param": {
                   "idCategory": 50,
-                  "limit": 2,
+                  "limit": 1,
                   "take": 0
                 }
               }
@@ -997,8 +997,8 @@
                     "Exec": "GetNewsListByCategory",
                     "Param": {
                       "idCategory": 50,
-                      "limit": 1,
-                      "take": 2
+                      "limit": 4,
+                      "take": 1
                     }
                   }
                 }
@@ -1040,8 +1040,8 @@
                 "Exec": "GetNewsListByCategory",
                 "Param": {
                   "idCategory": 50,
-                  "limit": 4,
-                  "take": 3
+                  "limit": 2,
+                  "take": 5
                 }
               }
             }
@@ -1112,7 +1112,7 @@
         "ComponentType": "component",
         "PartialItem": "Container",
         "ViewData": {},
-        "ClassName": "flex flex-row flex-wrap gap-4 w-full lg:w-[65%] group",
+        "ClassName": "flex flex-row flex-wrap gap-4 w-full lg:w-[65%]",
         "Children": [
           {
             "ComponentType": "element",
@@ -1122,7 +1122,7 @@
               "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs mb-3\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
             },
             "ViewData": {},
-            "ClassName": "w-full sm:w-[31%]",
+            "ClassName": "w-full sm:w-[31%] group",
             "Content": {
               "Object": "PromoTagger",
               "Action": "exec",
