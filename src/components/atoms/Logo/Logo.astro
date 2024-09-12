@@ -1,21 +1,35 @@
 ---
-const { animationdirection = "fade-right", textColor = '[--secundary-color]', fontSize = '', fontSizeSlogan = "", isMobile = false } = Astro.props;
+const {
+  animationdirection = "fade-right",
+  textColor = "[--secundary-color]",
+  fontSize = "",
+  fontSizeSlogan = "",
+  isMobile = false,
+} = Astro.props;
 ---
-{isMobile ? (
-  <a data-aos={animationdirection} href="/" class={`flex w-fit flex-col flex-1 font-normal text-${textColor} relative`}>
-    <h1 class="text-[2.1rem] font-FjallaOne tracking-none w-fit">Nearshoring News</h1>
-    <h4 class="text-[1rem] absolute top-[73%] bottom-0">We bring markets closer</h4>
-  </a>
-) : (
-  <a data-aos={animationdirection} href="/" class={`hidden md:flex flex-col text-left font-normal text-${textColor} relative`}>
-    <h1 class={`text-[7.2vw] font-FjallaOne tracking-normal`}>Nearshoring News</h1>
-    <h4 class={`text-[2vw] absolute top-[73%] bottom-0`}>We bring markets closer</h4>
-  </a>
-)}
 
-<style>
-  .logo {
-    padding-block: 1rem;
-    writing-mode: horizontal-tb;
-  }
-</style>
+{
+  isMobile ? (
+    <a
+      data-aos={animationdirection}
+      href="/"
+      class={`flex  w-fit flex-col font-normal text-${textColor} relative`}
+    >
+        <img
+        class="logo__img--mobile"
+        src="/img/logo/nearShoringLogoBlack.svg"
+        alt="Logo Near shoring"
+        aria-label="Nearshoring Logo"
+      />
+    </a>
+  ) : (
+    <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col`}>
+      <img
+        class="logo__img"
+        src="/img/logo/nearShoringLogoBlack.svg"
+        alt="Logo Near shoring"
+        aria-label="Nearshoring Logo"
+      />
+    </a>
+  )
+}

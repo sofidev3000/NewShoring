@@ -96,3 +96,32 @@ body {
   #terms:checked {
     background-color: var(--guardsman-red-700);
   }
+
+
+  /* Logo */
+
+
+  .logo {
+    padding-block: 1rem;
+    writing-mode: horizontal-tb;
+  }
+  .logo__img {
+    max-width: 60vw;
+    height: 25dvh;
+    object-fit: cover;
+  }
+  .logo__img--mobile {
+    max-width: 100%;
+    height: 8dvh;
+    object-fit: contain;
+    filter: invert(1);
+  }
+
+  .dark {
+    .logo__img {
+      max-width: 100%;
+      height: 25dvh;
+      object-fit: cover;
+      filter: invert(1);
+    }
+  }
