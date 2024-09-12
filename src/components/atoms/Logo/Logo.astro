@@ -1,4 +1,6 @@
 ---
+import ImageLazy from "@components/extras/ImageLazy.astro";
+
 const {
   animationdirection = "fade-right",
   textColor = "[--secundary-color]",
@@ -13,23 +15,27 @@ const {
     <a
       data-aos={animationdirection}
       href="/"
-      class={`flex  w-fit flex-col font-normal text-${textColor} relative`}
+      class={`flex  w-fit flex-col font-normal text-${textColor} relative w-[40%] min-w-[15rem]`}
     >
-        <img
-        class="logo__img--mobile"
-        src="/img/logo/nearShoringLogoBlack.svg"
-        alt="Logo Near shoring"
-        aria-label="Nearshoring Logo"
-      />
+        <ImageLazy
+            src="/img/logo/nearShoringLogoBlack.svg"
+            width="200"
+            height="114"
+            className="pt-[32%] relative "
+            classNameImage="logo__img--mobile"
+            slot="image"
+          />
     </a>
   ) : (
-    <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col`}>
-      <img
-        class="logo__img"
-        src="/img/logo/nearShoringLogoBlack.svg"
-        alt="Logo Near shoring"
-        aria-label="Nearshoring Logo"
-      />
+    <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col w-[43%] max-w-[30rem] 2xl:max-w-[45rem]`}>
+      <ImageLazy
+            src="/img/logo/nearShoringLogoBlack.svg"
+            width="200"
+            height="114"
+            className="pt-[30%] relative "
+            classNameImage="h-full"
+            slot="image"
+          />
     </a>
   )
 }
