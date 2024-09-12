@@ -1,34 +1,49 @@
-import { initProcessTranslate } from '@src/utils/translatePage';
-import React, { useState, useEffect } from 'react';
+import { initProcessTranslate } from "@src/utils/translatePage";
+import React, { useState, useEffect, useRef } from "react";
 
 const Languages = [
-  { name: 'Español', code: 'es', flag: 'circle-flags:es' },
-  { name: 'English', code: 'en', flag: 'emojione:flag-for-us-outlying-islands' },
-  { name: 'Chinese', code: 'cn', flag: 'circle-flags:cn' },
-  { name: 'French', code: 'fr', flag: 'circle-flags:fr' },
-  { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
+  { name: "Español", code: "es", flag: "circle-flags:es" },
+  {
+    name: "English",
+    code: "en",
+    flag: "emojione:flag-for-us-outlying-islands",
+  },
+  { name: "Chinese", code: "cn", flag: "circle-flags:cn" },
+  { name: "French", code: "fr", flag: "circle-flags:fr" },
+  { name: "Rusian", code: "rs", flag: "circle-flags:ru" },
 ];
 
-const ToggleLanguage = ({breakpoint='desktop'}) => {
+const ToggleLanguage = ({ breakpoint = "desktop" }) => {
+  // const [selectedLanguage, setSelectedLanguage] = useState(Languages[0]);
 
-  const [selectedLanguage, setSelectedLanguage] = useState(Languages[0]);
+  // // Se guarda la selección en localStorage
+  // useEffect(() => {
+  //   const savedLanguage = localStorage.getItem("selectedLanguage");
+  //   if (savedLanguage) {
+  //     setSelectedLanguage(JSON.parse(savedLanguage));
+  //   }
+  // }, []);
 
-  // Se guarda la selección en localStorage
+  // const handleLanguageChange = (language) => {
+  //   setSelectedLanguage(language);
+  //   localStorage.setItem("selectedLanguage", JSON.stringify(language));
+  // };
+
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-      setSelectedLanguage(JSON.parse(savedLanguage));
-    }
-  }, []);
+      initProcessTranslate();
+  
+  },[]);
 
-  const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-    localStorage.setItem('selectedLanguage', JSON.stringify(language));
-    // initProcessTranslate(language.code);
-  };
+  // setInterval(() => {
+  // }, 1000);
 
   return (
-    <form className="max-w-sm mx-auto">
+    <>
+      <div id="states_container">
+        <div className="gtranslate_wrapper"></div>
+      </div>
+
+      {/* <form className="max-w-sm mx-auto">
       <div className="flex">
         <button
           id={`states-button`}
@@ -74,7 +89,8 @@ const ToggleLanguage = ({breakpoint='desktop'}) => {
           </ul>
         </div>
       </div>
-    </form>
+    </form> */}
+    </>
   );
 };
 
