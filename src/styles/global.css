@@ -2,7 +2,7 @@
 :root {
     --main-color: #f4f4f4;
     --secundary-color: #1b1b1b, ;
-    --accent-color: #BA0000;
+    --accent-color: #8F0101;
     --background-glass: #000000d6;
     --divider-secundary: rgba(38, 38, 38, 0.454);
     /* Guardsman Red Palette */
@@ -14,9 +14,9 @@
     --guardsman-red-500: #BA0000;
     --guardsman-red-600: #ca0303;
     --guardsman-red-700: #8F0101;
-    --guardsman-red-800: #ba0000;
-    --guardsman-red-900: #940808;
-    --guardsman-red-950: #520000;
+    --guardsman-red-800: #8F0101;
+    --guardsman-red-900: #8F0101;
+    --guardsman-red-950: #8F0101;
 
     /* Buttons background color */
     --button-base: var(--guardsman-red-500);

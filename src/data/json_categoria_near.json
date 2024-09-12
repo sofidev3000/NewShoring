@@ -1,6 +1,6 @@
 [
   {
-    "ClassName": "w-full py-10 flex flex-wrap lg:max-w-screen-lg m-auto md:max-w-screen-md xl:max-w-[1300px]",
+    "ClassName": "w-full py-10 flex flex-wrap max-w-[1300px]",
     "Components": [
       {
         "ComponentType": "component",
@@ -39,7 +39,7 @@
             "ComponentType": "component",
             "PartialItem": "Container",
             "ViewData": {},
-            "ClassName": "w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap lg:max-w-screen-lg m-auto md:max-w-screen-md xl:max-w-[1300px]",
+            "ClassName": "w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap  m-auto max-w-[1300px]",
             "Children": [
               {
                 "ComponentType": "component",
