@@ -221,7 +221,7 @@
     ]
   },
   {
-    "ClassName": "flex flex-col justify-center  xl:flex-row   space-y-1 lg:space-y-0  items-start w-full  max-w-[1300px] flex-wrap md:gap-[5rem] xl:gap-[4rem]",
+    "ClassName": "flex flex-col justify-center lg:justify-between  xl:flex-row   space-y-1 lg:space-y-0  items-start w-full  max-w-[1300px] flex-wrap md:gap-[5rem]",
     "Components": [
       {
         "ComponentType": "component",
