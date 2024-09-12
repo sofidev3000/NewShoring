@@ -19,7 +19,7 @@ var optionsObjs = null;
 if(Options!=null){
     optionsObjs = JSON.parse(Options);
 }else{
-    optionsObjs = JSON.parse("{\"LinkContainer\": { \"ClassName\": \"\" },\"AssetsContainer\":{\"ClassName\":\"relative w-2/5 overflow-hidden\",\"HasFlag\":true,\"Flag\":{\"ClassName\":\"absolute top-1.5 left-1.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-black rounded-lg\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":true,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full\"}}},\"DataContainer\":{\"ClassName\":\"w-3/5 p-4 pl-0 pb-3\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"}}}");
+    optionsObjs = JSON.parse("{\"LinkContainer\":{\"ClassName\":\"\"},\"AssetsContainer\":{\"ClassName\":\"relative w-2/5 overflow-hidden\",\"HasFlag\":true,\"Flag\":{\"ClassName\":\"absolute top-1.5 left-1.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-black rounded-lg\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0\",\"HasWatermark\":true,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full\"}}},\"DataContainer\":{\"ClassName\":\"w-3/5 p-4 pl-0 pb-3\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"},\"Autor\":{\"Active\":true,\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por\",\"TextNext\":\"-\"}}}");
 }
 
 const dataAttributes = attributes && attributes ? attributes : "{}";
@@ -43,6 +43,11 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
             }
         </div>
         <div class={optionsObjs.DataContainer.ClassName}>
+            <span class="order-1">
+                Por&nbsp;
+                <strong>Ejemplo autor</strong>
+                &nbsp;-&nbsp;
+            </span>
             <time datetime="fecha_de_noticia" class={optionsObjs.DataContainer.Date.ClassName}>
                 {
                     optionsObjs.DataContainer.Date.Icon.ClassName && (
@@ -52,7 +57,7 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                 {datetime}
             </time>
             {
-                time &&(
+                time && (
                     <span class={optionsObjs.DataContainer.Time.ClassName}>
                         <svg xmlns="http://www.w3.org/2000/svg" class={optionsObjs.DataContainer.Time.Icon.ClassName} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 7v5" /><path d="M12 12l2 -3" /></svg>
                         {time}
