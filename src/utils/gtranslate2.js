@@ -1,6 +1,16 @@
 /*!Copyright (C) GTranslate Inc.*/ (function () {
     var gt = window.gtranslateSettings || {};
     gt = gt[document.currentScript.getAttribute("data-gt-widget-id")] || gt;
+    // TODO:
+    var Languages_storage= {
+        "zh-CN": {name: "Chinese" , code: "cn"},
+        "en": {name: "English", code: "en"},
+        "fr": {name: "French", code: "fr"},
+        "de": {name: "German", code: "de"},
+        "ru": {name: "Rusian", code: "rs"},
+        "es": {name: "Español", code: "es"},
+    };
+      // TODO:
     var lang_array_english = {
         af: "Afrikaans",
         sq: "Albanian",
@@ -318,6 +328,7 @@
     }
     var current_lang =
         document.querySelector("html").getAttribute("lang") || default_language;
+        
     if (url_structure == "none") {
         var googtrans_matches = document.cookie.match(
             "(^|;) ?googtrans=([^;]*)(;|$)"
@@ -503,7 +514,7 @@
             var el_div = document.createElement("div");
             el_div.appendChild(el_img);
             el_a.appendChild(el_div);
-            console.log(el_a)
+            
 
         // TODO:
         // el_a.appendChild(el_img);
@@ -563,7 +574,11 @@
             var lang = lang_pair.split("|")[1];
             
             //TODO:
-                // localStorage.setItem('currentLang', lang);
+            
+            // si se agrega un nuevo lenguage se debe agregar en el obj languages_storage
+            localStorage.setItem('selectedLanguage', JSON.stringify(Languages_storage[lang]));
+
+            //--    
                 var settings= window.gtranslateSettings;
                 window.gtranslateSettings = {
                     ...settings,

@@ -3,11 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const Languages = [
   { name: "Español", code: "es", flag: "circle-flags:es" },
-  {
-    name: "English",
-    code: "en",
-    flag: "emojione:flag-for-us-outlying-islands",
-  },
+  { name: "English", code: "en", flag: "emojione:flag-for-us-outlying-islands" },
   { name: "Chinese", code: "cn", flag: "circle-flags:cn" },
   { name: "French", code: "fr", flag: "circle-flags:fr" },
   { name: "Rusian", code: "rs", flag: "circle-flags:ru" },
@@ -30,9 +26,8 @@ const ToggleLanguage = ({ breakpoint = "desktop" }) => {
   // };
 
   useEffect(() => {
-      initProcessTranslate();
-  
-  },[]);
+    initProcessTranslate();
+  }, []);
 
   // setInterval(() => {
   // }, 1000);

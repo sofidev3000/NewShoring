@@ -15,17 +15,27 @@ const IndicadoresCarousel = () => {
           domain = window.location.origin;
         }
 
-        const baseURL = `${domain}/api-request`;
+        // const baseURL = `${domain}/api-request?`;
+        const baseURL = 'http://localhost:4322/api-request?test=https://deploy.d75gks6oi6j7d.amplifyapp.com';
+        // const baseURL = 'https://deploy.d75gks6oi6j7d.amplifyapp.com/api-request';
         // ejecuta
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
+
+        // SELECCIONAR LENGUAJE 
+        const currentLang = localStorage.getItem('selectedLanguage');
+        let langCode = 'es';
+        if (currentLang) {
+          langCode = JSON.parse(currentLang).code;
+        }
+
 
         const raw = JSON.stringify({
           "PluginName": "quotify",
           "ServiceName": "quantify-service",
           "ServiceAction": "indicadores-data",
           "BodyData": {
-            "language_code": "es",
+            "language_code": langCode,//"es",
             "query_date": getCurrentDate()
           },
           "DataContext": null
@@ -36,10 +46,11 @@ const IndicadoresCarousel = () => {
           headers: myHeaders,
           body: raw
         });
-
+        
+        
         if (!response.ok) throw new Error("Network response was not ok");
-
-        const result = await response.json();
+        
+        const result = await response.json();        
         const indicadoresData = result.result.divisas;
 
         // Asegúrate de que data sea un array
