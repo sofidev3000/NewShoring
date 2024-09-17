@@ -25,7 +25,7 @@
     background: linear-gradient(to left, #000000 0%, #00000031 100%);
 }
 .carrusel {
-    width: max-content;
+    width: max-content!important;
     display: flex;
     animation: scroll 17s linear infinite;
 }

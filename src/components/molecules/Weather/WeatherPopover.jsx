@@ -80,8 +80,8 @@ const formattedTime = currentTime.toLocaleTimeString("en-US", {
   hour: "numeric",
   minute: "numeric",
   second: "numeric",
-  // hour12: true,
-  hourCycle: "h24"
+  //  hour12: true,
+   hourCycle: "h24"
 });
 
 return (
