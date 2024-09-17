@@ -2,21 +2,22 @@
 :root {
     --main-color: #f4f4f4;
     --secundary-color: #1b1b1b, ;
-    --accent-color: #BA0000;
+    --accent-color: #8F0101;
     --background-glass: #000000d6;
-    --divider-secundary: rgba(38, 38, 38, 0.555);
+    --divider-secundary: rgb(38 38 38 / 23%);
+
     /* Guardsman Red Palette */
     --guardsman-red-50: #ffefef;
     --guardsman-red-100: #ffdcdc;
     --guardsman-red-200: #ffbfbf;
     --guardsman-red-300: #ff9292;
     --guardsman-red-400: #ff5454;
-    --guardsman-red-500: #ff1f1f;
-    --guardsman-red-600: #ff0000;
-    --guardsman-red-700: #db0000;
-    --guardsman-red-800: #ba0000;
-    --guardsman-red-900: #940808;
-    --guardsman-red-950: #520000;
+    --guardsman-red-500: #BA0000;
+    --guardsman-red-600: #ca0303;
+    --guardsman-red-700: #8F0101;
+    --guardsman-red-800: #8F0101;
+    --guardsman-red-900: #8F0101;
+    --guardsman-red-950: #8F0101;
 
     /* Buttons background color */
     --button-base: var(--guardsman-red-500);
@@ -38,7 +39,7 @@
     --main-color: #090909;
     /* Dark background */
     --secundary-color: #fafafa;
-    --divider-secundary: rgba(89, 89, 89, 0.581);
+    --divider-secundary: rgba(118, 118, 118, 0.348);
 
 }
 /* Definición de las fuentes */
@@ -64,14 +65,31 @@
 }
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'sistem-ui', sans-serif;
     background-color: var(--main-color);
     color: var(--secundary-color);
 }
+
+
+ #blog > * h2:not(.swiper-slide h2){
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:var(--guardsman-red-500);
+}
+
+#blog > *:is( h3,h4,h5,h6){
+  font-weight: 700;
+  font-size: 1.1rem;
+  color:var(--secundary-color);
+}
+
 
 .glassmorphism {
     -webkit-backdrop-filter: blur(25px);
@@ -85,4 +103,26 @@ body {
   }
   #terms:checked {
     background-color: var(--guardsman-red-700);
+  }
+
+
+  /* Logo */
+
+
+  .logo {
+    padding-block: 1rem;
+    writing-mode: horizontal-tb;
+  }
+  .logo__img {
+    object-fit: contain;
+  }
+  .logo__img--mobile {
+    object-fit: contain;
+    filter: invert(1);
+  }
+
+  .dark {
+    .logo__img {
+      filter: invert(1);
+    }
   }

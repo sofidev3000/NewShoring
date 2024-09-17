@@ -1,0 +1,79 @@
+[
+  {
+    "ClassName": "flex flex-row py-10 gap-2 items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-wrap",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "ArchiveContainer",
+        "Attributes": {
+          "NotFound": "{\"DisclaimerContainer\":{\"Active\":true,\"Type\":\"p\",\"ClassName\":\"\",\"Text\":\"Las búsqueda no ha generado resultados\"},\"HeadlineContainer\":{\"Active\":true,\"Type\":\"h1\",\"ClassName\":\"text-center md:text-start text-[--primary-text-color] mb-5 font-sans font-bold p-0 text-4xl w-full\",\"Text\":\"No se han encontrado resultados\"},\"CallToActionContainer\":{\"Active\":true,\"ClassName\":\"group px-3 mt-2 rounded-full inline-flex gap-2 flex-nowrap w-auto py-2 items-center font-bold border-[--guardsman-red-800] text-[--guardsman-red-800]  border-solid border-[1px] uppercase cursor-pointer text-sm tracking-wider hover:text-white  hover:font-bold hover:bg-[--button-hover] hover:from-[--primary-color] hover:to-[--primary-color] transition-all duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out\",\"Text\":\"Ver más noticias <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"group-hover:fill-[--secundary-color] group-hover:font-bold transition-transform duration-300 ease-in-out transform translate-x-0 group-hover:translate-x-2\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"icon icon-tabler icons-tabler-outline icon-tabler-arrow-right\\\" > <path stroke=\\\"none\\\" d=\\\"M0 0h24v24H0z\\\" fill=\\\"none\\\"></path><path d=\\\"M5 12l14 0\\\"></path><path d=\\\"M13 18l6 -6\\\"></path><path d=\\\"M13 6l6 6\\\"></path> </svg>\",\"Action\":\"\",\"Target\":\"_blank\"},\"ImageContainer\":{\"Active\":true,\"ClassName\":\"pt-[64%] w-full relative\",\"Src\":\"{{domain}}/img/{{associated}}/search_not-found_404.png\",\"SrcWebp\":\"\",\"Width\":\"540\",\"Height\":\"348\"}}"
+        },
+        "ViewData": {},
+        "ClassName": "",
+        "Children": [
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "Data": "{ \"data-astro-cid-wrmxgw5v\": \"\" }"
+            },
+            "ViewData": {},
+            "ClassName": "resultados__grid mt-20",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "promotagger/ItemNewsWithDesc",
+                "Attributes": {
+                  "Data": "{\"data-aos\":\"fade-left\"}",
+                  "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center \"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-2 mb-3 text-sm\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5 w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-2 mb-3 text-sm\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-1 w-full\"}}}"
+                },
+                "ViewData": {},
+                "ClassName": "w-full",
+                "Content": {
+                  "Object": "PromoTaggerArchive",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "SearchByQuery",
+                    "Param": {
+                      "limit": 9
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "w-full py-10",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "Pagination",
+                "Attributes": {
+                  "Previous": "{\"ClassName\":\"group/pag transition-all inline-flex w-12 h-12 items-center justify-center relative px-3 py-1 rounded-full hover:bg-[--neutral-variant-color]\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"fill-[--guardsman-red-700] group-hover/pag:fill-black transition-all\\\" width=\\\"12\\\" height=\\\"24\\\" viewBox=\\\"0 0 16 32\\\"><path d=\\\"m1.981 14.938 8.5-8.5a1.493 1.493 0 0 1 2.119 0l1.413 1.412a1.495 1.495 0 0 1 0 2.119L7.994 16l6.025 6.025a1.493 1.493 0 0 1 0 2.119l-1.412 1.419a1.493 1.493 0 0 1-2.119 0l-8.5-8.5a1.495 1.495 0 0 1-.006-2.125z\\\"/></svg>\"}",
+                  "Next": "{\"ClassName\":\"group/pag transition-all inline-flex w-12 h-12 items-center justify-center relative px-3 py-1 rounded-full hover:bg-[--neutral-variant-color]\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\"  class=\\\"fill-[--guardsman-red-700] group-hover/pag:fill-black transition-all\\\" width=\\\"12\\\" height=\\\"24\\\" viewBox=\\\"0 0 16 32\\\"><path d=\\\"m14.019 17.063-8.5 8.5a1.493 1.493 0 0 1-2.119 0l-1.413-1.412a1.495 1.495 0 0 1 0-2.119l6.025-6.025-6.025-6.025a1.495 1.495 0 0 1 0-2.119l1.406-1.425a1.493 1.493 0 0 1 2.119 0l8.5 8.5c.594.588.594 1.537.006 2.125z\\\"/></svg>\"}",
+                  "ItemsOptions": "{\"ClassName\":\"inline-flex w-12 h-12 items-center justify-center text-[--secundary-color] bg-[--neutral-variant-color] transition-all relative hover:text-[--primary-text-color] hover:bg-white px-3 py-1 rounded-full\",\"ClassNameActive\":\"inline-flex w-12 h-12 items-center justify-center text-white font-bold hover:bg-black transition-all relative bg-guardsman-red-800 px-3 py-1 rounded-full\"}"
+                },
+                "ViewData": {},
+                "ClassName": "flex pl-0 list-none justify-center gap-2",
+                "Content": {
+                  "Object": "Archive",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "Pagination",
+                    "Param": {
+                      "resource": "search",
+                      "limit": 9
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

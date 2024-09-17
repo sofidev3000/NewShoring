@@ -1,0 +1,324 @@
+[
+  {
+    "ClassName": "w-full py-10 flex flex-wrap max-w-[1300px]",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "ArchiveContainer",
+        "Attributes": {
+          "NotFound": "{\"DisclaimerContainer\":{\"Active\":true,\"Type\":\"p\",\"ClassName\":\"\",\"Text\":\"Sin resultados\"},\"HeadlineContainer\":{\"Active\":true,\"Type\":\"h1\",\"ClassName\":\"text-center md:text-start text-[--primary-text-color] mb-5 font-sans font-bold p-0 text-4xl w-full\",\"Text\":\"No se han encontrado resultados\"},\"CallToActionContainer\":{\"Active\":true,\"ClassName\":\"group px-3 mt-2 rounded-full inline-flex gap-2 flex-nowrap w-auto py-2 items-center font-bold border-[--guardsman-red-800] text-[--guardsman-red-800]  border-solid border-[1px] uppercase cursor-pointer text-sm tracking-wider hover:text-white  hover:font-bold hover:bg-[--button-hover] hover:from-[--primary-color] hover:to-[--primary-color] transition-all duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out\",\"Text\":\"Ver más noticias <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"group-hover:fill-[--secundary-color] group-hover:font-bold transition-transform duration-300 ease-in-out transform translate-x-0 group-hover:translate-x-2\\\" width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"currentColor\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\" class=\\\"icon icon-tabler icons-tabler-outline icon-tabler-arrow-right\\\" > <path stroke=\\\"none\\\" d=\\\"M0 0h24v24H0z\\\" fill=\\\"none\\\"></path><path d=\\\"M5 12l14 0\\\"></path><path d=\\\"M13 18l6 -6\\\"></path><path d=\\\"M13 6l6 6\\\"></path> </svg>\",\"Action\":\"\",\"Target\":\"_blank\"},\"ImageContainer\":{\"Active\":true,\"ClassName\":\"pt-[64%] w-full relative\",\"Src\":\"{{domain}}/img/{{associated}}/search_not-found_404.png\",\"SrcWebp\":\"\",\"Width\":\"540\",\"Height\":\"348\"}}"
+        },
+        "ViewData": {},
+        "ClassName": "",
+        "Children": [
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "Attributes": {
+              "ClassNameColumn": "bg-guardsman-red-900 p-3 w-full xl:max-w-[1300px] flex flex-col items-start justify-center *:text-white rounded-r-lg"
+            },
+            "ViewData": {},
+            "ClassName": "w-full flex justify-center mt-5 md:mt-[8rem] lg:mt-8 xl:mt-10",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "HeadLine",
+                "ViewData": {},
+                "ClassName": "font-bold uppercase text-4xl sm:text-5xl",
+                "Content": {
+                  "Object": "SingleData",
+                  "Action": "deserialize",
+                  "Data": {
+                    "Data": "Categoría: {{nameContent}}"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap  m-auto max-w-[1300px]",
+            "Children": [
+              {
+                "ComponentType": "component",
+                "PartialItem": "Swiper",
+                "ClassName": "resultados-grid mx-auto w-full  self-center",
+                "Attributes": {
+                  "Options": "{\"loop\":true,\"speed\":900,\"slidesPerView\":3,\"modules\": [\"Autoplay\"],\"autoplay\": { \"delay\": 5000, \"disableOnInteraction\": false },\"spaceBetween\": 30,\"observer\":true,\"observeParents\":true,\"breakpoints\":{\"320\":{\"slidesPerView\":1},\"944\":{\"slidesPerView\":3},\"1200\":{\"slidesPerView\":3}}}",
+                  "Navigation": "{\"Type\":\"none\", \"ClassName\":\"\" ,\"ClassNext\":\"\",\"ClassPrev\": \"\"}"
+                },
+                "ViewData": {},
+                "Children": [
+                  {
+                    "ComponentType": "element",
+                    "PartialItem": "SwiperItem",
+                    "ViewData": {},
+                    "ClassName": "swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]",
+                    "Content": {
+                      "Object": "ExtensionElementSigle",
+                      "Action": "exec",
+                      "Data": {
+                        "Exec": "GetContent",
+                        "Param": {
+                          "PartialItem": "promotagger/ItemNews",
+                          "ClassName": "w-full",
+                          "ViewData": "{\"ClassName\":\"\"}",
+                          "Attributes": "{\"DesignOptions\": \"{\\\"LinkContainer\\\":{\\\"ClassName\\\":\\\"group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md\\\"},\\\"AssetsContainer\\\":{\\\"ClassName\\\":\\\"relative w-full w-full overflow-hidden\\\",\\\"HasFlag\\\":false,\\\"Flag\\\":{\\\"ClassName\\\":\\\"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]\\\"},\\\"ImageContainer\\\":{\\\"ClassName\\\":\\\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full\\\",\\\"HasWatermark\\\":false,\\\"Image\\\":{\\\"ClassName\\\":\\\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\\\"}}},\\\"DataContainer\\\":{\\\"ClassName\\\":\\\"p-4 flex flex-wrap gap-2 flex-1\\\",\\\"Date\\\":{\\\"Active\\\":true,\\\"ClassName\\\":\\\"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center\\\",\\\"Icon\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\"}},\\\"Time\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center\\\",\\\"Icon\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\"}},\\\"Title\\\":{\\\"ClassName\\\":\\\"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium\\\"},\\\"Autor\\\":{\\\"Active\\\":true,\\\"ClassName\\\":\\\"\\\",\\\"Icon\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\"},\\\"TextPrev\\\":\\\"Por&nbsp;\\\",\\\"TextNext\\\":\\\"&nbsp;-&nbsp;\\\"}}}\"}",
+                          "Object": "PromoTaggerArchive",
+                          "Data": "{\"Exec\": \"SearchByCategory\",  \"Param\": { \"limit\": 6,\"perPage\": 27, \"perFragmet\":0}}",
+                          "Action": "exec"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "w-full flex flex-wrap justify-center px-3.5  gap-10 items-start mt-10 xl:max-w-[1300px]",
+            "Children": [
+              {
+                "ComponentType": "component",
+                "PartialItem": "Container",
+                "ClassName": "flex flex-col xl:h-full w-full xl:basis-[70%]",
+                "ViewData": {},
+                "Children": [
+                  {
+                    "ComponentType": "component",
+                    "PartialItem": "Container",
+                    "Attributes": {
+                      "Data": "{\"id\": \"resultados-grid\" , \"data-astro-cid-7ltl2ssp\": \"\" }"
+                    },
+                    "ViewData": {},
+                    "ClassName": "resultados__grid mt-[1rem]",
+                    "Children": [
+                      {
+                        "ComponentType": "element",
+                        "PartialItem": "promotagger/ItemNewsWithDesc",
+                        "Attributes": {
+                          "Data": "{\"data-aos\":\"fade-left\"}",
+                          "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+                        },
+                        "ViewData": {},
+                        "ClassName": "w-full group",
+                        "Content": {
+                          "Object": "PromoTaggerArchive",
+                          "Action": "exec",
+                          "Data": {
+                            "Exec": "SearchByCategory",
+                            "Param": {
+                              "limit": 4,
+                              "perPage": 27,
+                              "perFragmet": 6
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "ComponentType": "component",
+                    "PartialItem": "Container",
+                    "Attributes": {
+                      "Data": "{\"data-astro-cid-7ltl2ssp\": \"\" }"
+                    },
+                    "ViewData": {},
+                    "ClassName": "articles__small space-y-reverse w-full",
+                    "Children": [
+                      {
+                        "ComponentType": "element",
+                        "PartialItem": "promotagger/ItemNews",
+                        "Attributes": {
+                          "Data": "{\"data-aos\":\"fade-up\"}",
+                          "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                        },
+                        "ViewData": {},
+                        "ClassName": "w-full",
+                        "Content": {
+                          "Object": "PromoTaggerArchive",
+                          "Action": "exec",
+                          "Data": {
+                            "Exec": "SearchByCategory",
+                            "Param": {
+                              "limit": 4,
+                              "perPage": 27,
+                              "perFragmet": 10
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "ComponentType": "component",
+                    "PartialItem": "Container",
+                    "Attributes": {
+                      "Data": "{\"id\": \"resultados-grid\" , \"data-astro-cid-7ltl2ssp\": \"\" }"
+                    },
+                    "ViewData": {},
+                    "ClassName": "resultados__grid mt-[1rem]",
+                    "Children": [
+                      {
+                        "ComponentType": "element",
+                        "PartialItem": "promotagger/ItemNewsWithDesc",
+                        "Attributes": {
+                          "Data": "{\"data-aos\":\"fade-left\"}",
+                          "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+                        },
+                        "ViewData": {},
+                        "ClassName": "w-full",
+                        "Content": {
+                          "Object": "PromoTaggerArchive",
+                          "Action": "exec",
+                          "Data": {
+                            "Exec": "SearchByCategory",
+                            "Param": {
+                              "limit": 4,
+                              "perPage": 27,
+                              "perFragmet": 14
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ComponentType": "component",
+                "PartialItem": "Container",
+                "Attributes": {
+                  "Type": "aside"
+                },
+                "ClassName": "sticky top-20 w-full flex flex-col items-center xl:basis-[26%] xl:w-3/12 mt-10 sm:mt-0 pl-0 sm:pl-2 space-y-8 h-full",
+                "ViewData": {},
+                "Children": [
+                  {
+                    "ComponentType": "element",
+                    "PartialItem": "Form",
+                    "Attributes": {
+                      "Data": "{ \"method\":\"POST\", \"data-action\":\"/requestpost\",\"data-service\": \"storage-data\", \"data-service-action\": \"storage-suscribe-form\",\"data-plugin\": \"storage-data-system\"}",
+                      "RecaptchaField": "{ \"ClassName\": \"\", \"data-sitekey\": \"\", \"recaptcha-used\": false }",
+                      "HeadlineContainer": "{\"Active\":true,\"Type\":\"h2\",\"ClassName\":\"text-left text-2xl font-bold\",\"Text\":\"Suscríbete a nuestra Newsletter\"}"
+                    },
+                    "ViewData": {},
+                    "ClassName": "form-send flex-col items-strech justify-strech w-full",
+                    "Content": {
+                      "Object": "FormElementStructure",
+                      "Action": "deserialize",
+                      "Data": {
+                        "Field": [
+                          "{\"IdBase\":\"email-aside\",\"ClassNameContainer\":\"w-full flex flex-col gap-1\",\"Label\":{ \"ClassName\": \"\", \"TextContent\":\"Ingresa tu correo electrónico\" },\"Field\":{\"Type\":\"input\",\"ClassName\":\"\",\"Attributes\":{\"type\":\"email\",\"name\":\"email\",\"placeholder\": \"email\",\"required\":true}}}",
+                          "{\"IdBase\":\"terms-aside\",\"ClassNameContainer\":\"w-full block relative mt-3\",\"Label\":{\"ClassName\":\"flex items-center space-x-2 absolute w-full h-full top-0 left-0\",\"TextContent\":\"\"},\"Field\":{\"Type\":\"input\",\"ClassName\":\"form-checkbox checked:accent-guardsman-red-700\",\"Attributes\":{\"type\":\"checkbox\",\"name\":\"terms\",\"required\":true}},\"Message\":{\"ClassName\":\"text-xs\",\"Id\":\"\",\"TextContent\":\"Aceptar términos y condiciones\"},\"Error\":{\"ClassName\":\"text-red-600 hidden\",\"Id\":\"terms-error\",\"TextContent\":\"\"}}",
+                          "{\"IdBase\": \"buttonSubmit-aside\", \"ClassNameContainer\": \"w-full mt-3\", \"Field\": {\"Type\": \"input\", \"ClassName\": \"bg-[--button-base] hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold px-4 py-1 rounded-[7px] w-full h-full\", \"Attributes\": {\"type\": \"submit\", \"value\": \"Registrar\"}}}"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "ComponentType": "element",
+                    "PartialItem": "promotagger/ItemNewsWithDesc",
+                    "Attributes": {
+                      "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 text-lg mb-5\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\"order-2 text-sm\"}}}"
+                    },
+                    "ViewData": {},
+                    "ClassName": "w-full",
+                    "Content": {
+                      "Object": "PromoTaggerArchive",
+                      "Action": "exec",
+                      "Data": {
+                        "Exec": "SearchByCategory",
+                        "Param": {
+                          "limit": 1,
+                          "perPage": 27,
+                          "perFragmet": 18
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "flex w-full xl:max-w-[1300px] items-center",
+            "Children": [
+              {
+                "ComponentType": "component",
+                "PartialItem": "Container",
+                "Attributes": {
+                  "Data": "{\"data-astro-cid-7ltl2ssp\": \"\" }"
+                },
+                "ViewData": {},
+                "ClassName": "articles__small space-y-reverse w-full",
+                "Children": [
+                  {
+                    "ComponentType": "element",
+                    "PartialItem": "promotagger/ItemNews",
+                    "Attributes": {
+                      "Data": "{\"data-aos\":\"fade-up\"}",
+                      "DesignOptions": "{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full h-auto max-w-[114px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}}},\"DataContainer\":{\"ClassName\":\"max-w-[26rem] md:max-w-[17rem] flex flex-col space-y-10 space-y-reverse justify-start \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}"
+                    },
+                    "ViewData": {},
+                    "ClassName": "w-full",
+                    "Content": {
+                      "Object": "PromoTaggerArchive",
+                      "Action": "exec",
+                      "Data": {
+                        "Exec": "SearchByCategory",
+                        "Param": {
+                          "limit": 8,
+                          "perPage": 27,
+                          "perFragmet": 19
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "w-full py-10",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "Pagination",
+                "Attributes": {
+                  "Previous": "{\"ClassName\":\"group/pag transition-all inline-flex w-12 h-12 items-center justify-center relative px-3 py-1 rounded-full hover:bg-[--neutral-variant-color]\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" class=\\\"fill-[--guardsman-red-700] group-hover/pag:fill-black transition-all\\\" width=\\\"12\\\" height=\\\"24\\\" viewBox=\\\"0 0 16 32\\\"><path d=\\\"m1.981 14.938 8.5-8.5a1.493 1.493 0 0 1 2.119 0l1.413 1.412a1.495 1.495 0 0 1 0 2.119L7.994 16l6.025 6.025a1.493 1.493 0 0 1 0 2.119l-1.412 1.419a1.493 1.493 0 0 1-2.119 0l-8.5-8.5a1.495 1.495 0 0 1-.006-2.125z\\\"/></svg>\"}",
+                  "Next": "{\"ClassName\":\"group/pag transition-all inline-flex w-12 h-12 items-center justify-center relative px-3 py-1 rounded-full hover:bg-[--neutral-variant-color]\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\"  class=\\\"fill-[--guardsman-red-700] group-hover/pag:fill-black transition-all\\\" width=\\\"12\\\" height=\\\"24\\\" viewBox=\\\"0 0 16 32\\\"><path d=\\\"m14.019 17.063-8.5 8.5a1.493 1.493 0 0 1-2.119 0l-1.413-1.412a1.495 1.495 0 0 1 0-2.119l6.025-6.025-6.025-6.025a1.495 1.495 0 0 1 0-2.119l1.406-1.425a1.493 1.493 0 0 1 2.119 0l8.5 8.5c.594.588.594 1.537.006 2.125z\\\"/></svg>\"}",
+                  "ItemsOptions": "{\"ClassName\":\"inline-flex w-12 h-12 items-center justify-center text-[--secundary-color] bg-[--neutral-variant-color] transition-all relative hover:text-[--primary-text-color] hover:bg-white px-3 py-1 rounded-full\",\"ClassNameActive\":\"inline-flex w-12 h-12 items-center justify-center text-white font-bold hover:bg-black transition-all relative bg-guardsman-red-800 px-3 py-1 rounded-full\"}"
+                },
+                "ViewData": {},
+                "ClassName": "flex pl-0 list-none justify-center gap-2",
+                "Content": {
+                  "Object": "PromoTaggerArchive",
+                  "Action": "exec",
+                  "Data": {
+                    "Exec": "Pagination",
+                    "Param": {
+                      "resource": "{{path}}",
+                      "limit": 24
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

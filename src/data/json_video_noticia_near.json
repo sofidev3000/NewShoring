@@ -1,0 +1,308 @@
+[
+  {
+    "ClassName": "shareBtns opacity-0 p-2 fixed hidden xl:flex flex-col left-0 top-20  items-center gap-4 z-[1000]",
+    "Attributes": {
+      "Type": "div",
+      "Data": "{ \"id\": \"shareBtns\"}"
+    },
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "EmptyFragment",
+        "ViewData": {},
+        "ClassName": "",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "span"
+            },
+            "ViewData": {},
+            "ClassName": "text-xs mb-1 bg-[#000000ca] text-white rounded-md p-1",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": " Compartir:"
+              }
+            }
+          },
+          {
+            "ComponentType": "element",
+            "PartialItem": "IconList",
+            "ViewData": {},
+            "ClassName": "p-2 flex flex-col items-center gap-4",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": [
+                  {
+                    "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                    "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                    "href": "https://www.facebook.com/sharer/sharer.php?u={{request}}",
+                    "target": "_blank",
+                    "rel": "nofollow noreferrer noopener",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"10\" height=\"16\" viewBox=\"0 0 20 32\" data-astro-cid-dv46nlzh><path d=\"M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z\" data-astro-cid-dv46nlzh></path></svg>"
+                  },
+                  {
+                    "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                    "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                    "href": "https://twitter.com/intent/tweet?text={{titleSeo}}&url={{request}}",
+                    "target": "_blank",
+                    "rel": "nofollow noreferrer noopener",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" viewBox=\"0 0 32 32\" data-astro-cid-dv46nlzh><path d=\"M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0\"></path></svg>"
+                  },
+                  {
+                    "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                    "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                    "href": "https://www.linkedin.com/sharing/share-offsite/?url={{request}}",
+                    "target": "_blank",
+                    "rel": "nofollow noreferrer noopener",
+                    "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" viewBox=\"0 0 32 32\"><path d=\"M6.268 28H.463V9.306h5.805V28zM3.362 6.756C1.506 6.756 0 5.219 0 3.362a3.362 3.362 0 0 1 6.724 0c0 1.856-1.506 3.394-3.362 3.394zM27.994 28h-5.793v-9.1c0-2.169-.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794V28H9.903V9.306h5.567v2.55h.081c.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894V28h-.006z\"></path></svg>"
+                  },
+                  {
+                    "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                    "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                    "href": "https://api.whatsapp.com/send?text={{titleSeo}}%20{{request}}",
+                    "target": "_blank",
+                    "rel": "nofollow noreferrer noopener",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M23.806 6.069C26.425 8.694 28 12.175 28 15.882c0 7.65-6.363 13.875-14.006 13.875h-.006c-2.325 0-4.606-.581-6.631-1.688L.001 30l1.969-7.188a13.885 13.885 0 0 1-1.85-6.938c0-7.65 6.225-13.875 13.875-13.875 3.706 0 7.194 1.444 9.812 4.069zm-9.812 21.35c6.356 0 11.662-5.175 11.662-11.538.006-3.081-1.331-5.975-3.506-8.156S17.081 4.344 14 4.344c-6.362 0-11.537 5.175-11.537 11.531 0 2.181.606 4.3 1.762 6.138l.275.438-1.162 4.256L7.7 25.563l.419.25a11.512 11.512 0 0 0 5.875 1.606zm6.325-8.638c.344.169.575.256.656.412.088.144.088.838-.2 1.65s-1.669 1.55-2.338 1.65c-1.1.162-1.963.081-4.162-.869-3.481-1.506-5.75-5.006-5.925-5.238-.169-.231-1.412-1.881-1.412-3.588s.894-2.544 1.213-2.894c.319-.344.694-.431.925-.431s.462 0 .662.012c.213.012.5-.081.781.594.288.694.981 2.4 1.069 2.575s.144.375.031.606c-.663 1.325-1.375 1.281-1.019 1.894 1.344 2.306 2.681 3.106 4.719 4.125.344.175.55.144.75-.088.206-.238.869-1.012 1.1-1.363s.462-.294.781-.175c.319.113 2.025.95 2.369 1.125z\"></path></svg>"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "w-full  2xl:mt-15 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px] mt-24",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "EmptyFragment",
+        "ViewData": {},
+        "ClassName": "",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "ArticleHeaderThree",
+            "Attributes": {
+              "DesignOptions": "{\"DataContainer\":{\"ClassName\":\"h-full w-full text-[--primary-text-color] space-y-4 flex flex-col gap-10 justify-between\",\"Title\":{\"ClassName\":\"text-4xl text-center font-bold\"},\"Teaser\":{\"ClassName\":\"text-center text-md  font-normal\"},\"MetaContainer\":{\"Active\":false,\"ClassName\":\"flex flex-wrap justify-between mb-5 gap-3 lg:gap-0 mt-10\",\"Date\":{\"Active\":false,\"ClassName\":\"text-xs font-bold flex flex-nowrap text-[--guardsman-red-500] gap-2 items-center\",\"TextPrev\":\"Publicado en &nbsp;\",\"TextNext\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Category\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Comments\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}}}},\"AssetsContainer\":{\"ClassName\":\"absolute top-0 left-0 w-full h-full flex flex-col overflow-hidden\",\"ImageContainer\":{\"Active\": false,\"ClassName\":\"w-full h-full object-cover object-bottom overflow-hidden\",\"HasWatermark\":false}}}"
+            },
+            "ViewData": {},
+            "ClassName": "",
+            "Content": {
+              "Object": "News",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetNews"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "w-full 2xl:mt-15 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px] mt-24",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "Attributes": {
+          "Data": "{ \"id\":\"blog\" }"
+        },
+        "ViewData": {},
+        "ClassName": "h-full w-full text-[--primary-text-color] space-y-4 flex flex-col gap-10 justify-between",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "EmptyFragment",
+            "ViewData": {},
+            "ClassName": "",
+            "Content": {
+              "Object": "News",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetBodyNews"
+              }
+            }
+          },
+          {
+            "ComponentType": "component",
+            "PartialItem": "Container",
+            "ViewData": {},
+            "ClassName": "flex flex-col md:hidden itemscenter",
+            "Children": [
+              {
+                "ComponentType": "element",
+                "PartialItem": "HeadLine",
+                "Attributes": {
+                  "Type": "span"
+                },
+                "ViewData": {},
+                "ClassName": "text-sm my-3 bg-[#000000] dark:bg-slate-900 text-white hover:text-guardsman-red-800 rounded-md p-1 w-fit",
+                "Content": {
+                  "Object": "SingleData",
+                  "Action": "deserialize",
+                  "Data": {
+                    "Data": " Compartir:"
+                  }
+                }
+              },
+              {
+                "ComponentType": "element",
+                "PartialItem": "IconList",
+                "ViewData": {},
+                "ClassName": "p-2 flex items-center gap-4",
+                "Content": {
+                  "Object": "SingleData",
+                  "Action": "deserialize",
+                  "Data": {
+                    "Data": [
+                      {
+                        "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                        "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                        "href": "https://www.facebook.com/sharer/sharer.php?u={{request}}",
+                        "target": "_blank",
+                        "rel": "nofollow noreferrer noopener",
+                        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"10\" height=\"16\" viewBox=\"0 0 20 32\" data-astro-cid-dv46nlzh><path d=\"M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z\" data-astro-cid-dv46nlzh></path></svg>"
+                      },
+                      {
+                        "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                        "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                        "href": "https://twitter.com/intent/tweet?text={{titleSeo}}&url={{request}}",
+                        "target": "_blank",
+                        "rel": "nofollow noreferrer noopener",
+                        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" viewBox=\"0 0 32 32\" data-astro-cid-dv46nlzh><path d=\"M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0\"></path></svg>"
+                      },
+                      {
+                        "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                        "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                        "href": "https://www.linkedin.com/sharing/share-offsite/?url={{request}}",
+                        "target": "_blank",
+                        "rel": "nofollow noreferrer noopener",
+                        "icon": " <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" viewBox=\"0 0 32 32\"><path d=\"M6.268 28H.463V9.306h5.805V28zM3.362 6.756C1.506 6.756 0 5.219 0 3.362a3.362 3.362 0 0 1 6.724 0c0 1.856-1.506 3.394-3.362 3.394zM27.994 28h-5.793v-9.1c0-2.169-.044-4.95-3.018-4.95-3.018 0-3.481 2.356-3.481 4.794V28H9.903V9.306h5.567v2.55h.081c.775-1.469 2.668-3.019 5.492-3.019 5.875 0 6.955 3.869 6.955 8.894V28h-.006z\"></path></svg>"
+                      },
+                      {
+                        "ClassNameItem": "w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105",
+                        "ClassNameLink": "inline-flex items-center justify-center w-full h-full *:fill-white",
+                        "href": "https://api.whatsapp.com/send?text={{titleSeo}}%20{{request}}",
+                        "target": "_blank",
+                        "rel": "nofollow noreferrer noopener",
+                        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"fill-[--guardsman-red-700]\" width=\"14\" height=\"14\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path d=\"M23.806 6.069C26.425 8.694 28 12.175 28 15.882c0 7.65-6.363 13.875-14.006 13.875h-.006c-2.325 0-4.606-.581-6.631-1.688L.001 30l1.969-7.188a13.885 13.885 0 0 1-1.85-6.938c0-7.65 6.225-13.875 13.875-13.875 3.706 0 7.194 1.444 9.812 4.069zm-9.812 21.35c6.356 0 11.662-5.175 11.662-11.538.006-3.081-1.331-5.975-3.506-8.156S17.081 4.344 14 4.344c-6.362 0-11.537 5.175-11.537 11.531 0 2.181.606 4.3 1.762 6.138l.275.438-1.162 4.256L7.7 25.563l.419.25a11.512 11.512 0 0 0 5.875 1.606zm6.325-8.638c.344.169.575.256.656.412.088.144.088.838-.2 1.65s-1.669 1.55-2.338 1.65c-1.1.162-1.963.081-4.162-.869-3.481-1.506-5.75-5.006-5.925-5.238-.169-.231-1.412-1.881-1.412-3.588s.894-2.544 1.213-2.894c.319-.344.694-.431.925-.431s.462 0 .662.012c.213.012.5-.081.781.594.288.694.981 2.4 1.069 2.575s.144.375.031.606c-.663 1.325-1.375 1.281-1.019 1.894 1.344 2.306 2.681 3.106 4.719 4.125.344.175.55.144.75-.088.206-.238.869-1.012 1.1-1.363s.462-.294.781-.175c.319.113 2.025.95 2.369 1.125z\"></path></svg>"
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ClassName": "mx-auto w-full flex 2xl:justify-between mb-20 space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1100px] 2xl:max-w-[1300px] flex-col",
+    "Components": [
+      {
+        "ComponentType": "component",
+        "PartialItem": "Container",
+        "ViewData": {},
+        "ClassName": "w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10",
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "HeadLine",
+            "Attributes": {
+              "Type": "h2"
+            },
+            "ViewData": {},
+            "ClassName": "text-left text-3xl font-extrabold text-[--guardsman-red-500]",
+            "Content": {
+              "Object": "SingleData",
+              "Action": "deserialize",
+              "Data": {
+                "Data": "Videos Relacionados"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Swiper",
+        "ClassName": "mx-auto mt-5 w-full h-[300px]",
+        "Attributes": {
+          "Options": "{\"loop\":true,\"speed\":1000,\"slidesPerView\":1,\"modules\":[\"Autoplay\",\"Navigation\"],\"autoplay\": { \"delay\": 5000, \"disableOnInteraction\": false },\"navigation\":{\"nextEl\":\".video_relacionados_1_next\",\"prevEl\":\".video_relacionados_1_prev\"},\"spaceBetween\":30,\"observer\":true,\"observeParents\":true,\"breakpoints\":{\"320\":{\"slidesPerView\":1},\"944\":{\"slidesPerView\":3},\"1200\":{\"slidesPerView\":3}}}",
+          "Navigation": "{\"Type\":\"normal\", \"ClassName\":\"\" ,\"ClassNext\":\"video_relacionados_1_next text-white bg-guardsman-red-700 rounded-full\",\"ClassPrev\": \"video_relacionados_1_prev text-white bg-guardsman-red-700 rounded-full\"}",
+          "Pagination": "{ \"Active\":false,\"ClassName\":\"\" ,\"el\":\"\",\"Position\":\"outside\" }"
+        },
+        "ViewData": {},
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "SwiperItem",
+            "ViewData": {},
+            "ClassName": "swiper-slide w-full md:w-[48%] mr-[10px]",
+            "Content": {
+              "Object": "ExtensionElementSigle",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetContent",
+                "Param": {
+                  "PartialItem": "promotagger/ItemVideoNews",
+                  "ClassName": "w-full h-full",
+                  "ViewData": "{\"ClassName\":\"\"}",
+                  "Attributes": "{\"DesignOptions\": \"{\\\"LinkContainer\\\":{\\\"ClassName\\\":\\\"group/zoom flex bg-[--secundary-color] relative overflow-hidden h-full\\\"},\\\"AssetsContainer\\\":{\\\"ClassName\\\":\\\"absolute top-0 left-0 w-full h-full\\\",\\\"HasFlag\\\":true,\\\"Flag\\\":{\\\"ClassName\\\":\\\"absolute left-2 top-[65%] -translate-y-[65%] lg:top-[70%] lg:-translate-y-[70%]  z-[1] text-center py-1.5 px-1.5 font-sans text-xs font-bold text-white transition duration-300 ease-in-out\\\"},\\\"ImageContainer\\\":{\\\"ClassName\\\":\\\"load-image-container block h-0 group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative\\\",\\\"HasWatermark\\\":false,\\\"Image\\\":{\\\"ClassName\\\":\\\"lazy absolute top-0 left-0 w-full object-cover h-full\\\"}},\\\"GradientContainer\\\":{\\\"ClassName\\\":\\\"absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black\\\"}},\\\"DataContainer\\\":{\\\"ClassName\\\":\\\"relative z-[1] w-full px-4 pb-10 flex-1 inline-flex flex-wrap content-end\\\",\\\"Date\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"\\\"}},\\\"Time\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"\\\"}},\\\"Title\\\":{\\\"ClassName\\\":\\\"w-full group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-white text-sm leading-[1.1rem] font-sans font-medium\\\"},\\\"VideoIcon\\\":{\\\"ClassName\\\":\\\"absolute z-[1] top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"fill-white\\\"}}}}\"}",
+                  "Object": "PromoTagger",
+                  "Data": "{\"Exec\": \"GetListNews\", \"Param\": { \"limit\": 4,\"take\": 0,\"type_content\": \"news-video\"}}",
+                  "Action": "exec"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "ComponentType": "component",
+        "PartialItem": "Swiper",
+        "ClassName": "mx-auto mt-5 w-full h-[300px]",
+        "Attributes": {
+          "Options": "{\"loop\":true,\"speed\":1000,\"slidesPerView\":1,\"modules\":[\"Autoplay\",\"Navigation\"],\"autoplay\": { \"delay\": 5000, \"disableOnInteraction\": false },\"navigation\":{\"nextEl\":\".video_relacionados_2_next\",\"prevEl\":\".video_relacionados_2_prev\"},\"spaceBetween\":30,\"observer\":true,\"observeParents\":true,\"breakpoints\":{\"320\":{\"slidesPerView\":1},\"944\":{\"slidesPerView\":3},\"1200\":{\"slidesPerView\":3}}}",
+          "Navigation": "{\"Type\":\"normal\", \"ClassName\":\"\" ,\"ClassNext\":\"video_relacionados_2_next text-white bg-guardsman-red-700 rounded-full\",\"ClassPrev\": \"video_relacionados_2_prev text-white bg-guardsman-red-700 rounded-full\"}",
+          "Pagination": "{ \"Active\":false,\"ClassName\":\"\" ,\"el\":\"\",\"Position\":\"outside\" }"
+        },
+        "ViewData": {},
+        "Children": [
+          {
+            "ComponentType": "element",
+            "PartialItem": "SwiperItem",
+            "ViewData": {},
+            "ClassName": "swiper-slide w-full md:w-[48%] mr-[10px]",
+            "Content": {
+              "Object": "ExtensionElementSigle",
+              "Action": "exec",
+              "Data": {
+                "Exec": "GetContent",
+                "Param": {
+                  "PartialItem": "promotagger/ItemVideoNews",
+                  "ClassName": "w-full h-full",
+                  "ViewData": "{\"ClassName\":\"\"}",
+                  "Attributes": "{\"DesignOptions\": \"{\\\"LinkContainer\\\":{\\\"ClassName\\\":\\\"group/zoom flex bg-[--secundary-color] relative overflow-hidden h-full\\\"},\\\"AssetsContainer\\\":{\\\"ClassName\\\":\\\"absolute top-0 left-0 w-full h-full\\\",\\\"HasFlag\\\":true,\\\"Flag\\\":{\\\"ClassName\\\":\\\"absolute left-2 top-[65%] -translate-y-[65%] lg:top-[70%] lg:-translate-y-[70%]  z-[1] text-center py-1.5 px-1.5 font-sans text-xs font-bold text-white transition duration-300 ease-in-out\\\"},\\\"ImageContainer\\\":{\\\"ClassName\\\":\\\"load-image-container block h-0 group-hover/zoom:scale-125 transition-all duration-[2s] cursor-pointer pt-[132.15%] sm:pt-[124.15%] w-full relative\\\",\\\"HasWatermark\\\":false,\\\"Image\\\":{\\\"ClassName\\\":\\\"lazy absolute top-0 left-0 w-full object-cover h-full\\\"}},\\\"GradientContainer\\\":{\\\"ClassName\\\":\\\"absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black\\\"}},\\\"DataContainer\\\":{\\\"ClassName\\\":\\\"relative z-[1] w-full px-4 pb-10 flex-1 inline-flex flex-wrap content-end\\\",\\\"Date\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"\\\"}},\\\"Time\\\":{\\\"Active\\\":false,\\\"ClassName\\\":\\\"\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"\\\"}},\\\"Title\\\":{\\\"ClassName\\\":\\\"w-full group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-white text-sm leading-[1.1rem] font-sans font-medium\\\"},\\\"VideoIcon\\\":{\\\"ClassName\\\":\\\"absolute z-[1] top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]\\\",\\\"Icon\\\":{\\\"ClassName\\\":\\\"fill-white\\\"}}}}\"}",
+                  "Object": "PromoTagger",
+                  "Data": "{\"Exec\": \"GetListNews\", \"Param\": { \"limit\": 4,\"take\": 4,\"type_content\": \"news-video\"}}",
+                  "Action": "exec"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
