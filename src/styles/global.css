@@ -84,6 +84,13 @@ body {
     color:var(--guardsman-red-500);
 }
 
+#blog > *:is( h3,h4,h5,h6){
+  font-weight: 700;
+  font-size: 1.1rem;
+  color:var(--secundary-color);
+}
+
+
 .glassmorphism {
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
