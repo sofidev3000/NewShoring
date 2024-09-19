@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { initProcessTranslate } from "@src/utils/translatePage";
+import React, { useState, useEffect, useRef } from "react";
 
 const Languages = [
   { name: 'Español', code: 'es', flag: 'circle-flags:es' },
@@ -9,25 +10,36 @@ const Languages = [
   { name: 'Alemán', code: 'de', flag: 'circle-flags:de' }
 ];
 
-const ToggleLanguage = ({breakpoint='desktop'}) => {
+const ToggleLanguage = ({ breakpoint = "desktop" }) => {
+  // const [selectedLanguage, setSelectedLanguage] = useState(Languages[0]);
 
-  const [selectedLanguage, setSelectedLanguage] = useState(Languages[0]);
+  // // Se guarda la selección en localStorage
+  // useEffect(() => {
+  //   const savedLanguage = localStorage.getItem("selectedLanguage");
+  //   if (savedLanguage) {
+  //     setSelectedLanguage(JSON.parse(savedLanguage));
+  //   }
+  // }, []);
 
-  // Se guarda la selección en localStorage
+  // const handleLanguageChange = (language) => {
+  //   setSelectedLanguage(language);
+  //   localStorage.setItem("selectedLanguage", JSON.stringify(language));
+  // };
+
   useEffect(() => {
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-      setSelectedLanguage(JSON.parse(savedLanguage));
-    }
+    initProcessTranslate();
   }, []);
 
-  const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-    localStorage.setItem('selectedLanguage', JSON.stringify(language));
-  };
+  // setInterval(() => {
+  // }, 1000);
 
   return (
-    <form className="max-w-sm mx-auto">
+    <>
+      <div id="states_container">
+        <div className="gtranslate_wrapper"></div>
+      </div>
+
+      {/* <form className="max-w-sm mx-auto">
       <div className="flex">
         <button
           id={`states-button`}
@@ -73,7 +85,8 @@ const ToggleLanguage = ({breakpoint='desktop'}) => {
           </ul>
         </div>
       </div>
-    </form>
+    </form> */}
+    </>
   );
 };
 
