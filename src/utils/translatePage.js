@@ -1,6 +1,7 @@
 const initProcessTranslate = () => {
     const scripTag = document.createElement('script');
-    scripTag.setAttribute('src', '/src/utils/gtranslate2.js');
+    //scripTag.setAttribute('src', '/src/utils/gtranslate2.js');
+    scripTag.setAttribute('src', '/libs/js/gtranslate2.js');
     scripTag.setAttribute('defer', '');
     scripTag.setAttribute('id', 'langScript');
 
