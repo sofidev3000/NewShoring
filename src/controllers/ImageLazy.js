@@ -9,31 +9,33 @@ function execLazyLoad(selector) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let lazyImage = entry.target;
-                    if (lazyImage.dataset.bg!=undefined) {
-                        lazyImage.style.backgroundImage=lazyloadBG(lazyImage,canUse);
-                        lazyImage.removeAttribute("data-bg");
-                        lazyImage.removeAttribute("data-webp-bg");
-                        lazyImage.removeAttribute("data-bg-srcset");
-                        lazyImage.removeAttribute("data-webp-bg-srcset");
-                        lazyImage.classList.add(lazyImage.dataset.loaded);
-                        lazyImage.classList.remove("lazy");
-                    }
-                    else {
-                        lazyImage.src = UseWebp(lazyImage.dataset.src, lazyImage.dataset.webpSrc, canUse);
-                        var srcset = convertWebpSrcset(lazyImage.dataset.srcset, lazyImage.dataset.webpSrcset, canUse);
-                        if (srcset != "" && srcset != undefined) {
-                            lazyImage.srcset = srcset;
+                    if(lazyImage.dataset.src){
+                        if (lazyImage.dataset.bg!=undefined) {
+                            lazyImage.style.backgroundImage=lazyloadBG(lazyImage,canUse);
+                            lazyImage.removeAttribute("data-bg");
+                            lazyImage.removeAttribute("data-webp-bg");
+                            lazyImage.removeAttribute("data-bg-srcset");
+                            lazyImage.removeAttribute("data-webp-bg-srcset");
+                            lazyImage.classList.add(lazyImage.dataset.loaded);
+                            lazyImage.classList.remove("lazy");
                         }
-                        lazyImage.removeAttribute("data-src");
-                        lazyImage.removeAttribute("data-webp-src");
-                        lazyImage.removeAttribute("data-srcset");
-                        lazyImage.removeAttribute("data-webp-srcset");
-                        lazyImage.classList.add(lazyImage.dataset.loaded);
-                        removeLoader(lazyImage);
-                        lazyImage.classList.remove("lazy");
-                        lazyImageObserver.unobserve(lazyImage);
+                        else {
+                            lazyImage.src = UseWebp(lazyImage.dataset.src, lazyImage.dataset.webpSrc, canUse);
+                            var srcset = convertWebpSrcset(lazyImage.dataset.srcset, lazyImage.dataset.webpSrcset, canUse);
+                            if (srcset != "" && srcset != undefined) {
+                                lazyImage.srcset = srcset;
+                            }
+                            lazyImage.removeAttribute("data-src");
+                            lazyImage.removeAttribute("data-webp-src");
+                            lazyImage.removeAttribute("data-srcset");
+                            lazyImage.removeAttribute("data-webp-srcset");
+                            lazyImage.classList.add(lazyImage.dataset.loaded);
+                            removeLoader(lazyImage);
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
                     }
-
+                   
                 }
             });
         });

@@ -1,21 +1,41 @@
 ---
-const { animationdirection = "fade-right", textColor = '[--secundary-color]', fontSize = '', fontSizeSlogan = "", isMobile = false } = Astro.props;
----
-{isMobile ? (
-  <a data-aos={animationdirection} href="/" class={`flex flex-col flex-1 font-normal text-${textColor} relative`}>
-    <h1 class="text-[2.3rem] font-FjallaOne tracking-normal">Nearshoring News</h1>
-    <h4 class="text-[1rem] absolute top-[73%] bottom-0">We bring markets closer</h4>
-  </a>
-) : (
-  <a data-aos={animationdirection} href="/" class={`hidden md:flex flex-col text-left font-normal text-${textColor} relative`}>
-    <h1 class={`text-[7.2vw] font-FjallaOne tracking-normal`}>Nearshoring News</h1>
-    <h4 class={`text-[2vw] absolute top-[73%] bottom-0`}>We bring markets closer</h4>
-  </a>
-)}
+import ImageLazy from "@components/extras/ImageLazy.astro";
 
-<style>
-  .logo {
-    padding-block: 1rem;
-    writing-mode: horizontal-tb;
-  }
-</style>
+const {
+  animationdirection = "fade-right",
+  textColor = "[--secundary-color]",
+  fontSize = "",
+  fontSizeSlogan = "",
+  isMobile = false,
+} = Astro.props;
+---
+
+{
+  isMobile ? (
+    <a
+      data-aos={animationdirection}
+      href="/"
+      class={`flex  w-fit flex-col font-normal text-${textColor} relative w-[40%] min-w-[15rem]`}
+    >
+        <ImageLazy
+            src="/img/logo/nearShoringLogoBlack.svg"
+            width="200"
+            height="114"
+            className="pt-[32%] relative "
+            classNameImage="logo__img--mobile"
+            slot="image"
+          />
+    </a>
+  ) : (
+    <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col w-[43%] max-w-[30rem] 2xl:max-w-[45rem]`}>
+      <ImageLazy
+            src="/img/logo/nearShoringLogoBlack.svg"
+            width="200"
+            height="114"
+            className="pt-[30%] relative "
+            classNameImage="h-full logo__img"
+            slot="image"
+          />
+    </a>
+  )
+}

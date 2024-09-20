@@ -2,11 +2,12 @@ import { initProcessTranslate } from "@src/utils/translatePage";
 import React, { useState, useEffect, useRef } from "react";
 
 const Languages = [
-  { name: "Español", code: "es", flag: "circle-flags:es" },
-  { name: "English", code: "en", flag: "emojione:flag-for-us-outlying-islands" },
-  { name: "Chinese", code: "cn", flag: "circle-flags:cn" },
-  { name: "French", code: "fr", flag: "circle-flags:fr" },
-  { name: "Rusian", code: "rs", flag: "circle-flags:ru" },
+  { name: 'Español', code: 'es', flag: 'circle-flags:es' },
+  { name: 'English', code: 'en', flag: 'emojione:flag-for-us-outlying-islands' },
+  { name: 'Chinese', code: 'cn', flag: 'circle-flags:cn' },
+  { name: 'French', code: 'fr', flag: 'circle-flags:fr' },
+  { name: 'Rusian', code: 'rs', flag: 'circle-flags:ru' },
+  { name: 'Alemán', code: 'de', flag: 'circle-flags:de' }
 ];
 
 const ToggleLanguage = ({ breakpoint = "desktop" }) => {
