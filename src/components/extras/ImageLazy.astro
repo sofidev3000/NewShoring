@@ -11,7 +11,7 @@ interface Props {
 
 const { src, srcWebp, className, width, height,classNameImage, watermark = true } = Astro.props;
 
-var hasWatermark= "after:content-[''] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-full after:bg-contain after:bg-watermark after:bg-no-repeat";
+var hasWatermark= "after:content-[''] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-auto after:bg-contain after:bg-watermark after:bg-no-repeat";
 if(!watermark){
   hasWatermark = ""
 }
@@ -20,7 +20,7 @@ if(!watermark){
 <div class={`load-image-container block h-0 ${hasWatermark} ${className}`}>
   <div class="loader-icon  top-1/2 left-1/2 w-1/4 h-1/4 transform -translate-x-1/2 -translate-y-1/2">
     <div
-      class="lds-facebook block relative m-auto bg-transparent w-full h-full">
+      class="lds-facebook block relative m-auto bg-transparent w-full h-auto">
       <div></div><div></div><div></div>
     </div>
   </div>
@@ -31,7 +31,7 @@ if(!watermark){
     height={height}
     data-loaded="visible-image"
     data-src={src}
-    data-webp-src={srcWebp} 
+    data-webp-src={srcWebp}
     alt=""
     src=""
   />

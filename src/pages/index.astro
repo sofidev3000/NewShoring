@@ -12,7 +12,8 @@ import Button from "@components/atoms/Button/Button.astro";
 <Layout>
   <!-- Near Now -->
   <section
-    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"  >
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"
+  >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
     >
@@ -26,9 +27,9 @@ import Button from "@components/atoms/Button/Button.astro";
     <div
       class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
     >
-    <!-- mainCard -->
+      <!-- mainCard -->
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full mt-2","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-sm font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "},"Autor":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
@@ -47,9 +48,9 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <div class="border-b border-[--divider-secundary] w-full my-5"></div>
-      <div class="articles__small space-y-reverse w-full ">
+      <div class="articles__small space-y-reverse w-full">
         <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
           className=""
           category="Internacional"
           attributes={'{"data-aos":"fade-up"}'}
@@ -68,72 +69,75 @@ import Button from "@components/atoms/Button/Button.astro";
           />
         </ItemNews>
         <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-        className=""
-        category="Internacional"
-        attributes={'{"data-aos":"fade-up"}'}
-        title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-          width="200"
-          height="114"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="114"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-    className=""
-    category="Internacional"
-    attributes={'{"data-aos":"fade-up"}'}
-    title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-    datetime="22/04/2024"
-    href="#"
-    categoryColor="category_03"
-  >
-    <ImageLazy
-      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-      width="200"
-      height="114"
-      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-      classNameImage="h-full object-cover object-center"
-      slot="image"
-    />
-  </ItemNews>
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
       </div>
     </div>
     <!-- divider -->
-     <div class="hidden xl:flex h-full min-h-[100dvh] border-l border-1  border-[--divider-secundary]"></div>
+    <div
+      class="hidden xl:flex h-full min-h-[100dvh] border-l border-1 border-[--divider-secundary]"
+    >
+    </div>
     <!-- Secundary secction -->
     <div
       class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
     >
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full group"
         attributes={'{"data-aos":"fade-left"}'}
         category=""
@@ -152,289 +156,293 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-      className="flex flex-col self-center w-full group"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
     </div>
   </section>
   <!-- Industrías -->
   <section
-  class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full  max-w-[1300px] flex-wrap mb-10"
->
-  <div
-    class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-10"
   >
-    <h2
-      id="industrias"
-      class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
     >
-      Industrías
-    </h2>
-  </div>
-  <div class="flex self-center w-full lg:w-[30%]  ">
-    <ItemNewsWithDesc
-      Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full",\"Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
-      className="w-full"
-      attributes={'{"data-aos":"fade-right"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNewsWithDesc>
-  </div>
-  <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%] ">
-    <ItemNewsWithDesc
-      Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
-      className="w-full sm:w-[31%]"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNewsWithDesc>
-    <ItemNewsWithDesc
-      Options={'{"LinkContainer":{"ClassName":" group"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
-      className="w-full sm:w-[31%]"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNewsWithDesc>
-    <ItemNewsWithDesc
-      Options={'{"LinkContainer":{"ClassName":" group"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
-      className="w-full sm:w-[31%]"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNewsWithDesc>
-  </div>
-</section>
+      <h2
+        id="industrias"
+        class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+      >
+        Industrías
+      </h2>
+    </div>
+    <div class="flex self-center w-full lg:w-[30%]">
+      <ItemNewsWithDesc
+        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        className="w-full"
+        attributes={'{"data-aos":"fade-right"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+    </div>
+    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
+      <ItemNewsWithDesc
+        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+      <ItemNewsWithDesc
+        Options={'{"LinkContainer":{"ClassName":" group"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+      <ItemNewsWithDesc
+        Options={'{"LinkContainer":{"ClassName":" group"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        className="w-full sm:w-[31%]"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.🚀"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNewsWithDesc>
+    </div>
+  </section>
 
   <!-- Energía -->
-   <!-- Se agrega flex-row-reverse, en las secciones donde se necesita el orden inverso -->
-   <section
-   class="flex  flex-row-reverse lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"  >
-   <div
-     class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
-   >
-     <h2
-       id="energia"
-       class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
-     >
-       Energía
-     </h2>
-   </div>
-   <div
-     class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
-   >
-   <!-- mainCard -->
-     <ItemNews
-       Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-       className="flex flex-col self-center w-full font-bold group"
-       attributes={'{"data-aos":"fade-up"}'}
-       category="Near Now"
-       title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
-       datetime="22/04/2024"
-       href="#"
-       categoryColor="category_03"
-     >
-       <ImageLazy
-         src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-         width="600"
-         height="375"
-         className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-         classNameImage="h-full object-cover object-center"
-         slot="image"
-       />
-     </ItemNews>
-     <div class="border-b border-[--divider-secundary] w-full my-5"></div>
-     <div class="articles__small space-y-reverse w-full ">
-       <ItemNews
-         Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-         className=""
-         category="Internacional"
-         attributes={'{"data-aos":"fade-up"}'}
-         title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-         datetime="22/04/2024"
-         href="#"
-         categoryColor="category_03"
-       >
-         <ImageLazy
-           src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-           width="200"
-           height="114"
-           className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-           classNameImage="h-full object-cover object-center"
-           slot="image"
-         />
-       </ItemNews>
-       <ItemNews
-       Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-       className=""
-       category="Internacional"
-       attributes={'{"data-aos":"fade-up"}'}
-       title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-       datetime="22/04/2024"
-       href="#"
-       categoryColor="category_03"
-     >
-       <ImageLazy
-         src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-         width="200"
-         height="114"
-         className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-         classNameImage="h-full object-cover object-center"
-         slot="image"
-       />
-     </ItemNews>
-     <ItemNews
-     Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-     className=""
-     category="Internacional"
-     attributes={'{"data-aos":"fade-up"}'}
-     title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-     datetime="22/04/2024"
-     href="#"
-     categoryColor="category_03"
-   >
-     <ImageLazy
-       src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-       width="200"
-       height="114"
-       className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-       classNameImage="h-full object-cover object-center"
-       slot="image"
-     />
-   </ItemNews>
-   <ItemNews
-   Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-   className=""
-   category="Internacional"
-   attributes={'{"data-aos":"fade-up"}'}
-   title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-   datetime="22/04/2024"
-   href="#"
-   categoryColor="category_03"
- >
-   <ImageLazy
-     src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-     width="200"
-     height="114"
-     className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-     classNameImage="h-full object-cover object-center"
-     slot="image"
-   />
- </ItemNews>
-     </div>
-   </div>
-   <!-- divider -->
-   <div class="hidden xl:flex h-full min-h-[100dvh] border-l border-1  border-[--divider-secundary]"></div>
-   <!-- Secundary secction -->
-   <div
-     class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
-   >
-     <ItemNews
-       Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-       className="flex flex-col self-center w-full group"
-       attributes={'{"data-aos":"fade-left"}'}
-       category=""
-       title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-       datetime="22/04/2024"
-       href="#"
-       categoryColor="category_03"
-     >
-       <ImageLazy
-         src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-         width="600"
-         height="375"
-         className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-         classNameImage="h-full object-cover object-center"
-         slot="image"
-       />
-     </ItemNews>
-     <ItemNews
-     Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-     className="flex flex-col self-center w-full group"
-     attributes={'{"data-aos":"fade-left"}'}
-     category=""
-     title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-     datetime="22/04/2024"
-     href="#"
-     categoryColor="category_03"
-   >
-     <ImageLazy
-       src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-       width="600"
-       height="375"
-       className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-       classNameImage="h-full object-cover object-center"
-       slot="image"
-     />
-   </ItemNews>
-   </div>
- </section>
+  <!-- Se agrega flex-row-reverse, en las secciones donde se necesita el orden inverso -->
+  <section
+    class="flex flex-row-reverse lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"
+  >
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
+    >
+      <h2
+        id="energia"
+        class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+      >
+        Energía
+      </h2>
+    </div>
+    <div
+      class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
+    >
+      <!-- mainCard -->
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full mt-2","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-sm font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "},"Autor":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full font-bold group"
+        attributes={'{"data-aos":"fade-up"}'}
+        category="Near Now"
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen "
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <div class="border-b border-[--divider-secundary] w-full my-5"></div>
+      <div class="articles__small space-y-reverse w-full">
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+      </div>
+    </div>
+    <!-- divider -->
+    <div
+      class="hidden xl:flex h-full min-h-[100dvh] border-l border-1 border-[--divider-secundary]"
+    >
+    </div>
+    <!-- Secundary secction -->
+    <div
+      class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
+    >
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+      <ItemNews
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
+    </div>
+  </section>
   <!-- Newsletter -->
   <div
     class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full xl:max-w-[1300px] flex-wrap"
@@ -445,11 +453,7 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       Suscribe to our Newsletter
     </p>
-    <form
-      action="/"
-      method="post"
-      class="w-full flex flex-row flex-wrap gap-4"
-    >
+    <form action="/" method="post" class="w-full flex flex-row flex-wrap gap-4">
       <div class="w-full lg:w-[79%] flex flex-col gap-1">
         <input
           type="email"
@@ -470,8 +474,9 @@ import Button from "@components/atoms/Button/Button.astro";
     </form>
   </div>
   <!-- Finanzas -->
-   <section
-    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"  >
+  <section
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"
+  >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
     >
@@ -485,9 +490,9 @@ import Button from "@components/atoms/Button/Button.astro";
     <div
       class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
     >
-    <!-- mainCard -->
+      <!-- mainCard -->
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full mt-2","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-sm font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "},"Autor":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
@@ -506,9 +511,9 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <div class="border-b border-[--divider-secundary] w-full my-5"></div>
-      <div class="articles__small space-y-reverse w-full ">
+      <div class="articles__small space-y-reverse w-full">
         <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
           className=""
           category="Internacional"
           attributes={'{"data-aos":"fade-up"}'}
@@ -527,72 +532,75 @@ import Button from "@components/atoms/Button/Button.astro";
           />
         </ItemNews>
         <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-        className=""
-        category="Internacional"
-        attributes={'{"data-aos":"fade-up"}'}
-        title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-          width="200"
-          height="114"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="114"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-    className=""
-    category="Internacional"
-    attributes={'{"data-aos":"fade-up"}'}
-    title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-    datetime="22/04/2024"
-    href="#"
-    categoryColor="category_03"
-  >
-    <ImageLazy
-      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-      width="200"
-      height="114"
-      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-      classNameImage="h-full object-cover object-center"
-      slot="image"
-    />
-  </ItemNews>
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
       </div>
     </div>
     <!-- divider -->
-     <div class="hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary] "></div>
+    <div
+      class="hidden xl:flex w-[1px] h-full min-h-[100dvh] bg-[--divider-secundary]"
+    >
+    </div>
     <!-- Secundary secction -->
     <div
       class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
     >
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full group"
         attributes={'{"data-aos":"fade-left"}'}
         category=""
@@ -611,29 +619,29 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-      className="flex flex-col self-center w-full group"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
     </div>
   </section>
   <!-- video -->
   <section
-      class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full  max-w-[1300px] flex-wrap mb-10"
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-10"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -730,7 +738,8 @@ import Button from "@components/atoms/Button/Button.astro";
   </section>
   <!-- Logística y transporte -->
   <section
-    class="flex flex-row-reverse lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"  >
+    class="flex flex-row-reverse lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"
+  >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
     >
@@ -744,9 +753,9 @@ import Button from "@components/atoms/Button/Button.astro";
     <div
       class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
     >
-    <!-- mainCard -->
+      <!-- mainCard -->
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full mt-2","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-sm font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "},"Autor":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
@@ -765,9 +774,9 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <div class="border-b border-[--divider-secundary] w-full my-5"></div>
-      <div class="articles__small space-y-reverse w-full ">
+      <div class="articles__small space-y-reverse w-full">
         <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
           className=""
           category="Internacional"
           attributes={'{"data-aos":"fade-up"}'}
@@ -786,72 +795,75 @@ import Button from "@components/atoms/Button/Button.astro";
           />
         </ItemNews>
         <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-        className=""
-        category="Internacional"
-        attributes={'{"data-aos":"fade-up"}'}
-        title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-          width="200"
-          height="114"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="114"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-    className=""
-    category="Internacional"
-    attributes={'{"data-aos":"fade-up"}'}
-    title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-    datetime="22/04/2024"
-    href="#"
-    categoryColor="category_03"
-  >
-    <ImageLazy
-      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-      width="200"
-      height="114"
-      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-      classNameImage="h-full object-cover object-center"
-      slot="image"
-    />
-  </ItemNews>
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
       </div>
     </div>
     <!-- divider -->
-    <div class="hidden xl:flex h-full min-h-[100dvh] border-l border-1  border-[--divider-secundary]"></div>
+    <div
+      class="hidden xl:flex h-full min-h-[100dvh] border-l border-1 border-[--divider-secundary]"
+    >
+    </div>
     <!-- Secundary secction -->
     <div
       class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
     >
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full group"
         attributes={'{"data-aos":"fade-left"}'}
         category=""
@@ -870,29 +882,29 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-      className="flex flex-col self-center w-full group"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
     </div>
   </section>
   <!-- Parques Industríales -->
   <section
-      class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full  max-w-[1300px] flex-wrap mb-10"
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-10"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -904,9 +916,9 @@ import Button from "@components/atoms/Button/Button.astro";
         Parques Industriales
       </h2>
     </div>
-    <div class="flex self-center w-full lg:w-[30%]  ">
+    <div class="flex self-center w-full lg:w-[30%]">
       <ItemNewsWithDesc
-        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full",\"Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
         className="w-full"
         attributes={'{"data-aos":"fade-right"}'}
         category=""
@@ -926,7 +938,7 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNewsWithDesc>
     </div>
-    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%] ">
+    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
       <ItemNewsWithDesc
         Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
         className="w-full sm:w-[31%]"
@@ -991,7 +1003,8 @@ import Button from "@components/atoms/Button/Button.astro";
   </section>
   <!-- Capital Humano -->
   <section
-    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"  >
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-5"
+  >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-3 border-t-4 border-b self-center my-10"
     >
@@ -1005,9 +1018,9 @@ import Button from "@components/atoms/Button/Button.astro";
     <div
       class=`w-full xl:max-w-[700px] 2xl:max-w-[708px] flex lg:justify-between  gap-5 xl:gap-[20px] items-start w-full flex-wrap `
     >
-    <!-- mainCard -->
+      <!-- mainCard -->
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap  justify-center w-full mt-2\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-sm font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.4rem] text-center \"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap  justify-center w-full mt-2","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-sm font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.4rem] text-center "},"Autor":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full font-bold group"
         attributes={'{"data-aos":"fade-up"}'}
         category="Near Now"
@@ -1026,9 +1039,9 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <div class="border-b border-[--divider-secundary] w-full my-5"></div>
-      <div class="articles__small space-y-reverse w-full ">
+      <div class="articles__small space-y-reverse w-full">
         <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
           className=""
           category="Internacional"
           attributes={'{"data-aos":"fade-up"}'}
@@ -1047,72 +1060,75 @@ import Button from "@components/atoms/Button/Button.astro";
           />
         </ItemNews>
         <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-        className=""
-        category="Internacional"
-        attributes={'{"data-aos":"fade-up"}'}
-        title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-          width="200"
-          height="114"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNews>
-      <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-      className=""
-      category="Internacional"
-      attributes={'{"data-aos":"fade-up"}'}
-      title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-        width="200"
-        height="114"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
-    <ItemNews
-    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-    className=""
-    category="Internacional"
-    attributes={'{"data-aos":"fade-up"}'}
-    title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
-    datetime="22/04/2024"
-    href="#"
-    categoryColor="category_03"
-  >
-    <ImageLazy
-      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-      width="200"
-      height="114"
-      className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
-      classNameImage="h-full object-cover object-center"
-      slot="image"
-    />
-  </ItemNews>
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container max-w-[186px] h-full  max-h-[119px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-10 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+          className=""
+          category="Internacional"
+          attributes={'{"data-aos":"fade-up"}'}
+          title="Descubre el significado Descubre el significado Descubre el significado Descubre el significado"
+          datetime="22/04/2024"
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+            width="200"
+            height="114"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[150%] lg:pt-[135%] xl:pt-[150%] w-full absolute"
+            classNameImage="h-full object-cover object-center"
+            slot="image"
+          />
+        </ItemNews>
       </div>
     </div>
     <!-- divider -->
-    <div class="hidden xl:flex h-full min-h-[100dvh] border-l border-1  border-[--divider-secundary]"></div>
+    <div
+      class="hidden xl:flex h-full min-h-[100dvh] border-l border-1 border-[--divider-secundary]"
+    >
+    </div>
     <!-- Secundary secction -->
     <div
       class=`flex flex-row flex-wrap w-full lg:max-w-[430px] 2xl:max-w-[459px] items-stretch xl:gap-12 2xl:gap-28 gap-12`
     >
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full group"
         attributes={'{"data-aos":"fade-left"}'}
         category=""
@@ -1131,29 +1147,29 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNews>
       <ItemNews
-      Options={'{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 text-[1.3rem] mt-2\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-      className="flex flex-col self-center w-full group"
-      attributes={'{"data-aos":"fade-left"}'}
-      category=""
-      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-      datetime="22/04/2024"
-      href="#"
-      categoryColor="category_03"
-    >
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="600"
-        height="375"
-        className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-        classNameImage="h-full object-cover object-center"
-        slot="image"
-      />
-    </ItemNews>
+        Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 text-[1.3rem] mt-2"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+        className="flex flex-col self-center w-full group"
+        attributes={'{"data-aos":"fade-left"}'}
+        category=""
+        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+        datetime="22/04/2024"
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="h-full object-cover object-center"
+          slot="image"
+        />
+      </ItemNews>
     </div>
   </section>
   <!-- ESG -->
   <section
-      class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full  max-w-[1300px] flex-wrap mb-10"
+    class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] flex-wrap mb-10"
   >
     <div
       class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
@@ -1165,9 +1181,9 @@ import Button from "@components/atoms/Button/Button.astro";
         ESG
       </h2>
     </div>
-    <div class="flex self-center w-full lg:w-[30%]  ">
+    <div class="flex self-center w-full lg:w-[30%]">
       <ItemNewsWithDesc
-        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full",\"Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
+        Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
         className="w-full"
         attributes={'{"data-aos":"fade-right"}'}
         category=""
@@ -1187,7 +1203,7 @@ import Button from "@components/atoms/Button/Button.astro";
         />
       </ItemNewsWithDesc>
     </div>
-    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%] ">
+    <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
       <ItemNewsWithDesc
         Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":" order-2 text-sm"}}}'}
         className="w-full sm:w-[31%]"
@@ -1250,8 +1266,98 @@ import Button from "@components/atoms/Button/Button.astro";
       </ItemNewsWithDesc>
     </div>
   </section>
+  <!-- Patrocinadores -->
+  <section
+    class="patrocinadores flex flex-col lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full max-w-[1300px] mb-10 h-full"
+  >
+    <div
+      class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+    >
+      <h2
+        id="esg"
+        class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+      >
+        Patrocinadores
+      </h2>
+    </div>
+    <div class="patrocinadores-grid w-full">
+      <ImageLazy
+        src="https://edisonlawgroup.com/wp-content/uploads/2024/08/shopify-Patent-Infringement.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://logos-world.net/wp-content/uploads/2022/01/Unilever-Symbol.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://1000logos.net/wp-content/uploads/2022/06/Logo-HM.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://rastreosatelital.inbursa.com/static/res/logo_inbursa_acceso.png"
+        width="150"
+         height="100"
+         className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+         classNameImage="w-full h-full object-contain object-center"
+         slot="image"
+      />
+      <ImageLazy
+        src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://cdn.prod.website-files.com/627d96126a4d3386dc82ba44/627ef87b95730e9069f4b45e_savvy%20logo%20new.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://logos-world.net/wp-content/uploads/2021/05/Ford-Logo.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+      <ImageLazy
+        src="https://download.blender.org/branding/blender_logo.png"
+        width="150"
+        height="100"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
+        classNameImage="w-full h-full object-contain object-center"
+        slot="image"
+      />
+    </div>
+  </section>
 </Layout>
-<style >
+
+<style>
   .articles__small {
     min-height: 32dvh;
     display: grid;
@@ -1264,5 +1370,17 @@ import Button from "@components/atoms/Button/Button.astro";
       grid-template-rows: auto;
       gap: 1rem;
     }
+  }
+
+  .patrocinadores-grid {
+    display: grid;
+    place-content: center;
+    justify-content: center;
+    align-content: center;
+    padding-block: 1.5rem;
+    writing-mode: horizontal-tb;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto minmax(150px, 1fr);
+    gap: 1.1rem;
   }
 </style>
