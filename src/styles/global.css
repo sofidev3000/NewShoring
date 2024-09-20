@@ -141,3 +141,86 @@ body {
       filter: invert(1);
     }
   }
+
+
+
+  /* Carrusel infinito uso general (el de divisas se encuentra con su componente)*/
+
+    .slider {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider > div {
+    flex: 0 0 auto;
+}
+  .slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      var(--main-color)0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    @media screen and (max-width: 768px) {
+      width: 60px;
+
+    }
+  }
+
+  .slider::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      var(--main-color) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  @media screen and (max-width: 768px) {
+    .slider::before, .slider::after {
+    width: 52px
+  }
+  }
+
+
+
+
+  .slide__track {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    padding: 3rem 0;
+    height: auto;
+    width: max-content;
+    min-width: 200rem;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    animation: scroll 19s linear infinite;
+  }
+
+  .slide__track:has(> .slide:hover) {
+    animation-play-state: paused;
+  }
+  @keyframes scroll {
+    from {
+          transform: translateX(0);
+      }
+      to {
+          transform: translateX(-50%);
+      }
+  }
