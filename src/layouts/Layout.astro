@@ -8,6 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro";
 import Footer from "@organisms/Footer/Footer.astro";
 import ButtonToTop from "@components/atoms/ButtonToTop/ButtonToTop.astro";
+import BannerCoockies from "@components/atoms/BannerCoockies/BannerCoockies";
 
 const {
   title = SITE_TITLE,
@@ -26,6 +27,7 @@ const {
   </head>
 
   <body>
+    <!-- <BannerCoockies /> -->
     <TopBar />
     <article
       class=`hidden md:flex logo w-full  justify-center items-center text-left`

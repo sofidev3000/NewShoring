@@ -1,0 +1,22 @@
+.modal {
+    position: fixed; /* Mantener el modal en la ventana del navegador */
+    z-index: 10000; /* Asegurarse de que esté por encima de otros contenidos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Agregar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #fff;
+    color: black;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; /* Controlar el ancho del modal */
+    /* max-width: 500px; Ancho máximo */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

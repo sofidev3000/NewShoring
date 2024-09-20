@@ -9,16 +9,17 @@ const initProcessTranslate = () => {
     scripTagContent.setAttribute('id', 'LangScriptConfig');
 
 
-    // "default_language": "es",
     scripTagContent.textContent = `
     window.gtranslateSettings = {
+         "default_language": "es",
         "detect_browser_language":true,
         "languages":["en","fr", "de","es","zh-CN", "ru"],
         "alt_flags":{"en": "usa", "es":"mexico"},
         "wrapper_selector":".gtranslate_wrapper",
         "switcher_horizontal_position":"right",
         "switcher_vertical_position":"top",
-        "flag_style":"3d"
+        "flag_style":"3d",
+        "url_structure": "none"
         }
         `;
 
