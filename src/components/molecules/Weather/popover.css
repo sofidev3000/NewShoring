@@ -9,3 +9,49 @@
     border-style: solid;
     border-color: transparent transparent rgba(0, 0, 0, 0.84) transparent; /* Triángulo apuntando hacia abajo */
   }
+
+
+
+    /* Estilos del modal */
+    .modal-weather {
+      position: fixed; /* Posicionamiento fijo */
+      z-index: 3000; /* Asegurarse que esté en la parte superior */
+      left: 0;
+      top: 0;
+      width: 100%; /* Ancho completo */
+      height: 100%; /* Altura completa */
+      overflow: auto; /* Permitir desplazamiento si es necesario */
+      background-color: rgb(0,0,0); /* Color de fondo negro */
+      background-color: rgba(0,0,0,0.7); /* Fondo negro con opacidad */
+  }
+
+  /* Estilos del contenido del modal */
+  .modal-content-weather {
+      border-radius: 20px;
+      background-color: #fefefe;
+      margin: 15% auto; /* Centrar verticalmente */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%; /* Ancho del modal */
+      max-width: 600px; /* Ancho máximo del modal */
+      color: #000000;
+  }
+
+  .alert-weather{
+    background-color: red;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    top: 20px;
+  }
+
+  .alert-hide{
+    left: -100%;
+    transition: all .3s ease-in-out;
+  }
+  .alert-show{
+    left: 10px; 
+    transition: all .3s ease-in-out;
+  }

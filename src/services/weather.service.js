@@ -1,9 +1,9 @@
 // Function to get the user's location using geolocation
 const getLocation = () => {
   return new Promise((resolve, reject) => {
-    if (navigator.geolocation) {
+    if (window.navigator.geolocation) {
       // If the browser supports geolocation, get the current position
-      navigator.geolocation.getCurrentPosition(
+      window.navigator.geolocation.getCurrentPosition(
         (position) => resolve(position.coords), // Resolve with the coordinates of the position
         (error) => reject(error) // Reject with the error if there's any issue
       );

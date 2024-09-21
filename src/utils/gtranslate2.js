@@ -1,4 +1,5 @@
 /*!Copyright (C) GTranslate Inc.*/ (function () {
+    
     var gt = window.gtranslateSettings || {};
     gt = gt[document.currentScript.getAttribute("data-gt-widget-id")] || gt;
     // TODO:
