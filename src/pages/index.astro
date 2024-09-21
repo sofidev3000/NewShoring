@@ -1280,155 +1280,105 @@ import Button from "@components/atoms/Button/Button.astro";
         Patrocinadores
       </h2>
     </div>
-    <div class="slider w-full">
-      <div class="slide__track">
+    <Swiper
+    className="mx-auto mt-5 w-full h-[300px] "
+    navigation={'{\"Type\":\"none\", \"ClassName\":\"\" ,\"ClassNext\":\"\",\"ClassPrev\": \"\"}'}
+    options={'{\"effect\":\"slide\",\"loop\":true,\"speed\":3000,\"modules\":[\"Autoplay\"],\"slidesPerView\":\"1\",\"autoplay\":{\"delay\":0,\"disableOnInteraction\":false},\"breakpoints\":{\"767\":{\"slidesPerView\": \"auto\"},\"944\":{\"slidesPerView\":\"auto\"},\"1200\":{\"slidesPerView\":\"auto\"}}}'}
+  >
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
+      <a class="w-full h-full">
+        <ImageLazy
+        src="https://edisonlawgroup.com/wp-content/uploads/2024/08/shopify-Patent-Infringement.png"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
+      />
+      </a>
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
+      <ImageLazy
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
+      />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
+      <ImageLazy
+        src="https://logos-world.net/wp-content/uploads/2022/01/Unilever-Symbol.png"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
+      />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
+      <ImageLazy
+        src="https://1000logos.net/wp-content/uploads/2022/06/Logo-HM.png"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
+      />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://edisonlawgroup.com/wp-content/uploads/2024/08/shopify-Patent-Infringement.png"
         width="300"
         height="200"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-[200px] min-h-[300px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
-      <ImageLazy
-        src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
-      />
-      <ImageLazy
-        src="https://logos-world.net/wp-content/uploads/2022/01/Unilever-Symbol.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
-      />
-      <ImageLazy
-        src="https://1000logos.net/wp-content/uploads/2022/06/Logo-HM.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
-      />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://rastreosatelital.inbursa.com/static/res/logo_inbursa_acceso.png"
-        width="150"
-         height="100"
-         className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-         classNameImage="w-full h-full object-contain object-center"
-         slot="image"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://cdn.prod.website-files.com/627d96126a4d3386dc82ba44/627ef87b95730e9069f4b45e_savvy%20logo%20new.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://logos-world.net/wp-content/uploads/2021/05/Ford-Logo.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
+    </SwiperItem>
+    <SwiperItem className="swiper-slide w-full sm:w-[200px] min-h-[300px] sm:mr-[10px]">
       <ImageLazy
         src="https://download.blender.org/branding/blender_logo.png"
-        width="150"
-        height="100"
-        className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-        classNameImage="w-full h-full object-contain object-center"
-        slot="image"
+        width="300"
+        height="200"
+        className="group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full pt-[50%] sm:pt-[100%] overflow-hidden relative"
+        classNameImage="h-full object-contain object-center"
       />
-      <!-- Se repite para dar el efecto de carrusel -->
-      <ImageLazy
-      src="https://edisonlawgroup.com/wp-content/uploads/2024/08/shopify-Patent-Infringement.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://logos-world.net/wp-content/uploads/2022/01/Unilever-Symbol.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://1000logos.net/wp-content/uploads/2022/06/Logo-HM.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://rastreosatelital.inbursa.com/static/res/logo_inbursa_acceso.png"
-      width="150"
-       height="100"
-       className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-       classNameImage="w-full h-full object-contain object-center"
-       slot="image"
-    />
-    <ImageLazy
-      src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://cdn.prod.website-files.com/627d96126a4d3386dc82ba44/627ef87b95730e9069f4b45e_savvy%20logo%20new.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://logos-world.net/wp-content/uploads/2021/05/Ford-Logo.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-    <ImageLazy
-      src="https://download.blender.org/branding/blender_logo.png"
-      width="150"
-      height="100"
-      className="slide group-hover:scale-125 ease-in-out self-center justify-self-center  duration-500 transition-transform cursor-pointer  w-full min-h-[100px] overflow-hidden relative"
-      classNameImage="w-full h-full object-contain object-center"
-      slot="image"
-    />
-  </div>
-    </div>
+    </SwiperItem>
+  </Swiper>
+   
   </section>
 </Layout>
 
