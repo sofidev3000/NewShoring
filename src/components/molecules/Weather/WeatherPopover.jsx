@@ -6,7 +6,7 @@ const WeatherPopover = () => {
   // State variables for weather data, popover state, and popover reference
   const [weatherData, setWeatherData] = useState({
     temperature: null,
-    city: "CDMX",
+    city: "Ubicaión no disponible",
     iconImage: "https://openweathermap.org/img/wn/02d@2x.png",
     humidity: null,
     precipProbability: null,
