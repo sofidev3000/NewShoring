@@ -10,13 +10,53 @@
 }
 
 .modal-content {
+    position: absolute;
+    bottom: 0;
     background-color: #fff;
     color: black;
-    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    margin: 20px; /* 15% desde la parte superior y centrado */
     padding: 20px;
     border: 1px solid #888;
     width: 350px; /* Controlar el ancho del modal */
-    /* max-width: 500px; Ancho máximo */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-content-cookies-cont {
+    max-height: 70%;
+    overflow: auto;
+}
+
+.modal-content-cookies {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    margin: 15% auto; /* 15% desde la parte superior y centrado */
+    border: 1px solid #888;
+    width: 500px; /* Controlar el ancho del modal */
+    max-width: 500px;
+    height: 400px;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-content-cookies-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.show {
+    height: auto;
+}
+
+.hide {
+    height: 0;
+}
+
+.checkStyle {
+    border-radius: 21px;
+    width: 30px;
+    padding: 11px;
 }

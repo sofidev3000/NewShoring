@@ -19,6 +19,10 @@ const WeatherPopover = () => {
   const popoverRef = useRef(null);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [hasLocation, setHasLocation] = useState(false);
+
+  const [locationAllowed, setLocationAllowed] = useState(false);
+  const [modalLocationAllowed, setModalLocationAllowed] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
   // Function to handle the weather button click
   const handleWeatherButtonClick = () => {
     setPopoverOpen(!popoverOpen);
@@ -53,6 +57,22 @@ const WeatherPopover = () => {
       setHasLocation(false);
       console.error("Geolocation error fail:", error);
       // Handle geolocation error here
+      if (error.code == 1) {
+        if (locationAllowed) {
+          setModalLocationAllowed(true);
+          document.body.style.overflow = 'hidden';
+        }
+      } else if (error.code == 2) {
+        if (locationAllowed) {
+          setShowAlert(true);
+          setTimeout(() => {
+            setShowAlert(false);
+          }, 1700);
+        }
+      }
+
+      setLocationAllowed(false); // SE TIENE QUE REGRESAR A FALSE, O YA NO PERMITE EL CLICK EL "Mi ubicación"
+
       setWeatherData((prevData) => ({
         ...prevData,
         error: "Error al obtener los datos del clima",
@@ -62,6 +82,13 @@ const WeatherPopover = () => {
   useEffect(() => {
     fetchWeatherData();
   }, []);
+
+  // en caso de que el usuario de click en el pin de la ubicación...
+  useEffect(() => {
+    if (locationAllowed === true) {
+      fetchWeatherData();
+    }
+  }, [locationAllowed]);
 
   // Effect to update current time every second
   useEffect(() => {
@@ -184,7 +211,12 @@ const WeatherPopover = () => {
           </div>
         </>
       ) : (
-        <div className="flex hover:cursor-pointer " onClick={() => {fetchWeatherData();}} >
+        <div
+          className="flex hover:cursor-pointer "
+          onClick={() => {
+            setLocationAllowed(true);
+          }}
+        >
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
@@ -209,11 +241,33 @@ const WeatherPopover = () => {
               />
             </g>
           </svg>
-          <p className="font-bold text-red-500 text-xs ml-1">
-            Mi ubicación
-          </p>
+          <p className="font-bold text-red-500 text-xs ml-1">Mi ubicación</p>
         </div>
       )}
+
+      {/*  El Modal */}
+      <div id="myModalWeather" className="modal-weather" style={{display: modalLocationAllowed ? 'block' : 'none'}}>
+        {/* Contenido del Modal  */}
+        <div className="modal-content-weather">
+          <div className="flex items-center justify-between">
+            <h2 className="font-bold text-xl mb-2 text-orange-600">Algo a ocurrido!</h2>
+             <p className="text-3xl text-red-500 hover:cursor-pointer mb-0"
+              onClick={() => {
+                setModalLocationAllowed(false);
+                document.body.style.overflow = 'auto';
+              }}
+             >&times;</p>
+          </div>
+          <p>No es posible acceder a tu ubicación.</p>
+          <p>Al parecer esta bloquedo el permiso, es necesario habilitarlo y recargar la página para poder acceder.</p>
+        </div>
+      </div>
+
+      {/* ALERT */}
+      <div className={`alert-weather ${showAlert ? 'alert-show' : 'alert-hide'}`} >
+        <p>Información de ubicación no está disponible.</p>
+      </div>
+
     </>
   );
 };
