@@ -5,7 +5,11 @@ const getLocation = () => {
       // If the browser supports geolocation, get the current position
       window.navigator.geolocation.getCurrentPosition(
         (position) => resolve(position.coords), // Resolve with the coordinates of the position
-        (error) => reject(error) // Reject with the error if there's any issue
+        (error) => reject(error),
+        {
+          enableHighAccuracy: true,
+          maximumAge: 0,
+        } // Reject with the error if there's any issue
       );
     } else {
       // If geolocation is not supported, reject with a message
