@@ -11,14 +11,16 @@ const IndicadoresCarousel = () => {
     const fetchData = async () => {
       try {
         let domain = window.location.origin;
+
         const url = new URL(window.location.href);
         const params = new URLSearchParams(url.search);
         const testParam = params.get('test');
-        let testString = testParam ? `?test=${testParam}` : "";
-
-        const baseURL = `${domain}/api/divisas.json${testString}`;
-        // const baseURL = `${domain}/api-request${testString}`;
-
+        //const baseURL = `${domain}/api/divisas.json${testString}`;
+        let baseURL = `${domain}/api-request`;
+        if(testParam){
+          baseURL = `${baseURL}?${params.toString()}`
+        }
+       
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
@@ -50,15 +52,15 @@ const IndicadoresCarousel = () => {
 
         const result = await response.json();
         //Provisional para visualizar en local. Se debe comentar este y descomentar el de abajo
-        const indicadoresData = result.data.indicadores[0].result.divisas;
+        //const indicadoresData = result.data?.indicadores[0].result.divisas;
 
 
-        // const indicadoresData = result.result.divisas;
+        const indicadoresData = result.result.divisas;
 
 
         // Ensure data is an array
         setData(Array.isArray(indicadoresData) ? indicadoresData : []);
-        // setData(indicadoresData);
+        //setData(indicadoresData);
 
         console.log(indicadoresData);
       } catch (error) {
@@ -75,7 +77,7 @@ const IndicadoresCarousel = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <section className="carousel-container w-[24rem] overflow-hidden flex justify-center">
+    <section className="carousel-container overflow-hidden flex justify-center">
       <article className="carrusel flex flex-nowrap w-full">
         {/* Duplicating data for carousel animation */}
         {[...data, ...data].map((indicator, index) => (

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./bannerCookies.css";
-import coockiesImg from "./CoockiesImg.svg";
 
 const cookiesArr = [
   {
@@ -84,9 +83,9 @@ const BannerCoockies = () => {
     });
 
     // --------
+    document.body.style.overflow = "auto";
     handleModalAllCookies(); // cerrar el modal de las cookies detalle
     setIsVisible(false); // cerrar modal inicial de cookies
-
     // update storage para no volver a pedir cookies si ya existen...
     localStorage.setItem("storedCookies", "true");
   
@@ -104,7 +103,7 @@ const handleAcceptALL = () => {
        // document.cookie = "nombre=valor; expires=fecha; path=ruta; secure; SameSite=opción";
        document.cookie = `${c.cookieName}=${true}; expires=${expires}; path = path=; sameSite=Strict `;
      });
-
+     document.body.style.overflow = "auto";
     localStorage.setItem("storedCookies", "true");
     setIsVisible(false);
   };
@@ -151,7 +150,7 @@ const handleAcceptALL = () => {
         <div className="modal-content ">
           <div className="flex items-center mb-3">
             <img
-              src={coockiesImg.src}
+              src='/img/near/coockiesImg.svg'
               alt=""
               width={30}
               height={30}
@@ -166,7 +165,7 @@ const handleAcceptALL = () => {
 
           <div className=" flex flex-col mt-5">
             <button
-              className="border-2 border-indigo-500 text-sm text-indigo-600   hover:bg-indigo-600 hover:text-white transition ease-in-out  font-bold rounded p-1"
+              className="bg-[--button-base] text-sm hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color]  font-bold rounded-[7px] p-1"
               onClick={() => {
                 handleAcceptALL();
               }}
@@ -174,7 +173,7 @@ const handleAcceptALL = () => {
               Aceptar todas
             </button>
             <button
-              className="border-2 border-green-500 text-sm text-green-600   hover:bg-green-600 hover:text-white transition ease-in-out  font-bold rounded p-1 my-2"
+              className="border-2 border-green-500 text-sm text-green-600   hover:bg-green-600 hover:text-white transition ease-in-out  font-bold rounded-[7px] p-1 my-2"
               onClick={() => {
                 handleModalAllCookies();
               }}
@@ -203,7 +202,7 @@ const handleAcceptALL = () => {
                 <div key={c.id} className="mb-4">
                   <div className="flex items-center justify-between mb-1 py-1">
                     <p
-                      className="font-bold hover:cursor-pointer text-indigo-700"
+                      className="font-bold hover:cursor-pointer"
                       onClick={() => {
                         showHideTab({ id: c.id });
                       }}
@@ -237,7 +236,7 @@ const handleAcceptALL = () => {
 
           <div className="  mt-6 modal-content-cookies-btns px-4 pb-3">
           <button
-              className="border-2 border-indigo-500 text-sm text-indigo-600   hover:bg-indigo-600 hover:text-white transition ease-in-out  font-bold rounded p-1 mr-2"
+              className="bg-[--button-base] text-sm hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color]  font-bold rounded-[7px] p-1 mr-2"
               onClick={() => {
                 handleAcceptALL();
                 setIsVisibleAllCookies(false);
@@ -247,7 +246,7 @@ const handleAcceptALL = () => {
             </button>
 
             <button
-              className="border-2 border-indigo-500 text-sm text-indigo-600   hover:bg-indigo-600 hover:text-white transition ease-in-out  font-bold rounded p-1 mr-2"
+              className="bg-[--button-base] text-sm hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color]  font-bold rounded-[7px] p-1 mr-2"
               onClick={() => {
                 handleAcceptConfig();
               }}

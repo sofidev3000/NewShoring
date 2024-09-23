@@ -108,8 +108,8 @@ const WeatherPopover = () => {
     hour: "numeric",
     minute: "numeric",
     second: "numeric",
-    //  hour12: true,
-    hourCycle: "h24",
+    hour12: true,
+    //hourCycle: "h24",
   });
 
   return (
@@ -204,10 +204,10 @@ const WeatherPopover = () => {
           </button>
           // {/* Date and time display */}
           <div className="flex items-center gap-2 text-xs">
-            <time className="flex items-center cursor-pointer ">
+            <time className="flex items-center">
               {formattedDate}
             </time>{" "}
-            - <time className="cursor-pointer">{formattedTime}</time>
+            - <time className="cursor-pointer" translate="no">{formattedTime}</time>
           </div>
         </>
       ) : (

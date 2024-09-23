@@ -8,6 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro";
 import Footer from "@organisms/Footer/Footer.astro";
 import ButtonToTop from "@components/atoms/ButtonToTop/ButtonToTop.astro";
+import BannerCoockies from "@components/atoms/BannerCoockies/BannerCoockies";
 
 const {
   title = SITE_TITLE,
@@ -41,6 +42,7 @@ const {
   </head>
 
   <body>
+    <BannerCoockies client:only = 'react' />
     <TopBar />
     <ul id="shareBtns" class="shareBtns opacity-0 p-2 fixed hidden xl:flex flex-col left-0 top-20  items-center gap-4 z-[1000]">
       <span class="text-xs mb-1 bg-[#000000ca] text-white rounded-md p-1">Compartir:</span>
