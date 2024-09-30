@@ -16,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 const {
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
-  image = "../../public/img/city.jpg",
+  image = "/public/img/city.jpg",
 } = Astro.props;
 
 ---
@@ -24,7 +24,7 @@ const {
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/png" href="../../public/favicon.svg" />
+<link rel="icon" type="image/png" href="/public/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->

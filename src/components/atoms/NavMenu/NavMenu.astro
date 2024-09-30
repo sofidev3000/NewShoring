@@ -93,18 +93,7 @@ const randomNum = Math.floor(Math.random() * 1000);
     <ul
       class="flex flex-col lg:flex-row w-full  md:h-auto font-medium md:space-x-4 rtl:space-x-reverse  md:mt-0 md:border-0 space-y-4 md:space-y-0"
     >
-      {
-        pagePathname !== "/" && (
-          <li class="header__item  ">
-            <a
-              class="header__link block font-sans text-white hover:text-[--guardsman-red-500] transition-colors"
-              href="/"
-            >
-              Home
-            </a>
-          </li>
-        )
-      }
+
       {
         mainMenuItems.map((menuItem, index) => (
           <li class="">
