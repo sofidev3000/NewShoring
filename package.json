@@ -11,7 +11,6 @@
     "server": "node src/pages/api/server.mjs"
   },
   "dependencies": {
-    "@astrojs/node": "^8.3.3",
     "@astrojs/react": "^3.6.2",
     "@astrojs/tailwind": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -23,7 +22,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
     "flowbite": "^2.5.1",
     "json-server": "^1.0.0-beta.2",
     "openmeteo": "^1.1.4",
