@@ -1,0 +1,38 @@
+{
+    "Title": "Sustentabilidad",
+    "Description": "Prácticas y estrategias para la sostenibilidad.",
+    "Type": "website",
+    "Canonical": "/sustentabilidad",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "svg",
+      "Url": "https://www.nearshoring.news/img/sustentabilidad/sustentabilidadImage.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Sustentabilidad",
+        "Description": "Prácticas y estrategias para la sostenibilidad.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/sustentabilidad/sustentabilidadImage.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Sustentabilidad",
+        "Description": "Prácticas y estrategias para la sostenibilidad.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/sustentabilidad/sustentabilidadImage.png"
+        },
+        "Site": ""
+      }
+    }
+  }

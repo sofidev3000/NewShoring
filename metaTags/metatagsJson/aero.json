@@ -1,36 +1,36 @@
 {
-    "Title": "Aero - Nearshoring News México",
-    "Description": "Analiza cómo el nearshoring está impactando la industria aeroespacial y promoviendo el crecimiento en México.",
+    "Title": "Aero",
+    "Description": "Información sobre el sector aeroespacial.",
     "Type": "website",
     "Canonical": "/aero",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
-      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+      "Type": "svg",
+      "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
     },
     "Index": true,
     "Follow": true,
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Aero - Nearshoring News México",
-        "Description": "Analiza cómo el nearshoring está impactando la industria aeroespacial en México.",
+        "Title": "Aero",
+        "Description": "Información sobre el sector aeroespacial.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
           "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+          "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
         }
       },
       "Twitter": {
-        "Title": "Aero - Nearshoring News México",
-        "Description": "Analiza cómo el nearshoring está impactando la industria aeroespacial en México.",
+        "Title": "Aero",
+        "Description": "Información sobre el sector aeroespacial.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
           "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+          "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
         },
         "Site": ""
       }

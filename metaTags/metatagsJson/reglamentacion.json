@@ -1,0 +1,38 @@
+{
+    "Title": "Reglamentación",
+    "Description": "Detalles sobre la reglamentación relacionada con Nearshoring.",
+    "Type": "website",
+    "Canonical": "/reglamentacion",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "svg",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Reglamentación",
+        "Description": "Detalles sobre la reglamentación relacionada con Nearshoring.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Reglamentación",
+        "Description": "Detalles sobre la reglamentación relacionada con Nearshoring.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }

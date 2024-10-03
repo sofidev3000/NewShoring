@@ -1,0 +1,38 @@
+{
+    "Title": "Certificación",
+    "Description": "Programas de certificación en Nearshoring para mejorar la competitividad.",
+    "Type": "website",
+    "Canonical": "/certificacion",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "svg",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Certificación",
+        "Description": "Programas de certificación en Nearshoring para mejorar la competitividad.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Certificación",
+        "Description": "Programas de certificación en Nearshoring para mejorar la competitividad.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }
