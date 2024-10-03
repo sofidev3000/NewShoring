@@ -1,0 +1,38 @@
+{
+    "Title": "Marítimo - Nearshoring News México",
+    "Description": "Explora el impacto del nearshoring en la industria marítima y cómo está transformando el comercio en México.",
+    "Type": "website",
+    "Canonical": "/maritimo",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Marítimo - Nearshoring News México",
+        "Description": "Explora el impacto del nearshoring en la industria marítima.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Marítimo - Nearshoring News México",
+        "Description": "Explora el impacto del nearshoring en la industria marítima.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }

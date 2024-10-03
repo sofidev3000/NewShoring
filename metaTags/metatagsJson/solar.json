@@ -1,0 +1,38 @@
+{
+    "Title": "Solar - Nearshoring News México",
+    "Description": "Investiga el impacto del nearshoring en la industria solar y cómo está fomentando la energía renovable en México.",
+    "Type": "website",
+    "Canonical": "/solar",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Solar - Nearshoring News México",
+        "Description": "Investiga el impacto del nearshoring en la industria solar.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Solar - Nearshoring News México",
+        "Description": "Investiga el impacto del nearshoring en la industria solar.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }
