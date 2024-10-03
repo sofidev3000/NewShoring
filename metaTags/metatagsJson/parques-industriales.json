@@ -1,0 +1,38 @@
+{
+    "Title": "Parques Industriales - Nearshoring News México",
+    "Description": "Explora el desarrollo de parques industriales en México como resultado del nearshoring.",
+    "Type": "website",
+    "Canonical": "/parques-industriales",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Parques Industriales - Nearshoring News México",
+        "Description": "Explora el desarrollo de parques industriales en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Parques Industriales - Nearshoring News México",
+        "Description": "Explora el desarrollo de parques industriales en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }

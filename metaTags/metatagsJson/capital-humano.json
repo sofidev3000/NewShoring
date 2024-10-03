@@ -1,0 +1,38 @@
+{
+    "Title": "Capital Humano - Nearshoring News México",
+    "Description": "Analiza la importancia del capital humano en el contexto del nearshoring y su desarrollo en México.",
+    "Type": "website",
+    "Canonical": "/capital-humano",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Capital Humano - Nearshoring News México",
+        "Description": "Analiza la importancia del capital humano en el contexto del nearshoring.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Capital Humano - Nearshoring News México",
+        "Description": "Analiza la importancia del capital humano en el contexto del nearshoring.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }

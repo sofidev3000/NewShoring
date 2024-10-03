@@ -1,0 +1,38 @@
+{
+    "Title": "Terrestre - Nearshoring News México",
+    "Description": "Analiza cómo el nearshoring está mejorando la infraestructura terrestre y la movilidad en México.",
+    "Type": "website",
+    "Canonical": "/terrestre",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Terrestre - Nearshoring News México",
+        "Description": "Analiza cómo el nearshoring está mejorando la infraestructura terrestre en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Terrestre - Nearshoring News México",
+        "Description": "Analiza cómo el nearshoring está mejorando la infraestructura terrestre en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }
