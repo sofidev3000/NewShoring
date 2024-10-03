@@ -1,0 +1,38 @@
+{
+    "Title": "Aeroespacial - Nearshoring News México",
+    "Description": "Explora el impacto del nearshoring en la industria aeroespacial y cómo está revolucionando la manufactura en México.",
+    "Type": "website",
+    "Canonical": "/aeroespacial",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Aeroespacial - Nearshoring News México",
+        "Description": "Explora el impacto del nearshoring en la industria aeroespacial.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Aeroespacial - Nearshoring News México",
+        "Description": "Explora el impacto del nearshoring en la industria aeroespacial.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }

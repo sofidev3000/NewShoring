@@ -1,0 +1,38 @@
+{
+  "Title": "Industrias - Nearshoring News México",
+  "Description": "Descubre las últimas noticias sobre las industrias que están impulsando el nearshoring en México. Mantente al día con las tendencias del sector.",
+  "Type": "website",
+  "Canonical": "/industrias",
+  "ImageFeatured": {
+    "Width": "1200",
+    "Height": "379",
+    "Type": "png",
+    "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+  },
+  "Index": true,
+  "Follow": true,
+  "Snippets": [],
+  "Social": {
+    "Facebook": {
+      "Title": "Industrias - Nearshoring News México",
+      "Description": "Descubre las últimas noticias sobre las industrias que están impulsando el nearshoring en México.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+      }
+    },
+    "Twitter": {
+      "Title": "Industrias - Nearshoring News México",
+      "Description": "Descubre las últimas noticias sobre las industrias que están impulsando el nearshoring en México.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+      },
+      "Site": ""
+    }
+  }
+}

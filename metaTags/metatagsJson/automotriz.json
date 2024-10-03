@@ -1,0 +1,38 @@
+{
+    "Title": "Automotriz - Nearshoring News México",
+    "Description": "Descubre cómo el nearshoring está fortaleciendo la industria automotriz en México y generando nuevas oportunidades de negocio.",
+    "Type": "website",
+    "Canonical": "/automotriz",
+    "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+    "Index": true,
+    "Follow": true,
+    "Snippets": [],
+    "Social": {
+      "Facebook": {
+        "Title": "Automotriz - Nearshoring News México",
+        "Description": "Descubre cómo el nearshoring está fortaleciendo la industria automotriz en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        }
+      },
+      "Twitter": {
+        "Title": "Automotriz - Nearshoring News México",
+        "Description": "Descubre cómo el nearshoring está fortaleciendo la industria automotriz en México.",
+        "ImageFeatured": {
+          "Width": "1200",
+          "Height": "379",
+          "Type": "png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+        },
+        "Site": ""
+      }
+    }
+  }
