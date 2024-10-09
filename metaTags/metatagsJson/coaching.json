@@ -1,12 +1,12 @@
 {
-    "Title": "Coaching",
+    "Title": "Coaching | Nearshoring News",
     "Description": "Coaching en Nearshoring para el desarrollo personal y profesional.",
     "Type": "website",
-    "Canonical": "/coaching",
+    "Canonical": "coaching",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Coaching",
+        "Title": "Coaching | Nearshoring News",
         "Description": "Coaching en Nearshoring para el desarrollo personal y profesional.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Coaching",
+        "Title": "Coaching | Nearshoring News",
         "Description": "Coaching en Nearshoring para el desarrollo personal y profesional.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

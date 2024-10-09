@@ -1,0 +1,38 @@
+{
+  "Title": "Construcción | Nearshoring News",
+  "Description": "Descubre las últimas noticias y tendencias sobre construcción y nearshoring en América Latina. Mantente informado sobre proyectos, innovación, y oportunidades de crecimiento para empresas que buscan optimizar su producción y costos a través del nearshoring.",
+  "Type": "website",
+  "Canonical": "construccion",
+  "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+  "Index": true,
+  "Follow": true,
+  "Snippets": [],
+  "Social": {
+    "Facebook": {
+      "Title": "Construcción | Nearshoring News",
+      "Description": "Descubre las últimas noticias y tendencias sobre construcción y nearshoring en América Latina. Mantente informado sobre proyectos, innovación, y oportunidades de crecimiento para empresas que buscan optimizar su producción y costos a través del nearshoring.",
+      "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    }
+    },
+    "Twitter": {
+      "Title": "Construcción | Nearshoring News",
+      "Description": "Descubre las últimas noticias y tendencias sobre construcción y nearshoring en América Latina. Mantente informado sobre proyectos, innovación, y oportunidades de crecimiento para empresas que buscan optimizar su producción y costos a través del nearshoring.",
+     "ImageFeatured": {
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
+      "Site": ""
+    }
+  }
+}

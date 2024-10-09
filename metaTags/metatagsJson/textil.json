@@ -1,12 +1,12 @@
 {
-    "Title": "Textil - Nearshoring News México",
+    "Title": "Textil | Nearshoring News",
     "Description": "Conoce cómo el nearshoring está transformando la industria textil en México y generando nuevas oportunidades.",
     "Type": "website",
-    "Canonical": "/textil",
+    "Canonical": "textil",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Textil - Nearshoring News México",
+        "Title": "Textil | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria textil en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Textil - Nearshoring News México",
+        "Title": "Textil | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria textil en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

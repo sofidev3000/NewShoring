@@ -1,12 +1,12 @@
 {
-    "Title": "ESG",
+    "Title": "ESG | Nearshoring News",
     "Description": "Prácticas de ESG en el sector del Nearshoring.",
     "Type": "website",
-    "Canonical": "/esg",
+    "Canonical": "esg",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -19,17 +19,17 @@
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "ESG",
+        "Title": "ESG | Nearshoring News",
         "Description": "Prácticas de ESG en el sector del Nearshoring.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

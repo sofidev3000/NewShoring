@@ -1,37 +1,37 @@
 {
-    "Title": "Inclusión",
+    "Title": "Inclusión | Nearshoring News",
     "Description": "Iniciativas y estrategias para promover la inclusión.",
     "Type": "website",
-    "Canonical": "/inclusion",
+    "Canonical": "inclusion",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
-      "Url": "https://www.nearshoring.news/img/inclusion/inclusionImage.png"
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
     "Follow": true,
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Inclusión",
+        "Title": "Inclusión | Nearshoring News",
         "Description": "Iniciativas y estrategias para promover la inclusión.",
         "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/inclusion/inclusionImage.png"
-        }
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    }
       },
       "Twitter": {
-        "Title": "Inclusión",
+        "Title": "Inclusión | Nearshoring News",
         "Description": "Iniciativas y estrategias para promover la inclusión.",
         "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/inclusion/inclusionImage.png"
-        },
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
         "Site": ""
       }
     }

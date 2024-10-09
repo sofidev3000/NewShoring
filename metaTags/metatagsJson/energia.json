@@ -1,12 +1,12 @@
 {
-    "Title": "Energía - Nearshoring News México",
+    "Title": "Energía | Nearshoring News",
     "Description": "Explora cómo el nearshoring está impactando la industria de la energía y promoviendo la sostenibilidad en México.",
     "Type": "website",
-    "Canonical": "/energia",
+    "Canonical": "energia",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Energía - Nearshoring News México",
+        "Title": "Energía | Nearshoring News",
         "Description": "Explora cómo el nearshoring está impactando la industria de la energía.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Energía - Nearshoring News México",
+        "Title": "Energía | Nearshoring News",
         "Description": "Explora cómo el nearshoring está impactando la industria de la energía.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

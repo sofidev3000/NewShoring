@@ -1,12 +1,12 @@
 {
-    "Title": "Logística y Transporte - Nearshoring News México",
+    "Title": "Logística y Transporte | Nearshoring News",
     "Description": "Descubre el papel del nearshoring en la mejora de la logística y el transporte en México.",
     "Type": "website",
-    "Canonical": "/logistica-y-transporte",
+    "Canonical": "logistica-y-transporte",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Logística y Transporte - Nearshoring News México",
+        "Title": "Logística y Transporte | Nearshoring News",
         "Description": "Descubre el papel del nearshoring en la mejora de la logística y el transporte en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Logística y Transporte - Nearshoring News México",
+        "Title": "Logística y Transporte | Nearshoring News",
         "Description": "Descubre el papel del nearshoring en la mejora de la logística y el transporte en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

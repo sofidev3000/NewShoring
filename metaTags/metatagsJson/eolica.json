@@ -1,12 +1,12 @@
 {
-    "Title": "Eólica - Nearshoring News México",
+    "Title": "Eólica | Nearshoring News",
     "Description": "Descubre cómo el nearshoring está influyendo en la industria eólica y su papel en la energía sostenible en México.",
     "Type": "website",
-    "Canonical": "/eolica",
+    "Canonical": "eolica",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Eólica - Nearshoring News México",
+        "Title": "Eólica | Nearshoring News",
         "Description": "Descubre cómo el nearshoring está influyendo en la industria eólica.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Eólica - Nearshoring News México",
+        "Title": "Eólica | Nearshoring News",
         "Description": "Descubre cómo el nearshoring está influyendo en la industria eólica.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

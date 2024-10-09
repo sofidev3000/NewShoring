@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Marítimo",
+    "Title": "Marítimo | Nearshoring News",
     "Description": "Explora el impacto del nearshoring en el sector marítimo, donde las oportunidades de negocio están en auge.",
     "Type": "website",
-    "Canonical": "/maritimo",
+    "Canonical": "maritimo",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Marítimo",
+        "Title": "Marítimo | Nearshoring News",
         "Description": "Explora el impacto del nearshoring en el sector marítimo, donde las oportunidades de negocio están en auge.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Marítimo",
+        "Title": "Marítimo | Nearshoring News",
         "Description": "Explora el impacto del nearshoring en el sector marítimo, donde las oportunidades de negocio están en auge.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

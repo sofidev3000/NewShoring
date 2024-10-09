@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Finanzas",
+    "Title": "Finanzas | Nearshoring News",
     "Description": "Analiza el impacto del nearshoring en el sector financiero y cómo está cambiando las inversiones en México.",
     "Type": "website",
-    "Canonical": "/finanzas",
+    "Canonical": "finanzas",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,24 +14,24 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Finanzas",
+        "Title": "Finanzas | Nearshoring News",
         "Description": "Analiza el impacto del nearshoring en el sector financiero y cómo está cambiando las inversiones en México.",
         "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
-        }
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Finanzas",
+        "Title": "Finanzas | Nearshoring News",
         "Description": "Analiza el impacto del nearshoring en el sector financiero y cómo está cambiando las inversiones en México.",
         "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
-        },
+      "Width": "1200",
+      "Height": "379",
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+    },
         "Site": ""
       }
     }

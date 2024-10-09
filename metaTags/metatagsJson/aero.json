@@ -1,36 +1,36 @@
 {
-    "Title": "Aero",
-    "Description": "Información sobre el sector aeroespacial.",
+    "Title": "Noticias de transporte aéreo | NearShoring News",
+    "Description": "Información sobre el sector de transporte aéreo .",
     "Type": "website",
-    "Canonical": "/aero",
+    "Canonical": "aereo",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
-      "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
+      "Type": "image/png",
+      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
     "Follow": true,
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Aero",
-        "Description": "Información sobre el sector aeroespacial.",
+        "Title": "Noticias de transporte aéreo | NearShoring News",
+        "Description": "Información sobre el sector de transporte aéreo .",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
+          "Type": "image/png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Aero",
-        "Description": "Información sobre el sector aeroespacial.",
+        "Title": "Noticias de transporte aéreo | NearShoring News",
+        "Description": "Información sobre el sector de transporte aéreo .",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/aero/aeroImage.png"
+          "Type": "image/png",
+          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""
       }

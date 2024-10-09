@@ -1,12 +1,12 @@
 {
-    "Title": "Capacitación",
+    "Title": "Capacitación | Nearshoring News",
     "Description": "Capacitación en Nearshoring y desarrollo de habilidades clave.",
     "Type": "website",
-    "Canonical": "/capacitacion",
+    "Canonical": "capacitacion",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Capacitación",
+        "Title": "Capacitación | Nearshoring News",
         "Description": "Capacitación en Nearshoring y desarrollo de habilidades clave.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Capacitación",
+        "Title": "Capacitación | Nearshoring News",
         "Description": "Capacitación en Nearshoring y desarrollo de habilidades clave.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

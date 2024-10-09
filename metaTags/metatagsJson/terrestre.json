@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Terrestre",
+    "Title": "Terrestre | Nearshoring News",
     "Description": "Conoce cómo el nearshoring está transformando el transporte terrestre en México y creando nuevas oportunidades.",
     "Type": "website",
-    "Canonical": "/terrestre",
+    "Canonical": "terrestre",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Terrestre",
+        "Title": "Terrestre | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando el transporte terrestre en México y creando nuevas oportunidades.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Terrestre",
+        "Title": "Terrestre | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando el transporte terrestre en México y creando nuevas oportunidades.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

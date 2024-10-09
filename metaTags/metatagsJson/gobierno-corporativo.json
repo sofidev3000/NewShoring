@@ -1,38 +1,38 @@
 {
-    "Title": "Gobierno Corporativo",
-    "Description": "Prácticas y principios de gobierno corporativo.",
-    "Type": "website",
-    "Canonical": "/gobierno-corporativo",
-    "ImageFeatured": {
-      "Width": "1200",
-      "Height": "379",
-      "Type": "svg",
-      "Url": "https://www.nearshoring.news/img/gobierno/gobiernoImage.png"
-    },
-    "Index": true,
-    "Follow": true,
-    "Snippets": [],
-    "Social": {
-      "Facebook": {
-        "Title": "Gobierno Corporativo",
-        "Description": "Prácticas y principios de gobierno corporativo.",
-        "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/gobierno/gobiernoImage.png"
-        }
-      },
-      "Twitter": {
-        "Title": "Gobierno Corporativo",
-        "Description": "Prácticas y principios de gobierno corporativo.",
-        "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/gobierno/gobiernoImage.png"
-        },
-        "Site": ""
+  "Title": "Gobierno Corporativo | Nearshoring News",
+  "Description": "Prácticas y principios de gobierno corporativo.",
+  "Type": "website",
+  "Canonical": "gobierno-corporativo",
+  "ImageFeatured": {
+    "Width": "1200",
+    "Height": "379",
+    "Type": "image/png",
+    "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+  },
+  "Index": true,
+  "Follow": true,
+  "Snippets": [],
+  "Social": {
+    "Facebook": {
+      "Title": "Gobierno Corporativo | Nearshoring News",
+      "Description": "Prácticas y principios de gobierno corporativo.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "image/png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
       }
+    },
+    "Twitter": {
+      "Title": "Gobierno Corporativo | Nearshoring News",
+      "Description": "Prácticas y principios de gobierno corporativo.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "image/png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+      },
+      "Site": ""
     }
   }
+}

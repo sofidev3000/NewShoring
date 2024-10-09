@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Parques Industriales",
+    "Title": "Parques Industriales | Nearshoring News",
     "Description": "Descubre cómo los parques industriales están impulsando el nearshoring y fomentando la inversión en México.",
     "Type": "website",
-    "Canonical": "/parques-industriales",
+    "Canonical": "parques-industriales",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Parques Industriales",
+        "Title": "Parques Industriales | Nearshoring News",
         "Description": "Descubre cómo los parques industriales están impulsando el nearshoring y fomentando la inversión en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Parques Industriales",
+        "Title": "Parques Industriales | Nearshoring News",
         "Description": "Descubre cómo los parques industriales están impulsando el nearshoring y fomentando la inversión en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

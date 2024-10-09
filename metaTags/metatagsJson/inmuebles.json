@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Inmuebles",
+    "Title": "Inmuebles | Nearshoring News",
     "Description": "Analiza el papel de los inmuebles en el nearshoring y su influencia en la economía mexicana.",
     "Type": "website",
-    "Canonical": "/inmuebles",
+    "Canonical": "inmuebles",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Inmuebles",
+        "Title": "Inmuebles | Nearshoring News",
         "Description": "Analiza el papel de los inmuebles en el nearshoring y su influencia en la economía mexicana.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Inmuebles",
+        "Title": "Inmuebles | Nearshoring News",
         "Description": "Analiza el papel de los inmuebles en el nearshoring y su influencia en la economía mexicana.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

@@ -1,38 +1,38 @@
 {
-    "Title": "Electrónica - Nearshoring News México",
-    "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
-    "Type": "website",
-    "Canonical": "/electronica",
-    "ImageFeatured": {
-      "Width": "1200",
-      "Height": "379",
-      "Type": "png",
-      "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
-    },
-    "Index": true,
-    "Follow": true,
-    "Snippets": [],
-    "Social": {
-      "Facebook": {
-        "Title": "Electrónica - Nearshoring News México",
-        "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
-        "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
-        }
-      },
-      "Twitter": {
-        "Title": "Electrónica - Nearshoring News México",
-        "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
-        "ImageFeatured": {
-          "Width": "1200",
-          "Height": "379",
-          "Type": "png",
-          "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
-        },
-        "Site": ""
+  "Title": "Electrónica | Nearshoring News",
+  "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
+  "Type": "website",
+  "Canonical": "electronica",
+  "ImageFeatured": {
+    "Width": "1200",
+    "Height": "379",
+    "Type": "image/png",
+    "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+  },
+  "Index": true,
+  "Follow": true,
+  "Snippets": [],
+  "Social": {
+    "Facebook": {
+      "Title": "Electrónica | Nearshoring News",
+      "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "image/png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
       }
+    },
+    "Twitter": {
+      "Title": "Electrónica | Nearshoring News",
+      "Description": "Descubre cómo el nearshoring está impulsando el crecimiento de la industria electrónica en México.",
+      "ImageFeatured": {
+        "Width": "1200",
+        "Height": "379",
+        "Type": "image/png",
+        "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
+      },
+      "Site": ""
     }
   }
+}

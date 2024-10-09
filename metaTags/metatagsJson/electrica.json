@@ -1,12 +1,12 @@
 {
-    "Title": "Eléctrica - Nearshoring News México",
+    "Title": "Eléctrica | Nearshoring News",
     "Description": "Conoce cómo el nearshoring está transformando la industria eléctrica en México y sus implicaciones para el futuro.",
     "Type": "website",
-    "Canonical": "/electrica",
+    "Canonical": "electrica",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Eléctrica - Nearshoring News México",
+        "Title": "Eléctrica | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria eléctrica en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Eléctrica - Nearshoring News México",
+        "Title": "Eléctrica | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria eléctrica en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

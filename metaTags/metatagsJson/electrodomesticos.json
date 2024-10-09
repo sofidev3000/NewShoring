@@ -1,12 +1,12 @@
 {
-    "Title": "Electrodomésticos - Nearshoring News México",
+    "Title": "Electrodomésticos | Nearshoring News",
     "Description": "Conoce cómo el nearshoring está transformando la industria de los electrodomésticos en México.",
     "Type": "website",
-    "Canonical": "/electrodomesticos",
+    "Canonical": "electrodomesticos",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Electrodomésticos - Nearshoring News México",
+        "Title": "Electrodomésticos | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria de los electrodomésticos en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Electrodomésticos - Nearshoring News México",
+        "Title": "Electrodomésticos | Nearshoring News",
         "Description": "Conoce cómo el nearshoring está transformando la industria de los electrodomésticos en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

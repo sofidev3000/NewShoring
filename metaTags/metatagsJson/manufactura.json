@@ -1,12 +1,12 @@
 {
-    "Title": "Nearshoring News México - Manufactura",
+    "Title": "Manufactura | Nearshoring News",
     "Description": "Investiga cómo el nearshoring está revolucionando el sector de manufactura en México.",
     "Type": "website",
-    "Canonical": "/manufactura",
+    "Canonical": "manufactura",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "png",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Nearshoring News México - Manufactura",
+        "Title": "Manufactura | Nearshoring News",
         "Description": "Investiga cómo el nearshoring está revolucionando el sector de manufactura en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Nearshoring News México - Manufactura",
+        "Title": "Manufactura | Nearshoring News",
         "Description": "Investiga cómo el nearshoring está revolucionando el sector de manufactura en México.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""

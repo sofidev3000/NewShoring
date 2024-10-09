@@ -1,12 +1,12 @@
 {
-    "Title": "Leyes y Reglamentos",
+    "Title": "Leyes y Reglamentos | Nearshoring News",
     "Description": "Información sobre leyes y reglamentos en el contexto de Nearshoring.",
     "Type": "website",
-    "Canonical": "/leyes-y-reglamentos",
+    "Canonical": "leyes-y-reglamentos",
     "ImageFeatured": {
       "Width": "1200",
       "Height": "379",
-      "Type": "svg",
+      "Type": "image/png",
       "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
     },
     "Index": true,
@@ -14,22 +14,22 @@
     "Snippets": [],
     "Social": {
       "Facebook": {
-        "Title": "Leyes y Reglamentos",
+        "Title": "Leyes y Reglamentos | Nearshoring News",
         "Description": "Información sobre leyes y reglamentos en el contexto de Nearshoring.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         }
       },
       "Twitter": {
-        "Title": "Leyes y Reglamentos",
+        "Title": "Leyes y Reglamentos | Nearshoring News",
         "Description": "Información sobre leyes y reglamentos en el contexto de Nearshoring.",
         "ImageFeatured": {
           "Width": "1200",
           "Height": "379",
-          "Type": "png",
+          "Type": "image/png",
           "Url": "https://www.nearshoring.news/img/near/nearShoringLogoBlack.png"
         },
         "Site": ""
