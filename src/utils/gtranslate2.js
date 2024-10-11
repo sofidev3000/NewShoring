@@ -10,13 +10,14 @@
         "de": {name: "German", code: "de"},
         "ru": {name: "Rusian", code: "rs"},
         "es": {name: "Español", code: "es"},
+        "ar": {name: "Arabe", code: "ar"},
     };
       // TODO:
     var lang_array_english = {
         af: "Afrikaans",
         sq: "Albanian",
         am: "Amharic",
-        ar: "Arabic",
+        ar: "Árabe", //TODO:
         hy: "Armenian",
         az: "Azerbaijani",
         eu: "Basque",
