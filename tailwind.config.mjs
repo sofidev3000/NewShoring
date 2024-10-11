@@ -11,6 +11,9 @@ export default {
         'vremena': ['VremenaGrotesk', 'sans-serif'],
         'vremena-bold': ['VremenaGroteskBold', 'sans-serif'],
         'FjallaOne': ['FjallaOne-Regular', 'sans-serif'],
+        'WorkSans': [  "Work Sans", 'sans-serif'],
+        'Merriweather': [  "Merriweather", 'serif'],
+
       },
       colors: {
         "guardsman-red": {
