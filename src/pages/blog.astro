@@ -9,85 +9,61 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
 ---
 
 <LayoutPost title={`Blog`}>
-  <section class="w-full lg:w-[90%] mx-auto flex flex-col pt-[5.2rem] 2xl:pt-[1rem]">
-    <div class="mx-auto flex items-center flex-col justify-center pt-0 sm:justify-center py-0 px-3 xl:max-w-[1100px] 2xl:max-w-[1300px] relative z-10 w-full h-full 2xl:min-h-[45dvh]">
-    <div class="absolute w-full h-full top-0 left-0 bg-[#00000057] z-[1]"></div>
-      <div
-      class="w-full z-20 flex flex-col justify-end items-start h-full 2xl:mt-32 pt-4"
-    >
-      <h1
-        class="text-white mb-2 p-0 font-sans font-bold uppercase text-xl lg:text-3xl text-left"
-      >
+  <!-- article with sidebar -->
+  <div
+    class="w-full lg:w-[90%] pt-[5.2rem] 2xl:pt-[1rem] p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
+  >
+    <!-- Main article -->
+    <div id="blog" class="w-full lg:w-3/4 h-full gap-5">
+      <div class="w-full md:max-w-screen-md">
+        <h1 class="mb-2 p-0 font-sans font-bold uppercase text-xl lg:text-3xl text-left">
         ALCALDÍAS DE CIUDAD DE MÉXICO APLICARÁN LEY SECA DURANTE SEMANA
         SANTA: TLÁHUAC Y CUAJIMALPA
       </h1>
-      <p class="text-white  text-md  font-normal">
+      <p class="text-md  font-normal mb-5">
         El Costo Financiero De La Deuda Pública Alcanzó Un Récord En
         Febrero, Con Un Incremento Real Del 16%.
       </p>
-      <div
-        class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0 mt-10"
-      >
-        <time
-          datetime="fecha_de_noticia"
-          class="text-xs font-bold flex flex-nowrap text-[--guardsman-red-500] gap-2 items-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="stroke-white"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-            ></path><path
-              d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3"
-            ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path
-              d="M4 11h10"></path><path
-              d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path
-              d="M18 16.5v1.5l.5 .5"></path></svg
-          >
-          Publicado en mayo 13, 2024 09:57
-        </time>
-      </div>
-    </div>
-
-    <div
-      class="absolute top-0 left-0 w-full h-full flex flex-col overflow-hidden"
-    >
       <ImageLazy
         src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
         srcWebp="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
         width="540"
         height="378"
-        className="w-full h-full object-cover object-bottom overflow-hidden"
+        className="w-full h-full object-cover pt-[70%] object-bottom overflow-hidden relative"
       />
-
-      <img
-        src="/img/favicon.svg"
-        alt="Marca de agua"
-        class="w-10 h-10 object-cover object-center overflow-hidden absolute top-0 left-[90%] lg:left-[96%] right-0 bottom-0 z-10"
-      />
-      <div
-        class="absolute top-0 left-0 right-0 h-full w-full bg-gradient-to-b md:bg-gradient-to-t from-[#000] overflow-hidden to-[#0000003e] opacity-[3.8] z-0"
-      >
+        <div
+          class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0"
+        >
+          <time
+            datetime="fecha_de_noticia"
+            class="text-xs mt-5 font-bold flex flex-nowrap text-[--guardsman-red-500] gap-2 items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="stroke-[--guardsman-red-700]"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"
+              ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+              ></path><path
+                d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3"
+              ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path
+                d="M4 11h10"></path><path
+                d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path
+                d="M18 16.5v1.5l.5 .5"></path></svg
+            >
+            Publicado en mayo 13, 2024 09:57
+          </time>
+        </div>
       </div>
-    </div>
-    </div>
-  </section>
-  <!-- article with sidebar -->
-  <div
-    class="w-full lg:w-[90%] p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
-  >
-    <!-- Main article -->
-    <div id="blog" class="w-full lg:w-3/4 h-full gap-5">
       <div
-        class="h-full text-[--primary-text-color] space-y-4 flex flex-wrap gap-10 justify-between md:max-w-screen-md"
+        class="h-full text-[--primary-text-color] break-all space-y-4 flex flex-wrap gap-10 justify-between md:max-w-screen-md"
       >
         <p>
           En una sorprendente noticia, un <strong>raro oso panda pardo</strong> fue
