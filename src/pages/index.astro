@@ -17,13 +17,18 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       <!-- Divider con titulo -->
       <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="near-now"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Near Now!
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <!-- Cards container -->
@@ -31,7 +36,7 @@ import Button from "@components/atoms/Button/Button.astro";
         class="flex w-full items-start justify-between flex-wrap gap-5 h-full"
       >
         <div
-          class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex    items-start w-full flex-col `
+          class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex  items-start w-full flex-col `
         >
           <!-- mainCard -->
           <ItemNews
@@ -169,7 +174,7 @@ import Button from "@components/atoms/Button/Button.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700] group-hover:underline"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -189,7 +194,7 @@ import Button from "@components/atoms/Button/Button.astro";
             />
           </ItemNews>
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -217,13 +222,18 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       <!-- Divider con titulo -->
       <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="industrias"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Industrías
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <div class="flex self-center w-full lg:w-[30%]">
@@ -312,12 +322,24 @@ import Button from "@components/atoms/Button/Button.astro";
       </div>
     </section>
     <!-- Energía -->
-     <!-- Se agrega flex-row-reverse, en las secciones donde se necesita el orden inverso -->
-    <section class="flex flex-col lg:space-y-0 justify-between items-start w-full flex-wrap mb-5 lg:px-20 2xl:px-0">
+    <!-- Se agrega flex-row-reverse, en las secciones donde se necesita el orden inverso -->
+    <section
+      class="flex flex-col lg:space-y-0 justify-between items-start w-full flex-wrap mb-5 lg:px-20 2xl:px-0"
+    >
       <!-- Divider con titulo -->
-      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]">
-        <h2 id="energia" class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans" >
-          Energia
+      <div
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
+      >
+        <h2
+          id="energia"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
+        >
+          Energía
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <!-- Cards container -->
@@ -463,7 +485,7 @@ import Button from "@components/atoms/Button/Button.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -483,7 +505,7 @@ import Button from "@components/atoms/Button/Button.astro";
             />
           </ItemNews>
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -507,14 +529,14 @@ import Button from "@components/atoms/Button/Button.astro";
     </section>
     <!-- Newsletter -->
     <div
-      class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full flex-wrap lg:px-20 2xl:px-0"
+      class="my-10 flex 2xl:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full font-Merriweather flex-wrap lg:px-20 2xl:px-0"
       data-aos="fade-up"
     >
-      <p
+      <h2
         class="text-left text-3xl font-extrabold text-[--guardsman-red-500] w-full"
       >
         Suscribe to our Newsletter
-      </p>
+      </h2>
       <form
         action="/"
         method="post"
@@ -545,13 +567,18 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       <!-- Divider con titulo -->
       <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="finanzas"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Finanzas
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <!-- Cards container -->
@@ -697,7 +724,7 @@ import Button from "@components/atoms/Button/Button.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -744,13 +771,18 @@ import Button from "@components/atoms/Button/Button.astro";
       class="flex lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full flex-wrap mb-10 lg:px-20 2xl:px-0"
     >
       <div
-        class="w-full !border-[--secundary-color] pt-10 pb-4 border-t-4 border-b self-center my-10"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
-          id="video"
-          class="text-left text-3xl font-extrabold text-[--guardsman-red-500]"
+          id="near-now"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Video
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <Swiper
@@ -842,13 +874,18 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       <!-- Divider con titulo -->
       <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
-          id="logistica-transporte"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          id="logistica-y-transporte"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Logística y transporte
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <!-- Cards container -->
@@ -994,7 +1031,7 @@ import Button from "@components/atoms/Button/Button.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -1014,7 +1051,7 @@ import Button from "@components/atoms/Button/Button.astro";
             />
           </ItemNews>
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -1042,13 +1079,18 @@ import Button from "@components/atoms/Button/Button.astro";
     >
       <!-- Divider con titulo -->
       <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="parques-industriales"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Parques Industríales
+          <iconify-icon
+            class="group-hover/title:translate-x-2"
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
         </h2>
       </div>
       <div class="flex self-center w-full lg:w-[30%]">
@@ -1141,14 +1183,14 @@ import Button from "@components/atoms/Button/Button.astro";
       class="flex flex-col lg:space-y-0 justify-between items-start w-full flex-wrap mb-5 lg:px-20 2xl:px-0"
     >
       <!-- Divider con titulo -->
-      <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="capital-humano"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Capital Humano
+          <iconify-icon class="group-hover/title:translate-x-2" icon="si:arrow-right-duotone" width="30" height="30"></iconify-icon>
         </h2>
       </div>
       <!-- Cards container -->
@@ -1294,7 +1336,7 @@ import Button from "@components/atoms/Button/Button.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -1314,7 +1356,7 @@ import Button from "@components/atoms/Button/Button.astro";
             />
           </ItemNews>
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -1341,14 +1383,14 @@ import Button from "@components/atoms/Button/Button.astro";
       class="flex lg:justify-center 2xl:gap-x-14 lg:gap-10 space-y-10 lg:space-y-0 justify-center items-start w-full lg:px-20 2xl:px-0 flex-wrap mb-10"
     >
       <!-- Divider con titulo -->
-      <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="esg"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300 "
         >
           ESG
+          <iconify-icon class="group-hover/title:translate-x-2" icon="si:arrow-right-duotone" width="30" height="30"></iconify-icon>
         </h2>
       </div>
       <div class="flex self-center w-full lg:w-[30%]">
@@ -1441,14 +1483,14 @@ import Button from "@components/atoms/Button/Button.astro";
       class="patrocinadores flex flex-col lg:justify-between space-y-10 lg:space-y-0 justify-center lg:gap-[45px] items-start w-full lg:px-20 2xl:px-0 mb-10 h-full"
     >
       <!-- Divider con titulo -->
-      <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px]"
+      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
       >
         <h2
           id="patrocinadores"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300"
         >
           Patrocinadores
+          <iconify-icon class="group-hover/title:translate-x-2" icon="si:arrow-right-duotone" width="30" height="30"></iconify-icon>
         </h2>
       </div>
       <Swiper
