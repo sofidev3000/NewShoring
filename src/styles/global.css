@@ -2,6 +2,7 @@
 :root {
   --main-color: #f4f4f4;
   --secundary-color: #1b1b1b, ;
+  --text-color: #333;
   --accent-color: #8F0101;
   --background-glass: #000000d6;
   --divider-secundary: rgb(38 38 38 / 23%);
@@ -37,12 +38,16 @@
 
 .dark:root {
   --main-color: #090909;
+  --text-color: #d8d8d8;
   /* Dark background */
   --secundary-color: #fafafa;
   --divider-secundary: rgba(118, 118, 118, 0.348);
 
 }
-/* Definición de las fuentes */
+
+
+
+
 @font-face {
   font-family: 'VremenaGrotesk';
   src: url('/fonts/VremenaGrotesk.otf') format('opentype');
@@ -52,6 +57,7 @@
   font-family: 'VremenaGroteskBold';
   src: url('/fonts/VremenaGroteskBold.otf') format('opentype');
 }
+
 @font-face {
   font-family: 'FjallaOne-Regular';
   src: url('/fonts/FjallaOne-Regular.otf') format('opentype');
@@ -63,46 +69,67 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
   height: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+  line-height: 1.15;
 }
 
 body {
+  width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'sistem-ui', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: var(--main-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-kerning: normal;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -moz-font-variant-ligatures: common-ligatures;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+}
+
+h2{
+  font-family: "Merriweather", 'serif';
+  font-weight: 700;
+}
+#blog > * h2:not(.swiper-slide h2) {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--guardsman-red-500);
+}
+
+#blog > h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
   color: var(--secundary-color);
 }
 
-
-#blog > * h2:not(.swiper-slide h2){
-  font-weight: 700;
-  font-size: 1.5rem;
-  color:var(--guardsman-red-500);
-}
-
-#blog > h3{
-  font-weight: 700;
-  font-size: 1.4rem;
-  color:var(--secundary-color);
-}
-#blog > h4{
+#blog > h4 {
   font-weight: 700;
   font-size: 1.2rem;
-  color:var(--secundary-color);
+  color: var(--secundary-color);
 }
-#blog > h5{
+
+#blog > h5 {
   font-weight: 700;
   font-size: 1.1rem;
-  color:var(--secundary-color);
+  color: var(--secundary-color);
 }
-#blog > h6{
+
+#blog > h6 {
   font-weight: 700;
   font-size: 1rem;
-  color:var(--secundary-color);
+  color: var(--secundary-color);
 }
 
 
@@ -111,26 +138,30 @@ body {
   backdrop-filter: blur(25px);
   background: var(--background-glass);
 }
+
 #terms {
   outline-color: var(--guardsman-red-700);
   outline-width: 0.5px;
   border: 1px solid var(--guardsman-red-700);
 }
+
 #terms:checked {
   background-color: var(--guardsman-red-700);
 }
 
 
+
+
 /* Logo */
-
-
 .logo {
   padding-block: 1rem;
   writing-mode: horizontal-tb;
 }
+
 .logo__img {
   object-fit: contain;
 }
+
 .logo__img--mobile {
   object-fit: contain;
   filter: invert(1);
@@ -146,16 +177,18 @@ body {
 
 /* Carrusel infinito uso general (el de divisas se encuentra con su componente)*/
 
-  .slider {
+.slider {
   width: 90%;
   margin: auto;
   height: auto;
   overflow: hidden;
   position: relative;
 }
+
 .slider > div {
   flex: 0 0 auto;
 }
+
 .slider::before {
   content: "";
   position: absolute;
@@ -164,11 +197,10 @@ body {
   z-index: 2;
   width: 150px;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    var(--main-color)0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      var(--main-color)0%,
+      rgba(255, 255, 255, 0) 100%);
+
   @media screen and (max-width: 768px) {
     width: 60px;
 
@@ -180,20 +212,21 @@ body {
   position: absolute;
   width: 150px;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    var(--main-color) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right,
+      var(--main-color) 0%,
+      rgba(255, 255, 255, 0) 100%);
   z-index: 2;
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
+
 @media screen and (max-width: 768px) {
-  .slider::before, .slider::after {
-  width: 52px
-}
+
+  .slider::before,
+  .slider::after {
+    width: 52px
+  }
 }
 
 
@@ -216,11 +249,48 @@ body {
 .slide__track:has(> .slide:hover) {
   animation-play-state: paused;
 }
+
 @keyframes scroll {
   from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animaciones CARD PRINCIPAL */
+
+.img__container {
+  position: relative;
+}
+
+.img__container::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  transform: scale(0);
+  transform-origin: 1;
+  height: 4px;
+  transition: 1s transform;
+  background: #901704;
+}
+
+.card:hover .img__container::after {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-title,
+  .ecerpts {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ''
+  }
 }

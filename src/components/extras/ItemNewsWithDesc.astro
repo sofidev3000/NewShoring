@@ -6,6 +6,7 @@ interface Props {
     href: string;
 	category: string;
 	categoryColor: string;
+    author?:string;
     datetime:string;
     time?: string;
     Options?:string;
@@ -13,7 +14,7 @@ interface Props {
     content?:string;
 }
 
-const {href, category, categoryColor,datetime,title,content="",time=null,Options=null,className="",attributes=""} = Astro.props;
+const {href, category, categoryColor,datetime,title,content="",time=null,Options=null,className="",attributes="", author} = Astro.props;
 
 var optionsObjs = null;
 if(Options!=null){
@@ -48,11 +49,21 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
         <div class={optionsObjs.DataContainer.ClassName}>
 
             <div class={optionsObjs.DataContainer.ClassName}>
-                <span class="order-0">
+                {author && (
+
+                    <span class="order-0">
                     Por&nbsp;
-                    <strong>Ejemplo autor</strong>
-                    &nbsp;-&nbsp;
+                    <strong>{author}</strong>
+                    {datetime &&(
+
+                    <span>
+                     &nbsp;-&nbsp;
+                     </span>
+                     )
+                    }
                 </span>
+                    )
+                }
             <time datetime="fecha_de_noticia" class={optionsObjs.DataContainer.Date.ClassName}>
                 {
                     optionsObjs.DataContainer.Date.Icon.ClassName && (
@@ -69,7 +80,7 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
                     </span>
                 )
             }
-                  <p>
+                  <p class={optionsObjs.DataContainer.Content.ClassName}>
                     {content}
                 </p>
         </div>
