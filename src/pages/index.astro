@@ -7,6 +7,7 @@ import Swiper from "@components/extras/Swiper.astro";
 import SwiperItem from "@components/extras/SwiperItem.astro";
 import ItemVideoNews from "@components/extras/ItemVideoNews.astro";
 import Button from "@components/atoms/Button/Button.astro";
+import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
 ---
 
 <Layout>
@@ -173,46 +174,15 @@ import Button from "@components/atoms/Button/Button.astro";
         <div
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700] group-hover:underline"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
+        <div class="w-full h-[561px] relative">
+
+            <VideoStreamingLazy
+              className= "section-video__img-temp"
+              attributes={"{}"}
+              data = {"{\"id\":\"dddd\",\"resource\":\"/img/near/paraso-escondido-paisajes-de.mp4\",\"type\":\"video\",\"temporary_image\":{\"className\":\"h-full\",\"resource\":{\"alt\":\"prueba\",\"src\":\"/img/near/paraso-escondido-paisajes.png\",\"srcWebp\":\"/img/near/paraso-escondido-paisajes.webp\",\"width\":768,\"height\":1344}},\"setup\": \"{}\",\"class_name\":\"w-full h-full absolute top-0 left-0\"}"}
+             />
+  
+        </div>
         </div>
       </div>
     </section>
@@ -721,49 +691,49 @@ import Button from "@components/atoms/Button/Button.astro";
 
         <!-- Secundary secction -->
         <div
-          class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
+        class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
+      >
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700] group-hover:underline"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+          className="flex flex-col self-center w-full group"
+          attributes={'{"data-aos":"fade-left"}'}
+          category=""
+          title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+          datetime="Octubre 14, 2024"
+          author=""
+          href="#"
+          categoryColor="category_03"
         >
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-        </div>
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+            width="600"
+            height="375"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+            classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
+            slot="image"
+          />
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+          className="flex flex-col self-center w-full group"
+          attributes={'{"data-aos":"fade-left"}'}
+          category=""
+          title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+          datetime="Octubre 14, 2024"
+          author=""
+          href="#"
+          categoryColor="category_03"
+        >
+          <ImageLazy
+            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+            width="600"
+            height="375"
+            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+            classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
+            slot="image"
+          />
+        </ItemNews>
+      </div>
       </div>
     </section>
     <!-- video -->

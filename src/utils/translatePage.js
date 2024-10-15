@@ -14,7 +14,7 @@ const initProcessTranslate = () => {
     window.gtranslateSettings = {
          "default_language": "es",
         "detect_browser_language":true,
-        "languages":["en","fr", "de","es","zh-CN", "ru"],
+        "languages":["en","fr", "de","es","zh-CN", "ru", "ar"],
         "alt_flags":{"en": "usa", "es":"mexico"},
         "wrapper_selector":".gtranslate_wrapper",
         "switcher_horizontal_position":"right",
