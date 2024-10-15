@@ -98,9 +98,17 @@ body {
   text-rendering: optimizelegibility;
 }
 
+
+
 h2{
   font-family: "Merriweather", 'serif';
   font-weight: 700;
+}
+#blog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 #blog > * h2:not(.swiper-slide h2) {
   font-weight: 700;
@@ -131,6 +139,23 @@ h2{
   font-size: 1rem;
   color: var(--secundary-color);
 }
+#blog > * a{
+  color: var(--guardsman-red-800);
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+}
+#article > p{
+  text-wrap: wrap;
+  overflow: hidden;
+}
+#article > * strong {
+  text-wrap: balance;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 
 .glassmorphism {
