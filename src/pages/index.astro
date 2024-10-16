@@ -41,7 +41,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
         >
           <!-- mainCard -->
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":"card "},"AssetsContainer":{"ClassName":"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":" relative  h-[100%]  overflow-hidden w-full overflow-hidden group","HasWatermark":false,"Image":{"ClassName":"w-full h-[100%] object-cover  mb-4 group-hover:scale-[1.1] ease-in duration-[1s]"}}},"DataContainer":{"ClassName":" flex flex-wrap flex-col  items-center justify-center w-full mt-2 text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-[0.75rem] font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline "},"Autor":{"Active":true,"ClassName":"order-1 font-[600] text-left text-[0.75rem]","Icon":{"Active":false,"ClassName":"text-[0.75rem]"},"TextPrev":"Por&nbsp; ","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{\"LinkContainer\":{\"ClassName\":\"card \"},\"AssetsContainer\":{\"ClassName\":\"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block h-0 after:content-[\'\'] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-auto after:bg-contain after:bg-watermark after:bg-no-repeat group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\" flex flex-wrap flex-col  items-center justify-center w-full mt-2 text-[0.75rem]\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-[0.75rem] font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline \"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 font-[600] text-left text-[0.75rem]\",\"Icon\":{\"Active\":false,\"ClassName\":\"text-[0.75rem]\"},\"TextPrev\":\"Por&nbsp; \",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
             className="flex flex-col self-center w-full font-bold group"
             attributes={'{"data-aos":"fade-up"}'}
             category="Near Now"
@@ -56,7 +56,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
               width="600"
               height="375"
               className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full lg:max-h-[406px] xl:max-h-[594.92px] object-cover object-center"
+              classNameImage="lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"
               slot="image"
             />
           </ItemNews>
@@ -73,8 +73,8 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
               class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
             >
               <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
+                Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+                className="relative pb-4"
                 category="Internacional"
                 attributes={'{"data-aos":"fade-up"}'}
                 title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
@@ -93,8 +93,8 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
                 />
               </ItemNews>
               <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
+                Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+                className="relative pb-4"
                 category="Internacional"
                 attributes={'{"data-aos":"fade-up"}'}
                 title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
@@ -121,8 +121,8 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
               class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
             >
               <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
+                Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+                className="relative pb-4"
                 category="Internacional"
                 attributes={'{"data-aos":"fade-up"}'}
                 title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
@@ -141,8 +141,8 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
                 />
               </ItemNews>
               <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
+                Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+                className="relative pb-4"
                 category="Internacional"
                 attributes={'{"data-aos":"fade-up"}'}
                 title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
@@ -174,15 +174,23 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
         <div
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
-        <div class="w-full h-[561px] relative">
+        <div class="w-full h-[273px] relative">
 
             <VideoStreamingLazy
-              className= "section-video__img-temp"
+              className= "section-video__img-temp load-image-container block h-0 w-full pt-[75%] relative"
               attributes={"{}"}
               data = {"{\"id\":\"dddd\",\"resource\":\"/img/near/paraso-escondido-paisajes-de.mp4\",\"type\":\"video\",\"temporary_image\":{\"className\":\"h-full\",\"resource\":{\"alt\":\"prueba\",\"src\":\"/img/near/paraso-escondido-paisajes.png\",\"srcWebp\":\"/img/near/paraso-escondido-paisajes.webp\",\"width\":768,\"height\":1344}},\"setup\": \"{}\",\"class_name\":\"w-full h-full absolute top-0 left-0\"}"}
              />
-  
         </div>
+        <div class="w-full h-[273px] relative">
+
+           <VideoStreamingLazy
+           className= "section-video__img-temp load-image-container block h-0 w-full pt-[75%] relative"
+           attributes={"{}"}
+           data = {"{\"id\":\"dddd-1\",\"resource\":\"/img/near/paraso-escondido-paisajes-de.mp4\",\"type\":\"video\",\"temporary_image\":{\"className\":\"h-full\",\"resource\":{\"alt\":\"prueba\",\"src\":\"/img/near/paraso-escondido-paisajes.png\",\"srcWebp\":\"/img/near/paraso-escondido-paisajes.webp\",\"width\":768,\"height\":1344}},\"setup\": \"{}\",\"class_name\":\"w-full h-full absolute top-0 left-0\"}"}
+          />
+
+      </div>
         </div>
       </div>
     </section>
@@ -208,7 +216,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
       </div>
       <div class="flex self-center w-full lg:w-[30%]">
         <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full ","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
+          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full flex-col","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
           className="w-full"
           attributes={'{"data-aos":"fade-right"}'}
           category=""
@@ -228,15 +236,16 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
           />
         </ItemNewsWithDesc>
       </div>
+      
       <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
         <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
+          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full flex-col","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
           className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
+          attributes={'{"data-aos":"fade-right"}'}
           category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
+          title="Laboratorio aeroespacial en UNAQ: impulso a sostenibilidad e innovación"
+          content="La universidad abrirá un laboratorio aeroespacial, en colaboración con GE"
+          datetime="Octubre 11, 2024"
           href="#"
           categoryColor="category_03"
         >
@@ -250,13 +259,13 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
           />
         </ItemNewsWithDesc>
         <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
+          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full flex-col","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
           className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
+          attributes={'{"data-aos":"fade-right"}'}
           category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
+          title="Laboratorio aeroespacial en UNAQ: impulso a sostenibilidad e innovación"
+          content="La universidad abrirá un laboratorio aeroespacial, en colaboración con GE"
+          datetime="Octubre 11, 2024"
           href="#"
           categoryColor="category_03"
         >
@@ -270,13 +279,13 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
           />
         </ItemNewsWithDesc>
         <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
+          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full flex-col","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
           className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
+          attributes={'{"data-aos":"fade-right"}'}
           category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime=""
+          title="Laboratorio aeroespacial en UNAQ: impulso a sostenibilidad e innovación"
+          content="La universidad abrirá un laboratorio aeroespacial, en colaboración con GE"
+          datetime="Octubre 11, 2024"
           href="#"
           categoryColor="category_03"
         >
@@ -455,7 +464,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{\"LinkContainer\":{\"ClassName\":\"\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full text-[0.75rem]\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -475,7 +484,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
             />
           </ItemNews>
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+            Options={'{\"LinkContainer\":{\"ClassName\":\"\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full text-[0.75rem]\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -555,133 +564,134 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
       <div
         class="flex w-full items-start justify-between flex-wrap gap-5 h-full"
       >
+      <div
+      class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex  items-start w-full flex-col `
+    >
+      <!-- mainCard -->
+      <ItemNews
+        Options={'{\"LinkContainer\":{\"ClassName\":\"card \"},\"AssetsContainer\":{\"ClassName\":\"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block h-0 after:content-[\'\'] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-auto after:bg-contain after:bg-watermark after:bg-no-repeat group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\" flex flex-wrap flex-col  items-center justify-center w-full mt-2 text-[0.75rem]\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-[0.75rem] font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline \"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 font-[600] text-left text-[0.75rem]\",\"Icon\":{\"Active\":false,\"ClassName\":\"text-[0.75rem]\"},\"TextPrev\":\"Por&nbsp; \",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        className="flex flex-col self-center w-full font-bold group"
+        attributes={'{"data-aos":"fade-up"}'}
+        category="Near Now"
+        title="Robinhood’s Billionaire Cofounder Wants To Set Up Hundreds Of Solar Panels In Space"
+        datetime="Octubre 14, 2024"
+        author=""
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="	https://nxt-global-media.s3.amazonaws.com/near/images/11102024/b06b920cba.webp"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"
+          slot="image"
+        />
+      </ItemNews>
+      <!-- Divider -->
+      <div
+        class="border-b border-[--divider-secundary] w-full mb-8 mt-[10px]"
+      >
+      </div>
+      <!-- mini cards -->
+      <section
+        class="flex items-center justify-center w-full gap-5 xl:flex-nowrap flex-wrap"
+      >
         <div
-          class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex    items-start w-full flex-col `
+          class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
         >
-          <!-- mainCard -->
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":"card "},"AssetsContainer":{"ClassName":"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":" relative  h-[100%]  overflow-hidden w-full overflow-hidden group","HasWatermark":false,"Image":{"ClassName":"w-full h-[100%] object-cover  mb-4 group-hover:scale-[1.1] ease-in duration-[1s]"}}},"DataContainer":{"ClassName":" flex flex-wrap justify-center w-full mt-2 text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-[0.75rem] font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline "},"Autor":{"Active":true,"ClassName":"order-1 font-[600] text-left text-[0.75rem]","Icon":{"Active":false,"ClassName":"text-[0.75rem]"},"TextPrev":"Por&nbsp; ","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full font-bold group"
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
             attributes={'{"data-aos":"fade-up"}'}
-            category="Near Now"
-            title="Robinhood’s Billionaire Cofounder Wants To Set Up Hundreds Of Solar Panels In Space"
-            datetime="Octubre 15, 2024"
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
             author=""
+            datetime="Octubre 14, 2024"
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
-              src="	https://nxt-global-media.s3.amazonaws.com/near/images/11102024/b06b920cba.webp"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full lg:max-h-[406px] xl:max-h-[594.92px] object-cover object-center"
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
               slot="image"
             />
           </ItemNews>
-          <!-- Divider -->
-          <div
-            class="border-b border-[--divider-secundary] w-full mb-8 mt-[10px]"
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
           >
-          </div>
-          <!-- mini cards -->
-          <section
-            class="flex items-center justify-center w-full gap-5 xl:flex-nowrap flex-wrap"
-          >
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-            <div
-              class="hidden xl:flex h-auto min-h-[260px] w-[1px] border-l border-1 border-[--divider-secundary]"
-            >
-            </div>
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-          </section>
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
         </div>
+        <div
+          class="hidden xl:flex h-auto min-h-[260px] w-[1px] border-l border-1 border-[--divider-secundary]"
+        >
+        </div>
+        <div
+          class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
+        >
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
+          >
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
+          >
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
+        </div>
+      </section>
+    </div>
+
 
         <!-- divider -->
         <div
@@ -838,7 +848,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
         </SwiperItem>
       </Swiper>
     </section>
-    <!-- Logística y transporte -->
+    <!-- Finanzas -->
     <section
       class="flex flex-col lg:space-y-0 justify-between items-start w-full flex-wrap mb-5 lg:px-20 2xl:px-0"
     >
@@ -862,133 +872,134 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
       <div
         class="flex flex-row-reverse w-full items-start justify-between flex-wrap gap-5 h-full"
       >
+      <div
+      class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex  items-start w-full flex-col `
+    >
+      <!-- mainCard -->
+      <ItemNews
+        Options={'{\"LinkContainer\":{\"ClassName\":\"card \"},\"AssetsContainer\":{\"ClassName\":\"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block h-0 after:content-[\'\'] after:absolute after:top-2 after:right-2 after:z-10 after:w-1/5 after:h-auto after:bg-contain after:bg-watermark after:bg-no-repeat group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\" flex flex-wrap flex-col  items-center justify-center w-full mt-2 text-[0.75rem]\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 font-normal text-center\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"text-[0.75rem] font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline \"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 font-[600] text-left text-[0.75rem]\",\"Icon\":{\"Active\":false,\"ClassName\":\"text-[0.75rem]\"},\"TextPrev\":\"Por&nbsp; \",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        className="flex flex-col self-center w-full font-bold group"
+        attributes={'{"data-aos":"fade-up"}'}
+        category="Near Now"
+        title="Robinhood’s Billionaire Cofounder Wants To Set Up Hundreds Of Solar Panels In Space"
+        datetime="Octubre 14, 2024"
+        author=""
+        href="#"
+        categoryColor="category_03"
+      >
+        <ImageLazy
+          src="	https://nxt-global-media.s3.amazonaws.com/near/images/11102024/b06b920cba.webp"
+          width="600"
+          height="375"
+          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+          classNameImage="lazy absolute top-0 left-0 w-full  h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"
+          slot="image"
+        />
+      </ItemNews>
+      <!-- Divider -->
+      <div
+        class="border-b border-[--divider-secundary] w-full mb-8 mt-[10px]"
+      >
+      </div>
+      <!-- mini cards -->
+      <section
+        class="flex items-center justify-center w-full gap-5 xl:flex-nowrap flex-wrap"
+      >
         <div
-          class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex    items-start w-full flex-col `
+          class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
         >
-          <!-- mainCard -->
           <ItemNews
-            Options={'{"LinkContainer":{"ClassName":"card "},"AssetsContainer":{"ClassName":"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":" relative  h-[100%]  overflow-hidden w-full overflow-hidden group","HasWatermark":false,"Image":{"ClassName":"w-full h-[100%] object-cover  mb-4 group-hover:scale-[1.1] ease-in duration-[1s]"}}},"DataContainer":{"ClassName":" flex flex-wrap justify-center w-full mt-2 text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-[0.75rem] font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline "},"Autor":{"Active":true,"ClassName":"order-1 font-[600] text-left text-[0.75rem]","Icon":{"Active":false,"ClassName":"text-[0.75rem]"},"TextPrev":"Por&nbsp; ","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full font-bold group"
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
             attributes={'{"data-aos":"fade-up"}'}
-            category="Near Now"
-            title="Robinhood’s Billionaire Cofounder Wants To Set Up Hundreds Of Solar Panels In Space"
-            datetime="Octubre 14, 2024"
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
             author=""
+            datetime="Octubre 14, 2024"
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
-              src="	https://nxt-global-media.s3.amazonaws.com/near/images/11102024/b06b920cba.webp"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full lg:max-h-[406px] xl:max-h-[594.92px] object-cover object-center"
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
               slot="image"
             />
           </ItemNews>
-          <!-- Divider -->
-          <div
-            class="border-b border-[--divider-secundary] w-full mb-8 mt-[10px]"
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
           >
-          </div>
-          <!-- mini cards -->
-          <section
-            class="flex items-center justify-center w-full gap-5 xl:flex-nowrap flex-wrap"
-          >
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime=""
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime=""
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-            <div
-              class="hidden xl:flex h-auto min-h-[260px] w-[1px] border-l border-1 border-[--divider-secundary]"
-            >
-            </div>
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime=""
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime=""
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-          </section>
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
         </div>
+        <div
+          class="hidden xl:flex h-auto min-h-[260px] w-[1px] border-l border-1 border-[--divider-secundary]"
+        >
+        </div>
+        <div
+          class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
+        >
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
+          >
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
+          <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[88px] h-[88px] overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block w-[88px] h-[88px] overflow-hidden group\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 \",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\":{\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
+            className="relative pb-4"
+            category="Internacional"
+            attributes={'{"data-aos":"fade-up"}'}
+            title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
+            author=""
+            datetime="Octubre 14, 2024"
+            href="#"
+            categoryColor="category_03"
+          >
+            <ImageLazy
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
+              width="88"
+              height="88"
+              className=" w-[88px] h-[88px] overflow-hidden group"
+              classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
+              slot="image"
+            />
+          </ItemNews>
+        </div>
+      </section>
+    </div>
+
 
         <!-- divider -->
         <div
@@ -998,102 +1009,16 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
 
         <!-- Secundary secction -->
         <div
-          class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
-        >
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-        </div>
-      </div>
-    </section>
-    <!-- Parques Industríales -->
-    <section
-      class="flex lg:justify-center 2xl:gap-x-14 lg:gap-10 space-y-10 lg:space-y-0 justify-center items-start w-full lg:px-20 2xl:px-0 flex-wrap mb-10"
-    >
-      <!-- Divider con titulo -->
-      <div
-        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
+        class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
       >
-        <h2
-          id="parques-industriales"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300  cursor-pointer"
-        >
-          Parques Industríales
-          <iconify-icon
-            class="group-hover/title:translate-x-2"
-            icon="si:arrow-right-duotone"
-            width="30"
-            height="30"></iconify-icon>
-        </h2>
-      </div>
-      <div class="flex self-center w-full lg:w-[30%]">
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full ","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full"
-          attributes={'{"data-aos":"fade-right"}'}
-          category=""
-          title="Laboratorio aeroespacial en UNAQ: impulso a sostenibilidad e innovación"
-          content="La universidad abrirá un laboratorio aeroespacial, en colaboración con GE"
-          datetime="Octubre 11, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
-      </div>
-      <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather  text-[1.125rem] leading-[26px] mt-2 font-[700] group-hover:underline"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+          className="flex flex-col self-center w-full group"
           attributes={'{"data-aos":"fade-left"}'}
           category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
+          title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
           datetime="Octubre 14, 2024"
+          author=""
           href="#"
           categoryColor="category_03"
         >
@@ -1102,18 +1027,18 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
             width="600"
             height="375"
             className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
+            classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
             slot="image"
           />
-        </ItemNewsWithDesc>
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
+        </ItemNews>
+        <ItemNews
+          Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+          className="flex flex-col self-center w-full group"
           attributes={'{"data-aos":"fade-left"}'}
           category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
+          title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
           datetime="Octubre 14, 2024"
+          author=""
           href="#"
           categoryColor="category_03"
         >
@@ -1122,330 +1047,11 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
             width="600"
             height="375"
             className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
+            classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
             slot="image"
           />
-        </ItemNewsWithDesc>
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
-          category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
+        </ItemNews>
       </div>
-    </section>
-    <!-- Capital Humano -->
-    <section
-      class="flex flex-col lg:space-y-0 justify-between items-start w-full flex-wrap mb-5 lg:px-20 2xl:px-0"
-    >
-      <!-- Divider con titulo -->
-      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
-      >
-        <h2
-          id="capital-humano"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300  cursor-pointer"
-        >
-          Capital Humano
-          <iconify-icon class="group-hover/title:translate-x-2" icon="si:arrow-right-duotone" width="30" height="30"></iconify-icon>
-        </h2>
-      </div>
-      <!-- Cards container -->
-      <div
-        class="flex w-full items-start justify-between flex-wrap gap-5 h-full"
-      >
-        <div
-          class=` w-full lg:max-w-[721.92px] 2xl:w-[66.66%] 2xl:max-w-[none] flex    items-start w-full flex-col `
-        >
-          <!-- mainCard -->
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":"card "},"AssetsContainer":{"ClassName":"img__container h-full lg:max-h-[406px] xl:max-h-[594.92px] w-full lg:max-w-[721.92px] 2xl:max-w-[100%] overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":" relative  h-[100%]  overflow-hidden w-full overflow-hidden group","HasWatermark":false,"Image":{"ClassName":"w-full h-[100%] object-cover  mb-4 group-hover:scale-[1.1] ease-in duration-[1s]"}}},"DataContainer":{"ClassName":" flex flex-wrap justify-center w-full mt-2 text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1 font-normal text-center","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"text-[0.75rem] font-normal","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"main-title text-[1.375rem] leading-[34px] mt-5 mb-[5px] font-[600] font-Merriweather text-center group-hover:underline "},"Autor":{"Active":true,"ClassName":"order-1 font-[600] text-left text-[0.75rem]","Icon":{"Active":false,"ClassName":"text-[0.75rem]"},"TextPrev":"Por&nbsp; ","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full font-bold group"
-            attributes={'{"data-aos":"fade-up"}'}
-            category="Near Now"
-            title="Robinhood’s Billionaire Cofounder Wants To Set Up Hundreds Of Solar Panels In Space"
-            datetime="Octtubre 15, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="	https://nxt-global-media.s3.amazonaws.com/near/images/11102024/b06b920cba.webp"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full lg:max-h-[406px] xl:max-h-[594.92px] object-cover object-center"
-              slot="image"
-            />
-          </ItemNews>
-          <!-- Divider -->
-          <div
-            class="border-b border-[--divider-secundary] w-full mb-8 mt-[10px]"
-          >
-          </div>
-          <!-- mini cards -->
-          <section
-            class="flex items-center justify-center w-full gap-5 xl:flex-nowrap flex-wrap"
-          >
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-            <div
-              class="hidden xl:flex h-auto min-h-[260px] w-[1px] border-l border-1 border-[--divider-secundary]"
-            >
-            </div>
-            <div
-              class="w-full flex flex-flex-wrap flex-col items-start justify-between max-w-[533.27px]"
-            >
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-              <ItemNews
-                Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[104px] md:min-h-[130px] group  items-start justify-start *:mb-0 "},"AssetsContainer":{"ClassName":"relative w-[88px] h-[88px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full   group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer  w-full","HasWatermark":false,"Image":{"ClassName":"lazy w-full h-[100%] object-cover"}}},"DataContainer":{"ClassName":"w-full flex flex-col space-y-10 space-y-reverse justify-start text-[0.75rem] flex-1 ","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-[600] font-Merriweather text-[0.875rem] leading-[22px] leading-[22px] mb-[18px] text-wrap"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
-                className=""
-                category="Internacional"
-                attributes={'{"data-aos":"fade-up"}'}
-                title="14 Attorneys General Sue TikTok As Its Future In The U.S. Is On The Line"
-                author=""
-                datetime="Octubre 14, 2024"
-                href="#"
-                categoryColor="category_03"
-              >
-                <ImageLazy
-                  src="https://nxt-global-media.s3.amazonaws.com/near/images/10102024/9f467d8291.webp"
-                  width="88"
-                  height="88"
-                  className=" w-[88px] h-[88px] overflow-hidden group"
-                  classNameImage="lazy w-full min-w-[88px] h-full object-cover  mb-4 group-hover:scale-110 ease-in duration-300"
-                  slot="image"
-                />
-              </ItemNews>
-            </div>
-          </section>
-        </div>
-
-        <!-- divider -->
-        <div
-          class="hidden xl:flex h-auto lg:min-h-[54.119375rem] 2xl:min-h-[64.119375rem] border-l border-1 border-[--divider-secundary]"
-        >
-        </div>
-
-        <!-- Secundary secction -->
-        <div
-          class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
-        >
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-          <ItemNews
-            Options={'{"LinkContainer":{"ClassName":" "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full  text-[0.75rem]","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 font-Merriweather group-hover:underline  text-[1.125rem] leading-[26px] mt-2 font-[700]"},"Autor":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
-            className="flex flex-col self-center w-full group"
-            attributes={'{"data-aos":"fade-left"}'}
-            category=""
-            title="The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
-            datetime="Octubre 14, 2024"
-            author=""
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="600"
-              height="375"
-              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
-              slot="image"
-            />
-          </ItemNews>
-        </div>
-      </div>
-    </section>
-    <!-- ESG -->
-    <section
-      class="flex lg:justify-center 2xl:gap-x-14 lg:gap-10 space-y-10 lg:space-y-0 justify-center items-start w-full lg:px-20 2xl:px-0 flex-wrap mb-10"
-    >
-      <!-- Divider con titulo -->
-      <div class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
-      >
-        <h2
-          id="esg"
-          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300   cursor-pointer "
-        >
-          ESG
-          <iconify-icon class="group-hover/title:translate-x-2" icon="si:arrow-right-duotone" width="30" height="30"></iconify-icon>
-        </h2>
-      </div>
-      <div class="flex self-center w-full lg:w-[30%]">
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full ","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full"
-          attributes={'{"data-aos":"fade-right"}'}
-          category=""
-          title="Laboratorio aeroespacial en UNAQ: impulso a sostenibilidad e innovación"
-          content="La universidad abrirá un laboratorio aeroespacial, en colaboración con GE"
-          datetime="Octubre 11, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
-      </div>
-      <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
-          category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
-          category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
-        <ItemNewsWithDesc
-          Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full text-[0.75rem]","Date":{"ClassName":"order-0 flex items-center text-xs","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"leading-[26px] mt-5  font-[600] font-Merriweather text-left mb-3 group-hover:underline "},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
-          className="w-full sm:w-[31%]"
-          attributes={'{"data-aos":"fade-left"}'}
-          category=""
-          title="Alza de aranceles afecta importaciones de autos eléctricos chinos"
-          content="El aumento en los aranceles de 15 a 20% a."
-          datetime="Octubre 14, 2024"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="600"
-            height="375"
-            className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-            classNameImage="h-full object-cover object-center"
-            slot="image"
-          />
-        </ItemNewsWithDesc>
       </div>
     </section>
     <!-- Patrocinadores -->
