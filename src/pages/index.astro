@@ -174,7 +174,19 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
         <div
           class=`flex flex-row flex-wrap w-full flex-1 w-full lg:max-w-[321.47px]  2xl:w-[33.33%]  2xl:max-w-[none] items-stretch xl:gap-12  gap-[2.875rem]`
         >
-        <div class="w-full h-[273px] relative">
+        <h2
+          id="near-now"
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300 cursor-pointer"
+        >
+          Opiniones
+          <iconify-icon
+            class="group-hover/title:translate-x-2 "
+            icon="si:arrow-right-duotone"
+            width="30"
+            height="30"></iconify-icon>
+        </h2>
+        <div class="w-full h-[273px] relative flex flex-col gap-5">
+
 
             <VideoStreamingLazy
               className= "section-video__img-temp load-image-container block h-0 w-full pt-[75%] relative"
@@ -236,7 +248,7 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
           />
         </ItemNewsWithDesc>
       </div>
-      
+
       <div class="flex flex-row flex-wrap gap-4 w-full lg:w-[65%]">
         <ItemNewsWithDesc
           Options={'{"LinkContainer":{"ClassName":"group "},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-wrap gap-2 w-full flex-col","Date":{"ClassName":"order-0 flex items-center text-[0.75rem]","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5"},"Content":{"ClassName":" order-2 text-[0.9375rem]"}}}'}
