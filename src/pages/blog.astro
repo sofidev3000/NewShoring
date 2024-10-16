@@ -347,7 +347,7 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
       </div>
 
       <ItemNewsWithDesc
-        Options={'{"LinkContainer":{"ClassName":"w-full "},"AssetsContainer":{"ClassName":"w-full w-full overflow-hidden","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center group-hover:scale-125 ease-in-out duration-500 transition-transform"}}},"DataContainer":{"ClassName":"flex flex-col flex-wrap gap-2 w-full","Date":{"ClassName":"order-1 text-xs mb-3","Icon":{"ClassName":""}},"Time":{"ClassName":"","Icon":{"ClassName":""}},"Title":{"ClassName":"order-0 text-lg mb-5"},"Content":{"ClassName":"order-2 text-sm"}}}'}
+        Options={'{\"LinkContainer\":{\"ClassName\":\"group \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full flex-col\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 flex items-center text-[0.75rem]\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\" order-2 text-[0.9375rem]\"}}}'}
         className="w-full ]"
         attributes={""}
         category=""
@@ -371,41 +371,49 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
 
   <!-- Noticias relacionadas -->
   <section
-    class="w-full lg:w-[90%] *:text-[--secundary-color] py-5 mt-10 sm:mt-20 relative overflow-hidden flex flex-col justify-center items-center"
+    class="py-5 sm:py-0 max-w-[1300px] relative w-full flex flex-col justify-center items-center"
   >
     <div
       class="py-5 sm:py-0 md:max-w-screen-md xl:max-w-[1100px] 2xl:max-w-[1300px] relative z-10 w-full flex flex-col justify-center items-center"
     >
-      <h2
-        class="text-left mb-10 flex-1 p-0 font-sans font-bold uppercase text-3xl sm:text-4xl w-full"
-      >
-        Noticias Relacionadas
-      </h2>
+        <div
+          class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
+        >
+        <h2
+          class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300 cursor-pointer"
+        >
+          Noticias Relacionadas
+          
+        </h2>
+      </div>
       <Swiper
-        className="mx-auto w-full flex justify-center items-center self-center"
+        className="mx-auto w-full flex justify-center items-center self-center lg:h-[300px]"
         pagination={'{"ClassName":"relative mt-2.5" ,"el":"today-news__pagination" }'}
         navigation={'{"Type":"none", "ClassName":"" ,"ClassNext":"","ClassPrev": ""}'}
         options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
       >
+      
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-          <ItemNews
-            Options={'{"LinkContainer": { "ClassName": "group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md" },"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag": true,"Flag":{"ClassName":"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]"},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":true,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full "}}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center","Icon":{"ClassName":"fill-[--guardsman-red-700]"}},"Time":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center","Icon":{"ClassName":"stroke-[--guardsman-red-700]"}},"Title":{"ClassName":"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium"}}}'}
-            className="w-full"
-            category="Internacional"
-            title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-            datetime="22/04/2024"
-            time="17:24"
+        
+            <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+            className="flex flex-col self-center w-full group"
+            attributes={'{"data-aos":"fade-left"}'}
+            category=""
+            title="NUEVO The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+            datetime="Octubre 14, 2024"
+            author=""
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
               src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="200"
-              height="114"
-              className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-              classNameImage=""
+              width="600"
+              height="375"
+              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
               slot="image"
             />
           </ItemNews>
@@ -413,22 +421,24 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-          <ItemNews
-            Options={'{"LinkContainer": { "ClassName": "group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md" },"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag": true,"Flag":{"ClassName":"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]"},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":true,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full "}}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center","Icon":{"ClassName":"fill-[--guardsman-red-700]"}},"Time":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center","Icon":{"ClassName":"stroke-[--guardsman-red-700]"}},"Title":{"ClassName":"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium"}}}'}
-            className="w-full"
-            category="Internacional"
-            title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-            datetime="22/04/2024"
-            time="17:24"
+        
+            <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+            className="flex flex-col self-center w-full group"
+            attributes={'{"data-aos":"fade-left"}'}
+            category=""
+            title="NUEVO The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+            datetime="Octubre 14, 2024"
+            author=""
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
               src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="200"
-              height="114"
-              className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-              classNameImage=""
+              width="600"
+              height="375"
+              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
               slot="image"
             />
           </ItemNews>
@@ -436,22 +446,24 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-          <ItemNews
-            Options={'{"LinkContainer": { "ClassName": "group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md" },"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag": true,"Flag":{"ClassName":"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]"},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":true,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full "}}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center","Icon":{"ClassName":"fill-[--guardsman-red-700]"}},"Time":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center","Icon":{"ClassName":"stroke-[--guardsman-red-700]"}},"Title":{"ClassName":"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium"}}}'}
-            className="w-full"
-            category="Internacional"
-            title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-            datetime="22/04/2024"
-            time="17:24"
+        
+            <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+            className="flex flex-col self-center w-full group"
+            attributes={'{"data-aos":"fade-left"}'}
+            category=""
+            title="NUEVO The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+            datetime="Octubre 14, 2024"
+            author=""
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
               src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="200"
-              height="114"
-              className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-              classNameImage="h-full"
+              width="600"
+              height="375"
+              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
               slot="image"
             />
           </ItemNews>
@@ -459,58 +471,30 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-          <ItemNews
-            Options={'{"LinkContainer": { "ClassName": "group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md" },"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag": true,"Flag":{"ClassName":"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]"},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":true,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full"}}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center","Icon":{"ClassName":"fill-[--guardsman-red-700]"}},"Time":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center","Icon":{"ClassName":"stroke-[--guardsman-red-700]"}},"Title":{"ClassName":"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium"}}}'}
-            className="w-full"
-            category="Internacional"
-            title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-            datetime="22/04/2024"
-            time="17:24"
+        
+            <ItemNews
+            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+            className="flex flex-col self-center w-full group"
+            attributes={'{"data-aos":"fade-left"}'}
+            category=""
+            title="NUEVO The 12 Billionaires Trying To Flip Montana’s Senate Seat Red"
+            datetime="Octubre 14, 2024"
+            author=""
             href="#"
             categoryColor="category_03"
           >
             <ImageLazy
               src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="200"
-              height="114"
-              className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-              classNameImage="h-full"
+              width="600"
+              height="375"
+              className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+              classNameImage="h-full object-cover object-center lg:max-h-[184.75px]  2xl:max-h-[272.95px]"
               slot="image"
             />
           </ItemNews>
         </SwiperItem>
-        <SwiperItem
-          className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
-        >
-          <ItemNews
-            Options={'{"LinkContainer": { "ClassName": "group flex flex-col gap-3 bg-[--primary-color] overflow-auto shadow-md" },"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden","HasFlag": true,"Flag":{"ClassName":"absolute top-2.5 group-hover:left-0 transition-all duration-[2s] left-2.5 text-center py-1.5 px-1.5 font-sans text-xs font-bold text-[--secundary-color]"},"ImageContainer":{"ClassName":"load-image-container block relative h-0","HasWatermark":true,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full"}}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-2 items-center","Icon":{"ClassName":"fill-[--guardsman-red-700]"}},"Time":{"ClassName":"font-body text-[--secundary-color] mb-1.5 flex flex-nowrap gap-1 items-center","Icon":{"ClassName":"stroke-[--guardsman-red-700]"}},"Title":{"ClassName":"group-hover:text-[--guardsman-red-700] group-hover:transition-colors text-[--secundary-color] text-sm leading-[1.1rem] min-h-[4rem] sm:min-h-[3rem] font-sans font-medium"}}}'}
-            className="w-full"
-            category="Internacional"
-            title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-            datetime="22/04/2024"
-            time="17:24"
-            href="#"
-            categoryColor="category_03"
-          >
-            <ImageLazy
-              src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-              width="200"
-              height="114"
-              className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-              classNameImage="h-full"
-              slot="image"
-            />
-          </ItemNews>
-        </SwiperItem>
+       
       </Swiper>
     </div>
   </section>
 </LayoutPost>
-
-<style is:global>
-  #blog>h2{
-    font-weight: 700;
-    font-size: 1.5rem;
-    color:var(--guardsman-red-500);
-}
-</style>

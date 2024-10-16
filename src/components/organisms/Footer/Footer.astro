@@ -13,7 +13,7 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
   <div
     class="sm:min-w-[300px] w-full sm:w-[300px] h-full flex flex-col justify-between items-start gap-[3rem] mt-[1rem]"
   >
-    <Logo animationdirection="fade-bottom" isMobile="true" />
+    <Logo animationdirection="fade-bottom" isMobile="true" isFooter={true} />
     <SocialMediaIcons />
     <nav>
       <ul>
@@ -51,65 +51,67 @@ import FormCheckbox from "@components/atoms/formAtoms/FormCheckbox.astro";
     </nav>
   </div>
 
-  <div class="footer__latest-post flex flex-col gap-3 m-0 w-full lg:w-[60%] xl:max-w-[370px]">
+  <div
+    class="footer__latest-post flex flex-col gap-3 m-0 w-full lg:w-[60%] xl:max-w-[370px]"
+  >
     <h3 class="font-bold text-xl mb-0">Lo más reciente</h3>
     <ItemNews
-    Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-    className=""
-    category="Internacional"
-    attributes={'{"data-aos":"fade-up"}'}
-    title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
-    datetime="22/04/2024"
-    href="#"
-    categoryColor="category_03"
-  >
-    <ImageLazy
-      src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-      width="200"
-      height="114"
-      className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
-      classNameImage="h-full object-cover object-center"
-      slot="image"
-    />
-  </ItemNews>
-  <ItemNews
-  Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-  className=""
-  category="Internacional"
-  attributes={'{"data-aos":"fade-up"}'}
-  title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
-  datetime="22/04/2024"
-  href="#"
-  categoryColor="category_03"
->
-  <ImageLazy
-    src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-    width="200"
-    height="114"
-    className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
-    classNameImage="h-full object-cover object-center"
-    slot="image"
-  />
-</ItemNews>
-<ItemNews
-Options={'{\"LinkContainer\":{\"ClassName\":\"flex gap-3 min-h-[140px] md:min-h-[130px] group\"},\"AssetsContainer\":{\"ClassName\":\"relative w-[28%] h-auto max-w-[114px] overflow-hidden \",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full  h-full object-cover object-center\"}}},\"DataContainer\":{\"ClassName\":\"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"order-0 font-bold text-sm w-full\"},\"Autor\":{\"Active\":true,\"ClassName\":\"order-1 text-xs\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"SponsorTag\": {\"LinkContainer\":{\"ClassName\":\"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto\"}}}}'}
-className=""
-category="Internacional"
-attributes={'{"data-aos":"fade-up"}'}
-title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
-datetime="22/04/2024"
-href="#"
-categoryColor="category_03"
->
-<ImageLazy
-  src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
-  width="200"
-  height="114"
-  className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
-  classNameImage="h-full object-cover object-center"
-  slot="image"
-/>
-</ItemNews>
+      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm w-full"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+      className=""
+      category="Internacional"
+      attributes={'{"data-aos":"fade-up"}'}
+      title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+        width="200"
+        height="114"
+        className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
+      />
+    </ItemNews>
+    <ItemNews
+      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm w-full"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+      className=""
+      category="Internacional"
+      attributes={'{"data-aos":"fade-up"}'}
+      title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+        width="200"
+        height="114"
+        className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
+      />
+    </ItemNews>
+    <ItemNews
+      Options={'{"LinkContainer":{"ClassName":"flex gap-3 min-h-[140px] md:min-h-[130px] group"},"AssetsContainer":{"ClassName":"relative w-[28%] h-auto max-w-[114px] overflow-hidden ","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container  h-full  max-h-[170px] group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full  h-full object-cover object-center"}}},"DataContainer":{"ClassName":"w-[73%] flex flex-col space-y-2 space-y-reverse justify-start","Date":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"font-normal","Icon":{"Active":false,"ClassName":""}},"Title":{"ClassName":"order-0 font-bold text-sm w-full"},"Autor":{"Active":true,"ClassName":"order-1 text-xs","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"},"SponsorTag": {"LinkContainer":{"ClassName":"absolute bottom-0 right-0 text-center py-1.5 px-1.5 font-sans text-xs font-bold uppercase flex flex-nowrap flex-row gap-2 overflow-auto"}}}}'}
+      className=""
+      category="Internacional"
+      attributes={'{"data-aos":"fade-up"}'}
+      title="Descubre el significado Descubre csdv vdzvsdvdvsdv..."
+      datetime="22/04/2024"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/0da498c2-a169-4ea5-8671-7f63880e5917.webp"
+        width="200"
+        height="114"
+        className="group-hover:scale-125 ease-in-out duration-500 max-w-[114px] max-h-[170px] transition-transform cursor-pointer pt-[130%] sm:pt-[100%] w-full absolute"
+        classNameImage="h-full object-cover object-center"
+        slot="image"
+      />
+    </ItemNews>
   </div>
 
   <div class="footer__latest-post flex flex-col gap-4 w-full xl:max-w-[356px]">

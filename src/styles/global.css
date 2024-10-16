@@ -104,12 +104,12 @@ h2{
   font-family: "Merriweather", 'serif';
   font-weight: 700;
 }
-#blog{
+/*#blog{
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-}
+}*/
 #blog > * h2:not(.swiper-slide h2) {
   font-weight: 700;
   font-size: 1.5rem;
@@ -118,13 +118,13 @@ h2{
 
 #blog > h3 {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--secundary-color);
 }
 
 #blog > h4 {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--secundary-color);
 }
 
@@ -146,6 +146,8 @@ h2{
   cursor: pointer;
   font-weight: 700;
 }
+#blog ul{list-style: disc!important; padding-left: 40px!important;}
+#blog ol{list-style: decimal!important; padding-left: 40px!important;}
 #article > p{
   text-wrap: wrap;
   overflow: hidden;
