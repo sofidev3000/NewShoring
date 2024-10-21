@@ -7,6 +7,7 @@ const {
   fontSize = "",
   fontSizeSlogan = "",
   isMobile = false,
+  isFooter = false
 } = Astro.props;
 ---
 
@@ -15,13 +16,13 @@ const {
     <a
       data-aos={animationdirection}
       href="/"
-      class={`flex  w-fit flex-col pt-1 font-normal text-${textColor} relative w-[20%] min-w-[60vw]`}
+      class={`flex  w-fit flex-col pt-1 font-normal text-${textColor} relative w-[20%] ${!isFooter ? "min-w-[65%] md:min-w-[35%]" : "min-w-[75%] md:min-w-[100%]"} ` }
     >
         <ImageLazy
             src="/img/logo/nearShoringLogoBlack.svg"
             width="200"
             height="114"
-            className="pt-12 relative "
+            className="pt-12 relative pt-[32%]"
             classNameImage="logo__img--mobile"
             slot="image"
           />
