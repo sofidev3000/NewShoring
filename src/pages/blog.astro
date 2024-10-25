@@ -10,178 +10,152 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
 
 <LayoutPost title={`Blog`}>
   <!-- article with sidebar -->
-  <div
-    class="w-full lg:w-[90%] pt-[5.2rem] 2xl:pt-[1rem] p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
+  <section
+    class="w-full lg:w-[90%] 2xl:pt-[1rem] p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
   >
-    <!-- Main article -->
-    <div id="blog" class="w-full lg:w-3/4 h-full gap-5">
+    <div class="w-full lg:w-3/4 h-full gap-5">
       <div class="w-full md:max-w-screen-md">
-        <h1 class="mb-2 p-0 font-sans font-bold uppercase text-xl lg:text-3xl text-left">
-        ALCALDÍAS DE CIUDAD DE MÉXICO APLICARÁN LEY SECA DURANTE SEMANA
-        SANTA: TLÁHUAC Y CUAJIMALPA
-      </h1>
-      <p class="text-md  font-normal mb-5">
-        El Costo Financiero De La Deuda Pública Alcanzó Un Récord En
-        Febrero, Con Un Incremento Real Del 16%.
-      </p>
-      <ImageLazy
-        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        srcWebp="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-        width="540"
-        height="378"
-        className="w-full h-full object-cover pt-[70%] object-bottom overflow-hidden relative"
-      />
-        <div
-          class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0"
-        >
-          <time
-            datetime="fecha_de_noticia"
-            class="text-xs mt-5 font-bold flex flex-nowrap text-[--guardsman-red-500] gap-2 items-center"
+        <div class="w-full md:max-w-screen-md">
+          <h1
+            class="mb-2 p-0 font-sans font-bold uppercase text-xl lg:text-3xl text-left"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="stroke-[--guardsman-red-700]"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-clock"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-              ></path><path
-                d="M10.5 21h-4.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v3"
-              ></path><path d="M16 3v4"></path><path d="M8 3v4"></path><path
-                d="M4 11h10"></path><path
-                d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path
-                d="M18 16.5v1.5l.5 .5"></path></svg
-            >
-            Publicado en mayo 13, 2024 09:57
-          </time>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- article with sidebar -->
-  <div
-    class="w-full lg:w-[90%] p-0 mt-10 sm:mt-10 px-3 flex flex-wrap m-auto xl:max-w-[1100px] 2xl:max-w-[1300px]"
-  >
-    <!-- Main article -->
-    <div id="blog" class="w-full lg:w-3/4 h-full gap-5 *:text-pretty ">
-      <div
-      id="article"
-        class="h-full text-[--primary-text-color]  space-y-4 flex flex-wrap gap-10 justify-between md:max-w-screen-md *:text-pretty "
+            Rusia presenta billete BRICS; simboliza unión económica
+            internacional
+          </h1>
 
-      >
-        <p>
-          En una sorprendente noticia, un <strong>raro oso panda pardo</strong> fue
-          avistado por primera vez en seis años en las montañas Qinling, en la provincia
-          china de Shaanxi. Este avistamiento representa la undécima vez en total
-          que se ha observado a esta especie desde su primer registro en 1985, marcando
-          un hecho significativo para la conservación de esta subespecie.
-          <a href="/">hola mundo</a>
-        </p>
-        <h2 class="">
-          Avistamiento de oso panda pardo
-        </h2>
-        <p>
-          <strong>El avistamiento</strong>
-          <strong>del oso panda pardo</strong> se produjo el pasado 17 de enero,
-          cuando una cámara infrarroja colocada en la Reserva Nacional de la Naturaleza
-          de Changqing logró capturar la imagen de este ejemplar único. Cabe mencionar
-          que es la primera vez que se observa un panda pardo en esta zona desde
-          el año 2018, lo que resalta la importancia de este hallazgo para la investigación
-          y conservación de la especie.
-        </p>
-        <h3 class="">
-          Subespecie extremadamente rara
-        </h3>
-        <h4 class="">
-          Subespecie extremadamente rara
-        </h4>
-        <h5 class="">
-          Subespecie extremadamente rara
-        </h5>
-        <h6 class="">
-          Subespecie extremadamente rara
-        </h6>
-        <p>
-          La subespecie de panda pardo de las <strong>montañas Qinling</strong> es
-          sumamente escasa, con una población estimada de tan solo 20 individuos.
-          El descubrimiento inicial de esta subespecie en 1985, en la misma área
-          donde se realizó este avistamiento, destaca la importancia de preservar
-          su hábitat y tomar medidas para su protección.
-        </p>
-        <!-- Banner comercial -->
-        <div
-          id="div-gpt-ad-4222133-1"
-          class="google-ads bg-[#d7d7d7b8] w-full h-[100px] relative m-5"
-          data-code="@adsDomain/responsive_portada_leaderboard_1"
-          data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
-        >
+          <p class="text-md font-normal mb-5">
+            Durante la cumbre BRICS 2024 en Kazán, Vladimir Putin presentó el
+            prototipo del billete, como n paso hacia la independencia del dólar
+            estadounidense.
+          </p>
+        </div>
+
+        <div class="">
           <div
-            class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
+            class="w-full h-full object-cover pt-[70%] object-bottom overflow-hidden relative"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="fill-none stoke-[#1b1b1bbf]"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-                d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-              ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
-                d="M7 13l4 0"></path><path
-                d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"></path></svg
+            <div
+              class="loader-icon top-1/2 left-1/2 w-1/4 h-1/4 transform -translate-x-1/2 -translate-y-1/2 loader-icon--hidden"
             >
+              <div
+                class="lds-facebook block relative m-auto bg-transparent w-full h-full"
+              >
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <img
+              alt=""
+              class="absolute top-0 left-0 w-full h-full object-cover visible-image"
+              width="540"
+              height="378"
+              data-loaded="visible-image"
+              src="https://nxt-global-media.s3.amazonaws.com/near/images/25102024/8c680429e7.webp"
+            />
           </div>
         </div>
-        <h2 class="">
-          Investigación genética de oso panda pardo
-        </h2>
+
+        <div class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0 mt-10">
+          <time
+            datetime="fecha_de_noticia"
+            class="flex flex-wrap justify-between mb-5 gap-3 lg:gap-0"
+          >
+            Publicado en &nbsp; Octubre 25, 2024
+          </time>
+        </div>
+      </div><div
+        class="h-full text-[--primary-text-color] space-y-4 md:max-w-screen-md"
+        id="blog"
+      >
         <p>
-          En un estudio reciente, llevado a cabo por la <strong
-            >Academia China de Ciencias y publicado en la revista PNAS</strong
-          >, se señaló que una mutación genética es la responsable de la
-          particular coloración de los pandas pardos. Esta investigación
-          confirmó que una deleción homocigótica en el gen Bace2 es la
-          responsable de esta mutación, lo que amplía nuestro conocimiento sobre
-          la genética de esta especie en peligro de extinción.
-        </p>
+          Durante la <strong>cumbre BRICS 2024</strong> que tuvo lugar en <strong
+            >Kazán, Rusia</strong
+          >, el presidente Valdimir Putin dio a conocer oficialmente el
+          prototipo del billete de la futura moneda BRICS, marcando un hito
+          significativo en los esfuerzos del <strong
+            >bloque por establecer una alternativa al sistema financiero
+            occidental y al dólar estadounidense</strong
+          >.
+        </p><p><br /></p><p>
+          Esta presentación es vista como un movimiento para fortalecer la
+          colaboración entre las economías emergentes que forman parte de este
+          bloque internacional alternativo al G7: Brasil, Egipto, Emiratos
+          Árabes Unidos, Etiopía, India, República Popular China y Sudáfrica.
+        </p><p><br /></p><p><br /></p><h2>
+          Un billete como símbolmo de unión económica
+        </h2><p>
+          El<strong> </strong>billete BRICS exhibe las banderas de los cinco
+          miembros fundadores del bloque, Brasil, Rusia, India, China y
+          Sudáfrica, dispuestas en un círculo. Este diseño <strong
+            >simboliza la unidad y cooperación entre estas economías emergentes</strong
+          >, subrayando el compromiso compartido de impulsar el desarrollo
+          económico y comercial en el ámbito internacional.
+        </p><p><br /></p><p>
+          En el reverso del billete, se encuentran<strong>
+            otras banderas,</strong
+          > representando a países como México, Nigeria, Argelia, Afganistán, Argentina
+          y Bahréin. Esta inclusión evidencia la intención del bloque de expandir
+          su influencia a nivel global, fortaleciendo la colaboración entre naciones
+          y promoviendo un entorno propicio para el <strong
+            >comercio y las inversiones internacionales</strong
+          >.
+        </p><p><br /></p><p><br /></p><p><br /></p><h2>
+          Propuesta de una moneda respaldada por el oro
+        </h2><p>
+          La<strong> propuesta de una moneda respaldada por el oro</strong> ha generado
+          expectativas dentro de los mercados financieros internacionales, especialmente
+          en un contexto donde el valor de este metal precioso ha alcanzado máximos
+          históricos.
+        </p><p><br /></p>
+        <blockquote>
+          <span >
+          This text is blocked quoted
+          </span>
+          </blockquote>
+          <ul>
+            <li>elemnt-1</li>
+            <li>elemnt-2</li>
+            <li>elemnt-3</li>
+            <li>elemnt-4</li>
+          </ul>
+
+          <a href="#">Anchor example</a>
         <p>
-          El análisis del genoma y la historia familiar de dos pandas pardos
-          reveló que ambos compartían una deleción homocigótica en el gen Bace2,
-          distinta a la presente en otros pandas estudiados. Para confirmar el
-          efecto de esta mutación, <strong
-            >los investigadores utilizaron la técnica CRISPR-Cas9</strong
-          > para introducir la misma deleción en ratones. Como resultado, los ratones
-          exhibieron una coloración pardo-blanca, demostrando que la mutación en
-          el gen Bace2 es responsable de la coloración inusual en estos pandas.
+          Este respaldo conferiría a la moneda BRICS una estabilidad intrínseca,
+          generando confianza entre los actores económicos y fortaleciendo su
+          potencial para convertirse en una alternativa viable al <strong
+            >dólar estadounidense en el comercio internacional.</strong
+          >
+        </p><p><br /></p><p>
+          Según la propuesta, el respaldo restante de la<strong>
+            moneda (60%)</strong
+          > estaría compuesto por divisas locales, como el<strong>
+            yuan chino, el rublo ruso y la rupia india</strong
+          >, lo que fortalecería la capacidad de las economías miembros para
+          sostener su crecimiento económico sin depender de monedas extranjeras.
+        </p><p><br /></p><p>
+          Esta estrategia busca diversificar las reservas y promover un comercio
+          más equilibrado entre los países <strong>miembros del bloque</strong>,
+          reduciendo la vulnerabilidad ante fluctuaciones en las <strong
+            >divisas internacionales</strong
+          >.
         </p>
-      </div>
-      <!-- SHARE BTNS MOBILE -->
-      <div class="flex flex-col md:hidden itemscenter">
-        <h5
-          class="text-sm  my-3 bg-[#000000] dark:bg-slate-900  text-white hover:text-guardsman-red-800 rounded-md p-1 w-fit"
+
+      </div><div class="flex flex-col md:hidden itemscenter">
+        <span
+          class="text-sm my-3 bg-[#000000] dark:bg-slate-900 text-white hover:text-guardsman-red-800 rounded-md p-1 w-fit"
         >
-          Compartir:
-        </h5>
-        <ul class="p-2 flex items-center gap-4">
+          Compartir:</span
+        ><ul class="p-2 flex items-center gap-4">
           <li
             class="w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105"
           >
             <a
-              href="#"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://https://www.nearshoring.news/articulo/rusia-presenta-billete-brics-simboliza-union-economica-internaciona"
               class="inline-flex items-center justify-center w-full h-full *:fill-white"
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer noopener"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -189,21 +163,22 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
                 width="10"
                 height="16"
                 viewBox="0 0 20 32"
-                data-astro-cid-dv46nlzh
+                data-astro-cid-dv46nlzh=""
                 ><path
                   d="M17.446 18h-4.668v14H6.517V18H1.43v-5.791h5.087V7.795C6.517 2.774 9.508 0 14.084 0c2.192 0 4.484.391 4.484.391v4.931h-2.526c-2.489 0-3.265 1.544-3.265 3.129v3.758h5.557z"
-                  data-astro-cid-dv46nlzh></path></svg
+                  data-astro-cid-dv46nlzh=""></path></svg
               >
             </a>
           </li>
+
           <li
             class="w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105"
           >
             <a
-              href="#"
+              href="https://twitter.com/intent/tweet?text=Rusia presenta prototipo de billete BRICS en cumbre, Argentina simboliza unión económica internacional&url=https://https://www.nearshoring.news/articulo/rusia-presenta-billete-brics-simboliza-union-economica-internaciona"
               class="inline-flex items-center justify-center w-full h-full *:fill-white"
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer noopener"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -211,21 +186,22 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
                 width="14"
                 height="14"
                 viewBox="0 0 32 32"
-                data-astro-cid-dv46nlzh
+                data-astro-cid-dv46nlzh=""
                 ><path
                   d="M24.324 3h4.414l-9.636 11.012L30.437 29h-8.875l-6.957-9.086L6.656 29H2.238l10.305-11.781L1.676 3h9.097l6.282 8.305Zm-1.55 23.363h2.445L9.445 5.5H6.82Zm0 0"
                 ></path></svg
               >
             </a>
           </li>
+
           <li
             class="w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105"
           >
             <a
-              href="#"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=https://https://www.nearshoring.news/articulo/rusia-presenta-billete-brics-simboliza-union-economica-internaciona"
               class="inline-flex items-center justify-center w-full h-full *:fill-white"
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer noopener"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -239,22 +215,21 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
               >
             </a>
           </li>
+
           <li
             class="w-8 h-8 mr-2 bg-guardsman-red-500 rounded-full hover:scale-105"
           >
             <a
-              href="#"
+              href="https://api.whatsapp.com/send?text=Rusia presenta prototipo de billete BRICS en cumbre, Argentina simboliza unión económica internacional%20https://https://www.nearshoring.news/articulo/rusia-presenta-billete-brics-simboliza-union-economica-internaciona"
               class="inline-flex items-center justify-center w-full h-full *:fill-white"
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer noopener"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="fill-[--guardsman-red-700]"
                 width="14"
                 height="14"
-                width="32"
-                height="32"
                 viewBox="0 0 32 32"
                 ><path
                   d="M23.806 6.069C26.425 8.694 28 12.175 28 15.882c0 7.65-6.363 13.875-14.006 13.875h-.006c-2.325 0-4.606-.581-6.631-1.688L.001 30l1.969-7.188a13.885 13.885 0 0 1-1.85-6.938c0-7.65 6.225-13.875 13.875-13.875 3.706 0 7.194 1.444 9.812 4.069zm-9.812 21.35c6.356 0 11.662-5.175 11.662-11.538.006-3.081-1.331-5.975-3.506-8.156S17.081 4.344 14 4.344c-6.362 0-11.537 5.175-11.537 11.531 0 2.181.606 4.3 1.762 6.138l.275.438-1.162 4.256L7.7 25.563l.419.25a11.512 11.512 0 0 0 5.875 1.606zm6.325-8.638c.344.169.575.256.656.412.088.144.088.838-.2 1.65s-1.669 1.55-2.338 1.65c-1.1.162-1.963.081-4.162-.869-3.481-1.506-5.75-5.006-5.925-5.238-.169-.231-1.412-1.881-1.412-3.588s.894-2.544 1.213-2.894c.319-.344.694-.431.925-.431s.462 0 .662.012c.213.012.5-.081.781.594.288.694.981 2.4 1.069 2.575s.144.375.031.606c-.663 1.325-1.375 1.281-1.019 1.894 1.344 2.306 2.681 3.106 4.719 4.125.344.175.55.144.75-.088.206-.238.869-1.012 1.1-1.363s.462-.294.781-.175c.319.113 2.025.95 2.369 1.125z"
@@ -264,126 +239,151 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
           </li>
         </ul>
       </div>
-    </div>
-    <!-- Side Bar -->
-    <aside
-      class="sticky top-20 w-full flex flex-col items-center lg:w-3/12  mt-10 sm:mt-0 pl-0 sm:pl-2 space-y-8 h-full"
+    </div><aside
+      class="sticky top-20 w-full flex flex-col items-center lg:w-3/12 mt-10 lg:mt-0 pl-0 sm:pl-2 space-y-8 h-full"
     >
-    <h3 class="text-left text-2xl font-bold">Suscríbete a nuestra Newsletter</h3>
+      <h2 class="text-left text-2xl font-bold">
+        Suscríbete a nuestra Newsletter
+      </h2>
+
       <form
-        id="subscribe-form"
+        class="form-send flex-col items-strech justify-strech w-full"
+        data-associate="near"
         method="POST"
-        action="/"
-        class="flex-col items-strech justify-strech w-full"
+        data-action="/requestpost"
+        data-service="storage-data"
+        data-service-action="storage-suscribe-form"
+        data-plugin="storage-data-system"
       >
-        <div class="flex flex-col items-center justify-center ga-10 w-full">
-          <span class="text-sm text-red-600 hidden mb-2" id="email-error"
-          ></span>
-          <span class="text-sm text-red-600 hidden mb-2" id="terms-error"
-          ></span>
-        </div>
+        <div data-form-belong="form-send__result" class="w-full hidden"></div>
 
-        <label class="flex text-sm text-left self-start text-white" for="email">
-          Ingresa tu correo electrónico
-        </label>
+        <div class="w-full flex flex-col gap-1">
+          <label class="" for="email-aside__input" id="email-aside__label">
+            Ingresa tu correo electrónico
+          </label>
 
-        <div class="flex items-center justify-center w-full">
           <input
-            class="py-[10.2px] flex-1 text-xs"
+            class=""
+            id="email-aside__input"
             type="email"
-            id="email"
             name="email"
-            placeholder="Tu email"
-            required
-          />
-          <Button
-            text="Suscribirse"
-            ID="send-btn"
-            clase="self-start px-5 py-[10px] w-fit"
-            rounded="rounded-r-lg"
-            type="submit"
-          />
-        </div>
-        <div class="flex py-2">
-          <input
-            type="checkbox"
-            id="terms"
-            name="terms"
-            class="form-checkbox checked:accent-guardsman-red-700 mr-2"
-            required
+            placeholder="email"
+            required="true"
           />
 
-          <span class={`text-xs  text-[--secundary-color]`}
-            >Aceptar términos y condiciones</span
+          <div
+            data-lastpass-icon-root=""
+            style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
           >
+          </div>
+        </div>
+
+        <div class="w-full block relative mt-3">
+          <label
+            class="flex items-center space-x-2 absolute w-full h-full top-0 left-0"
+            for="terms-aside__input"
+            id="terms-aside__label"
+          >
+          </label>
+
+          <input
+            class="form-checkbox checked:accent-guardsman-red-700"
+            id="terms-aside__input"
+            type="checkbox"
+            name="terms"
+            required="true"
+          />
+
+          <span class="text-xs" id=""> Aceptar términos y condiciones </span>
+
+          <span class="text-red-600 hidden" id="terms-error"> </span>
+        </div>
+
+        <div
+          class=""
+          data-sitekey=""
+          style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"
+        >
+        </div>
+        <input type="hidden" value="true" name="recaptcha-used" />
+        <div class="w-full mt-3">
+          <input
+            class="bg-[--button-base] hover:bg-[--button-hover] :activebg-[--button-active] text-[--button-color] font-bold px-4 py-2 rounded-[7px] w-full h-full"
+            id="buttonSubmit-aside__input"
+            type="submit"
+            value="Registrar"
+          />
         </div>
       </form>
-      <div
-        id="div-gpt-ad-4222133-1"
-        class="google-ads bg-[#8d8d8db8] w-full h-[600px] relative"
-        data-code="@adsDomain/responsive_article_vertical_1"
-        data-sizes='[{\"width\":300,\"height\":600},{\"width\":120,\"height\":600}]'
-      >
-        <div
-          class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-0"
+      <article class="w-full relative">
+        <a
+          class="group"
+          href="https://www.nearshoring.news/articulo/galicia-impulsa-el-desarrollo-industrial-a-traves-de-la-eolica-offshore-y-energias-renovables"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="fill-none stoke-[#1b1b1bbf]"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-            ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
-              d="M7 13l4 0"></path><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"
-            ></path></svg
-          >
-        </div>
-      </div>
+          <div class="relative w-full  overflow-hidden">
+            <div
+              class="load-image-container block  h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
+            >
+              <div
+                class="loader-icon top-1/2 left-1/2 w-1/4 h-1/4 transform -translate-x-1/2 -translate-y-1/2 loader-icon--hidden"
+              >
+                <div
+                  class="lds-facebook block relative m-auto bg-transparent w-full h-full"
+                >
+                  <div></div><div></div><div></div>
+                </div>
+              </div>
 
-      <ItemNewsWithDesc
-        Options={'{\"LinkContainer\":{\"ClassName\":\"group \"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"flex flex-wrap gap-2 w-full flex-col\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1 flex items-center text-[0.75rem]\",\"Icon\":{\"ClassName\":\"\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{\"ClassName\":\"\"}},\"Title\":{\"ClassName\":\"main-title text-[1.125rem] leading-[26px] mt-5  font-[600] font-Merriweather text-left group-hover:underline mb-5\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1 text-sm mb-3 font-normal\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"},\"Content\":{\"ClassName\":\" order-2 text-[0.9375rem]\"}}}'}
-        className="w-full ]"
-        attributes={""}
-        category=""
-        title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        datetime="22/04/2024"
-        href="#"
-        categoryColor="category_03"
-      >
-        <ImageLazy
-          src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-          width="600"
-          height="375"
-          className="group-hover:scale-125 ease-in-out duration-500 transition-transform cursor-pointer pt-[62.5%] w-full relative"
-          classNameImage="h-full object-cover object-center"
-          slot="image"
-        />
-      </ItemNewsWithDesc>
+              <img
+                class="absolute top-0 left-0 w-full h-full object-cover object-center visible-image"
+                width="200"
+                height="114"
+                data-loaded="visible-image"
+                alt=""
+                src="https://nxt-global-media.s3.amazonaws.com/near/images/25102024/a2654e207c.webp"
+              />
+            </div>
+            <!-- Badge -->
+          </div>
+
+          <div class="flex flex-wrap gap-2 w-full flex-col">
+            <time
+              datetime="fecha_de_noticia"
+              class="order-1 flex items-center text-[0.75rem]"
+            >
+              Octubre 25, 2024
+            </time>
+            <h2
+              class="main-title text-[1.125rem] leading-[26px] mt-5 font-[600] font-Merriweather text-left group-hover:underline mb-5"
+            >
+              Galicia impulsa el desarrollo industrial a través de eólica
+              offshore
+            </h2>
+            <p class="order-2 text-[0.9375rem]">
+              Galicia impulsa la eólica offshore, destacando su capacidad y
+              proyectos...
+            </p>
+          </div>
+          <!-- Sponsor -->
+        </a>
+      </article>
     </aside>
-  </div>
+  </section>
 
   <!-- Noticias relacionadas -->
   <section
-    class="py-5 sm:py-0 max-w-[1300px] relative w-full flex flex-col justify-center items-center"
+    class="py-5 sm:py-0 max-w-[1300px] relative w-full flex flex-col justify-center items-center mx-auto mb-5"
   >
     <div
       class="py-5 sm:py-0 md:max-w-screen-md xl:max-w-[1100px] 2xl:max-w-[1300px] relative z-10 w-full flex flex-col justify-center items-center"
     >
-        <div
-          class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
-        >
+      <div
+        class="w-full !border-[--secundary-color] py-[1rem] border-t-[0.25rem] border-b self-center my-[24px] group-hover/title"
+      >
         <h2
           class="text-left text-[1.375rem] leading-[1.33] font-[700] text-[--secundary-color] font-WorkSans flex items-center gap-2 group/title transition-all transition-300 cursor-pointer"
         >
           Noticias Relacionadas
-          
         </h2>
       </div>
       <Swiper
@@ -392,13 +392,11 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         navigation={'{"Type":"none", "ClassName":"" ,"ClassNext":"","ClassPrev": ""}'}
         options={'{"loop":true,"speed":1000,"slidesPerView":1,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
       >
-      
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-        
-            <ItemNews
-            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+          <ItemNews
+            Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -421,9 +419,8 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-        
-            <ItemNews
-            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+          <ItemNews
+            Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -446,9 +443,8 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-        
-            <ItemNews
-            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+          <ItemNews
+            Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -471,9 +467,8 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
         <SwiperItem
           className="swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
         >
-        
-            <ItemNews
-            Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+          <ItemNews
+            Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap gap-2 flex-1","Date":{"Active":true,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color]"}},"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-sm leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
             className="flex flex-col self-center w-full group"
             attributes={'{"data-aos":"fade-left"}'}
             category=""
@@ -493,7 +488,6 @@ import LayoutPost from "@src/layouts/LayoutPost.astro";
             />
           </ItemNews>
         </SwiperItem>
-       
       </Swiper>
     </div>
   </section>
