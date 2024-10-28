@@ -81,6 +81,7 @@ html {
 
 body {
   width: 100%;
+  overflow-wrap: break-word;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -152,6 +153,7 @@ p{
 #blog > p{
   text-align: left;
   margin-top: 1rem;
+  text-wrap: wrap;
 }
 #blog {
   blockquote {
