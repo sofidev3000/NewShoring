@@ -20,7 +20,7 @@ var optionsObjs = null;
 if(Options!=null){
     optionsObjs = JSON.parse(Options);
 }else{
-    optionsObjs = JSON.parse("{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"\"}}},\"DataContainer\":{\"ClassName\":\"\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"},\"Autor\":{\"Active\":true,\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por\",\"TextNext\":\"-\"}}}");
+    optionsObjs = JSON.parse("{\"LinkContainer\":{\"ClassName\":\" \"},\"AssetsContainer\":{\"ClassName\":\"\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"Overlay\":{\"Active\":false,\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"\"}}},\"DataContainer\":{\"ClassName\":\"\",\"Date\":{\"ClassName\":\"font-body text-[--primary-text-color] mb-1.5 flex flex-nowrap gap-2 items-center\",\"Icon\":{\"ClassName\":\"fill-[--neutral-variant-color]\"}},\"Time\":{\"ClassName\":\"\",\"Icon\":{}},\"Title\":{\"ClassName\":\"group-hover:text-[--neutral-variant-color] group-hover:transition-colors text-[--primary-text-color] text-sm leading-[1.1rem] font-sans font-medium\"},\"Autor\":{\"Active\":true,\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por\",\"TextNext\":\"-\"}}}");
 }
 
 const dataAttributes = attributes && attributes ? attributes : "{}";
@@ -40,6 +40,11 @@ const dataAttributes = attributes && attributes ? attributes : "{}";
             {
                 optionsObjs.AssetsContainer.HasFlag && (
                     <span class={ `${optionsObjs.AssetsContainer.Flag.ClassName} ${categoryColor}`}>{category}</span>
+                )
+            }
+            {
+                optionsObjs.AssetsContainer?.Overlay?.Active && (
+                 <div class={optionsObjs.AssetsContainer.Overlay.ClassName}></div>
                 )
             }
         </div>
