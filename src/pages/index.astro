@@ -186,22 +186,22 @@ import VideoStreamingLazy from "@components/extras/VideoStreamingLazy.astro";
             height="30"></iconify-icon>
         </h2>
         <div class="w-full h-[273px] relative flex flex-col gap-5">
-
-
             <VideoStreamingLazy
               className= "section-video__img-temp load-image-container block h-0 w-full pt-[75%] relative"
               attributes={"{}"}
               data = {"{\"id\":\"dddd\",\"resource\":\"/img/near/paraso-escondido-paisajes-de.mp4\",\"type\":\"video\",\"temporary_image\":{\"className\":\"h-full\",\"resource\":{\"alt\":\"prueba\",\"src\":\"/img/near/paraso-escondido-paisajes.png\",\"srcWebp\":\"/img/near/paraso-escondido-paisajes.webp\",\"width\":768,\"height\":1344}},\"setup\": \"{}\",\"class_name\":\"w-full h-full absolute top-0 left-0\"}"}
              />
         </div>
-        <div class="w-full h-[273px] relative">
-
-           <VideoStreamingLazy
-           className= "section-video__img-temp load-image-container block h-0 w-full pt-[75%] relative"
-           attributes={"{}"}
-           data = {"{\"id\":\"dddd-1\",\"resource\":\"/img/near/paraso-escondido-paisajes-de.mp4\",\"type\":\"video\",\"temporary_image\":{\"className\":\"h-full\",\"resource\":{\"alt\":\"prueba\",\"src\":\"/img/near/paraso-escondido-paisajes.png\",\"srcWebp\":\"/img/near/paraso-escondido-paisajes.webp\",\"width\":768,\"height\":1344}},\"setup\": \"{}\",\"class_name\":\"w-full h-full absolute top-0 left-0\"}"}
+        <div class="w-full relative">
+          <ImageLazy
+                src="./img/near/ads/cpkc_kansas.jpg"
+                srcWebp="./img/near/ads/cpkc_kansas.webp"
+                width="768"
+                height="640"
+                className="load-image-container block h-0 pt-[83.33%] w-full "
+                classNameImage="lazy absolute top-0 left-0 w-full h-full"
+                slot="image"
           />
-
       </div>
         </div>
       </div>
