@@ -1,20 +1,87 @@
-<form
-action={"/"}
-method="get"
-class="relative flex items-center "
->
-<input
-  type="search"
-  id="search-navbar"
-  required
-  class="w-full h-[38px] text-[1rem] rounded-l-xl block p-2 ps-none border-white  bg-white text-black  focus:border-[--guardsman-red-700] focus:outline-none outline-1 border-0"
-  placeholder="Buscar..."
-/>
-<button
-  type="submit"
-  class="flex items-center justify-center text-white hover:text-[--guardsman-red-700] transition ease-in-out bg-[--neutral-variant-color] hover:bg-[--secundary-color] p-[7.5px] w-9 h-[38.3px] rounded-r-lg border"
->
-  <i class="fa-solid fa-magnifying-glass text-[14px]"></i>
+---
+
+---
+
+<div class="flex items-center">
+  <form
+    action={"/"}
+    method="get"
+    class="relative flex items-center search lg:mr-3 "
+  >
+    <label
+      for="search-navbar"
+      class="label-search flex items-center rounded-l-xl"
+    >
+      <input
+        type="search"
+        id="search-navbar"
+        required
+        class="form-input bg-white h-[38px] text-[1rem] rounded-l-xl block p-2 ps-none text-black focus:outline-none outline-0 border-0 focus:ring-transparent"
+        placeholder="Buscar..."
+      />
+    </label>
+    <button
+      type="submit"
+      class="button-submit items-center justify-center text-white hover:bg-[--guardsman-red-700] transition ease-in-out bg-[--neutral-variant-color] hover:text-[--secundary-color] px-[7.5px] h-[38.3px] rounded-r-lg border"
+    >
+      Buscar
+    </button>
+  </form>
+  <i
+    class="fa-solid search-icon fa-magnifying-glass text-[20px] text-white mr-5"
+  ></i>
   <span class="sr-only">Search icon</span>
-</button>
-</form>
+</div>
+
+<script>
+  const form = document.querySelector(".search");
+  const searchIcon = document.querySelector(".search-icon");
+
+  searchIcon.addEventListener("click", () => {
+    form.classList.toggle("is-active");
+    if (form.classList.contains("is-active")) {
+      searchIcon.classList.add("hidden");
+    } else {
+      searchIcon.classList.remove("hidden");
+    }
+  });
+</script>
+
+<style>
+  .search-icon {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .search {
+      transition:
+        transform 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+      transform: scaleX(0);
+      opacity: 0;
+
+      overflow: hidden;
+    }
+    .search.is-active {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+
+    .form-input,
+    .button-submit {
+      opacity: 1;
+      transform: none;
+    }
+    .search-icon {
+      cursor: pointer;
+      display: block;
+      &:hover {
+        color: var(--guardsman-red-700);
+      }
+    }
+
+    .search-icon.hidden {
+      display: none;
+    }
+  }
+  
+</style>
