@@ -6,7 +6,7 @@
   <form
     action={"/"}
     method="get"
-    class="relative flex items-center search mr-3"
+    class="relative flex items-center search lg:mr-3 "
   >
     <label
       for="search-navbar"
@@ -22,12 +22,13 @@
     </label>
     <button
       type="submit"
-      class="button-submit items-center justify-center text-white hover:bg-[--guardsman-red-700] transition ease-in-out bg-[--neutral-variant-color] hover:text-[--secundary-color] p-[7.5px] h-[38.3px] rounded-r-lg border"
+      class="button-submit items-center justify-center text-white hover:bg-[--guardsman-red-700] transition ease-in-out bg-[--neutral-variant-color] hover:text-[--secundary-color] px-[7.5px] h-[38.3px] rounded-r-lg border"
     >
       Buscar
     </button>
   </form>
-  <i class="fa-solid  search-icon  fa-magnifying-glass text-[20px] text-white mr-5"
+  <i
+    class="fa-solid search-icon fa-magnifying-glass text-[20px] text-white mr-5"
   ></i>
   <span class="sr-only">Search icon</span>
 </div>
@@ -42,40 +43,45 @@
       searchIcon.classList.add("hidden");
     } else {
       searchIcon.classList.remove("hidden");
-      
     }
   });
 </script>
 
 <style>
-  .search {
-    transition:
-      transform 0.3s ease-in-out,
-      opacity 0.3s ease-in-out;
-    transform: scaleX(0);
-    opacity: 0;
-    
-    overflow: hidden;
-  }
-  .search.is-active {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  
-  .form-input,
-  .button-submit {
-    opacity: 1; 
-    transform: none;
-  }
   .search-icon {
-    cursor: pointer;
-    display: block;
-    &:hover {
-      color: var(--guardsman-red-700);
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .search {
+      transition:
+        transform 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+      transform: scaleX(0);
+      opacity: 0;
+
+      overflow: hidden;
+    }
+    .search.is-active {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+
+    .form-input,
+    .button-submit {
+      opacity: 1;
+      transform: none;
+    }
+    .search-icon {
+      cursor: pointer;
+      display: block;
+      &:hover {
+        color: var(--guardsman-red-700);
+      }
+    }
+
+    .search-icon.hidden {
+      display: none;
     }
   }
   
-  .search-icon.hidden {
-     display: none;
-  } 
 </style>
