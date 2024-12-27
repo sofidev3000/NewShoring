@@ -6,6 +6,7 @@ import ThemeIcon from "@components/atoms/ThemeIcon/ThemeIcon.astro";
 import ToggleLanguage from "@components/atoms/ToogleLanguage/ToggleLanguage";
 import IndicadoresCarousel from "@atoms/IndicadoresCarousel/IndicadoresCarousel";
 import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
+import SearchInput from "@components/atoms/SerchInput/SearchInput.astro";
 
 
 ---
@@ -23,6 +24,7 @@ import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
     <IndicadoresCarousel  client:only="react"/>
   </div>
   <div class="social-media flex  gap-2 pl-0 list-none">
+    <SearchInput />
     <SocialMediaIcons />
     <Button text="Suscríbete" ID="suscribe-btn" clase="px-2" />
     <div class="icons flex gap-1">
