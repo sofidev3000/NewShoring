@@ -7,6 +7,7 @@ import ToggleLanguage from "@components/atoms/ToogleLanguage/ToggleLanguage";
 import IndicadoresCarousel from "@atoms/IndicadoresCarousel/IndicadoresCarousel";
 import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
 
+import SearchInput from "@components/atoms/SerchInput/SearchInput.astro";
 
 ---
 <script>
@@ -22,7 +23,26 @@ import PopupSuscribe from "@molecules/PopupSuscribe/PopupSuscribe.astro";
   <div class="indicadores__carousel w-80">
     <IndicadoresCarousel  client:only="react"/>
   </div>
-  <div class="social-media flex  gap-2 pl-0 list-none">
+  <div class="social-media flex  gap-2 pl-0 list-none relative">
+    <form class="relative flex items-center group" data-associate="near" method="GET" action="/busqueda">
+      <div data-form-belong="form-send__result" class="w-full hidden"></div>
+      <div class="h-[38px] flex-auto md:flex-1 transition-opacity absolute w-48 right-full">
+        <input
+          class="w-full h-full text-[1rem] opacity-0 rounded-l-xl p-2 ps-none border-white bg-white text-black focus:border-[--guardsman-red-700] focus:outline-none outline-1 border-0 
+                group-hover:transition-opacity  group-hover:opacity-100 "
+          id="q__input"
+          type="search"
+          name="q"
+          placeholder="Buscar">
+      </div>
+      <div class="" data-sitekey="" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+      <input type="hidden" value="false" name="recaptcha-used">
+      <div class="flex items-center justify-center text-white hover:text-[--guardsman-red-700] transition ease-in-out hover:bg-[--secundary-color] p-[7.5px] w-9 h-[38.3px] relative">
+        <i class="fa-solid fa-magnifying-glass text-[14px]"></i>
+        <input class="w-full h-full cursor-pointer absolute top-0 left-0 z-10" id="buttonSubmit__input" type="submit" value="">
+      </div>
+    </form>
+    
     <SocialMediaIcons />
     <Button text="Suscríbete" ID="suscribe-btn" clase="px-2" />
     <div class="icons flex gap-1">
