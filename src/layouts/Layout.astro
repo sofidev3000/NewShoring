@@ -55,6 +55,7 @@ const {
       import { initAOS } from "@utils/aos";
       import { execLazyLoad } from "@controllers/ImageLazy";
       import {initProcessTranslate} from '@utils/translatePage';
+      import {initProcessAds} from '../services/fetchAds.service.js';
 
       document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
@@ -70,6 +71,8 @@ const {
             initSend(this as HTMLFormElement);
           });
         });
+
+        initProcessAds();
       });
     </script>
   </body>
