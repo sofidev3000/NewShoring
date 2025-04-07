@@ -121,25 +121,25 @@ p{
 #blog  > h3 {
   font-weight: 700;
   font-size: 1.3rem;
-  color: var(--secundary-color);
+  color: var(--guardsman-red-500);
 }
 
 #blog  > h4 {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--secundary-color);
+  color: var(--guardsman-red-500);
 }
 
 #blog  > h5 {
   font-weight: 700;
   font-size: 1.1rem;
-  color: var(--secundary-color);
+  color: var(--guardsman-red-500);
 }
 
 #blog > h6 {
   font-weight: 700;
   font-size: 1rem;
-  color: var(--secundary-color);
+  color: var(--guardsman-red-500);
 }
 #blog >  a{
   color: var(--guardsman-red-800);
