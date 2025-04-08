@@ -50,12 +50,20 @@ const BannerCoockies = () => {
   const [allCookiesArr, setAllCookiesArr] = useState(cookiesArr);
 
   useEffect(() => {
-    const cookieConsent = localStorage.getItem("storedCookies");
-    if (!cookieConsent) {
-      // si no hay cookies
+    const cookiesDocumentArr = document?.cookie?.split("; ");
+    const cookiesCounter = cookiesArr.length; // las que se mandan como prop al inicio del componente
+    let counter = 0;
+    cookiesArr.forEach((cookie) => {
+      if (cookiesDocumentArr.some(c => c.includes(`${cookie.cookieName}`))) {
+        counter++;
+      }
+    })
+
+    if (counter !== cookiesCounter) {
       setIsVisible(true);
       document.body.style.overflow = "hidden";
     }
+
   }, []);
 
   
@@ -86,8 +94,6 @@ const BannerCoockies = () => {
     document.body.style.overflow = "auto";
     handleModalAllCookies(); // cerrar el modal de las cookies detalle
     setIsVisible(false); // cerrar modal inicial de cookies
-    // update storage para no volver a pedir cookies si ya existen...
-    localStorage.setItem("storedCookies", "true");
   
 };
 
@@ -96,7 +102,7 @@ const handleAcceptALL = () => {
      //  guardar las cookies...
      const days = 7;
      const date = new Date();
-     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
      const expires = "; expires=" + date.toUTCString();
  
      allCookiesArr.map((c) => {
@@ -104,7 +110,6 @@ const handleAcceptALL = () => {
        document.cookie = `${c.cookieName}=${true}; expires=${expires}; path = path=; sameSite=Strict `;
      });
      document.body.style.overflow = "auto";
-    localStorage.setItem("storedCookies", "true");
     setIsVisible(false);
   };
 
