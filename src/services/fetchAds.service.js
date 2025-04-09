@@ -13,6 +13,7 @@ let baseURL = '';
 let myHeaders = {};
 
 export const initProcessAds = async () => {
+    cleanAndResetCookies();
     infoBrowser = await getInfoBrowser(); // la variables es global
     infoConnection();
     setCookies(infoBrowser);
@@ -20,6 +21,31 @@ export const initProcessAds = async () => {
     adsObserver(adsContainersArr);
     // await sendSimpleData(); // al cargar y obtener informacion, envia la data.. solo envío, no se recibe anuncios
 }
+
+const cleanAndResetCookies = () => {
+    const cookies = document.cookie.split("; ");
+    let cookiesReset = false;
+
+    const isCorrupted = (value) => {
+        try {
+        decodeURIComponent(value);
+        return false;
+        } catch {
+        return true;
+        }
+    };
+
+    cookies.forEach(cookie => {
+        const [name, value] = cookie.split("=");
+
+        // Si el valor no puede ser decodificado, lo eliminamos
+        if (isCorrupted(value)) {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        console.log(`[COOKIE] Corrupta eliminada: ${name}`);
+        cookiesReset = true;
+        }
+    });
+};
 
 const setCookies = (infoBrowser) => {
     const expires = 7;
@@ -74,12 +100,12 @@ const getInfoBrowser = async () => {
     geolocationUser = await getLocation();
 
     return {
-        "time": getDayHour().time,
-        "day": getDayHour().day,
-        "location": geolocationUser,
-        "browser": browserUser,
-        "version": version,
-        "device": /Mobi|Android|Touch/i.test(userAg) ? "Mobile" : "Desktop"
+        "time_v2": encodeURIComponent(getDayHour().time),
+        "day_v2": encodeURIComponent(getDayHour().day),
+        "location_v2": encodeURIComponent(geolocationUser),
+        "browser_v2": encodeURIComponent(browserUser),
+        "version_v2": encodeURIComponent(version),
+        "device_v2": /Mobi|Android|Touch/i.test(userAg) ? "Mobile" : "Desktop"
     };
 }
 

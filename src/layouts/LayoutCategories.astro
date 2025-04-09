@@ -51,7 +51,7 @@ const {
       import { initSend } from "@controllers/ApiSend";
       import { initAOS } from "@utils/aos";
       import { execLazyLoad } from "@controllers/ImageLazy";
-
+      import {initProcessAds} from '@services/fetchAds.service.js';
       document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
         initAOS();
@@ -64,6 +64,7 @@ const {
             initSend(this as HTMLFormElement);
           });
         });
+        initProcessAds();
       });
     </script>
   </body>
