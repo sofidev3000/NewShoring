@@ -1,12 +1,13 @@
 /* Light Mode */
 :root {
-  --main-color: #f4f4f4;
   --secundary-color: #1b1b1b, ;
+  --main-color: #f4f4f4;
   --text-color: #333;
   --accent-color: #8F0101;
   --background-glass: #000000d6;
   --divider-secundary: rgb(38 38 38 / 23%);
 
+  --slogan-text: #1d1d1b;
   /* Guardsman Red Palette */
   --guardsman-red-50: #ffefef;
   --guardsman-red-100: #ffdcdc;
@@ -37,6 +38,7 @@
 /* Dark Mode */
 
 .dark:root {
+
   --main-color: #090909;
   --text-color: #d8d8d8;
   /* Dark background */
@@ -98,39 +100,41 @@ body {
   line-height: 1;
   text-rendering: optimizelegibility;
 }
+
 ul li {
   list-style: none;
 }
 
 
-h2{
+h2 {
   font-family: "Merriweather", 'serif';
   font-weight: 700;
 }
-p{
+
+p {
   line-height: 1.5;
 }
 
 
-#blog >  h2:not(.swiper-slide h2) {
+#blog > h2:not(.swiper-slide h2) {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--guardsman-red-500);
 }
 
-#blog  > h3 {
+#blog > h3 {
   font-weight: 700;
   font-size: 1.3rem;
   color: var(--guardsman-red-500);
 }
 
-#blog  > h4 {
+#blog > h4 {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--guardsman-red-500);
 }
 
-#blog  > h5 {
+#blog > h5 {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--guardsman-red-500);
@@ -141,27 +145,40 @@ p{
   font-size: 1rem;
   color: var(--guardsman-red-500);
 }
-#blog >  a{
+
+#blog > a {
   color: var(--guardsman-red-800);
   font-style: italic;
   text-decoration: underline;
   cursor: pointer;
   font-weight: 700;
 }
-#blog > ul li{list-style: disc; padding-left: 5px; margin-bottom: .9rem;}
-#blog > ol li{list-style: decimal; padding-left: 5px;}
-#blog > p{
+
+#blog > ul li {
+  list-style: disc;
+  padding-left: 5px;
+  margin-bottom: .9rem;
+}
+
+#blog > ol li {
+  list-style: decimal;
+  padding-left: 5px;
+}
+
+#blog > p {
   text-align: left;
   margin-top: 1rem;
   text-wrap: wrap;
 }
+
 #blog {
   blockquote {
     border-left: 10px solid var(--guardsman-red-800);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+    quotes: "\201C" "\201D" "\2018" "\2019";
   }
+
   blockquote:before {
     color: var(--text-color);
     content: open-quote;
@@ -170,6 +187,7 @@ p{
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
+
   blockquote p {
     display: inline;
   }
@@ -198,26 +216,9 @@ p{
 
 
 
-/* Logo */
-.logo {
-  padding-block: 1rem;
-  writing-mode: horizontal-tb;
-}
 
-.logo__img {
-  object-fit: contain;
-}
 
-.logo__img--mobile {
-  object-fit: contain;
-  filter: invert(1);
-}
 
-.dark {
-  .logo__img {
-    filter: invert(1);
-  }
-}
 
 
 

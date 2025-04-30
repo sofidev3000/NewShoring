@@ -16,25 +16,25 @@ const {
     <a
       data-aos={animationdirection}
       href="/"
-      class={`flex  w-fit flex-col pt-1 font-normal text-${textColor} relative w-[20%] ${!isFooter ? "min-w-[65%] md:min-w-[35%]" : "min-w-[75%] md:min-w-[100%]"} ` }
+      class={`flex  w-fit flex-col pt-1 font-normal text-${textColor} relative w-[20%] ${!isFooter ? "min-w-[65%] md:min-w-[35%]" : "min-w-[80%] md:min-w-[100%]"} ` }
     >
         <ImageLazy
-            src="/img/logo/nearShoringLogoBlack.svg"
+            src="/img/logo/logo-near-2.svg"
             width="200"
             height="114"
-            className="pt-12 relative pt-[32%]"
-            classNameImage="logo__img--mobile"
+            className=" relative pt-[32%]"
+            classNameImage="logo__img logo__img--mobile h-full object-contain"
             slot="image"
           />
     </a>
   ) : (
     <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col w-[70%] max-w-[50rem] 2xl:max-w-[55rem]`}>
       <ImageLazy
-            src="/img/logo/nearShoringLogoBlack.svg"
+            src="/img/logo/logo-near-2.svg"
             width="200"
             height="114"
             className="pt-[30%] relative "
-            classNameImage="h-full logo__img"
+            classNameImage="h-full logo__img object-contain"
             slot="image"
           />
     </a>
