@@ -9,6 +9,7 @@ import HeaderMobile from "@components/organisms/HeaderMobile/HeaderMobile.astro"
 import Footer from "@organisms/Footer/Footer.astro";
 import ButtonToTop from "@components/atoms/ButtonToTop/ButtonToTop.astro";
 import BannerCoockies from "@components/atoms/BannerCoockies/BannerCoockies";
+import LogoIcon from "@components/atoms/Logo/LogoIcon.astro";
 
 const {
   title = SITE_TITLE,
@@ -27,23 +28,28 @@ const {
   </head>
 
   <body>
-    <BannerCoockies client:only = 'react' />
+    <BannerCoockies client:only="react" />
     <TopBar />
 
-    <article
-      class=`hidden lg:flex  w-full justify-center items-center`
-    >
-      <Logo/>
+    <article class=`hidden lg:flex  w-full mx-auto  justify-center items-center py-5`>
+
+      <a
+        data-aos="fade-right"
+        href="/"
+        class={`flex  pt-1 font-normal w-50 h-fit items-center justify-start`}
+      >
+        <LogoIcon />
+      </a>
     </article>
     <HeaderMobile />
     <Header />
-    <main class="overflow-hidden w-full flex flex-col justify-center items-center px-3 pt-36 sm:pt-56 lg:pt-1">
+    <main
+      class="overflow-hidden w-full flex flex-col justify-center items-center px-3 pt-36 sm:pt-56 lg:pt-1"
+    >
       <ButtonToTop />
       <slot />
     </main>
     <Footer />
-
-
 
     <script
       type="module"
@@ -54,14 +60,13 @@ const {
       import { initSend } from "@controllers/ApiSend";
       import { initAOS } from "@utils/aos";
       import { execLazyLoad } from "@controllers/ImageLazy";
-      import {initProcessTranslate} from '@utils/translatePage';
-      import {initProcessAds} from '../services/fetchAds.service.js';
+      import { initProcessTranslate } from "@utils/translatePage";
+      import { initProcessAds } from "../services/fetchAds.service.js";
 
       document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
         initAOS();
         // initProcessTranslate();
-
 
         const form = document.querySelectorAll(".form-send");
 
