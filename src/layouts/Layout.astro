@@ -55,6 +55,7 @@ const {
       import { execLazyLoad } from "@controllers/ImageLazy";
       import { initProcessTranslate } from "@utils/translatePage";
       import { initProcessAds } from "../services/fetchAds.service.js";
+      import {initProcessTheme} from "@utils/themeButton.js";
 
       document.addEventListener("DOMContentLoaded", function () {
         execLazyLoad();
@@ -70,6 +71,7 @@ const {
           });
         });
 
+        initProcessTheme();
         initProcessAds();
       });
     </script>
