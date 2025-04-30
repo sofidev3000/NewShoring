@@ -1,0 +1,13 @@
+.load-image-container:has( .logo__img--dark){
+    display: none;
+}
+
+
+.dark{
+    .load-image-container:has( .logo__img--dark){
+        display: block;
+    }
+    .load-image-container:has( .logo__img--light){
+        display: none;
+    }
+}

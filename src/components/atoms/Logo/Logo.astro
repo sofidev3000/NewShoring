@@ -1,6 +1,6 @@
 ---
 import ImageLazy from "@components/extras/ImageLazy.astro";
-
+import "./logo.css"
 const {
   animationdirection = "fade-right",
   textColor = "[--secundary-color]",
@@ -16,25 +16,33 @@ const {
     <a
       data-aos={animationdirection}
       href="/"
-      class={`flex  w-fit flex-col pt-1 font-normal text-${textColor} relative w-[20%] ${!isFooter ? "min-w-[65%] md:min-w-[35%]" : "min-w-[80%] md:min-w-[100%]"} ` }
+      class={`flex   flex-col pt-1 font-normal  relative w-40 ${!isFooter ? "min-w-[25%] md:min-w-[35%]" : "min-w-[25%] "} ` }
     >
         <ImageLazy
-            src="/img/logo/logo-near-2.svg"
-            width="200"
+            src="/img/logo/logo-dark.svg "
+            width="100"
             height="114"
-            className=" relative pt-[32%]"
-            classNameImage="logo__img logo__img--mobile h-full object-contain"
+            className=" relative pt-[32%] w-40"
+            classNameImage="logo__img  logo__img--mobile h-full object-contain"
             slot="image"
           />
     </a>
   ) : (
     <a data-aos={animationdirection} href="/" class={`logo hidden md:flex flex-col w-[70%] max-w-[50rem] 2xl:max-w-[55rem]`}>
       <ImageLazy
-            src="/img/logo/logo-near-2.svg"
+            src="/img/logo/logo-ligth.svg"
             width="200"
             height="114"
             className="pt-[30%] relative "
-            classNameImage="h-full logo__img object-contain"
+            classNameImage="logo__img logo__img--light h-full  object-contain"
+            slot="image"
+          />
+      <ImageLazy
+            src="/img/logo/logo-dark.svg"
+            width="200"
+            height="114"
+            className="pt-[30%] relative "
+            classNameImage="logo__img logo__img--dark  h-full  object-contain"
             slot="image"
           />
     </a>

@@ -13,17 +13,17 @@ import ToggleLanguage from "@components/atoms/ToogleLanguage/ToggleLanguage";
 </script>
 
 <header
-  class="w-full fixed z-[900] bg-black flex justify-between items-start py-[3dvh] lg:hidden text-white pr-5 gap-2"
+  class="w-full fixed z-[900] bg-black flex justify-between items-start py-[3dvh] lg:hidden text-white pr-5"
 >
-  <di class="mt-[2dvh]">
+  <div class="mt-[2dvh]">
     <HamburgerButton />
-  </di>
-  <a href="/" class="w-40 h-20 flex justify-center items-center">
-    <LogoIcon fillColor="white" width="auto" height="auto" />
-  </a>
-  <di class="mt-[3dvh]">
+  </div>
+  <div  class="mt-[2dvh]">
+  <Logo hidden="flex" hiddenDesktop="hidden" isMobile="true"/>
+  </div>
+  <div class="mt-[3dvh]">
     <ThemeIcon />
-  </di>
+  </div>
   <aside
     class="panel bg-black fixed top-0 w-full h-[100vh] flex flex-col lg:hidden items-start px-3 pt-20 *:text-2xl space-y-10"
   >
