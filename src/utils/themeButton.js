@@ -1,5 +1,4 @@
 export const initProcessTheme = () => {
-	alert("Cambiar tema");
 	const themeButton = document.getElementById("themeToggle");
 	const element = document.documentElement; // Aplicar el tema almacenado
 	const body = document.body;
