@@ -19,7 +19,7 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
     </div>
   </div>
   <section
-    class="w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap m-auto  max-w-[1280px]"
+    class=" w-full p-0 mt-10 sm:mt-10 px-3.5 flex flex-wrap m-auto max-w-[1280px]"
   >
     <!-- Ads block -->
     <div
@@ -50,7 +50,7 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
     </div>
     <!-- Slider principal -->
     <Swiper
-      className="resultados-grid mx-auto w-full  self-center lg:h-[320px]"
+      className="resultados-grid mx-auto w-full  self-center lg:h-auto p-y-10"
       pagination={'{"ClassName":"relative mt-2.5" ,"el":"today-news__pagination" }'}
       navigation={'{"Type":"", "ClassName":"" ,"ClassNext":"","ClassPrev": ""}'}
       options={'{"loop":true,"speed":900,"slidesPerView":3,"modules": ["Autoplay","Pagination","Navigation"],"spaceBetween": 30,"observer":true,"observeParents":true,"breakpoints":{"320":{"slidesPerView":1},"944":{"slidesPerView":3},"1200":{"slidesPerView":3}}}'}
@@ -59,7 +59,7 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
         className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
       >
         <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+          Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
           className="flex flex-col self-center w-full group"
           category="Internacional"
           title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
@@ -82,7 +82,7 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
       className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
     >
       <ItemNews
-        Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
+        Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
         className="flex flex-col self-center w-full group"
         category="Internacional"
         title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
@@ -101,75 +101,121 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
         />
       </ItemNews>
     </SwiperItem>
-     <SwiperItem
-        className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
-      >
-        <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-          className="flex flex-col self-center w-full group"
-          category="Internacional"
-          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-          datetime="22/04/2024"
-          time="17:24"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="200"
-            height="114"
-            className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-            classNameImage=""
-            slot="image"
-          />
-        </ItemNews>
-      </SwiperItem>
-       <SwiperItem
-        className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
-      >
-        <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-          className="flex flex-col self-center w-full group"
-          category="Internacional"
-          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-          datetime="22/04/2024"
-          time="17:24"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="200"
-            height="114"
-            className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-            classNameImage=""
-            slot="image"
-          />
-        </ItemNews>
-      </SwiperItem>
-       <SwiperItem
-        className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
-      >
-        <ItemNews
-          Options={'{\"LinkContainer\":{\"ClassName\":\"shadow-md\"},\"AssetsContainer\":{\"ClassName\":\"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]\",\"HasFlag\":false,\"Flag\":{\"ClassName\":\"\"},\"ImageContainer\":{\"ClassName\":\"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative\",\"HasWatermark\":false,\"Image\":{\"ClassName\":\"lazy absolute top-0 left-0 w-full h-full object-cover object-center\"}},\"VideoIcon\":{\"Active\":true,\"ClassName\":\"text-sm absolute bottom-2 left-2\",\"Content\":\"<svg xmlns=\\\"http://www.w3.org/2000/svg\\\" fill=\\\"#ffffff\\\" width=\\\"32\\\" height=\\\"32\\\" viewBox=\\\"0 0 32 32\\\"><path d=\\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\\"/></svg>\"}},\"DataContainer\":{\"ClassName\":\"p-4 flex flex-wrap gap-2 flex-1\",\"Date\":{\"Active\":true,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"}},\"Time\":{\"Active\":false,\"ClassName\":\"\",\"Icon\":{\"Active\":false,\"ClassName\":\"stroke-[--neutral-variant-color]\"}},\"Title\":{\"ClassName\":\"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]\"},\"Autor\":{\"Active\":false,\"ClassName\":\"order-1\",\"Icon\":{\"Active\":false,\"ClassName\":\"\"},\"TextPrev\":\"Por&nbsp;\",\"TextNext\":\"&nbsp;-&nbsp;\"}}}'}
-          className="flex flex-col self-center w-full group"
-          category="Internacional"
-          title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
-          datetime="22/04/2024"
-          time="17:24"
-          href="#"
-          categoryColor="category_03"
-        >
-          <ImageLazy
-            src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
-            width="200"
-            height="114"
-            className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
-            classNameImage=""
-            slot="image"
-          />
-        </ItemNews>
-      </SwiperItem>
+    <SwiperItem
+    className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
+  >
+    <ItemNews
+      Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+      className="flex flex-col self-center w-full group"
+      category="Internacional"
+      title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+      datetime="22/04/2024"
+      time="17:24"
+      href="#"
+      categoryColor="category_03"
+    >
+      <ImageLazy
+        src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+        width="200"
+        height="114"
+        className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+        classNameImage=""
+        slot="image"
+      />
+    </ItemNews>
+  </SwiperItem>
+  <SwiperItem
+  className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
+>
+  <ItemNews
+    Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+    className="flex flex-col self-center w-full group"
+    category="Internacional"
+    title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+    datetime="22/04/2024"
+    time="17:24"
+    href="#"
+    categoryColor="category_03"
+  >
+    <ImageLazy
+      src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+      width="200"
+      height="114"
+      className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+      classNameImage=""
+      slot="image"
+    />
+  </ItemNews>
+</SwiperItem>
+<SwiperItem
+className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
+>
+<ItemNews
+  Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+  className="flex flex-col self-center w-full group"
+  category="Internacional"
+  title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+  datetime="22/04/2024"
+  time="17:24"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+    width="200"
+    height="114"
+    className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+    classNameImage=""
+    slot="image"
+  />
+</ItemNews>
+</SwiperItem>
+<SwiperItem
+className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
+>
+<ItemNews
+  Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+  className="flex flex-col self-center w-full group"
+  category="Internacional"
+  title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+  datetime="22/04/2024"
+  time="17:24"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+    width="200"
+    height="114"
+    className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+    classNameImage=""
+    slot="image"
+  />
+</ItemNews>
+</SwiperItem>
+<SwiperItem
+className=" swiper-slide w-full md:w-[48%] lg:w-[31%] mr-[10px]"
+>
+<ItemNews
+  Options={'{"LinkContainer":{"ClassName":"shadow-md"},"AssetsContainer":{"ClassName":"relative w-full w-full overflow-hidden lg:max-h-[184.75px]  2xl:max-h-[272.95px]","HasFlag":false,"Flag":{"ClassName":""},"ImageContainer":{"ClassName":"load-image-container block relative h-0 group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative","HasWatermark":false,"Image":{"ClassName":"lazy absolute top-0 left-0 w-full h-full object-cover object-center"}},"VideoIcon":{"Active":true,"ClassName":"text-sm absolute bottom-2 left-2","Content":"<svg xmlns=\\"http://www.w3.org/2000/svg\\" fill=\\"#ffffff\\" width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\"><path d=\\"M23.231 14.875c1.025.575 1.025 2.056 0 2.625l-11 6.313c-.994.55-2.231-.162-2.231-1.313v-13c0-1.156 1.244-1.862 2.231-1.313zM31.5 16c0 8.563-6.938 15.5-15.5 15.5S.5 24.562.5 16 7.438.5 16 .5 31.5 7.438 31.5 16zm-28 0c0 6.906 5.594 12.5 12.5 12.5S28.5 22.906 28.5 16 22.906 3.5 16 3.5 3.5 9.094 3.5 16z\\"/></svg>"}},"DataContainer":{"ClassName":"p-4 flex flex-wrap  gap-4  w-full","Date":{"Active":true,"ClassName":"flex items-center h-4  gap-5 order-1 ml-4 ","Icon":{"Active":false,"ClassName":"hidden !h-0 "}},"Time":{"Active":false,"ClassName":"","Icon":{"Active":false,"ClassName":"stroke-[--neutral-variant-color] hidden !h-0 " } },"Title":{"ClassName":"order-0 group-hover:underline font-Merriweather text-lg  leading-[24px] mt-2 font-[700]"},"Autor":{"Active":false,"ClassName":"order-1","Icon":{"Active":false,"ClassName":""},"TextPrev":"Por&nbsp;","TextNext":"&nbsp;-&nbsp;"}}}'}
+  className="flex flex-col self-center w-full group"
+  category="Internacional"
+  title="Descubre el significado y origen del ingrediente Naruto en el popular platillo japonés Ramen"
+  datetime="22/04/2024"
+  time="17:24"
+  href="#"
+  categoryColor="category_03"
+>
+  <ImageLazy
+    src="https://gf-tvoainews.s3.amazonaws.com/images/5d823efb-9175-4ee5-8ce5-2404b8264518.jpg"
+    width="200"
+    height="114"
+    className="group-hover:scale-125 transition-all duration-[2s] cursor-pointer pt-[70%] sm:pt-[50%] w-full relative"
+    classNameImage=""
+    slot="image"
+  />
+</ItemNews>
+</SwiperItem>
     </Swiper>
 
     <!-- Ads block -->
@@ -201,7 +247,9 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
     </div>
   </section>
   <!-- resultados + sidebar -->
-  <div class="flex flex-wrap justify-center gap-10 items-start mt-10 max-w-[1280px]">
+  <div
+    class="flex flex-wrap justify-center gap-10 items-start mt-10 max-w-[1280px]"
+  >
     <!-- Grid resultados -->
     <div class="flex flex-col xl:h-full w-full xl:basis-[70%]">
       <div id="resultados-grid" class="resultados__grid mt-[1rem]">
@@ -476,33 +524,34 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
           />
         </ItemNewsWithDesc>
       </div>
-       <!-- Ads block -->
-  <div
-  id="div-gpt-ad-4222133-1"
-  class="google-ads bg-[#9f9f9f] mb-5 w-full h-[100px] relative mt-10"
-  data-code="@adsDomain/responsive_portada_leaderboard_1"
-  data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
->
-  <div
-    class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="fill-none stoke-[#1b1b1bbf]"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-        d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
-      ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path d="M7 13l4 0"
-      ></path><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"></path></svg
-    >
-  </div>
-</div>
+      <!-- Ads block -->
+      <div
+        id="div-gpt-ad-4222133-1"
+        class="google-ads bg-[#9f9f9f] mb-5 w-full h-[100px] relative mt-10"
+        data-code="@adsDomain/responsive_portada_leaderboard_1"
+        data-sizes='[{\"width\":728,\"height\":90},{\"width\":970,\"height\":90},{\"width\":320,\"height\":100},{\"width\":320,\"height\":50}]'
+      >
+        <div
+          class="google-ads__temporal absolute top-2/4 left-2/4 -translate-y-2 -translate-x-2/4 z-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-none stoke-[#1b1b1bbf]"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+            ></path><path d="M7 15v-4a2 2 0 0 1 4 0v4"></path><path
+              d="M7 13l4 0"></path><path d="M17 9v6h-1.5a1.5 1.5 0 1 1 1.5 -1.5"
+            ></path></svg
+          >
+        </div>
+      </div>
     </div>
     <!-- Side Bar -->
     <aside
@@ -756,58 +805,55 @@ import LayoutCategories from "@src/layouts/LayoutCategories.astro";
     </ul>
   </div>
   <section
-  class="px-3.5 flex flex-wrap justify-between lg:max-w-screen-lg m-auto md:max-w-screen-md mt-10 xl:max-w-[1140px]"
->
-  <div class="w-full sm:w-[48%] ml-0 sm:ml-[2%]">
-    <ImageLazy
-      src="https://www.tvoainews.com/img/search_not-found_404.png"
-      width="540"
-      height="348"
-      className="pt-[64%] w-full relative"
-    />
-  </div>
-  <div
-    class="w-full sm:w-[48%] ml-0 sm:ml-[2%] flex flex-col justify-center items-center md:items-start"
+    class="px-3.5 flex flex-wrap justify-between lg:max-w-screen-lg m-auto md:max-w-screen-md mt-10 xl:max-w-[1140px]"
   >
-    <h1
-      class="text-center md:text-start text-[--primary-text-color] mb-5 font-sans font-bold p-0 text-4xl w-full after:content-[''] after:w-10 after:h-full after:absolute after:ml-2.5 after:bg-contain after:bg-no-repeat after:bg-titleOrnament relative"
+    <div class="w-full sm:w-[48%] ml-0 sm:ml-[2%]">
+      <ImageLazy
+        src="https://www.tvoainews.com/img/search_not-found_404.png"
+        width="540"
+        height="348"
+        className="pt-[64%] w-full relative"
+      />
+    </div>
+    <div
+      class="w-full sm:w-[48%] ml-0 sm:ml-[2%] flex flex-col justify-center items-center md:items-start"
     >
-      No se han encontrado resultados
-    </h1>
-    <p>Las búsqueda no ha generado resultados</p>
-    <a
-      href="/"
-      target="_blank"
-      class="group px-3 mt-2 rounded-full inline-flex gap-2 flex-nowrap w-auto py-2 items-center font-bold border-[--neutral-variant-color] bg-gradient-to-r from-[--neutral-color] via-[--neutral-variant-color] to-[--neutral-acent-color] border-solid border-[1px] uppercase cursor-pointer text-sm tracking-wider text-white hover:text-[--neutral-variant-color] hover:font-bold hover:bg-[--primary-color] hover:from-[--primary-color] hover:to-[--primary-color] transition-all duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out"
-    >
-      Ver más noticias
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="group-hover:fill-[--neutral-variant-color] group-hover:font-bold transition-transform duration-300 ease-in-out transform translate-x-0 group-hover:translate-x-2"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+      <h1
+        class="text-center md:text-start text-[--primary-text-color] mb-5 font-sans font-bold p-0 text-4xl w-full after:content-[''] after:w-10 after:h-full after:absolute after:ml-2.5 after:bg-contain after:bg-no-repeat after:bg-titleOrnament relative"
       >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-          d="M5 12l14 0"></path><path d="M13 18l6 -6"></path><path d="M13 6l6 6"
-        ></path>
-      </svg>
-    </a>
-  </div>
-</section>
+        No se han encontrado resultados
+      </h1>
+      <p>Las búsqueda no ha generado resultados</p>
+      <a
+        href="/"
+        target="_blank"
+        class="group px-3 mt-2 rounded-full inline-flex gap-2 flex-nowrap w-auto py-2 items-center font-bold border-[--neutral-variant-color] bg-gradient-to-r from-[--neutral-color] via-[--neutral-variant-color] to-[--neutral-acent-color] border-solid border-[1px] uppercase cursor-pointer text-sm tracking-wider text-white hover:text-[--neutral-variant-color] hover:font-bold hover:bg-[--primary-color] hover:from-[--primary-color] hover:to-[--primary-color] transition-all duration-500 ease-in-out hover:transition-all hover:duration-500 hover:ease-in-out"
+      >
+        Ver más noticias
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="group-hover:fill-[--neutral-variant-color] group-hover:font-bold transition-transform duration-300 ease-in-out transform translate-x-0 group-hover:translate-x-2"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M5 12l14 0"></path><path d="M13 18l6 -6"></path><path
+            d="M13 6l6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
 </LayoutCategories>
-
-
 
 <style>
   .resultados__grid {
-
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     grid-template-rows: auto;
